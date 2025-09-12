@@ -7,8 +7,8 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { name: 'Ana Sayfa', path: '/' },
-    { name: 'Hakkımızda', path: '/about' },
     { name: 'Hizmetler', path: '/services' },
+    { name: 'Ruhsal Yolculuk', path: '/spiritual-journey' },
     { name: 'Ruhsal İyilik', path: '/spiritual-wellbeing' },
     { name: 'İletişim', path: '/contact' },
   ];

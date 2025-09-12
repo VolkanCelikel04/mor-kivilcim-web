@@ -6,6 +6,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import SpiritualWellbeing from './pages/SpiritualWellbeing';
+import SpiritualJourney from './pages/SpiritualJourney';
 import Footer from './components/Footer';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/spiritual-wellbeing" element={<SpiritualWellbeing />} />
+            <Route path="/spiritual-journey" element={<SpiritualJourney />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
