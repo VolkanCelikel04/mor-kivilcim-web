@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		package.json = package.json
+		package-lock.json = package-lock.json
+		README.md = README.md
+		tailwind.config.js = tailwind.config.js
+		tsconfig.json = tsconfig.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
+	ProjectSection(SolutionItems) = preProject
+		public\.htaccess = public\.htaccess
+		public\index.html = public\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B2C3D4E5-F6G7-8901-BCDE-F23456789012}"
+	ProjectSection(SolutionItems) = preProject
+		src\App.tsx = src\App.tsx
+		src\index.css = src\index.css
+		src\index.tsx = src\index.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{C3D4E5F6-G7H8-9012-CDEF-345678901234}"
+	ProjectSection(SolutionItems) = preProject
+		src\components\Footer.tsx = src\components\Footer.tsx
+		src\components\Navbar.tsx = src\components\Navbar.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pages", "pages", "{D4E5F6G7-H8I9-0123-DEFG-456789012345}"
+	ProjectSection(SolutionItems) = preProject
+		src\pages\About.tsx = src\pages\About.tsx
+		src\pages\Contact.tsx = src\pages\Contact.tsx
+		src\pages\Home.tsx = src\pages\Home.tsx
+		src\pages\Services.tsx = src\pages\Services.tsx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12345678-1234-1234-1234-123456789012}
+	EndGlobalSection
+EndGlobal
