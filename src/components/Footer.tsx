@@ -60,6 +60,11 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/spiritual-wellbeing" className="text-gray-300 hover:text-mor-400 transition-colors">
+                  Ruhsal İyilik
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-gray-300 hover:text-mor-400 transition-colors">
                   İletişim
                 </Link>

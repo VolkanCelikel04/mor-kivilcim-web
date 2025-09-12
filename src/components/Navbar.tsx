@@ -9,6 +9,7 @@ const Navbar: React.FC = () => {
     { name: 'Ana Sayfa', path: '/' },
     { name: 'Hakkımızda', path: '/about' },
     { name: 'Hizmetler', path: '/services' },
+    { name: 'Ruhsal İyilik', path: '/spiritual-wellbeing' },
     { name: 'İletişim', path: '/contact' },
   ];
 
