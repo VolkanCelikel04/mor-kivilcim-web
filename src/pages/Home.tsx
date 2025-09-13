@@ -11,6 +11,11 @@ const Home: React.FC = () => {
           <div className="absolute top-20 left-20 w-32 h-32 bg-mor-400 rounded-full opacity-20 animate-pulse"></div>
           <div className="absolute bottom-20 right-20 w-24 h-24 bg-purple-400 rounded-full opacity-30 animate-pulse delay-1000"></div>
           <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-indigo-400 rounded-full opacity-25 animate-pulse delay-500"></div>
+          {/* Spiritüel Semboller */}
+          <div className="absolute top-32 right-32 text-4xl opacity-30 animate-float">🌸</div>
+          <div className="absolute bottom-32 left-32 text-3xl opacity-25 animate-float delay-1000">💎</div>
+          <div className="absolute top-1/3 right-1/4 text-2xl opacity-20 animate-pulse delay-500">🕉️</div>
+          <div className="absolute bottom-1/3 left-1/3 text-3xl opacity-30 animate-float delay-700">🌙</div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -249,6 +254,69 @@ const Home: React.FC = () => {
               </svg>
               Instagram'da Takip Et
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Spiritüel Semboller Section */}
+      <section className="py-20 bg-gradient-to-br from-mor-50 via-purple-50 to-indigo-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center mb-6">
+              <span className="text-4xl mr-4">🌸</span>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+                Spiritüel Semboller
+              </h2>
+            </div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Ruhsal yolculuğunuzda size rehberlik eden kutsal semboller ve anlamları
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-mor-100 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-mor-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl">🌸</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Yaşam Çiçeği</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Evrenin yaratılış deseni, bütünlük ve uyumun sembolü. 
+                Ruhsal gelişimde rehberlik eder.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-mor-100 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl">💎</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Ametist</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Ruhsal koruma ve temizlik kristali. 
+                Negatif enerjileri temizler, iç huzur sağlar.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-mor-100 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-indigo-400 to-mor-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl">🕉️</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Om Sembolü</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Evrensel ses, yaratılışın titreşimi. 
+                Meditasyonda kullanılan kutsal ses.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-mor-100 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-mor-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-3xl">🌙</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Ay Sembolü</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Duygusal dünyanın ve sezgilerin sembolü. 
+                İç dünyanızı keşfetmenizde rehberlik eder.
+              </p>
+            </div>
           </div>
         </div>
       </section>
