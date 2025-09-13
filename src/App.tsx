@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import SpiritualWellbeing from './pages/SpiritualWellbeing';
 import SpiritualJourney from './pages/SpiritualJourney';
+import AdminSupport from './pages/AdminSupport';
 import Footer from './components/Footer';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/spiritual-wellbeing" element={<SpiritualWellbeing />} />
             <Route path="/spiritual-journey" element={<SpiritualJourney />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/admin/support" element={<AdminSupport />} />
           </Routes>
         </main>
         <Footer />
