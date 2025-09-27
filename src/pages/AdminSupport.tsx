@@ -9,8 +9,11 @@ import {
   ExclamationTriangleIcon,
   XCircleIcon,
   EyeIcon,
-  PencilIcon
+  PencilIcon,
+  ArrowRightOnRectangleIcon
 } from '@heroicons/react/24/outline';
+import { useAuth } from '../contexts/AuthContext';
+import { supportService } from '../services/apiService';
 
 interface SupportTicket {
   id: string;
@@ -44,6 +47,7 @@ interface TicketStats {
 }
 
 const AdminSupport: React.FC = () => {
+  const { token, logout, user } = useAuth();
   const [tickets, setTickets] = useState<SupportTicket[]>([]);
   const [categories, setCategories] = useState<SupportCategory[]>([]);
   const [stats, setStats] = useState<TicketStats>({
@@ -60,7 +64,7 @@ const AdminSupport: React.FC = () => {
   const [filterPriority, setFilterPriority] = useState<string>('all');
   const [newMessage, setNewMessage] = useState('');
 
-  const API_BASE = 'https://localhost:7001/api/admin/support';
+  // Azure API kullanılıyor - config/api.ts'den alınıyor
 
   useEffect(() => {
     loadTickets();
@@ -70,23 +74,28 @@ const AdminSupport: React.FC = () => {
   const loadTickets = async () => {
     try {
       setLoading(true);
-      const params = new URLSearchParams();
-      if (filterStatus !== 'all') params.append('status', filterStatus);
-      if (filterPriority !== 'all') params.append('priority', filterPriority);
       
-      const response = await fetch(`${API_BASE}/tickets?${params}`, {
-        headers: {
-          'Authorization': 'Bearer YOUR_ADMIN_TOKEN_HERE' // Gerçek token gerekli
-        }
+      if (!token) {
+        console.warn('Token bulunamadı');
+        setLoading(false);
+        return;
+      }
+
+      const response = await supportService.getTickets(token, {
+        status: filterStatus,
+        priority: filterPriority,
       });
       
-      if (response.ok) {
-        const data = await response.json();
-        setTickets(data.tickets || []);
-        calculateStats(data.tickets || []);
+      if (response.success && response.data) {
+        const tickets = response.data.items || response.data;
+        setTickets(Array.isArray(tickets) ? tickets : []);
+        calculateStats(Array.isArray(tickets) ? tickets : []);
       }
     } catch (error) {
       console.error('Tickets yüklenirken hata:', error);
+      // Fallback: Mock data
+      setTickets([]);
+      calculateStats([]);
     } finally {
       setLoading(false);
     }
@@ -94,13 +103,14 @@ const AdminSupport: React.FC = () => {
 
   const loadCategories = async () => {
     try {
-      const response = await fetch('https://localhost:7001/api/support/categories');
-      if (response.ok) {
-        const data = await response.json();
-        setCategories(data);
+      const response = await supportService.getCategories();
+      if (response.success && response.data) {
+        setCategories(response.data);
       }
     } catch (error) {
       console.error('Kategoriler yüklenirken hata:', error);
+      // Fallback: Mock categories
+      setCategories([]);
     }
   };
 
@@ -159,25 +169,17 @@ const AdminSupport: React.FC = () => {
   };
 
   const sendMessage = async (ticketId: string) => {
-    if (!newMessage.trim()) return;
+    if (!newMessage.trim() || !token) return;
 
     try {
-      const response = await fetch(`${API_BASE}/tickets/${ticketId}/messages`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer YOUR_ADMIN_TOKEN_HERE'
-        },
-        body: JSON.stringify({
-          body: newMessage,
-          isInternal: false
-        })
-      });
-
-      if (response.ok) {
+      const response = await supportService.sendMessage(token, ticketId, newMessage, false);
+      
+      if (response.success) {
         setNewMessage('');
         loadTickets();
         alert('Mesaj gönderildi!');
+      } else {
+        alert('Mesaj gönderilemedi!');
       }
     } catch (error) {
       console.error('Mesaj gönderilirken hata:', error);
@@ -186,19 +188,16 @@ const AdminSupport: React.FC = () => {
   };
 
   const updateTicketStatus = async (ticketId: string, status: number) => {
-    try {
-      const response = await fetch(`${API_BASE}/tickets/${ticketId}`, {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer YOUR_ADMIN_TOKEN_HERE'
-        },
-        body: JSON.stringify({ status })
-      });
+    if (!token) return;
 
-      if (response.ok) {
+    try {
+      const response = await supportService.updateTicketStatus(token, ticketId, status);
+      
+      if (response.success) {
         loadTickets();
         alert('Ticket durumu güncellendi!');
+      } else {
+        alert('Ticket güncellenemedi!');
       }
     } catch (error) {
       console.error('Ticket güncellenirken hata:', error);
@@ -217,7 +216,14 @@ const AdminSupport: React.FC = () => {
                 <TicketIcon className="h-8 w-8 text-purple-600 mr-3" />
                 Destek Yönetim Paneli
               </h1>
-              <p className="text-gray-600 mt-2">DailyPositive Destek Sistemi Admin Paneli</p>
+              <p className="text-gray-600 mt-2">
+                DailyPositive Destek Sistemi Admin Paneli
+                {user && (
+                  <span className="ml-2 text-purple-600 font-medium">
+                    - Hoş geldiniz, {user.name || user.email}
+                  </span>
+                )}
+              </p>
             </div>
             <div className="flex space-x-4">
               <button
@@ -225,6 +231,13 @@ const AdminSupport: React.FC = () => {
                 className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
               >
                 Yenile
+              </button>
+              <button
+                onClick={logout}
+                className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors flex items-center"
+              >
+                <ArrowRightOnRectangleIcon className="h-4 w-4 mr-2" />
+                Çıkış Yap
               </button>
             </div>
           </div>
