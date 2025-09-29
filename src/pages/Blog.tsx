@@ -1,83 +1,138 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Blog: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const categories = [
     { id: 'all', name: 'Tümü', icon: '🌟' },
-    { id: 'daily-energy', name: 'Günlük Enerji', icon: '⚡' },
-    { id: 'affirmations', name: 'Affirmasyonlar', icon: '💫' },
+    { id: 'breathing', name: 'Nefes Teknikleri', icon: '🫁' },
     { id: 'meditation', name: 'Meditasyon', icon: '🧘‍♀️' },
-    { id: 'crystals', name: 'Kristaller', icon: '💎' },
-    { id: 'spiritual-guidance', name: 'Spiritüel Rehberlik', icon: '🔮' },
+    { id: 'healing', name: 'Şifa Teknikleri', icon: '💝' },
+    { id: 'writing', name: 'Yazı Terapisi', icon: '✍️' },
+    { id: 'movement', name: 'Hareket Meditasyonu', icon: '🚶‍♀️' },
   ];
 
   const blogPosts = [
     {
       id: 1,
-      title: 'Bugünün Enerjisi: Yeni Başlangıçlar',
-      excerpt: 'Bugün evren size yeni fırsatlar sunuyor. İç dünyanızda değişim rüzgarları esiyor.',
-      content: 'Bugünün enerjisi yeni başlangıçlar ve dönüşümlerle dolu. Evren size yeni fırsatlar sunuyor ve iç dünyanızda değişim rüzgarları esiyor. Bu enerjiyi en iyi şekilde kullanmak için...',
-      category: 'daily-energy',
+      title: '4-4-4 Nefes (Kutu Nefesi)',
+      excerpt: '2–5 Dakikada Sinir Sistemini Yatıştır',
+      content: 'Burnundan 4 sayıda al, 4 sayıda tut, 4 sayıda ver. 3–6 tur. Çene ve omuzlar yumuşak.',
+      category: 'breathing',
       date: '2024-01-15',
-      readTime: '3 dk',
-      image: '🌅',
-      tags: ['enerji', 'yeni başlangıç', 'dönüşüm']
+      readTime: '5 dk',
+      image: '🫁',
+      tags: ['nefes', 'stres', 'rahatlama'],
+      link: '/blog/444-breathing'
     },
     {
       id: 2,
-      title: 'Güçlü Affirmasyonlar: İç Huzur',
-      excerpt: 'Her gün tekrarlayabileceğiniz, iç huzurunuzu artıracak güçlü affirmasyonlar.',
-      content: 'Affirmasyonlar, zihnimizi pozitif düşüncelerle besleyen güçlü araçlardır. İç huzurunuzu artırmak için her gün tekrarlayabileceğiniz affirmasyonlar...',
-      category: 'affirmations',
+      title: 'Beden Taraması',
+      excerpt: '"Yumuşama"yı Bedeninle Hatırla',
+      content: 'Dikkati ayaktan başa gezdir; değiştirmeye çalışma—yalnızca fark et ve nefesle eşlik et.',
+      category: 'meditation',
       date: '2024-01-14',
-      readTime: '5 dk',
-      image: '💫',
-      tags: ['affirmasyon', 'iç huzur', 'pozitif düşünce']
+      readTime: '10 dk',
+      image: '🧘‍♀️',
+      tags: ['meditasyon', 'farkındalık', 'beden'],
+      link: '/blog/beden-taramasi'
     },
     {
       id: 3,
-      title: 'Sabah Meditasyonu: Günü Başlatma',
-      excerpt: 'Güne pozitif başlamak için yapabileceğiniz basit ama etkili meditasyon teknikleri.',
-      content: 'Sabah meditasyonu, güne pozitif ve huzurlu başlamanın en etkili yollarından biridir. İşte günü başlatmak için yapabileceğiniz basit ama etkili teknikler...',
-      category: 'meditation',
+      title: 'Ho\'oponopono',
+      excerpt: 'Nazik Onarımın Dört Cümlesi',
+      content: '"Özür dilerim. Lütfen beni affet. Teşekkür ederim. Seni seviyorum."—kalp çevresinde, nefesle birlikte.',
+      category: 'healing',
       date: '2024-01-13',
       readTime: '7 dk',
-      image: '🧘‍♀️',
-      tags: ['meditasyon', 'sabah rutini', 'mindfulness']
+      image: '💝',
+      tags: ['şifa', 'affetme', 'onarım'],
+      link: '/blog/hooponopono'
     },
     {
       id: 4,
-      title: 'Ametist Kristali: Ruhsal Koruma',
-      excerpt: 'Ametist kristalinin güçlü enerjisi ve ruhsal koruma özellikleri hakkında bilmeniz gerekenler.',
-      content: 'Ametist, en güçlü ruhsal koruma kristallerinden biridir. Bu mor renkli kristal, negatif enerjileri temizler ve ruhsal gelişiminizi destekler...',
-      category: 'crystals',
+      title: 'Reiki',
+      excerpt: 'Deneyim, Etik ve Beklenti Yönetimi',
+      content: 'Reiki tamamlayıcı bir yaklaşımdır; tıbbi bakımın yerine geçmez. Net sınırlar ve niyet, deneyimi derinleştirir.',
+      category: 'healing',
       date: '2024-01-12',
-      readTime: '6 dk',
-      image: '💎',
-      tags: ['kristal', 'ametist', 'ruhsal koruma']
+      readTime: '8 dk',
+      image: '✨',
+      tags: ['reiki', 'enerji', 'şifa'],
+      link: '/blog/reiki'
     },
     {
       id: 5,
-      title: 'Chakra Dengeleme: Kök Chakra',
-      excerpt: 'Kök chakranızı dengelemek ve güçlendirmek için pratik yöntemler.',
-      content: 'Kök chakra, güvenlik ve topraklanma ile ilgili enerji merkezimizdir. Bu chakranın dengesi, yaşamımızda güvenlik ve istikrar hissi yaratır...',
-      category: 'spiritual-guidance',
+      title: 'Travma-Duyarlı Meditasyon',
+      excerpt: '5 İlke ile Güvenlik',
+      content: 'Hızını sen belirlersin. Topraklama önce, yoğunlaşırsa durma izni hep açık.',
+      category: 'meditation',
       date: '2024-01-11',
       readTime: '8 dk',
-      image: '🔮',
-      tags: ['chakra', 'dengeleme', 'topraklanma']
+      image: '🛡️',
+      tags: ['travma', 'güvenlik', 'meditasyon'],
+      link: '/blog/travma-duyarli-meditasyon'
     },
     {
       id: 6,
-      title: 'Ayın Enerjisi: Dolunay Ritüeli',
-      excerpt: 'Dolunay enerjisini kullanarak yapabileceğiniz güçlü ritüeller ve pratikler.',
-      content: 'Dolunay, güçlü enerjisiyle dönüşüm ve tamamlanma zamanıdır. Bu dönemde yapabileceğiniz ritüeller ve pratikler...',
-      category: 'spiritual-guidance',
+      title: 'Uyku İçin Meditasyon',
+      excerpt: 'Yoga Nidra\'dan İlhamla',
+      content: '10–15 dakikalık beden taraması + nefes + nazik imgeleme, uykuya geçişi kolaylaştırabilir.',
+      category: 'meditation',
       date: '2024-01-10',
+      readTime: '12 dk',
+      image: '🌙',
+      tags: ['uyku', 'meditasyon', 'yoga nidra'],
+      link: '/blog/uyku-meditasyonu'
+    },
+    {
+      id: 7,
+      title: 'Yürüyüş Meditasyonu',
+      excerpt: 'Her Adımda Farkındalık',
+      content: '20 dakikalık yürüyüşte adım-nefes senkronu ve çevresel farkındalık; sonunda tek cümlelik şükran.',
+      category: 'movement',
+      date: '2024-01-09',
+      readTime: '15 dk',
+      image: '🚶‍♀️',
+      tags: ['yürüyüş', 'farkındalık', 'hareket'],
+      link: '/blog/yuruyus-meditasyonu'
+    },
+    {
+      id: 8,
+      title: 'Şükran & Duygusal Yazım',
+      excerpt: '5 Dakikada Regülasyon',
+      content: '3 küçük iyi şeyi yaz + haftada bir kez 10 dakikalık ifade edici yazım.',
+      category: 'writing',
+      date: '2024-01-08',
+      readTime: '5 dk',
+      image: '✍️',
+      tags: ['yazım', 'şükran', 'duygular'],
+      link: '/blog/sukran-yazim'
+    },
+    {
+      id: 9,
+      title: 'Onaylamalar',
+      excerpt: 'Ne Zaman, Nasıl?',
+      content: '"Ben iyiyim" yerine, kendi değerlerin üzerinden öz-onaylama daha etkili olur.',
+      category: 'writing',
+      date: '2024-01-07',
       readTime: '10 dk',
-      image: '🌕',
-      tags: ['dolunay', 'ritüel', 'dönüşüm']
+      image: '💪',
+      tags: ['onaylama', 'öz-değer', 'pozitif'],
+      link: '/blog/onaylamalar'
+    },
+    {
+      id: 10,
+      title: 'Aile Dizimi',
+      excerpt: 'Nedir, Ne Değildir? Güvenli Çerçeve',
+      content: 'Aile Dizimi bir temsil çalışmasıdır; bilimsel geçerliliği tartışmalıdır. Güvenli alan ve entegrasyon şart.',
+      category: 'healing',
+      date: '2024-01-06',
+      readTime: '12 dk',
+      image: '🌳',
+      tags: ['aile', 'sistemik', 'terapi'],
+      link: '/blog/aile-dizimi'
     }
   ];
 
@@ -217,9 +272,12 @@ const Blog: React.FC = () => {
                     <span className="text-sm text-gray-500">
                       📅 {new Date(post.date).toLocaleDateString('tr-TR')}
                     </span>
-                    <button className="text-mor-600 font-semibold hover:text-mor-700 transition-colors">
+                    <Link 
+                      to={post.link} 
+                      className="text-mor-600 font-semibold hover:text-mor-700 transition-colors"
+                    >
                       Devamını Oku →
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>
