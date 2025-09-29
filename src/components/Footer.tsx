@@ -105,21 +105,21 @@ const Footer: React.FC = () => {
                 <span className="text-mor-400 mr-3 mt-1">📍</span>
                 <div>
                   <p className="font-medium">Adres</p>
-                  <p className="text-sm">Levent Mahallesi<br />Büyükdere Caddesi<br />Beşiktaş, İstanbul</p>
+                  <p className="text-sm">Bostancı<br />İstanbul, Türkiye</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="text-mor-400 mr-3 mt-1">📧</span>
                 <div>
                   <p className="font-medium">E-posta</p>
-                  <p className="text-sm">info@morkivilcim.com</p>
+                  <p className="text-sm">info@morkiviilm.com</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="text-mor-400 mr-3 mt-1">📱</span>
                 <div>
                   <p className="font-medium">Telefon</p>
-                  <p className="text-sm">+90 (212) 555 0123</p>
+                  <p className="text-sm">0501 127 25 33</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -145,9 +145,9 @@ const Footer: React.FC = () => {
               </p>
             </div>
             <div className="flex items-center space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-mor-400 transition-colors">Gizlilik Politikası</a>
-              <a href="#" className="hover:text-mor-400 transition-colors">Kullanım Şartları</a>
-              <a href="#" className="hover:text-mor-400 transition-colors">Çerez Politikası</a>
+              <Link to="/privacy-policy" className="hover:text-mor-400 transition-colors">Gizlilik Politikası</Link>
+              <Link to="/terms-of-service" className="hover:text-mor-400 transition-colors">Kullanım Şartları</Link>
+              <Link to="/cookie-policy" className="hover:text-mor-400 transition-colors">Çerez Politikası</Link>
             </div>
           </div>
         </div>
