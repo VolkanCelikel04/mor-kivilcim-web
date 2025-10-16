@@ -185,7 +185,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">E-posta</h3>
                     <p className="text-gray-600">
-                      info@morkiviilm.com
+                      info@morkivilcim.com
                     </p>
                   </div>
                 </div>

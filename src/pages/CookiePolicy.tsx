@@ -289,7 +289,7 @@ const CookiePolicy: React.FC = () => {
               Çerez politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz:
             </p>
             <p className="text-gray-700">
-              <strong>E-posta:</strong> info@morkiviilm.com<br />
+              <strong>E-posta:</strong> info@morkivilcim.com<br />
               <strong>Telefon:</strong> 0501 127 25 33<br />
               <strong>Adres:</strong> Bostancı, İstanbul, Türkiye
             </p>

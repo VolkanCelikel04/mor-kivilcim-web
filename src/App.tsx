@@ -29,12 +29,14 @@ import DailyPositive from './pages/DailyPositive';
 import AccountDeletion from './pages/AccountDeletion';
 import ProtectedRoute from './components/ProtectedRoute';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
   return (
     <AuthProvider>
       <Router>
+        <ScrollToTop />
         <div className="min-h-screen bg-gray-50">
           <Navbar />
           <main>

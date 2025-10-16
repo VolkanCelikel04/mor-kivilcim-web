@@ -19,7 +19,7 @@ const TermsOfService: React.FC = () => {
         <div className="space-y-4">
           <div>
             <h4 className="font-semibold mb-2">Şirket/İşletme:</h4>
-            <p>Mor Kıvılcım, Adres: Bostancı, İstanbul, Türkiye, E-posta: info@morkiviilm.com, Tel: 0501 127 25 33</p>
+            <p>Mor Kıvılcım, Adres: Bostancı, İstanbul, Türkiye, E-posta: info@morkivilcim.com, Tel: 0501 127 25 33</p>
           </div>
           <div>
             <h4 className="font-semibold mb-2">Hizmetler:</h4>
@@ -133,7 +133,7 @@ const TermsOfService: React.FC = () => {
       title: "Gizlilik ve Çerezler",
       content: (
         <div className="space-y-4">
-          <p>Kişisel verilerinizin işlenmesine ilişkin ayrıntılar Gizlilik Politikası'nda; çerez kullanım detayları Çerez Politikası'nda yer alır. KVKK ve, uygulanabiliyorsa, GDPR kapsamındaki haklarınızı kullanabilirsiniz: info@morkiviilm.com</p>
+          <p>Kişisel verilerinizin işlenmesine ilişkin ayrıntılar Gizlilik Politikası'nda; çerez kullanım detayları Çerez Politikası'nda yer alır. KVKK ve, uygulanabiliyorsa, GDPR kapsamındaki haklarınızı kullanabilirsiniz: info@morkivilcim.com</p>
         </div>
       )
     },
@@ -171,7 +171,7 @@ const TermsOfService: React.FC = () => {
       title: "Bildirimler ve İletişim",
       content: (
         <div className="space-y-4">
-          <p>Resmî bildirimler info@morkiviilm.com adresine e-posta ile yapılabilir. Mor Kıvılcım, Kullanıcı'nın sağladığı iletişim bilgileri üzerinden bilgilendirme yapabilir (bülten için açık rıza gerekir ve her zaman vazgeçebilirsiniz).</p>
+          <p>Resmî bildirimler info@morkivilcim.com adresine e-posta ile yapılabilir. Mor Kıvılcım, Kullanıcı'nın sağladığı iletişim bilgileri üzerinden bilgilendirme yapabilir (bülten için açık rıza gerekir ve her zaman vazgeçebilirsiniz).</p>
         </div>
       )
     },
@@ -273,7 +273,7 @@ const TermsOfService: React.FC = () => {
               Kullanım şartları hakkında sorularınız için bizimle iletişime geçebilirsiniz:
             </p>
             <p className="text-gray-700">
-              <strong>E-posta:</strong> info@morkiviilm.com<br />
+              <strong>E-posta:</strong> info@morkivilcim.com<br />
               <strong>Telefon:</strong> 0501 127 25 33<br />
               <strong>Adres:</strong> Bostancı, İstanbul, Türkiye
             </p>

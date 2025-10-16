@@ -19,7 +19,7 @@ const PrivacyPolicy: React.FC = () => {
         <div className="space-y-4">
           <p><strong>Veri Sorumlusu:</strong> Mor Kıvılcım</p>
           <p><strong>Adres:</strong> Bostancı, İstanbul, Türkiye</p>
-          <p><strong>E-posta:</strong> info@morkiviilm.com</p>
+          <p><strong>E-posta:</strong> info@morkivilcim.com</p>
           <p><strong>Telefon:</strong> 0501 127 25 33</p>
           <p>Kişisel verilerinizle ilgili talepleriniz için aşağıdaki "Haklarınız ve Başvuru" bölümündeki kanalları kullanabilirsiniz.</p>
         </div>
@@ -192,7 +192,7 @@ const PrivacyPolicy: React.FC = () => {
           </ul>
           <div>
             <h4 className="font-semibold mb-2">Başvuru kanalları:</h4>
-            <p><strong>E-posta:</strong> info@morkiviilm.com (konu satırı: KVKK Başvuru)</p>
+            <p><strong>E-posta:</strong> info@morkivilcim.com (konu satırı: KVKK Başvuru)</p>
             <p><strong>Posta:</strong> Bostancı, İstanbul, Türkiye</p>
           </div>
           <p>Başvurularınızı mevzuattaki süreler içinde yanıtlarız. Olumsuz yanıt almanız hâlinde KVKK Kurumu'na şikâyet hakkınız saklıdır.</p>
@@ -253,7 +253,7 @@ const PrivacyPolicy: React.FC = () => {
               <li>• Zorunlu çerezler olmadan site çalışmaz; analitik/pazarlama çerezleri rızaya bağlıdır.</li>
               <li>• Rezervasyon ve iletişim için temel verileri alır, sadece hizmeti sağlamak için kullanırız.</li>
               <li>• Pazarlama mesajlarını dilediğiniz an iptal edebilirsiniz.</li>
-              <li>• KVKK kapsamındaki haklarınız için info@morkiviilm.com adresine yazın.</li>
+              <li>• KVKK kapsamındaki haklarınız için info@morkivilcim.com adresine yazın.</li>
             </ul>
           </div>
 
@@ -297,7 +297,7 @@ const PrivacyPolicy: React.FC = () => {
               Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz:
             </p>
             <p className="text-gray-700">
-              <strong>E-posta:</strong> info@morkiviilm.com<br />
+              <strong>E-posta:</strong> info@morkivilcim.com<br />
               <strong>Telefon:</strong> 0501 127 25 33
             </p>
           </div>
