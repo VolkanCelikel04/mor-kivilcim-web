@@ -14,6 +14,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { useAuth } from '../contexts/AuthContext';
 import { supportService } from '../services/apiService';
+import { useSessionTimeout } from '../hooks/useSessionTimeout';
 
 interface SupportTicket {
   id: string;
@@ -48,6 +49,9 @@ interface TicketStats {
 
 const AdminSupport: React.FC = () => {
   const { token, logout, user } = useAuth();
+  
+  // Session timeout hook
+  useSessionTimeout();
   const [tickets, setTickets] = useState<SupportTicket[]>([]);
   const [categories, setCategories] = useState<SupportCategory[]>([]);
   const [stats, setStats] = useState<TicketStats>({

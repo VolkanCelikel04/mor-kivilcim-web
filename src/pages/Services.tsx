@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Services: React.FC = () => {
   const spiritualServices = [
@@ -258,9 +259,12 @@ const Services: React.FC = () => {
               Hangi hizmete ihtiyacınız olduğunu söyleyin, size en uygun çözümü sunalım.
             </p>
           </div>
-          <button className="bg-white text-mor-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-mor-50 transition-all duration-300 transform hover:scale-105">
+          <Link 
+            to="/contact" 
+            className="inline-block bg-white text-mor-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-mor-50 transition-all duration-300 transform hover:scale-105"
+          >
             Ücretsiz Danışmanlık Alın
-          </button>
+          </Link>
         </div>
       </section>
     </div>

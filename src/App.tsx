@@ -27,7 +27,9 @@ import FamilyConstellation from './pages/blog/FamilyConstellation';
 // DailyPositive imports
 import DailyPositive from './pages/DailyPositive';
 import AccountDeletion from './pages/AccountDeletion';
+import MeditationGuide from './pages/MeditationGuide';
 import ProtectedRoute from './components/ProtectedRoute';
+import SecureAdminRoute from './components/SecureAdminRoute';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { AuthProvider } from './contexts/AuthContext';
@@ -65,11 +67,13 @@ function App() {
               {/* DailyPositive Routes */}
               <Route path="/dailypositive" element={<DailyPositive />} />
               <Route path="/dailypositive/hesap-silme" element={<AccountDeletion />} />
+              <Route path="/meditasyon-rehberi" element={<MeditationGuide />} />
               <Route path="/admin/login" element={<AdminLogin />} />
+              {/* Güvenli Admin Route - Sadece yetkili kullanıcılar */}
               <Route path="/admin/support" element={
-                <ProtectedRoute>
+                <SecureAdminRoute>
                   <AdminSupport />
-                </ProtectedRoute>
+                </SecureAdminRoute>
               } />
             </Routes>
           </main>
