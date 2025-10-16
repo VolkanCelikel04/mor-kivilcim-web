@@ -68,6 +68,7 @@ function App() {
               <Route path="/dailypositive" element={<DailyPositive />} />
               <Route path="/dailypositive/hesap-silme" element={<AccountDeletion />} />
               <Route path="/meditasyon-rehberi" element={<MeditationGuide />} />
+              <Route path="/meditation" element={<MeditationGuide />} />
               <Route path="/admin/login" element={<AdminLogin />} />
               {/* Güvenli Admin Route - Sadece yetkili kullanıcılar */}
               <Route path="/admin/support" element={
