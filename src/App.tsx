@@ -24,6 +24,9 @@ import WalkingMeditation from './pages/blog/WalkingMeditation';
 import GratitudeWriting from './pages/blog/GratitudeWriting';
 import Affirmations from './pages/blog/Affirmations';
 import FamilyConstellation from './pages/blog/FamilyConstellation';
+// DailyPositive imports
+import DailyPositive from './pages/DailyPositive';
+import AccountDeletion from './pages/AccountDeletion';
 import ProtectedRoute from './components/ProtectedRoute';
 import Footer from './components/Footer';
 import { AuthProvider } from './contexts/AuthContext';
@@ -57,6 +60,9 @@ function App() {
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
               <Route path="/cookie-policy" element={<CookiePolicy />} />
+              {/* DailyPositive Routes */}
+              <Route path="/dailypositive" element={<DailyPositive />} />
+              <Route path="/dailypositive/hesap-silme" element={<AccountDeletion />} />
               <Route path="/admin/login" element={<AdminLogin />} />
               <Route path="/admin/support" element={
                 <ProtectedRoute>
