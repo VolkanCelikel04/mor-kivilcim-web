@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -17,12 +20,11 @@ const About: React.FC = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-mor-400 to-purple-500 rounded-full flex items-center justify-center mr-4">
                 <span className="text-white text-3xl">🧘‍♀️</span>
               </div>
-              <span className="text-mor-200 font-semibold text-lg">Spiritüel Rehberlik</span>
+              <span className="text-mor-200 font-semibold text-lg">{t('about.spiritualGuidance')}</span>
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">Hakkımızda</h1>
+            <h1 className="text-5xl lg:text-6xl font-bold mb-6">{t('about.title')}</h1>
             <p className="text-xl lg:text-2xl max-w-4xl mx-auto text-mor-100 leading-relaxed">
-              MOR Kıvılcım olarak, ruhsal dönüşüm ve enerji çalışmaları alanında 
-              rehberlik sunuyor, iç dünyanızı keşfetmenizde size eşlik ediyoruz.
+              {t('about.description')}
             </p>
           </div>
         </div>
@@ -35,21 +37,16 @@ const About: React.FC = () => {
             <div>
               <div className="flex items-center mb-6">
                 <span className="text-4xl mr-4">🌟</span>
-                <h2 className="text-4xl font-bold text-gray-900">Ruhsal Yolculuğumuz</h2>
+                <h2 className="text-4xl font-bold text-gray-900">{t('about.journey.title')}</h2>
               </div>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                MOR Kıvılcım, ruhsal dönüşüm ve enerji çalışmaları alanında 
-                uzmanlaşmış bir rehberlik merkezidir. İç dünyanızı keşfetmenizde 
-                ve ruhsal gelişiminizde size eşlik ediyoruz.
+                {t('about.journey.p1')}
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Aile dizimi, ThetaHealing, Reiki ve meditasyon gibi çeşitli 
-                spiritüel uygulamalarla, yaşamınızda pozitif dönüşümler 
-                yaşamanıza yardımcı oluyoruz.
+                {t('about.journey.p2')}
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Her bireyin kendine özgü ruhsal yolculuğu olduğuna inanıyor, 
-                bu yolculukta size özel rehberlik sunuyoruz.
+                {t('about.journey.p3')}
               </p>
             </div>
             <div className="bg-gradient-to-br from-mor-50 via-purple-50 to-indigo-50 rounded-3xl p-8 shadow-xl">
@@ -59,28 +56,28 @@ const About: React.FC = () => {
                     <span className="text-white text-2xl">🧘‍♀️</span>
                   </div>
                   <div className="text-3xl font-bold text-mor-600 mb-2">500+</div>
-                  <div className="text-gray-600">Meditasyon Seansı</div>
+                  <div className="text-gray-600">{t('about.stats.meditation')}</div>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">🔮</span>
                   </div>
                   <div className="text-3xl font-bold text-purple-600 mb-2">200+</div>
-                  <div className="text-gray-600">Enerji Çalışması</div>
+                  <div className="text-gray-600">{t('about.stats.energy')}</div>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-br from-indigo-400 to-mor-500 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">📿</span>
                   </div>
                   <div className="text-3xl font-bold text-indigo-600 mb-2">100+</div>
-                  <div className="text-gray-600">Spiritüel Danışmanlık</div>
+                  <div className="text-gray-600">{t('about.stats.counseling')}</div>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-br from-mor-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">🌸</span>
                   </div>
                   <div className="text-3xl font-bold text-mor-600 mb-2">5+</div>
-                  <div className="text-gray-600">Yıllık Deneyim</div>
+                  <div className="text-gray-600">{t('about.stats.experience')}</div>
                 </div>
               </div>
             </div>
@@ -94,10 +91,10 @@ const About: React.FC = () => {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-6">
               <span className="text-4xl mr-4">💎</span>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">Değerlerimiz</h2>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">{t('about.values.title')}</h2>
             </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Spiritüel çalışmalarımızı yönlendiren temel değerlerimiz
+              {t('about.values.subtitle')}
             </p>
           </div>
 
@@ -106,10 +103,9 @@ const About: React.FC = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-mor-400 to-purple-500 rounded-2xl flex items-center justify-center mb-6 mx-auto">
                 <span className="text-3xl">🤲</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Şefkat ve Anlayış</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{t('about.values.compassion.title')}</h3>
               <p className="text-gray-600 text-center leading-relaxed">
-                Her bireyin kendine özgü ruhsal yolculuğuna saygı duyar, 
-                şefkatli bir yaklaşımla rehberlik sunuyoruz.
+                {t('about.values.compassion.desc')}
               </p>
             </div>
 
@@ -117,10 +113,9 @@ const About: React.FC = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 mx-auto">
                 <span className="text-3xl">🌟</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Bütünsel Şifa</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{t('about.values.holistic.title')}</h3>
               <p className="text-gray-600 text-center leading-relaxed">
-                Zihin, beden ve ruhun bütünsel şifasını hedefliyor, 
-                enerji dengesini sağlıyoruz.
+                {t('about.values.holistic.desc')}
               </p>
             </div>
 
@@ -128,10 +123,9 @@ const About: React.FC = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-indigo-400 to-mor-500 rounded-2xl flex items-center justify-center mb-6 mx-auto">
                 <span className="text-3xl">🕊️</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">İç Huzur</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{t('about.values.peace.title')}</h3>
               <p className="text-gray-600 text-center leading-relaxed">
-                İç dünyanızda huzur ve denge bulmanızı sağlayarak, 
-                yaşamınızda pozitif dönüşümler yaratıyoruz.
+                {t('about.values.peace.desc')}
               </p>
             </div>
           </div>
@@ -144,10 +138,10 @@ const About: React.FC = () => {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-6">
               <span className="text-4xl mr-4">👥</span>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">Spiritüel Rehberlerimiz</h2>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">{t('about.team.title')}</h2>
             </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Deneyimli ve uzman spiritüel rehberlerimizle ruhsal yolculuğunuzda size eşlik ediyoruz
+              {t('about.team.subtitle')}
             </p>
           </div>
 
@@ -156,14 +150,14 @@ const About: React.FC = () => {
               <div className="w-32 h-32 bg-gradient-to-br from-mor-400 to-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-white text-4xl">🧘‍♀️</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">Mor Kıvılcım</h3>
-              <p className="text-mor-600 mb-4 text-center font-semibold">Kurucu & Baş Spiritüel Rehber</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">{t('about.team.founder.name')}</h3>
+              <p className="text-mor-600 mb-4 text-center font-semibold">{t('about.team.founder.role')}</p>
               <p className="text-gray-600 text-center leading-relaxed">
-                Aile dizimi, ThetaHealing ve Reiki uzmanı. 10+ yıl spiritüel rehberlik deneyimi.
+                {t('about.team.founder.desc')}
               </p>
               <div className="mt-4 flex justify-center space-x-2">
-                <span className="bg-mor-100 text-mor-700 px-3 py-1 rounded-full text-sm">Aile Dizimi</span>
-                <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">ThetaHealing</span>
+                <span className="bg-mor-100 text-mor-700 px-3 py-1 rounded-full text-sm">{t('about.team.founder.tag1')}</span>
+                <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">{t('about.team.founder.tag2')}</span>
               </div>
             </div>
 
@@ -171,14 +165,14 @@ const About: React.FC = () => {
               <div className="w-32 h-32 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-white text-4xl">🔮</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">Enerji Şifacısı</h3>
-              <p className="text-purple-600 mb-4 text-center font-semibold">Reiki Ustası & Enerji Terapisti</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">{t('about.team.healer.name')}</h3>
+              <p className="text-purple-600 mb-4 text-center font-semibold">{t('about.team.healer.role')}</p>
               <p className="text-gray-600 text-center leading-relaxed">
-                Reiki, kristal terapi ve aura temizliği uzmanı. Enerji dengesi ve şifa çalışmaları.
+                {t('about.team.healer.desc')}
               </p>
               <div className="mt-4 flex justify-center space-x-2">
-                <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Reiki</span>
-                <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">Kristal Terapi</span>
+                <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">{t('about.team.healer.tag1')}</span>
+                <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">{t('about.team.healer.tag2')}</span>
               </div>
             </div>
 
@@ -186,14 +180,14 @@ const About: React.FC = () => {
               <div className="w-32 h-32 bg-gradient-to-br from-indigo-400 to-mor-500 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-white text-4xl">📿</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">Meditasyon Rehberi</h3>
-              <p className="text-indigo-600 mb-4 text-center font-semibold">Mindfulness & Meditasyon Uzmanı</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">{t('about.team.guide.name')}</h3>
+              <p className="text-indigo-600 mb-4 text-center font-semibold">{t('about.team.guide.role')}</p>
               <p className="text-gray-600 text-center leading-relaxed">
-                Meditasyon, mindfulness ve nefes çalışmaları uzmanı. İç huzur ve farkındalık rehberliği.
+                {t('about.team.guide.desc')}
               </p>
               <div className="mt-4 flex justify-center space-x-2">
-                <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">Meditasyon</span>
-                <span className="bg-mor-100 text-mor-700 px-3 py-1 rounded-full text-sm">Mindfulness</span>
+                <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">{t('about.team.guide.tag1')}</span>
+                <span className="bg-mor-100 text-mor-700 px-3 py-1 rounded-full text-sm">{t('about.team.guide.tag2')}</span>
               </div>
             </div>
           </div>

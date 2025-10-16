@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const SpiritualWellbeing: React.FC = () => {
+  const { t } = useTranslation();
+  
   const spiritualApps = [
     {
       title: 'Mindfulness & Meditasyon',

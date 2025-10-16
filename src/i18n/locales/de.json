@@ -22,35 +22,83 @@
   "about": {
     "title": "Über uns",
     "subtitle": "Spirituelle Transformation mit Lila Funke",
-    "description": "Lila Funke ist eine Plattform, die speziell für diejenigen entwickelt wurde, die spirituelle Entwicklung und inneren Frieden suchen. Unser Ziel ist es, jedem Einzelnen zu helfen, sein inneres Potenzial zu entdecken und ihn auf seiner spirituellen Reise zu begleiten.",
-    "mission": "Unsere Mission",
-    "missionText": "Menschen bei ihrer spirituellen Entwicklung zu unterstützen und ihnen zu helfen, inneren Frieden zu erreichen.",
-    "vision": "Unsere Vision",
-    "visionText": "Mehr bewusste und friedliche Menschen in der Welt zu erziehen."
+    "description": "Als Lila Funke bieten wir Begleitung im Bereich der spirituellen Transformation und Energiearbeit an, um Ihre innere Welt zu entdecken.",
+    "spiritualGuidance": "Spirituelle Führung",
+    "journey": {
+      "title": "Unsere spirituelle Reise",
+      "p1": "Lila Funke ist ein Beratungszentrum, das sich auf spirituelle Transformation und Energiearbeit spezialisiert hat. Wir begleiten Sie bei der Entdeckung Ihrer inneren Welt und Ihrer spirituellen Entwicklung.",
+      "p2": "Mit verschiedenen spirituellen Praktiken wie Familienaufstellung, ThetaHealing, Reiki und Meditation helfen wir Ihnen, positive Transformationen in Ihrem Leben zu erleben.",
+      "p3": "Wir glauben, dass jeder Mensch eine einzigartige spirituelle Reise hat, und wir bieten Ihnen auf dieser Reise eine persönliche Begleitung."
+    },
+    "stats": {
+      "meditation": "Meditationssitzungen",
+      "energy": "Energiearbeit",
+      "counseling": "Spirituelle Beratung",
+      "experience": "Jahre Erfahrung"
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "subtitle": "Die Grundwerte, die unsere spirituelle Arbeit leiten",
+      "compassion": {
+        "title": "Mitgefühl und Verständnis",
+        "desc": "Wir respektieren die einzigartige spirituelle Reise jedes Einzelnen und bieten Begleitung mit einem mitfühlenden Ansatz."
+      },
+      "holistic": {
+        "title": "Ganzheitliche Heilung",
+        "desc": "Wir streben ganzheitliche Heilung von Geist, Körper und Seele an und sorgen für Energiebalance."
+      },
+      "peace": {
+        "title": "Innerer Frieden",
+        "desc": "Indem wir Ihnen helfen, Frieden und Gleichgewicht in Ihrer inneren Welt zu finden, schaffen wir positive Transformationen in Ihrem Leben."
+      }
+    },
+    "team": {
+      "title": "Unsere spirituellen Führer",
+      "subtitle": "Wir begleiten Sie auf Ihrer spirituellen Reise mit unseren erfahrenen und kompetenten spirituellen Führern",
+      "founder": {
+        "name": "Lila Funke",
+        "role": "Gründer & Hauptspirituelle Führer",
+        "desc": "Experte für Familienaufstellung, ThetaHealing und Reiki. Über 10 Jahre spirituelle Beratungserfahrung.",
+        "tag1": "Familienaufstellung",
+        "tag2": "ThetaHealing"
+      },
+      "healer": {
+        "name": "Energieheiler",
+        "role": "Reiki-Meister & Energietherapeut",
+        "desc": "Experte für Reiki, Kristalltherapie und Aura-Reinigung. Energiebalance und Heilungsarbeit.",
+        "tag1": "Reiki",
+        "tag2": "Kristalltherapie"
+      },
+      "guide": {
+        "name": "Meditationsführer",
+        "role": "Achtsamkeits- & Meditationsexperte",
+        "desc": "Experte für Meditation, Achtsamkeit und Atemübungen. Begleitung zu innerem Frieden und Bewusstsein.",
+        "tag1": "Meditation",
+        "tag2": "Achtsamkeit"
+      }
+    }
   },
   "services": {
     "title": "Unsere Dienstleistungen",
     "subtitle": "Umfassende Dienstleistungen für spirituelle Entwicklung",
-    "meditation": "Meditationssitzungen",
-    "meditationDesc": "Entdecken Sie Ihren inneren Frieden durch persönliche und Gruppenmeditationssitzungen.",
-    "energyWork": "Energiearbeit",
-    "energyWorkDesc": "Chakra-Ausgleich und Energie-Reinigung.",
-    "spiritualCounseling": "Spirituelle Beratung",
-    "spiritualCounselingDesc": "Begleitung auf Ihrer persönlichen spirituellen Reise.",
-    "workshops": "Workshop-Programme",
-    "workshopsDesc": "Spezielle Workshop-Programme für spirituelle Entwicklung.",
-    "freeConsultation": "Kostenlose Beratung erhalten"
+    "description": "Unsere speziell für Ihre spirituelle Entwicklung konzipierten Dienstleistungen",
+    "freeConsultation": "Kostenlose Beratung erhalten",
+    "contactUs": "Kontaktieren Sie uns"
   },
   "blog": {
     "title": "Blog",
     "subtitle": "Artikel über spirituelle Entwicklung und inneren Frieden",
+    "description": "Praktische Anleitungen, Meditationstechniken und Heilmethoden zur Unterstützung Ihrer spirituellen Entwicklung",
     "readMore": "Weiterlesen",
     "categories": "Kategorien",
     "all": "Alle",
-    "meditation": "Meditation",
-    "energy": "Energie",
-    "spiritual": "Spirituell",
-    "wellness": "Wohlbefinden"
+    "loadMore": "Mehr Inhalt laden",
+    "newsletter": {
+      "title": "Spiritueller Newsletter",
+      "subtitle": "Abonnieren Sie unseren Newsletter für tägliche Affirmationen, Energie-Updates und spirituelle Ratschläge.",
+      "placeholder": "Ihre E-Mail-Adresse",
+      "subscribe": "Abonnieren"
+    }
   },
   "contact": {
     "title": "Kontakt",

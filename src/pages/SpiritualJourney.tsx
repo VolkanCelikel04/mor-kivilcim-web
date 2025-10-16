@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const SpiritualJourney: React.FC = () => {
+  const { t } = useTranslation();
+  
   const journeySteps = [
     {
       step: 1,

@@ -22,35 +22,83 @@
   "about": {
     "title": "Hakkımızda",
     "subtitle": "Mor Kıvılcım ile Ruhsal Dönüşüm",
-    "description": "Mor Kıvılcım, ruhsal gelişim ve iç huzur arayanlar için özel olarak tasarlanmış bir platformdur. Amacımız, her bireyin içindeki potansiyeli ortaya çıkarmak ve ruhsal yolculuğunda rehberlik etmektir.",
-    "mission": "Misyonumuz",
-    "missionText": "İnsanların ruhsal gelişimlerini desteklemek ve iç huzura ulaşmalarına yardımcı olmak.",
-    "vision": "Vizyonumuz",
-    "visionText": "Dünyada daha fazla bilinçli ve huzurlu birey yetiştirmek."
+    "description": "MOR Kıvılcım olarak, ruhsal dönüşüm ve enerji çalışmaları alanında rehberlik sunuyor, iç dünyanızı keşfetmenizde size eşlik ediyoruz.",
+    "spiritualGuidance": "Spiritüel Rehberlik",
+    "journey": {
+      "title": "Ruhsal Yolculuğumuz",
+      "p1": "MOR Kıvılcım, ruhsal dönüşüm ve enerji çalışmaları alanında uzmanlaşmış bir rehberlik merkezidir. İç dünyanızı keşfetmenizde ve ruhsal gelişiminizde size eşlik ediyoruz.",
+      "p2": "Aile dizimi, ThetaHealing, Reiki ve meditasyon gibi çeşitli spiritüel uygulamalarla, yaşamınızda pozitif dönüşümler yaşamanıza yardımcı oluyoruz.",
+      "p3": "Her bireyin kendine özgü ruhsal yolculuğu olduğuna inanıyor, bu yolculukta size özel rehberlik sunuyoruz."
+    },
+    "stats": {
+      "meditation": "Meditasyon Seansı",
+      "energy": "Enerji Çalışması",
+      "counseling": "Spiritüel Danışmanlık",
+      "experience": "Yıllık Deneyim"
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "subtitle": "Spiritüel çalışmalarımızı yönlendiren temel değerlerimiz",
+      "compassion": {
+        "title": "Şefkat ve Anlayış",
+        "desc": "Her bireyin kendine özgü ruhsal yolculuğuna saygı duyar, şefkatli bir yaklaşımla rehberlik sunuyoruz."
+      },
+      "holistic": {
+        "title": "Bütünsel Şifa",
+        "desc": "Zihin, beden ve ruhun bütünsel şifasını hedefliyor, enerji dengesini sağlıyoruz."
+      },
+      "peace": {
+        "title": "İç Huzur",
+        "desc": "İç dünyanızda huzur ve denge bulmanızı sağlayarak, yaşamınızda pozitif dönüşümler yaratıyoruz."
+      }
+    },
+    "team": {
+      "title": "Spiritüel Rehberlerimiz",
+      "subtitle": "Deneyimli ve uzman spiritüel rehberlerimizle ruhsal yolculuğunuzda size eşlik ediyoruz",
+      "founder": {
+        "name": "Mor Kıvılcım",
+        "role": "Kurucu & Baş Spiritüel Rehber",
+        "desc": "Aile dizimi, ThetaHealing ve Reiki uzmanı. 10+ yıl spiritüel rehberlik deneyimi.",
+        "tag1": "Aile Dizimi",
+        "tag2": "ThetaHealing"
+      },
+      "healer": {
+        "name": "Enerji Şifacısı",
+        "role": "Reiki Ustası & Enerji Terapisti",
+        "desc": "Reiki, kristal terapi ve aura temizliği uzmanı. Enerji dengesi ve şifa çalışmaları.",
+        "tag1": "Reiki",
+        "tag2": "Kristal Terapi"
+      },
+      "guide": {
+        "name": "Meditasyon Rehberi",
+        "role": "Mindfulness & Meditasyon Uzmanı",
+        "desc": "Meditasyon, mindfulness ve nefes çalışmaları uzmanı. İç huzur ve farkındalık rehberliği.",
+        "tag1": "Meditasyon",
+        "tag2": "Mindfulness"
+      }
+    }
   },
   "services": {
     "title": "Hizmetlerimiz",
     "subtitle": "Ruhsal Gelişim İçin Kapsamlı Hizmetler",
-    "meditation": "Meditasyon Seansları",
-    "meditationDesc": "Kişisel ve grup meditasyon seansları ile iç huzurunuzu keşfedin.",
-    "energyWork": "Enerji Çalışmaları",
-    "energyWorkDesc": "Çakra dengeleme ve enerji temizleme çalışmaları.",
-    "spiritualCounseling": "Ruhsal Danışmanlık",
-    "spiritualCounselingDesc": "Kişisel ruhsal yolculuğunuzda rehberlik.",
-    "workshops": "Atölye Çalışmaları",
-    "workshopsDesc": "Ruhsal gelişim için özel atölye programları.",
-    "freeConsultation": "Ücretsiz Danışmanlık Alın"
+    "description": "Spiritüel gelişiminiz için özel olarak tasarlanmış hizmetlerimiz",
+    "freeConsultation": "Ücretsiz Danışmanlık Alın",
+    "contactUs": "Bizimle İletişime Geçin"
   },
   "blog": {
     "title": "Blog",
     "subtitle": "Ruhsal Gelişim ve İç Huzur Hakkında Yazılar",
+    "description": "Spiritüel gelişiminizi destekleyecek pratik rehberler, meditasyon teknikleri ve şifa yöntemleri",
     "readMore": "Devamını Oku",
     "categories": "Kategoriler",
     "all": "Tümü",
-    "meditation": "Meditasyon",
-    "energy": "Enerji",
-    "spiritual": "Ruhsal",
-    "wellness": "Sağlık"
+    "loadMore": "Daha Fazla İçerik Yükle",
+    "newsletter": {
+      "title": "Spiritüel Bülten",
+      "subtitle": "Günlük affirmasyonlar, enerji durumu ve spiritüel tavsiyeler için bültenimize abone olun.",
+      "placeholder": "E-posta adresiniz",
+      "subscribe": "Abone Ol"
+    }
   },
   "contact": {
     "title": "İletişim",

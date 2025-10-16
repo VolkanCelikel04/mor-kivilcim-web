@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Services: React.FC = () => {
+  const { t } = useTranslation();
+  
   const spiritualServices = [
     {
       title: 'Meditasyon & Mindfulness',
@@ -118,11 +121,10 @@ const Services: React.FC = () => {
           <div className="text-center">
             <div className="flex items-center justify-center mb-6">
               <span className="text-5xl mr-4">🕯️</span>
-              <h1 className="text-4xl md:text-6xl font-bold">Spiritüel Hizmetler</h1>
+              <h1 className="text-4xl md:text-6xl font-bold">{t('services.title')}</h1>
             </div>
             <p className="text-xl md:text-2xl max-w-4xl mx-auto mb-8">
-              Ruhsal gelişiminiz ve iç huzurunuz için özel olarak tasarlanmış, 
-              evrensel enerjilerle uyumlu hizmetlerimiz.
+              {t('services.subtitle')}
             </p>
             <div className="flex justify-center space-x-8 text-lg">
               <div className="flex items-center">
@@ -263,7 +265,7 @@ const Services: React.FC = () => {
             to="/contact" 
             className="inline-block bg-white text-mor-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-mor-50 transition-all duration-300 transform hover:scale-105"
           >
-            Ücretsiz Danışmanlık Alın
+            {t('services.freeConsultation')}
           </Link>
         </div>
       </section>

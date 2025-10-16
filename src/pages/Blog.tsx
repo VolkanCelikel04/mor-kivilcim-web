@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Blog: React.FC = () => {
+  const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const categories = [
@@ -287,7 +289,7 @@ const Blog: React.FC = () => {
           {/* Load More Button */}
           <div className="text-center mt-12">
             <button className="bg-gradient-to-r from-mor-500 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-mor-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
-              Daha Fazla İçerik Yükle
+              {t('blog.loadMore')}
             </button>
           </div>
         </div>
@@ -299,20 +301,20 @@ const Blog: React.FC = () => {
           <div className="mb-8">
             <span className="text-6xl mb-4 block">📧</span>
             <h2 className="text-4xl font-bold mb-4">
-              Spiritüel Bülten
+              {t('blog.newsletter.title')}
             </h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-              Günlük affirmasyonlar, enerji durumu ve spiritüel tavsiyeler için bültenimize abone olun.
+              {t('blog.newsletter.subtitle')}
             </p>
           </div>
           <div className="max-w-md mx-auto flex gap-4">
             <input
               type="email"
-              placeholder="E-posta adresiniz"
+              placeholder={t('blog.newsletter.placeholder')}
               className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
             />
             <button className="bg-white text-mor-600 px-6 py-3 rounded-lg font-bold hover:bg-mor-50 transition-all duration-300">
-              Abone Ol
+              {t('blog.newsletter.subscribe')}
             </button>
           </div>
         </div>

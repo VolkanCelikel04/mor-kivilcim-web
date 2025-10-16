@@ -22,35 +22,83 @@
   "about": {
     "title": "About Us",
     "subtitle": "Spiritual Transformation with Purple Spark",
-    "description": "Purple Spark is a platform specially designed for those seeking spiritual development and inner peace. Our goal is to help each individual discover their inner potential and guide them on their spiritual journey.",
-    "mission": "Our Mission",
-    "missionText": "To support people's spiritual development and help them achieve inner peace.",
-    "vision": "Our Vision",
-    "visionText": "To raise more conscious and peaceful individuals in the world."
+    "description": "As Purple Spark, we provide guidance in the field of spiritual transformation and energy work, accompanying you in discovering your inner world.",
+    "spiritualGuidance": "Spiritual Guidance",
+    "journey": {
+      "title": "Our Spiritual Journey",
+      "p1": "Purple Spark is a guidance center specialized in spiritual transformation and energy work. We accompany you in discovering your inner world and your spiritual development.",
+      "p2": "With various spiritual practices such as family constellation, ThetaHealing, Reiki and meditation, we help you experience positive transformations in your life.",
+      "p3": "We believe that each individual has a unique spiritual journey, and we offer you personalized guidance on this journey."
+    },
+    "stats": {
+      "meditation": "Meditation Sessions",
+      "energy": "Energy Work",
+      "counseling": "Spiritual Counseling",
+      "experience": "Years of Experience"
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The core values that guide our spiritual work",
+      "compassion": {
+        "title": "Compassion and Understanding",
+        "desc": "We respect each individual's unique spiritual journey and offer guidance with a compassionate approach."
+      },
+      "holistic": {
+        "title": "Holistic Healing",
+        "desc": "We aim for holistic healing of mind, body and spirit, providing energy balance."
+      },
+      "peace": {
+        "title": "Inner Peace",
+        "desc": "By helping you find peace and balance in your inner world, we create positive transformations in your life."
+      }
+    },
+    "team": {
+      "title": "Our Spiritual Guides",
+      "subtitle": "We accompany you on your spiritual journey with our experienced and expert spiritual guides",
+      "founder": {
+        "name": "Purple Spark",
+        "role": "Founder & Chief Spiritual Guide",
+        "desc": "Expert in family constellation, ThetaHealing and Reiki. 10+ years of spiritual guidance experience.",
+        "tag1": "Family Constellation",
+        "tag2": "ThetaHealing"
+      },
+      "healer": {
+        "name": "Energy Healer",
+        "role": "Reiki Master & Energy Therapist",
+        "desc": "Expert in Reiki, crystal therapy and aura cleansing. Energy balance and healing work.",
+        "tag1": "Reiki",
+        "tag2": "Crystal Therapy"
+      },
+      "guide": {
+        "name": "Meditation Guide",
+        "role": "Mindfulness & Meditation Expert",
+        "desc": "Expert in meditation, mindfulness and breathing exercises. Inner peace and awareness guidance.",
+        "tag1": "Meditation",
+        "tag2": "Mindfulness"
+      }
+    }
   },
   "services": {
     "title": "Our Services",
     "subtitle": "Comprehensive Services for Spiritual Development",
-    "meditation": "Meditation Sessions",
-    "meditationDesc": "Discover your inner peace through personal and group meditation sessions.",
-    "energyWork": "Energy Work",
-    "energyWorkDesc": "Chakra balancing and energy clearing work.",
-    "spiritualCounseling": "Spiritual Counseling",
-    "spiritualCounselingDesc": "Guidance on your personal spiritual journey.",
-    "workshops": "Workshop Programs",
-    "workshopsDesc": "Special workshop programs for spiritual development.",
-    "freeConsultation": "Get Free Consultation"
+    "description": "Our services specially designed for your spiritual development",
+    "freeConsultation": "Get Free Consultation",
+    "contactUs": "Contact Us"
   },
   "blog": {
     "title": "Blog",
     "subtitle": "Articles on Spiritual Development and Inner Peace",
+    "description": "Practical guides, meditation techniques and healing methods to support your spiritual development",
     "readMore": "Read More",
     "categories": "Categories",
     "all": "All",
-    "meditation": "Meditation",
-    "energy": "Energy",
-    "spiritual": "Spiritual",
-    "wellness": "Wellness"
+    "loadMore": "Load More Content",
+    "newsletter": {
+      "title": "Spiritual Newsletter",
+      "subtitle": "Subscribe to our newsletter for daily affirmations, energy updates and spiritual advice.",
+      "placeholder": "Your email address",
+      "subscribe": "Subscribe"
+    }
   },
   "contact": {
     "title": "Contact",
