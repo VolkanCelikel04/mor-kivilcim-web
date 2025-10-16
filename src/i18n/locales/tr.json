@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "spiritualJourney": "Ruhsal Yolculuk",
+    "spiritualWellbeing": "Ruhsal Sağlık",
+    "dailyPositive": "DailyPositive",
+    "meditationGuide": "Meditasyon Rehberi"
+  },
+  "home": {
+    "title": "Mor Kıvılcım",
+    "subtitle": "Ruhsal Dönüşüm ve İç Huzur",
+    "description": "İçinizdeki mor kıvılcımı keşfedin ve ruhsal yolculuğunuza başlayın. Meditasyon, enerji çalışmaları ve kişisel gelişim hizmetleriyle hayatınızı dönüştürün.",
+    "getStarted": "Hemen Başla",
+    "learnMore": "Daha Fazla Bilgi",
+    "freeConsultation": "Ücretsiz Danışmanlık Alın",
+    "meditationGuide": "Meditasyon Rehberi"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Mor Kıvılcım ile Ruhsal Dönüşüm",
+    "description": "Mor Kıvılcım, ruhsal gelişim ve iç huzur arayanlar için özel olarak tasarlanmış bir platformdur. Amacımız, her bireyin içindeki potansiyeli ortaya çıkarmak ve ruhsal yolculuğunda rehberlik etmektir.",
+    "mission": "Misyonumuz",
+    "missionText": "İnsanların ruhsal gelişimlerini desteklemek ve iç huzura ulaşmalarına yardımcı olmak.",
+    "vision": "Vizyonumuz",
+    "visionText": "Dünyada daha fazla bilinçli ve huzurlu birey yetiştirmek."
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Ruhsal Gelişim İçin Kapsamlı Hizmetler",
+    "meditation": "Meditasyon Seansları",
+    "meditationDesc": "Kişisel ve grup meditasyon seansları ile iç huzurunuzu keşfedin.",
+    "energyWork": "Enerji Çalışmaları",
+    "energyWorkDesc": "Çakra dengeleme ve enerji temizleme çalışmaları.",
+    "spiritualCounseling": "Ruhsal Danışmanlık",
+    "spiritualCounselingDesc": "Kişisel ruhsal yolculuğunuzda rehberlik.",
+    "workshops": "Atölye Çalışmaları",
+    "workshopsDesc": "Ruhsal gelişim için özel atölye programları.",
+    "freeConsultation": "Ücretsiz Danışmanlık Alın"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Ruhsal Gelişim ve İç Huzur Hakkında Yazılar",
+    "readMore": "Devamını Oku",
+    "categories": "Kategoriler",
+    "all": "Tümü",
+    "meditation": "Meditasyon",
+    "energy": "Enerji",
+    "spiritual": "Ruhsal",
+    "wellness": "Sağlık"
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Bizimle İletişime Geçin",
+    "getInTouch": "İletişim Bilgileri",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "form": {
+      "title": "Mesaj Gönder",
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "company": "Şirket",
+      "message": "Mesajınız",
+      "send": "Mesaj Gönder",
+      "sending": "Gönderiliyor...",
+      "success": "✅ Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.",
+      "error": "❌ Mesaj gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin veya direkt email atın: info@morkivilcim.com"
+    }
+  },
+  "footer": {
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "cookies": "Çerez Politikası",
+    "rights": "Tüm hakları saklıdır.",
+    "followUs": "Bizi Takip Edin"
+  },
+  "meditation": {
+    "title": "Meditasyon Rehberi",
+    "subtitle": "Mor Kıvılcım Meditasyon Akışı",
+    "step1": "Hazırlık (1 dk)",
+    "step1Desc": "Duruşu ayarla, telefon sessizde, bir niyet cümlesi.",
+    "step2": "Nefes (2 dk)",
+    "step2Desc": "4-4-4 döngüsü (al-tut-ver).",
+    "step3": "Beden Tarama (2 dk)",
+    "step3Desc": "Ayak tabanlarından başa, gevşeme.",
+    "step4": "Görselleme (3 dk)",
+    "step4Desc": "Kalp merkezinde \"mor kıvılcım\" canlanır; her nefeste alanını nazikçe aydınlatır.",
+    "step5": "Şifa Cümleleri (2 dk)",
+    "step5Desc": "\"Özür dilerim, lütfen beni affet, teşekkür ederim, seni seviyorum.\" (içinden ya da fısıltıyla).",
+    "step6": "Kapanış (1-2 dk)",
+    "step6Desc": "Kıvılcımı kalpte sabitle, köklerden dünyaya uzanan güçlü bir bağ hayal et; su içme ve kısa not.",
+    "start": "Başla",
+    "pause": "Duraklat",
+    "resume": "Devam Et",
+    "reset": "Sıfırla",
+    "timer": "Süre",
+    "progress": "İlerleme"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Hata oluştu",
+    "success": "Başarılı",
+    "close": "Kapat",
+    "back": "Geri",
+    "next": "İleri",
+    "previous": "Önceki",
+    "readMore": "Devamını Oku",
+    "learnMore": "Daha Fazla Bilgi"
+  }
+}

@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   const navItems = [
-    { name: 'Ana Sayfa', path: '/' },
-    { name: 'Hizmetler', path: '/services' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Ruhsal Yolculuk', path: '/spiritual-journey' },
-    { name: 'Ruhsal İyilik', path: '/spiritual-wellbeing' },
-    { name: 'DailyPositive', path: '/dailypositive' },
-    { name: 'İletişim', path: '/contact' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.services'), path: '/services' },
+    { name: t('nav.blog'), path: '/blog' },
+    { name: t('nav.spiritualJourney'), path: '/spiritual-journey' },
+    { name: t('nav.spiritualWellbeing'), path: '/spiritual-wellbeing' },
+    { name: t('nav.dailyPositive'), path: '/dailypositive' },
+    { name: t('nav.contact'), path: '/contact' },
   ];
 
   return (
@@ -43,6 +46,7 @@ const Navbar: React.FC = () => {
                 {item.name}
               </Link>
             ))}
+            <LanguageSelector />
           </div>
 
           {/* Mobile menu button */}
@@ -84,6 +88,9 @@ const Navbar: React.FC = () => {
                 {item.name}
               </Link>
             ))}
+            <div className="px-3 py-2">
+              <LanguageSelector />
+            </div>
           </div>
         </div>
       )}

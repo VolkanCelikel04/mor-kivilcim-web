@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,7 +25,7 @@ const Contact: React.FC = () => {
     const scriptUrl = process.env.REACT_APP_GOOGLE_SCRIPT_URL || '';
     
     if (!scriptUrl) {
-      alert('Form yapılandırması tamamlanmamış. Lütfen daha sonra tekrar deneyin.');
+      alert(t('contact.form.error'));
       return;
     }
     
@@ -32,7 +34,7 @@ const Contact: React.FC = () => {
       const submitButton = document.querySelector('button[type="submit"]') as HTMLButtonElement;
       if (submitButton) {
         submitButton.disabled = true;
-        submitButton.textContent = 'Gönderiliyor...';
+        submitButton.textContent = t('contact.form.sending');
       }
       
       // Google Sheets'e gönder
@@ -46,7 +48,7 @@ const Contact: React.FC = () => {
       });
       
       // Başarılı mesaj
-      alert('✅ Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.');
+      alert(t('contact.form.success'));
       
       // Formu temizle
       setFormData({
@@ -60,18 +62,18 @@ const Contact: React.FC = () => {
       // Butonu tekrar aktif et
       if (submitButton) {
         submitButton.disabled = false;
-        submitButton.textContent = 'Mesaj Gönder';
+        submitButton.textContent = t('contact.form.send');
       }
       
     } catch (error) {
       console.error('Form gönderme hatası:', error);
-      alert('❌ Mesaj gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin veya direkt email atın: info@morkivilcim.com');
+      alert(t('contact.form.error'));
       
       // Butonu tekrar aktif et
       const submitButton = document.querySelector('button[type="submit"]') as HTMLButtonElement;
       if (submitButton) {
         submitButton.disabled = false;
-        submitButton.textContent = 'Mesaj Gönder';
+        submitButton.textContent = t('contact.form.send');
       }
     }
   };

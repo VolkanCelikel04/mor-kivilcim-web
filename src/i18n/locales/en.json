@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "spiritualJourney": "Spiritual Journey",
+    "spiritualWellbeing": "Spiritual Wellbeing",
+    "dailyPositive": "DailyPositive",
+    "meditationGuide": "Meditation Guide"
+  },
+  "home": {
+    "title": "Purple Spark",
+    "subtitle": "Spiritual Transformation and Inner Peace",
+    "description": "Discover the purple spark within you and begin your spiritual journey. Transform your life with meditation, energy work, and personal development services.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "freeConsultation": "Get Free Consultation",
+    "meditationGuide": "Meditation Guide"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Spiritual Transformation with Purple Spark",
+    "description": "Purple Spark is a platform specially designed for those seeking spiritual development and inner peace. Our goal is to help each individual discover their inner potential and guide them on their spiritual journey.",
+    "mission": "Our Mission",
+    "missionText": "To support people's spiritual development and help them achieve inner peace.",
+    "vision": "Our Vision",
+    "visionText": "To raise more conscious and peaceful individuals in the world."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive Services for Spiritual Development",
+    "meditation": "Meditation Sessions",
+    "meditationDesc": "Discover your inner peace through personal and group meditation sessions.",
+    "energyWork": "Energy Work",
+    "energyWorkDesc": "Chakra balancing and energy clearing work.",
+    "spiritualCounseling": "Spiritual Counseling",
+    "spiritualCounselingDesc": "Guidance on your personal spiritual journey.",
+    "workshops": "Workshop Programs",
+    "workshopsDesc": "Special workshop programs for spiritual development.",
+    "freeConsultation": "Get Free Consultation"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles on Spiritual Development and Inner Peace",
+    "readMore": "Read More",
+    "categories": "Categories",
+    "all": "All",
+    "meditation": "Meditation",
+    "energy": "Energy",
+    "spiritual": "Spiritual",
+    "wellness": "Wellness"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in Touch with Us",
+    "getInTouch": "Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "form": {
+      "title": "Send Message",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "✅ Your message has been sent successfully! We will get back to you as soon as possible.",
+      "error": "❌ An error occurred while sending the message. Please try again later or send a direct email to: info@morkivilcim.com"
+    }
+  },
+  "footer": {
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "rights": "All rights reserved.",
+    "followUs": "Follow Us"
+  },
+  "meditation": {
+    "title": "Meditation Guide",
+    "subtitle": "Purple Spark Meditation Flow",
+    "step1": "Preparation (1 min)",
+    "step1Desc": "Adjust posture, phone on silent, set an intention.",
+    "step2": "Breathing (2 min)",
+    "step2Desc": "4-4-4 cycle (inhale-hold-exhale).",
+    "step3": "Body Scan (2 min)",
+    "step3Desc": "From soles of feet to head, relaxation.",
+    "step4": "Visualization (3 min)",
+    "step4Desc": "The \"purple spark\" comes alive in the heart center; gently illuminates its space with each breath.",
+    "step5": "Healing Phrases (2 min)",
+    "step5Desc": "\"I'm sorry, please forgive me, thank you, I love you.\" (silently or in a whisper).",
+    "step6": "Closing (1-2 min)",
+    "step6Desc": "Anchor the spark in the heart, imagine a strong connection extending from roots to the world; drink water and take a short note.",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Resume",
+    "reset": "Reset",
+    "timer": "Timer",
+    "progress": "Progress"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "readMore": "Read More",
+    "learnMore": "Learn More"
+  }
+}

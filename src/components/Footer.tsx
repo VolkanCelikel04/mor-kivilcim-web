@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
+  
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900 text-white">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -46,25 +49,25 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6 flex items-center">
               <span className="text-2xl mr-2">🔗</span>
-              Hızlı Linkler
+              {t('footer.about')}
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-mor-400 transition-colors flex items-center">
                   <span className="text-mor-400 mr-2">🏠</span>
-                  Ana Sayfa
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-mor-400 transition-colors flex items-center">
                   <span className="text-mor-400 mr-2">🌟</span>
-                  Hakkımızda
+                  {t('nav.about')}
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-mor-400 transition-colors flex items-center">
                   <span className="text-mor-400 mr-2">🕯️</span>
-                  Hizmetler
+                  {t('nav.services')}
                 </Link>
               </li>
               <li>

@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "spiritualJourney": "Spirituelle Reise",
+    "spiritualWellbeing": "Spirituelles Wohlbefinden",
+    "dailyPositive": "DailyPositive",
+    "meditationGuide": "Meditationsführer"
+  },
+  "home": {
+    "title": "Lila Funke",
+    "subtitle": "Spirituelle Transformation und innerer Frieden",
+    "description": "Entdecken Sie den lila Funken in sich und beginnen Sie Ihre spirituelle Reise. Verwandeln Sie Ihr Leben durch Meditation, Energiearbeit und persönliche Entwicklung.",
+    "getStarted": "Loslegen",
+    "learnMore": "Mehr erfahren",
+    "freeConsultation": "Kostenlose Beratung erhalten",
+    "meditationGuide": "Meditationsführer"
+  },
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Spirituelle Transformation mit Lila Funke",
+    "description": "Lila Funke ist eine Plattform, die speziell für diejenigen entwickelt wurde, die spirituelle Entwicklung und inneren Frieden suchen. Unser Ziel ist es, jedem Einzelnen zu helfen, sein inneres Potenzial zu entdecken und ihn auf seiner spirituellen Reise zu begleiten.",
+    "mission": "Unsere Mission",
+    "missionText": "Menschen bei ihrer spirituellen Entwicklung zu unterstützen und ihnen zu helfen, inneren Frieden zu erreichen.",
+    "vision": "Unsere Vision",
+    "visionText": "Mehr bewusste und friedliche Menschen in der Welt zu erziehen."
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Umfassende Dienstleistungen für spirituelle Entwicklung",
+    "meditation": "Meditationssitzungen",
+    "meditationDesc": "Entdecken Sie Ihren inneren Frieden durch persönliche und Gruppenmeditationssitzungen.",
+    "energyWork": "Energiearbeit",
+    "energyWorkDesc": "Chakra-Ausgleich und Energie-Reinigung.",
+    "spiritualCounseling": "Spirituelle Beratung",
+    "spiritualCounselingDesc": "Begleitung auf Ihrer persönlichen spirituellen Reise.",
+    "workshops": "Workshop-Programme",
+    "workshopsDesc": "Spezielle Workshop-Programme für spirituelle Entwicklung.",
+    "freeConsultation": "Kostenlose Beratung erhalten"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Artikel über spirituelle Entwicklung und inneren Frieden",
+    "readMore": "Weiterlesen",
+    "categories": "Kategorien",
+    "all": "Alle",
+    "meditation": "Meditation",
+    "energy": "Energie",
+    "spiritual": "Spirituell",
+    "wellness": "Wohlbefinden"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Kontaktieren Sie uns",
+    "getInTouch": "Kontaktinformationen",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "form": {
+      "title": "Nachricht senden",
+      "name": "Vollständiger Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "company": "Unternehmen",
+      "message": "Ihre Nachricht",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "success": "✅ Ihre Nachricht wurde erfolgreich gesendet! Wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "error": "❌ Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut oder senden Sie eine direkte E-Mail an: info@morkivilcim.com"
+    }
+  },
+  "footer": {
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "cookies": "Cookie-Richtlinie",
+    "rights": "Alle Rechte vorbehalten.",
+    "followUs": "Folgen Sie uns"
+  },
+  "meditation": {
+    "title": "Meditationsführer",
+    "subtitle": "Lila Funke Meditationsfluss",
+    "step1": "Vorbereitung (1 Min)",
+    "step1Desc": "Haltung anpassen, Telefon stumm schalten, eine Absicht setzen.",
+    "step2": "Atmung (2 Min)",
+    "step2Desc": "4-4-4 Zyklus (einatmen-halten-ausatmen).",
+    "step3": "Körperscan (2 Min)",
+    "step3Desc": "Von den Fußsohlen bis zum Kopf, Entspannung.",
+    "step4": "Visualisierung (3 Min)",
+    "step4Desc": "Der \"lila Funke\" erwacht im Herzchakra; erhellt sanft seinen Raum mit jedem Atemzug.",
+    "step5": "Heilende Sätze (2 Min)",
+    "step5Desc": "\"Es tut mir leid, bitte vergib mir, danke, ich liebe dich.\" (still oder im Flüsterton).",
+    "step6": "Abschluss (1-2 Min)",
+    "step6Desc": "Den Funken im Herzen verankern, sich eine starke Verbindung vorstellen, die von den Wurzeln zur Welt reicht; Wasser trinken und eine kurze Notiz machen.",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Fortsetzen",
+    "reset": "Zurücksetzen",
+    "timer": "Timer",
+    "progress": "Fortschritt"
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolgreich",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Vorherige",
+    "readMore": "Weiterlesen",
+    "learnMore": "Mehr erfahren"
+  }
+}

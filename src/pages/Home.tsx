@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Home: React.FC = () => {
+  const { t } = useTranslation();
+  
   return (
     <div>
       {/* Spiritüel Hero Section */}
@@ -27,25 +30,23 @@ const Home: React.FC = () => {
                 <span className="text-mor-200 font-semibold">Spiritüel Rehberlik</span>
               </div>
               <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-                MOR
-                <span className="block text-mor-200">Kıvılcım</span>
+                {t('home.title')}
               </h1>
               <p className="text-xl lg:text-2xl mb-8 text-mor-100 leading-relaxed">
-                İç dünyanızı keşfedin, ruhsal yolculuğunuzda rehberlik bulun. 
-                Evrensel enerji ile bağlantı kurun.
+                {t('home.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/spiritual-journey"
                   className="bg-gradient-to-r from-mor-500 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-mor-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
-                  Ruhsal Yolculuğa Başla
+                  {t('home.getStarted')}
                 </Link>
                 <Link
                   to="/meditation"
                   className="border-2 border-mor-300 text-mor-100 px-8 py-4 rounded-full font-bold text-lg hover:bg-mor-300 hover:text-white transition-all duration-300"
                 >
-                  Meditasyon Rehberi
+                  {t('home.meditationGuide')}
                 </Link>
               </div>
             </div>
