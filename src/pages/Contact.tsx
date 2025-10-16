@@ -16,18 +16,64 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form gönderme işlemi burada yapılacak
-    console.log('Form data:', formData);
-    alert('Mesajınız gönderildi! En kısa sürede size dönüş yapacağız.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      message: ''
-    });
+    
+    // Google Sheets API URL'i (bu URL'i Google Apps Script'ten deploy ettikten sonra alacaksınız)
+    const scriptUrl = process.env.REACT_APP_GOOGLE_SCRIPT_URL || '';
+    
+    if (!scriptUrl) {
+      alert('Form yapılandırması tamamlanmamış. Lütfen daha sonra tekrar deneyin.');
+      return;
+    }
+    
+    try {
+      // Form gönderiliyor mesajı
+      const submitButton = document.querySelector('button[type="submit"]') as HTMLButtonElement;
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Gönderiliyor...';
+      }
+      
+      // Google Sheets'e gönder
+      const response = await fetch(scriptUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+        mode: 'no-cors' // Google Apps Script için gerekli
+      });
+      
+      // Başarılı mesaj
+      alert('✅ Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.');
+      
+      // Formu temizle
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        message: ''
+      });
+      
+      // Butonu tekrar aktif et
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Mesaj Gönder';
+      }
+      
+    } catch (error) {
+      console.error('Form gönderme hatası:', error);
+      alert('❌ Mesaj gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin veya direkt email atın: info@morkivilcim.com');
+      
+      // Butonu tekrar aktif et
+      const submitButton = document.querySelector('button[type="submit"]') as HTMLButtonElement;
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Mesaj Gönder';
+      }
+    }
   };
 
   return (

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Test</title>
+</head>
+<body>
+    <h1>Google Sheets Form Test</h1>
+    <form id="testForm">
+        <input type="text" name="name" placeholder="Ad Soyad" required><br><br>
+        <input type="email" name="email" placeholder="E-posta" required><br><br>
+        <input type="tel" name="phone" placeholder="Telefon"><br><br>
+        <input type="text" name="company" placeholder="Şirket"><br><br>
+        <textarea name="message" placeholder="Mesaj" required></textarea><br><br>
+        <button type="submit">Test Gönder</button>
+    </form>
+
+    <script>
+        document.getElementById('testForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                company: formData.get('company'),
+                message: formData.get('message')
+            };
+            
+            try {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbxE-WMYghhM3_iESsV6BcvEpwM8EKNIFRLqLfoI_OZhmTwGT2MwillL-QgrIZYbhJCMlQ/exec', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                    mode: 'no-cors'
+                });
+                
+                alert('✅ Test mesajı gönderildi! Google Sheets\'i kontrol edin.');
+                this.reset();
+                
+            } catch (error) {
+                alert('❌ Hata: ' + error.message);
+            }
+        });
+    </script>
+</body>
+</html>
