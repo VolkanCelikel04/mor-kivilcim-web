@@ -7,109 +7,109 @@ const Services: React.FC = () => {
   
   const spiritualServices = [
     {
-      title: 'Meditasyon & Mindfulness',
-      description: 'Zihninizi sakinleştirin, iç huzurunuzu bulun ve farkındalığınızı artırın.',
+      title: t('services.meditation.title'),
+      description: t('services.meditation.description'),
       icon: '🧘‍♀️',
       color: 'from-mor-400 to-purple-500',
       features: [
-        'Rehberli Meditasyon Seansları',
-        'Mindfulness Egzersizleri',
-        'Nefes Alma Teknikleri',
-        'Zihin Sakinleştirme Pratikleri',
-        'Günlük Meditasyon Rutinleri'
+        t('services.meditation.features.guided'),
+        t('services.meditation.features.mindfulness'),
+        t('services.meditation.features.breathing'),
+        t('services.meditation.features.calming'),
+        t('services.meditation.features.routines')
       ],
-      benefits: ['Stres Azaltma', 'Odaklanma Artışı', 'İç Huzur', 'Duygusal Denge']
+      benefits: [t('services.meditation.benefits.stress'), t('services.meditation.benefits.focus'), t('services.meditation.benefits.peace'), t('services.meditation.benefits.balance')]
     },
     {
-      title: 'Enerji Şifası & Reiki',
-      description: 'Enerji alanınızı temizleyin, aura çalışmaları ile güçlenin.',
+      title: t('services.energy.title'),
+      description: t('services.energy.description'),
       icon: '🔮',
       color: 'from-purple-400 to-indigo-500',
       features: [
-        'Reiki Seansları',
-        'Aura Temizliği',
-        'Chakra Dengeleme',
-        'Enerji Blokaj Çözümü',
-        'Kristal Enerjisi Çalışmaları'
+        t('services.energy.features.reiki'),
+        t('services.energy.features.aura'),
+        t('services.energy.features.chakra'),
+        t('services.energy.features.blockage'),
+        t('services.energy.features.crystal')
       ],
-      benefits: ['Enerji Temizliği', 'Fiziksel Şifa', 'Ruhsal Denge', 'Aura Güçlendirme']
+      benefits: [t('services.energy.benefits.cleansing'), t('services.energy.benefits.healing'), t('services.energy.benefits.balance'), t('services.energy.benefits.strengthening')]
     },
     {
-      title: 'Spiritüel Danışmanlık',
-      description: 'Yaşam yolculuğunuzda rehberlik, ruhsal gelişim danışmanlığı.',
+      title: t('services.counseling.title'),
+      description: t('services.counseling.description'),
       icon: '📿',
       color: 'from-indigo-400 to-mor-500',
       features: [
-        'Yaşam Yolu Analizi',
-        'Ruhsal Rehberlik',
-        'Kişisel Dönüşüm',
-        'Hedef Belirleme',
-        'İç Keşif Çalışmaları'
+        t('services.counseling.features.lifePath'),
+        t('services.counseling.features.guidance'),
+        t('services.counseling.features.transformation'),
+        t('services.counseling.features.goals'),
+        t('services.counseling.features.discovery')
       ],
-      benefits: ['Yaşam Amacı', 'Kişisel Gelişim', 'Dönüşüm', 'İç Görü']
+      benefits: [t('services.counseling.benefits.purpose'), t('services.counseling.benefits.development'), t('services.counseling.benefits.transformation'), t('services.counseling.benefits.insight')]
     },
     {
-      title: 'Kristal Terapi',
-      description: 'Kristallerin şifalı enerjisini kullanarak ruhsal ve fiziksel denge sağlayın.',
+      title: t('services.crystal.title'),
+      description: t('services.crystal.description'),
       icon: '💎',
       color: 'from-mor-300 to-purple-400',
       features: [
-        'Kristal Seçimi ve Temizliği',
-        'Chakra Kristalleri',
-        'Kristal Meditasyonu',
-        'Enerji Şifası',
-        'Kristal Ritüelleri'
+        t('services.crystal.features.selection'),
+        t('services.crystal.features.chakra'),
+        t('services.crystal.features.meditation'),
+        t('services.crystal.features.healing'),
+        t('services.crystal.features.rituals')
       ],
-      benefits: ['Enerji Dengesi', 'Duygusal Şifa', 'Ruhsal Koruma', 'İç Huzur']
+      benefits: [t('services.crystal.benefits.balance'), t('services.crystal.benefits.healing'), t('services.crystal.benefits.protection'), t('services.crystal.benefits.peace')]
     },
     {
-      title: 'Astroloji & Numeroloji',
-      description: 'Kozmik enerjileri anlayın, yaşam yolunuzu keşfedin.',
+      title: t('services.astrology.title'),
+      description: t('services.astrology.description'),
       icon: '⭐',
       color: 'from-purple-300 to-indigo-400',
       features: [
-        'Doğum Haritası Analizi',
-        'Numeroloji Hesaplaması',
-        'Gelecek Yol Haritası',
-        'Uyumlu Kristaller',
-        'Ritüel Önerileri'
+        t('services.astrology.features.birthChart'),
+        t('services.astrology.features.numerology'),
+        t('services.astrology.features.future'),
+        t('services.astrology.features.crystals'),
+        t('services.astrology.features.rituals')
       ],
-      benefits: ['Kendini Tanıma', 'Yaşam Yolu', 'Gelecek Rehberliği', 'Uyum']
+      benefits: [t('services.astrology.benefits.self'), t('services.astrology.benefits.path'), t('services.astrology.benefits.guidance'), t('services.astrology.benefits.harmony')]
     },
     {
-      title: 'Spiritüel Atölyeler',
-      description: 'Gruplar halinde spiritüel gelişim ve öğrenme deneyimleri.',
+      title: t('services.workshops.title'),
+      description: t('services.workshops.description'),
       icon: '🌸',
       color: 'from-indigo-300 to-mor-400',
       features: [
-        'Meditasyon Atölyeleri',
-        'Kristal Çalışma Grupları',
-        'Enerji Şifası Eğitimi',
-        'Ritüel Yaratma',
-        'Spiritüel Sanat'
+        t('services.workshops.features.meditation'),
+        t('services.workshops.features.crystal'),
+        t('services.workshops.features.healing'),
+        t('services.workshops.features.ritual'),
+        t('services.workshops.features.art')
       ],
-      benefits: ['Topluluk', 'Öğrenme', 'Paylaşım', 'Büyüme']
+      benefits: [t('services.workshops.benefits.community'), t('services.workshops.benefits.learning'), t('services.workshops.benefits.sharing'), t('services.workshops.benefits.growth')]
     }
   ];
 
   const dailyPractices = [
     {
-      title: 'Sabah Ritüeli',
-      time: '06:00 - 08:00',
+      title: t('services.practices.morning.title'),
+      time: t('services.practices.morning.time'),
       icon: '🌅',
-      practices: ['Gün doğumu meditasyonu', 'Şükran pratiği', 'Niyet belirleme', 'Enerji temizliği']
+      practices: [t('services.practices.morning.sunrise'), t('services.practices.morning.gratitude'), t('services.practices.morning.intention'), t('services.practices.morning.cleansing')]
     },
     {
-      title: 'Öğle Molası',
-      time: '12:00 - 13:00',
+      title: t('services.practices.noon.title'),
+      time: t('services.practices.noon.time'),
       icon: '☀️',
-      practices: ['Mindful yeme', 'Kısa meditasyon', 'Enerji yenileme', 'Doğa bağlantısı']
+      practices: [t('services.practices.noon.mindful'), t('services.practices.noon.meditation'), t('services.practices.noon.renewal'), t('services.practices.noon.nature')]
     },
     {
-      title: 'Akşam Ritüeli',
-      time: '18:00 - 20:00',
+      title: t('services.practices.evening.title'),
+      time: t('services.practices.evening.time'),
       icon: '🌙',
-      practices: ['Günü değerlendirme', 'Gece meditasyonu', 'Şifa çalışması', 'Günü kapatma']
+      practices: [t('services.practices.evening.reflection'), t('services.practices.evening.meditation'), t('services.practices.evening.healing'), t('services.practices.evening.closure')]
     }
   ];
 
@@ -129,15 +129,15 @@ const Services: React.FC = () => {
             <div className="flex justify-center space-x-8 text-lg">
               <div className="flex items-center">
                 <span className="text-2xl mr-2">✨</span>
-                <span>Kişisel</span>
+                <span>{t('services.hero.personal')}</span>
               </div>
               <div className="flex items-center">
                 <span className="text-2xl mr-2">🌟</span>
-                <span>Dönüştürücü</span>
+                <span>{t('services.hero.transformative')}</span>
               </div>
               <div className="flex items-center">
                 <span className="text-2xl mr-2">💫</span>
-                <span>Şifalı</span>
+                <span>{t('services.hero.healing')}</span>
               </div>
             </div>
           </div>
@@ -149,10 +149,10 @@ const Services: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Hizmetlerimiz
+              {t('services.ourServices.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Her biri özel olarak tasarlanmış, ruhsal yolculuğunuzu destekleyecek hizmetler
+              {t('services.ourServices.subtitle')}
             </p>
           </div>
 
@@ -172,7 +172,7 @@ const Services: React.FC = () => {
                 <div className="mb-6">
                   <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
                     <span className="text-mor-500 mr-2">✨</span>
-                    Özellikler:
+                    {t('services.features')}:
                   </h4>
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
@@ -189,7 +189,7 @@ const Services: React.FC = () => {
                 <div className="mb-6">
                   <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
                     <span className="text-purple-500 mr-2">🌟</span>
-                    Faydalar:
+                    {t('services.benefits')}:
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {service.benefits.map((benefit, benefitIndex) => (
@@ -201,7 +201,7 @@ const Services: React.FC = () => {
                 </div>
 
                 <button className="w-full bg-gradient-to-r from-mor-500 to-purple-600 text-white py-3 px-6 rounded-xl font-semibold hover:from-mor-600 hover:to-purple-700 transition-all duration-300">
-                  Detaylı Bilgi Al
+                  {t('services.details')}
                 </button>
               </div>
             ))}
@@ -214,10 +214,10 @@ const Services: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Günlük Spiritüel Pratikler
+              {t('services.dailyPractices.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Her günü anlamlı kılan, ruhunuzu besleyen günlük ritüeller
+              {t('services.dailyPractices.subtitle')}
             </p>
           </div>
 
@@ -255,10 +255,10 @@ const Services: React.FC = () => {
           <div className="mb-8">
             <span className="text-6xl mb-4 block">🌟</span>
             <h2 className="text-4xl font-bold mb-4">
-              Spiritüel Yolculuğunuza Başlayın
+              {t('services.cta.title')}
             </h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-              Hangi hizmete ihtiyacınız olduğunu söyleyin, size en uygun çözümü sunalım.
+              {t('services.cta.subtitle')}
             </p>
           </div>
           <Link 

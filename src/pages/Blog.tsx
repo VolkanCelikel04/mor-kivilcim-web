@@ -7,133 +7,133 @@ const Blog: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const categories = [
-    { id: 'all', name: 'Tümü', icon: '🌟' },
-    { id: 'breathing', name: 'Nefes Teknikleri', icon: '🫁' },
-    { id: 'meditation', name: 'Meditasyon', icon: '🧘‍♀️' },
-    { id: 'healing', name: 'Şifa Teknikleri', icon: '💝' },
-    { id: 'writing', name: 'Yazı Terapisi', icon: '✍️' },
-    { id: 'movement', name: 'Hareket Meditasyonu', icon: '🚶‍♀️' },
+    { id: 'all', name: t('blog.categories.all'), icon: '🌟' },
+    { id: 'breathing', name: t('blog.categories.breathing'), icon: '🫁' },
+    { id: 'meditation', name: t('blog.categories.meditation'), icon: '🧘‍♀️' },
+    { id: 'healing', name: t('blog.categories.healing'), icon: '💝' },
+    { id: 'writing', name: t('blog.categories.writing'), icon: '✍️' },
+    { id: 'movement', name: t('blog.categories.movement'), icon: '🚶‍♀️' },
   ];
 
   const blogPosts = [
     {
       id: 1,
-      title: '4-4-4 Nefes (Kutu Nefesi)',
-      excerpt: '2–5 Dakikada Sinir Sistemini Yatıştır',
-      content: 'Burnundan 4 sayıda al, 4 sayıda tut, 4 sayıda ver. 3–6 tur. Çene ve omuzlar yumuşak.',
+      title: t('blog.posts.breathing444.title'),
+      excerpt: t('blog.posts.breathing444.excerpt'),
+      content: t('blog.posts.breathing444.content'),
       category: 'breathing',
       date: '2024-01-15',
-      readTime: '5 dk',
+      readTime: t('blog.posts.breathing444.readTime'),
       image: '🫁',
-      tags: ['nefes', 'stres', 'rahatlama'],
+      tags: [t('blog.posts.breathing444.tags.breath'), t('blog.posts.breathing444.tags.stress'), t('blog.posts.breathing444.tags.relaxation')],
       link: '/blog/444-breathing'
     },
     {
       id: 2,
-      title: 'Beden Taraması',
-      excerpt: '"Yumuşama"yı Bedeninle Hatırla',
-      content: 'Dikkati ayaktan başa gezdir; değiştirmeye çalışma—yalnızca fark et ve nefesle eşlik et.',
+      title: t('blog.posts.bodyScan.title'),
+      excerpt: t('blog.posts.bodyScan.excerpt'),
+      content: t('blog.posts.bodyScan.content'),
       category: 'meditation',
       date: '2024-01-14',
-      readTime: '10 dk',
+      readTime: t('blog.posts.bodyScan.readTime'),
       image: '🧘‍♀️',
-      tags: ['meditasyon', 'farkındalık', 'beden'],
+      tags: [t('blog.posts.bodyScan.tags.meditation'), t('blog.posts.bodyScan.tags.awareness'), t('blog.posts.bodyScan.tags.body')],
       link: '/blog/beden-taramasi'
     },
     {
       id: 3,
-      title: 'Ho\'oponopono',
-      excerpt: 'Nazik Onarımın Dört Cümlesi',
-      content: '"Özür dilerim. Lütfen beni affet. Teşekkür ederim. Seni seviyorum."—kalp çevresinde, nefesle birlikte.',
+      title: t('blog.posts.hooponopono.title'),
+      excerpt: t('blog.posts.hooponopono.excerpt'),
+      content: t('blog.posts.hooponopono.content'),
       category: 'healing',
       date: '2024-01-13',
-      readTime: '7 dk',
+      readTime: t('blog.posts.hooponopono.readTime'),
       image: '💝',
-      tags: ['şifa', 'affetme', 'onarım'],
+      tags: [t('blog.posts.hooponopono.tags.healing'), t('blog.posts.hooponopono.tags.forgiveness'), t('blog.posts.hooponopono.tags.repair')],
       link: '/blog/hooponopono'
     },
     {
       id: 4,
-      title: 'Reiki',
-      excerpt: 'Deneyim, Etik ve Beklenti Yönetimi',
-      content: 'Reiki tamamlayıcı bir yaklaşımdır; tıbbi bakımın yerine geçmez. Net sınırlar ve niyet, deneyimi derinleştirir.',
+      title: t('blog.posts.reiki.title'),
+      excerpt: t('blog.posts.reiki.excerpt'),
+      content: t('blog.posts.reiki.content'),
       category: 'healing',
       date: '2024-01-12',
-      readTime: '8 dk',
+      readTime: t('blog.posts.reiki.readTime'),
       image: '✨',
-      tags: ['reiki', 'enerji', 'şifa'],
+      tags: [t('blog.posts.reiki.tags.reiki'), t('blog.posts.reiki.tags.energy'), t('blog.posts.reiki.tags.healing')],
       link: '/blog/reiki'
     },
     {
       id: 5,
-      title: 'Travma-Duyarlı Meditasyon',
-      excerpt: '5 İlke ile Güvenlik',
-      content: 'Hızını sen belirlersin. Topraklama önce, yoğunlaşırsa durma izni hep açık.',
+      title: t('blog.posts.traumaSensitive.title'),
+      excerpt: t('blog.posts.traumaSensitive.excerpt'),
+      content: t('blog.posts.traumaSensitive.content'),
       category: 'meditation',
       date: '2024-01-11',
-      readTime: '8 dk',
+      readTime: t('blog.posts.traumaSensitive.readTime'),
       image: '🛡️',
-      tags: ['travma', 'güvenlik', 'meditasyon'],
+      tags: [t('blog.posts.traumaSensitive.tags.trauma'), t('blog.posts.traumaSensitive.tags.safety'), t('blog.posts.traumaSensitive.tags.meditation')],
       link: '/blog/travma-duyarli-meditasyon'
     },
     {
       id: 6,
-      title: 'Uyku İçin Meditasyon',
-      excerpt: 'Yoga Nidra\'dan İlhamla',
-      content: '10–15 dakikalık beden taraması + nefes + nazik imgeleme, uykuya geçişi kolaylaştırabilir.',
+      title: t('blog.posts.sleepMeditation.title'),
+      excerpt: t('blog.posts.sleepMeditation.excerpt'),
+      content: t('blog.posts.sleepMeditation.content'),
       category: 'meditation',
       date: '2024-01-10',
-      readTime: '12 dk',
+      readTime: t('blog.posts.sleepMeditation.readTime'),
       image: '🌙',
-      tags: ['uyku', 'meditasyon', 'yoga nidra'],
+      tags: [t('blog.posts.sleepMeditation.tags.sleep'), t('blog.posts.sleepMeditation.tags.meditation'), t('blog.posts.sleepMeditation.tags.yogaNidra')],
       link: '/blog/uyku-meditasyonu'
     },
     {
       id: 7,
-      title: 'Yürüyüş Meditasyonu',
-      excerpt: 'Her Adımda Farkındalık',
-      content: '20 dakikalık yürüyüşte adım-nefes senkronu ve çevresel farkındalık; sonunda tek cümlelik şükran.',
+      title: t('blog.posts.walkingMeditation.title'),
+      excerpt: t('blog.posts.walkingMeditation.excerpt'),
+      content: t('blog.posts.walkingMeditation.content'),
       category: 'movement',
       date: '2024-01-09',
-      readTime: '15 dk',
+      readTime: t('blog.posts.walkingMeditation.readTime'),
       image: '🚶‍♀️',
-      tags: ['yürüyüş', 'farkındalık', 'hareket'],
+      tags: [t('blog.posts.walkingMeditation.tags.walking'), t('blog.posts.walkingMeditation.tags.awareness'), t('blog.posts.walkingMeditation.tags.movement')],
       link: '/blog/yuruyus-meditasyonu'
     },
     {
       id: 8,
-      title: 'Şükran & Duygusal Yazım',
-      excerpt: '5 Dakikada Regülasyon',
-      content: '3 küçük iyi şeyi yaz + haftada bir kez 10 dakikalık ifade edici yazım.',
+      title: t('blog.posts.gratitudeWriting.title'),
+      excerpt: t('blog.posts.gratitudeWriting.excerpt'),
+      content: t('blog.posts.gratitudeWriting.content'),
       category: 'writing',
       date: '2024-01-08',
-      readTime: '5 dk',
+      readTime: t('blog.posts.gratitudeWriting.readTime'),
       image: '✍️',
-      tags: ['yazım', 'şükran', 'duygular'],
+      tags: [t('blog.posts.gratitudeWriting.tags.writing'), t('blog.posts.gratitudeWriting.tags.gratitude'), t('blog.posts.gratitudeWriting.tags.emotions')],
       link: '/blog/sukran-yazim'
     },
     {
       id: 9,
-      title: 'Onaylamalar',
-      excerpt: 'Ne Zaman, Nasıl?',
-      content: '"Ben iyiyim" yerine, kendi değerlerin üzerinden öz-onaylama daha etkili olur.',
+      title: t('blog.posts.affirmations.title'),
+      excerpt: t('blog.posts.affirmations.excerpt'),
+      content: t('blog.posts.affirmations.content'),
       category: 'writing',
       date: '2024-01-07',
-      readTime: '10 dk',
+      readTime: t('blog.posts.affirmations.readTime'),
       image: '💪',
-      tags: ['onaylama', 'öz-değer', 'pozitif'],
+      tags: [t('blog.posts.affirmations.tags.affirmation'), t('blog.posts.affirmations.tags.selfWorth'), t('blog.posts.affirmations.tags.positive')],
       link: '/blog/onaylamalar'
     },
     {
       id: 10,
-      title: 'Aile Dizimi',
-      excerpt: 'Nedir, Ne Değildir? Güvenli Çerçeve',
-      content: 'Aile Dizimi bir temsil çalışmasıdır; bilimsel geçerliliği tartışmalıdır. Güvenli alan ve entegrasyon şart.',
+      title: t('blog.posts.familyConstellation.title'),
+      excerpt: t('blog.posts.familyConstellation.excerpt'),
+      content: t('blog.posts.familyConstellation.content'),
       category: 'healing',
       date: '2024-01-06',
-      readTime: '12 dk',
+      readTime: t('blog.posts.familyConstellation.readTime'),
       image: '🌳',
-      tags: ['aile', 'sistemik', 'terapi'],
+      tags: [t('blog.posts.familyConstellation.tags.family'), t('blog.posts.familyConstellation.tags.systemic'), t('blog.posts.familyConstellation.tags.therapy')],
       link: '/blog/aile-dizimi'
     }
   ];
@@ -143,14 +143,14 @@ const Blog: React.FC = () => {
     : blogPosts.filter(post => post.category === selectedCategory);
 
   const dailyAffirmation = {
-    text: "Bugün kendime şefkatle yaklaşıyorum ve iç huzurumu besliyorum.",
-    author: "MOR Kıvılcım"
+    text: t('blog.dailyAffirmation.text'),
+    author: t('blog.dailyAffirmation.author')
   };
 
   const energyStatus = {
-    level: "Yüksek",
+    level: t('blog.energyStatus.level'),
     color: "text-green-500",
-    description: "Bugünün enerjisi yaratıcılık ve ilhamla dolu. Yeni projeler başlatmak için mükemmel bir gün."
+    description: t('blog.energyStatus.description')
   };
 
   return (
@@ -169,11 +169,11 @@ const Blog: React.FC = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-mor-400 to-purple-500 rounded-full flex items-center justify-center mr-4">
                 <span className="text-white text-3xl">📚</span>
               </div>
-              <span className="text-mor-200 font-semibold text-lg">Spiritüel Blog</span>
+              <span className="text-mor-200 font-semibold text-lg">{t('blog.hero.subtitle')}</span>
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">Ruhsal Kaynaklar</h1>
+            <h1 className="text-5xl lg:text-6xl font-bold mb-6">{t('blog.hero.title')}</h1>
             <p className="text-xl lg:text-2xl max-w-4xl mx-auto text-mor-100 leading-relaxed">
-              Günlük enerji durumu, affirmasyonlar, meditasyon rehberleri ve spiritüel tavsiyeler
+              {t('blog.hero.description')}
             </p>
           </div>
         </div>
@@ -187,7 +187,7 @@ const Blog: React.FC = () => {
             <div className="bg-gradient-to-br from-mor-50 to-purple-50 rounded-3xl p-8 shadow-xl border border-mor-100">
               <div className="flex items-center mb-6">
                 <span className="text-4xl mr-4">💫</span>
-                <h2 className="text-2xl font-bold text-gray-900">Günün Affirmasyonu</h2>
+                <h2 className="text-2xl font-bold text-gray-900">{t('blog.dailyAffirmation.title')}</h2>
               </div>
               <blockquote className="text-lg text-gray-700 italic mb-4 leading-relaxed">
                 "{dailyAffirmation.text}"
@@ -199,7 +199,7 @@ const Blog: React.FC = () => {
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl p-8 shadow-xl border border-purple-100">
               <div className="flex items-center mb-6">
                 <span className="text-4xl mr-4">⚡</span>
-                <h2 className="text-2xl font-bold text-gray-900">Günün Enerjisi</h2>
+                <h2 className="text-2xl font-bold text-gray-900">{t('blog.energyStatus.title')}</h2>
               </div>
               <div className="mb-4">
                 <span className={`text-3xl font-bold ${energyStatus.color}`}>
@@ -278,7 +278,7 @@ const Blog: React.FC = () => {
                       to={post.link} 
                       className="text-mor-600 font-semibold hover:text-mor-700 transition-colors"
                     >
-                      Devamını Oku →
+                      {t('blog.readMore')} →
                     </Link>
                   </div>
                 </div>
