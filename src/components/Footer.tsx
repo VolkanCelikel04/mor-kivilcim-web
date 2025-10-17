@@ -18,8 +18,7 @@ const Footer: React.FC = () => {
               <span className="ml-3 text-2xl font-bold">MOR Kıvılcım</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
-              Ruhsal dönüşüm ve enerji çalışmaları alanında uzmanlaşmış rehberlik merkezi. 
-              İç dünyanızı keşfetmenizde ve ruhsal gelişiminizde size eşlik ediyoruz.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a 
@@ -73,19 +72,19 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/spiritual-wellbeing" className="text-gray-300 hover:text-mor-400 transition-colors flex items-center">
                   <span className="text-mor-400 mr-2">🧘‍♀️</span>
-                  Ruhsal İyilik
+                  {t('nav.spiritualWellbeing')}
                 </Link>
               </li>
               <li>
                 <Link to="/spiritual-journey" className="text-gray-300 hover:text-mor-400 transition-colors flex items-center">
                   <span className="text-mor-400 mr-2">🛤️</span>
-                  Ruhsal Yolculuk
+                  {t('nav.spiritualJourney')}
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-mor-400 transition-colors flex items-center">
                   <span className="text-mor-400 mr-2">📞</span>
-                  İletişim
+                  {t('nav.contact')}
                 </Link>
               </li>
             </ul>
@@ -95,35 +94,35 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6 flex items-center">
               <span className="text-2xl mr-2">📞</span>
-              İletişim
+              {t('footer.contact')}
             </h3>
             <div className="space-y-4 text-gray-300">
               <div className="flex items-start">
                 <span className="text-mor-400 mr-3 mt-1">📍</span>
                 <div>
-                  <p className="font-medium">Adres</p>
-                  <p className="text-sm">Bostancı<br />İstanbul, Türkiye</p>
+                  <p className="font-medium">{t('footer.address')}</p>
+                  <p className="text-sm">{t('footer.addressValue')}</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="text-mor-400 mr-3 mt-1">📧</span>
                 <div>
-                  <p className="font-medium">E-posta</p>
+                  <p className="font-medium">{t('footer.email')}</p>
                   <p className="text-sm">info@morkivilcim.com</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="text-mor-400 mr-3 mt-1">📱</span>
                 <div>
-                  <p className="font-medium">Telefon</p>
+                  <p className="font-medium">{t('footer.phone')}</p>
                   <p className="text-sm">0501 127 25 33</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="text-mor-400 mr-3 mt-1">🕒</span>
                 <div>
-                  <p className="font-medium">Çalışma Saatleri</p>
-                  <p className="text-sm">Pzt-Cum: 09:00-18:00<br />Cmt: 09:00-14:00</p>
+                  <p className="font-medium">{t('footer.workingHours')}</p>
+                  <p className="text-sm">{t('footer.workingHoursValue')}</p>
                 </div>
               </div>
             </div>
@@ -135,16 +134,16 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-center md:text-left mb-4 md:mb-0">
               <p className="text-gray-400">
-                &copy; 2024 MOR Kıvılcım. Tüm hakları saklıdır.
+                {t('footer.copyright')}
               </p>
               <p className="text-sm text-gray-500 mt-1">
-                Ruhsal dönüşüm ve enerji çalışmaları merkezi
+                {t('footer.centerDescription')}
               </p>
             </div>
             <div className="flex items-center space-x-6 text-sm text-gray-400">
-              <Link to="/privacy-policy" className="hover:text-mor-400 transition-colors">Gizlilik Politikası</Link>
-              <Link to="/terms-of-service" className="hover:text-mor-400 transition-colors">Kullanım Şartları</Link>
-              <Link to="/cookie-policy" className="hover:text-mor-400 transition-colors">Çerez Politikası</Link>
+              <Link to="/privacy-policy" className="hover:text-mor-400 transition-colors">{t('footer.privacyPolicy')}</Link>
+              <Link to="/terms-of-service" className="hover:text-mor-400 transition-colors">{t('footer.termsOfService')}</Link>
+              <Link to="/cookie-policy" className="hover:text-mor-400 transition-colors">{t('footer.cookiePolicy')}</Link>
             </div>
           </div>
         </div>

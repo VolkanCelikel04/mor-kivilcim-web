@@ -6,44 +6,69 @@ const SpiritualWellbeing: React.FC = () => {
   
   const spiritualApps = [
     {
-      title: 'Mindfulness & Meditasyon',
-      description: 'Günlük hayatınızda iç huzuru bulmanız için rehberlik eden uygulamalar',
+      title: t('spiritualWellbeing.apps.mindfulness.title'),
+      description: t('spiritualWellbeing.apps.mindfulness.description'),
       apps: [
         {
           name: 'Headspace',
-          description: 'Nefes alma, meditasyon ve mindful yaşam teknikleri öğretir',
-          features: ['Kaygı yönetimi', 'Stres azaltma', 'Odaklanma', 'Uyku kalitesi']
+          description: t('spiritualWellbeing.apps.mindfulness.headspace.description'),
+          features: [
+            t('spiritualWellbeing.apps.mindfulness.headspace.features.anxiety'),
+            t('spiritualWellbeing.apps.mindfulness.headspace.features.stress'),
+            t('spiritualWellbeing.apps.mindfulness.headspace.features.focus'),
+            t('spiritualWellbeing.apps.mindfulness.headspace.features.sleep')
+          ]
         },
         {
           name: 'Calm',
-          description: 'Rahatlatıcı müzikler, meditasyonlar ve uyku hikayeleri',
-          features: ['Uyku hikayeleri', 'Doğa sesleri', 'Günlük meditasyonlar']
+          description: t('spiritualWellbeing.apps.mindfulness.calm.description'),
+          features: [
+            t('spiritualWellbeing.apps.mindfulness.calm.features.stories'),
+            t('spiritualWellbeing.apps.mindfulness.calm.features.nature'),
+            t('spiritualWellbeing.apps.mindfulness.calm.features.meditations')
+          ]
         },
         {
           name: 'Insight Timer',
-          description: 'Ücretsiz meditasyon uygulaması, binlerce rehberli meditasyon',
-          features: ['Ücretsiz içerik', 'Topluluk özellikleri', 'İlerleme takibi']
+          description: t('spiritualWellbeing.apps.mindfulness.insightTimer.description'),
+          features: [
+            t('spiritualWellbeing.apps.mindfulness.insightTimer.features.free'),
+            t('spiritualWellbeing.apps.mindfulness.insightTimer.features.community'),
+            t('spiritualWellbeing.apps.mindfulness.insightTimer.features.progress')
+          ]
         }
       ]
     },
     {
-      title: 'Kişisel Gelişim',
-      description: 'Kendinizi keşfetmeniz ve potansiyelinizi açığa çıkarmanız için',
+      title: t('spiritualWellbeing.apps.personalDevelopment.title'),
+      description: t('spiritualWellbeing.apps.personalDevelopment.description'),
       apps: [
         {
           name: 'Day One',
-          description: 'Hayatınızı kaydetmek ve düşünmek için günlük uygulaması',
-          features: ['Farkındalık geliştirme', 'Şükran pratiği', 'Yansıtma becerileri']
+          description: t('spiritualWellbeing.apps.personalDevelopment.dayOne.description'),
+          features: [
+            t('spiritualWellbeing.apps.personalDevelopment.dayOne.features.awareness'),
+            t('spiritualWellbeing.apps.personalDevelopment.dayOne.features.gratitude'),
+            t('spiritualWellbeing.apps.personalDevelopment.dayOne.features.reflection')
+          ]
         },
         {
           name: '365 Gratitude',
-          description: 'Hayatınızdaki iyi şeylere odaklanmanızı sağlar',
-          features: ['Günlük teşekkür pratiği', 'Ruh hali takibi', 'Günlük zorluklar']
+          description: t('spiritualWellbeing.apps.personalDevelopment.gratitude365.description'),
+          features: [
+            t('spiritualWellbeing.apps.personalDevelopment.gratitude365.features.daily'),
+            t('spiritualWellbeing.apps.personalDevelopment.gratitude365.features.mood'),
+            t('spiritualWellbeing.apps.personalDevelopment.gratitude365.features.challenges')
+          ]
         },
         {
           name: 'Habitica',
-          description: 'Alışkanlıklarınızı oyunlaştırarak geliştirin',
-          features: ['Oyunlaştırma', 'Hedef belirleme', 'İlerleme takibi']
+          description: t('spiritualWellbeing.apps.personalDevelopment.habitica.description'),
+          features: [
+            t('spiritualWellbeing.apps.personalDevelopment.habitica.features.gamification'),
+            t('spiritualWellbeing.apps.personalDevelopment.habitica.features.goals'),
+            t('spiritualWellbeing.apps.personalDevelopment.habitica.features.tracking')
+          ]
         }
       ]
     }
@@ -51,25 +76,25 @@ const SpiritualWellbeing: React.FC = () => {
 
   const wellbeingResources = [
     {
-      title: 'İç Huzur Teknikleri',
-      description: 'Günlük hayatta iç huzuru bulmanın yolları',
+      title: t('spiritualWellbeing.resources.innerPeace.title'),
+      description: t('spiritualWellbeing.resources.innerPeace.description'),
       items: [
-        'Derin nefes alma egzersizleri',
-        'Doğa ile bağlantı kurma',
-        'Şükran pratiği',
-        'Mindful yürüyüş',
-        'Yaratıcı ifade yolları'
+        t('spiritualWellbeing.resources.innerPeace.items.breathing'),
+        t('spiritualWellbeing.resources.innerPeace.items.nature'),
+        t('spiritualWellbeing.resources.innerPeace.items.gratitude'),
+        t('spiritualWellbeing.resources.innerPeace.items.walking'),
+        t('spiritualWellbeing.resources.innerPeace.items.creative')
       ]
     },
     {
-      title: 'Stres Yönetimi',
-      description: 'Stresli durumlarla başa çıkma stratejileri',
+      title: t('spiritualWellbeing.resources.stressManagement.title'),
+      description: t('spiritualWellbeing.resources.stressManagement.description'),
       items: [
-        '4-7-8 nefes tekniği',
-        'Progresif kas gevşetme',
-        'Görselleştirme teknikleri',
-        'Günlük rutin oluşturma',
-        'Sosyal destek ağları'
+        t('spiritualWellbeing.resources.stressManagement.items.breathing'),
+        t('spiritualWellbeing.resources.stressManagement.items.muscle'),
+        t('spiritualWellbeing.resources.stressManagement.items.visualization'),
+        t('spiritualWellbeing.resources.stressManagement.items.routine'),
+        t('spiritualWellbeing.resources.stressManagement.items.support')
       ]
     }
   ];
@@ -80,10 +105,9 @@ const SpiritualWellbeing: React.FC = () => {
       <section className="bg-gradient-to-r from-mor-600 to-mor-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Ruhsal İyilik Hali</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('spiritualWellbeing.title')}</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              İç huzurunuzu bulmanız, kişisel gelişiminizi desteklemeniz için 
-              özenle seçilmiş kaynaklar ve uygulamalar.
+              {t('spiritualWellbeing.subtitle')}
             </p>
           </div>
         </div>
@@ -94,10 +118,10 @@ const SpiritualWellbeing: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Önerilen Uygulamalar
+              {t('spiritualWellbeing.recommendedApps')}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Ruhsal gelişiminizi destekleyecek, kanıtlanmış uygulamalar
+              {t('spiritualWellbeing.appsDescription')}
             </p>
           </div>
 
@@ -142,10 +166,10 @@ const SpiritualWellbeing: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              İyilik Hali Kaynakları
+              {t('spiritualWellbeing.wellbeingResources')}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Günlük hayatınızda uygulayabileceğiniz pratik teknikler
+              {t('spiritualWellbeing.resourcesDescription')}
             </p>
           </div>
 
@@ -176,13 +200,13 @@ const SpiritualWellbeing: React.FC = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            İç Huzurunuzu Keşfedin
+            {t('spiritualWellbeing.discoverInnerPeace')}
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Ruhsal gelişim yolculuğunuzda size rehberlik etmek için buradayız.
+            {t('spiritualWellbeing.ctaDescription')}
           </p>
           <button className="bg-mor-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-mor-700 transition-colors">
-            Kişisel Danışmanlık Alın
+            {t('spiritualWellbeing.getPersonalConsultation')}
           </button>
         </div>
       </section>

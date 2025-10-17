@@ -624,18 +624,29 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Get in Touch with Us",
+    "subtitle": "Let's talk about your projects. Learn how we can help you.",
     "getInTouch": "Contact Information",
     "address": "Address",
+    "addressValue": "Bostancı\nIstanbul, Turkey",
     "phone": "Phone",
+    "phoneValue": "0501 127 25 33",
     "email": "Email",
+    "emailValue": "info@morkivilcim.com",
+    "workingHours": "Working Hours",
+    "workingHoursValue": "Monday - Friday: 09:00 - 18:00\nSaturday: 09:00 - 14:00\nSunday: Closed",
+    "socialMedia": "Social Media",
     "form": {
       "title": "Send Message",
       "name": "Full Name",
+      "namePlaceholder": "Your name and surname",
       "email": "Email",
+      "emailPlaceholder": "example@email.com",
       "phone": "Phone",
+      "phonePlaceholder": "+90 (5XX) XXX XX XX",
       "company": "Company",
-      "message": "Your Message",
+      "companyPlaceholder": "Your company name",
+      "message": "Message",
+      "messagePlaceholder": "Share details about your project...",
       "send": "Send Message",
       "sending": "Sending...",
       "success": "✅ Your message has been sent successfully! We will get back to you as soon as possible.",
@@ -647,11 +658,117 @@
     "services": "Services",
     "blog": "Blog",
     "contact": "Contact",
+    "description": "A guidance center specialized in spiritual transformation and energy work. We accompany you in discovering your inner world and in your spiritual development.",
+    "address": "Address",
+    "addressValue": "Bostancı\nIstanbul, Turkey",
+    "phone": "Phone",
+    "email": "Email",
+    "workingHours": "Working Hours",
+    "workingHoursValue": "Mon-Fri: 09:00-18:00\nSat: 09:00-14:00",
+    "copyright": "© 2024 MOR Kıvılcım. All rights reserved.",
+    "centerDescription": "Spiritual transformation and energy work center",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Policy",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
     "rights": "All rights reserved.",
     "followUs": "Follow Us"
+  },
+  "spiritualWellbeing": {
+    "title": "Spiritual Wellbeing",
+    "subtitle": "Carefully selected resources and applications to help you find inner peace and support your personal development.",
+    "recommendedApps": "Recommended Apps",
+    "appsDescription": "Proven applications that will support your spiritual development",
+    "wellbeingResources": "Wellbeing Resources",
+    "resourcesDescription": "Practical techniques you can apply in your daily life",
+    "discoverInnerPeace": "Discover Your Inner Peace",
+    "ctaDescription": "We are here to guide you on your spiritual development journey.",
+    "getPersonalConsultation": "Get Personal Consultation",
+    "apps": {
+      "mindfulness": {
+        "title": "Mindfulness & Meditation",
+        "description": "Applications that guide you to find inner peace in your daily life",
+        "headspace": {
+          "description": "Teaches breathing, meditation and mindful living techniques",
+          "features": {
+            "anxiety": "Anxiety management",
+            "stress": "Stress reduction",
+            "focus": "Focus",
+            "sleep": "Sleep quality"
+          }
+        },
+        "calm": {
+          "description": "Relaxing music, meditations and sleep stories",
+          "features": {
+            "stories": "Sleep stories",
+            "nature": "Nature sounds",
+            "meditations": "Daily meditations"
+          }
+        },
+        "insightTimer": {
+          "description": "Free meditation app with thousands of guided meditations",
+          "features": {
+            "free": "Free content",
+            "community": "Community features",
+            "progress": "Progress tracking"
+          }
+        }
+      },
+      "personalDevelopment": {
+        "title": "Personal Development",
+        "description": "To discover yourself and unlock your potential",
+        "dayOne": {
+          "description": "Daily app for recording and reflecting on your life",
+          "features": {
+            "awareness": "Awareness development",
+            "gratitude": "Gratitude practice",
+            "reflection": "Reflection skills"
+          }
+        },
+        "gratitude365": {
+          "description": "Helps you focus on the good things in your life",
+          "features": {
+            "daily": "Daily gratitude practice",
+            "mood": "Mood tracking",
+            "challenges": "Daily challenges"
+          }
+        },
+        "habitica": {
+          "description": "Develop your habits through gamification",
+          "features": {
+            "gamification": "Gamification",
+            "goals": "Goal setting",
+            "tracking": "Progress tracking"
+          }
+        }
+      }
+    },
+    "resources": {
+      "innerPeace": {
+        "title": "Inner Peace Techniques",
+        "description": "Ways to find inner peace in daily life",
+        "items": {
+          "breathing": "Deep breathing exercises",
+          "nature": "Connecting with nature",
+          "gratitude": "Gratitude practice",
+          "walking": "Mindful walking",
+          "creative": "Creative expression ways"
+        }
+      },
+      "stressManagement": {
+        "title": "Stress Management",
+        "description": "Strategies for coping with stressful situations",
+        "items": {
+          "breathing": "4-7-8 breathing technique",
+          "muscle": "Progressive muscle relaxation",
+          "visualization": "Visualization techniques",
+          "routine": "Creating daily routine",
+          "support": "Social support networks"
+        }
+      }
+    }
   },
   "meditation": {
     "title": "Meditation Guide",

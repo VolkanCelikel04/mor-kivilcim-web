@@ -624,18 +624,29 @@
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Kontaktieren Sie uns",
+    "subtitle": "Lassen Sie uns über Ihre Projekte sprechen. Erfahren Sie, wie wir Ihnen helfen können.",
     "getInTouch": "Kontaktinformationen",
     "address": "Adresse",
+    "addressValue": "Bostancı\nIstanbul, Türkei",
     "phone": "Telefon",
+    "phoneValue": "0501 127 25 33",
     "email": "E-Mail",
+    "emailValue": "info@morkivilcim.com",
+    "workingHours": "Arbeitszeiten",
+    "workingHoursValue": "Montag - Freitag: 09:00 - 18:00\nSamstag: 09:00 - 14:00\nSonntag: Geschlossen",
+    "socialMedia": "Soziale Medien",
     "form": {
       "title": "Nachricht senden",
       "name": "Vollständiger Name",
+      "namePlaceholder": "Ihr Vor- und Nachname",
       "email": "E-Mail",
+      "emailPlaceholder": "beispiel@email.com",
       "phone": "Telefon",
+      "phonePlaceholder": "+90 (5XX) XXX XX XX",
       "company": "Unternehmen",
-      "message": "Ihre Nachricht",
+      "companyPlaceholder": "Ihr Firmenname",
+      "message": "Nachricht",
+      "messagePlaceholder": "Teilen Sie Details über Ihr Projekt mit...",
       "send": "Nachricht senden",
       "sending": "Wird gesendet...",
       "success": "✅ Ihre Nachricht wurde erfolgreich gesendet! Wir werden uns so schnell wie möglich bei Ihnen melden.",
@@ -647,11 +658,117 @@
     "services": "Dienstleistungen",
     "blog": "Blog",
     "contact": "Kontakt",
+    "description": "Ein Beratungszentrum, das sich auf spirituelle Transformation und Energiearbeit spezialisiert hat. Wir begleiten Sie bei der Entdeckung Ihrer inneren Welt und Ihrer spirituellen Entwicklung.",
+    "address": "Adresse",
+    "addressValue": "Bostancı\nIstanbul, Türkei",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "workingHours": "Arbeitszeiten",
+    "workingHoursValue": "Mo-Fr: 09:00-18:00\nSa: 09:00-14:00",
+    "copyright": "© 2024 MOR Kıvılcım. Alle Rechte vorbehalten.",
+    "centerDescription": "Zentrum für spirituelle Transformation und Energiearbeit",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
     "cookies": "Cookie-Richtlinie",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen",
+    "cookiePolicy": "Cookie-Richtlinie",
     "rights": "Alle Rechte vorbehalten.",
     "followUs": "Folgen Sie uns"
+  },
+  "spiritualWellbeing": {
+    "title": "Spirituelles Wohlbefinden",
+    "subtitle": "Sorgfältig ausgewählte Ressourcen und Anwendungen, um Ihnen zu helfen, inneren Frieden zu finden und Ihre persönliche Entwicklung zu unterstützen.",
+    "recommendedApps": "Empfohlene Apps",
+    "appsDescription": "Bewährte Anwendungen, die Ihre spirituelle Entwicklung unterstützen",
+    "wellbeingResources": "Wohlbefinden-Ressourcen",
+    "resourcesDescription": "Praktische Techniken, die Sie in Ihrem täglichen Leben anwenden können",
+    "discoverInnerPeace": "Entdecken Sie Ihren inneren Frieden",
+    "ctaDescription": "Wir sind hier, um Sie auf Ihrer spirituellen Entwicklungsreise zu begleiten.",
+    "getPersonalConsultation": "Persönliche Beratung erhalten",
+    "apps": {
+      "mindfulness": {
+        "title": "Achtsamkeit & Meditation",
+        "description": "Anwendungen, die Sie dabei leiten, inneren Frieden in Ihrem täglichen Leben zu finden",
+        "headspace": {
+          "description": "Lehrt Atemtechniken, Meditation und achtsame Lebensweise",
+          "features": {
+            "anxiety": "Angstbewältigung",
+            "stress": "Stressreduktion",
+            "focus": "Fokus",
+            "sleep": "Schlafqualität"
+          }
+        },
+        "calm": {
+          "description": "Entspannende Musik, Meditationen und Schlafgeschichten",
+          "features": {
+            "stories": "Schlafgeschichten",
+            "nature": "Naturgeräusche",
+            "meditations": "Tägliche Meditationen"
+          }
+        },
+        "insightTimer": {
+          "description": "Kostenlose Meditations-App mit Tausenden von geführten Meditationen",
+          "features": {
+            "free": "Kostenlose Inhalte",
+            "community": "Community-Features",
+            "progress": "Fortschrittsverfolgung"
+          }
+        }
+      },
+      "personalDevelopment": {
+        "title": "Persönliche Entwicklung",
+        "description": "Um sich selbst zu entdecken und Ihr Potenzial zu entfalten",
+        "dayOne": {
+          "description": "Tägliche App zum Aufzeichnen und Reflektieren Ihres Lebens",
+          "features": {
+            "awareness": "Bewusstseinsentwicklung",
+            "gratitude": "Dankbarkeitspraxis",
+            "reflection": "Reflexionsfähigkeiten"
+          }
+        },
+        "gratitude365": {
+          "description": "Hilft Ihnen, sich auf die guten Dinge in Ihrem Leben zu konzentrieren",
+          "features": {
+            "daily": "Tägliche Dankbarkeitspraxis",
+            "mood": "Stimmungsverfolgung",
+            "challenges": "Tägliche Herausforderungen"
+          }
+        },
+        "habitica": {
+          "description": "Entwickeln Sie Ihre Gewohnheiten durch Gamification",
+          "features": {
+            "gamification": "Gamification",
+            "goals": "Zielsetzung",
+            "tracking": "Fortschrittsverfolgung"
+          }
+        }
+      }
+    },
+    "resources": {
+      "innerPeace": {
+        "title": "Innerer Frieden Techniken",
+        "description": "Wege, um inneren Frieden im täglichen Leben zu finden",
+        "items": {
+          "breathing": "Tiefe Atemübungen",
+          "nature": "Verbindung mit der Natur",
+          "gratitude": "Dankbarkeitspraxis",
+          "walking": "Achtsames Gehen",
+          "creative": "Kreative Ausdrucksmöglichkeiten"
+        }
+      },
+      "stressManagement": {
+        "title": "Stressmanagement",
+        "description": "Strategien zur Bewältigung stressiger Situationen",
+        "items": {
+          "breathing": "4-7-8 Atemtechnik",
+          "muscle": "Progressive Muskelentspannung",
+          "visualization": "Visualisierungstechniken",
+          "routine": "Tägliche Routine schaffen",
+          "support": "Soziale Unterstützungsnetzwerke"
+        }
+      }
+    }
   },
   "meditation": {
     "title": "Meditationsführer",

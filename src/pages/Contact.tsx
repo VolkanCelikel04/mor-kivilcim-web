@@ -84,9 +84,9 @@ const Contact: React.FC = () => {
       <section className="bg-gradient-to-r from-mor-600 to-mor-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">İletişim</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('contact.title')}</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Projeleriniz hakkında konuşalım. Size nasıl yardımcı olabileceğimizi öğrenin.
+              {t('contact.subtitle')}
             </p>
           </div>
         </div>
@@ -98,12 +98,12 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Mesaj Gönderin</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('contact.form.title')}</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      Ad Soyad *
+                      {t('contact.form.name')} *
                     </label>
                     <input
                       type="text"
@@ -113,12 +113,12 @@ const Contact: React.FC = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mor-500 focus:border-transparent"
-                      placeholder="Adınız ve soyadınız"
+                      placeholder={t('contact.form.namePlaceholder')}
                     />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      E-posta *
+                      {t('contact.form.email')} *
                     </label>
                     <input
                       type="email"
@@ -128,7 +128,7 @@ const Contact: React.FC = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mor-500 focus:border-transparent"
-                      placeholder="ornek@email.com"
+                      placeholder={t('contact.form.emailPlaceholder')}
                     />
                   </div>
                 </div>
@@ -136,7 +136,7 @@ const Contact: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                      Telefon
+                      {t('contact.form.phone')}
                     </label>
                     <input
                       type="tel"
@@ -145,12 +145,12 @@ const Contact: React.FC = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mor-500 focus:border-transparent"
-                      placeholder="+90 (5XX) XXX XX XX"
+                      placeholder={t('contact.form.phonePlaceholder')}
                     />
                   </div>
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                      Şirket
+                      {t('contact.form.company')}
                     </label>
                     <input
                       type="text"
@@ -159,14 +159,14 @@ const Contact: React.FC = () => {
                       value={formData.company}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mor-500 focus:border-transparent"
-                      placeholder="Şirket adınız"
+                      placeholder={t('contact.form.companyPlaceholder')}
                     />
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Mesaj *
+                    {t('contact.form.message')} *
                   </label>
                   <textarea
                     id="message"
@@ -176,7 +176,7 @@ const Contact: React.FC = () => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mor-500 focus:border-transparent"
-                    placeholder="Projeniz hakkında detayları paylaşın..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                   />
                 </div>
 
@@ -184,14 +184,14 @@ const Contact: React.FC = () => {
                   type="submit"
                   className="w-full bg-mor-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-mor-700 transition-colors"
                 >
-                  Mesaj Gönder
+                  {t('contact.form.send')}
                 </button>
               </form>
             </div>
 
             {/* Contact Info */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">İletişim Bilgileri</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('contact.getInTouch')}</h2>
               
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -202,10 +202,9 @@ const Contact: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Adres</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">{t('contact.address')}</h3>
                     <p className="text-gray-600">
-                      Bostancı<br />
-                      İstanbul, Türkiye
+                      {t('contact.addressValue')}
                     </p>
                   </div>
                 </div>
@@ -217,9 +216,9 @@ const Contact: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Telefon</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">{t('contact.phone')}</h3>
                     <p className="text-gray-600">
-                      0501 127 25 33
+                      {t('contact.phoneValue')}
                     </p>
                   </div>
                 </div>
@@ -231,9 +230,9 @@ const Contact: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">E-posta</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">{t('contact.email')}</h3>
                     <p className="text-gray-600">
-                      info@morkivilcim.com
+                      {t('contact.emailValue')}
                     </p>
                   </div>
                 </div>
@@ -245,11 +244,9 @@ const Contact: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Çalışma Saatleri</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">{t('contact.workingHours')}</h3>
                     <p className="text-gray-600">
-                      Pazartesi - Cuma: 09:00 - 18:00<br />
-                      Cumartesi: 09:00 - 14:00<br />
-                      Pazar: Kapalı
+                      {t('contact.workingHoursValue')}
                     </p>
                   </div>
                 </div>
@@ -257,7 +254,7 @@ const Contact: React.FC = () => {
 
               {/* Social Media */}
               <div className="mt-8">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Sosyal Medya</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('contact.socialMedia')}</h3>
                 <div className="flex space-x-4">
                   <a href="https://www.instagram.com/mor_kivilcim/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-mor-600 rounded-lg flex items-center justify-center text-white hover:bg-mor-700 transition-colors">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

@@ -624,18 +624,29 @@
   },
   "contact": {
     "title": "İletişim",
-    "subtitle": "Bizimle İletişime Geçin",
+    "subtitle": "Projeleriniz hakkında konuşalım. Size nasıl yardımcı olabileceğimizi öğrenin.",
     "getInTouch": "İletişim Bilgileri",
     "address": "Adres",
+    "addressValue": "Bostancı\nİstanbul, Türkiye",
     "phone": "Telefon",
+    "phoneValue": "0501 127 25 33",
     "email": "E-posta",
+    "emailValue": "info@morkivilcim.com",
+    "workingHours": "Çalışma Saatleri",
+    "workingHoursValue": "Pazartesi - Cuma: 09:00 - 18:00\nCumartesi: 09:00 - 14:00\nPazar: Kapalı",
+    "socialMedia": "Sosyal Medya",
     "form": {
-      "title": "Mesaj Gönder",
+      "title": "Mesaj Gönderin",
       "name": "Ad Soyad",
+      "namePlaceholder": "Adınız ve soyadınız",
       "email": "E-posta",
+      "emailPlaceholder": "ornek@email.com",
       "phone": "Telefon",
+      "phonePlaceholder": "+90 (5XX) XXX XX XX",
       "company": "Şirket",
-      "message": "Mesajınız",
+      "companyPlaceholder": "Şirket adınız",
+      "message": "Mesaj",
+      "messagePlaceholder": "Projeniz hakkında detayları paylaşın...",
       "send": "Mesaj Gönder",
       "sending": "Gönderiliyor...",
       "success": "✅ Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.",
@@ -647,11 +658,117 @@
     "services": "Hizmetler",
     "blog": "Blog",
     "contact": "İletişim",
+    "description": "Ruhsal dönüşüm ve enerji çalışmaları alanında uzmanlaşmış rehberlik merkezi. İç dünyanızı keşfetmenizde ve ruhsal gelişiminizde size eşlik ediyoruz.",
+    "address": "Adres",
+    "addressValue": "Bostancı\nİstanbul, Türkiye",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "workingHours": "Çalışma Saatleri",
+    "workingHoursValue": "Pzt-Cum: 09:00-18:00\nCmt: 09:00-14:00",
+    "copyright": "© 2024 MOR Kıvılcım. Tüm hakları saklıdır.",
+    "centerDescription": "Ruhsal dönüşüm ve enerji çalışmaları merkezi",
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Şartları",
     "cookies": "Çerez Politikası",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Kullanım Şartları",
+    "cookiePolicy": "Çerez Politikası",
     "rights": "Tüm hakları saklıdır.",
     "followUs": "Bizi Takip Edin"
+  },
+  "spiritualWellbeing": {
+    "title": "Ruhsal İyilik Hali",
+    "subtitle": "İç huzurunuzu bulmanız, kişisel gelişiminizi desteklemeniz için özenle seçilmiş kaynaklar ve uygulamalar.",
+    "recommendedApps": "Önerilen Uygulamalar",
+    "appsDescription": "Ruhsal gelişiminizi destekleyecek, kanıtlanmış uygulamalar",
+    "wellbeingResources": "İyilik Hali Kaynakları",
+    "resourcesDescription": "Günlük hayatınızda uygulayabileceğiniz pratik teknikler",
+    "discoverInnerPeace": "İç Huzurunuzu Keşfedin",
+    "ctaDescription": "Ruhsal gelişim yolculuğunuzda size rehberlik etmek için buradayız.",
+    "getPersonalConsultation": "Kişisel Danışmanlık Alın",
+    "apps": {
+      "mindfulness": {
+        "title": "Mindfulness & Meditasyon",
+        "description": "Günlük hayatınızda iç huzuru bulmanız için rehberlik eden uygulamalar",
+        "headspace": {
+          "description": "Nefes alma, meditasyon ve mindful yaşam teknikleri öğretir",
+          "features": {
+            "anxiety": "Kaygı yönetimi",
+            "stress": "Stres azaltma",
+            "focus": "Odaklanma",
+            "sleep": "Uyku kalitesi"
+          }
+        },
+        "calm": {
+          "description": "Rahatlatıcı müzikler, meditasyonlar ve uyku hikayeleri",
+          "features": {
+            "stories": "Uyku hikayeleri",
+            "nature": "Doğa sesleri",
+            "meditations": "Günlük meditasyonlar"
+          }
+        },
+        "insightTimer": {
+          "description": "Ücretsiz meditasyon uygulaması, binlerce rehberli meditasyon",
+          "features": {
+            "free": "Ücretsiz içerik",
+            "community": "Topluluk özellikleri",
+            "progress": "İlerleme takibi"
+          }
+        }
+      },
+      "personalDevelopment": {
+        "title": "Kişisel Gelişim",
+        "description": "Kendinizi keşfetmeniz ve potansiyelinizi açığa çıkarmanız için",
+        "dayOne": {
+          "description": "Hayatınızı kaydetmek ve düşünmek için günlük uygulaması",
+          "features": {
+            "awareness": "Farkındalık geliştirme",
+            "gratitude": "Şükran pratiği",
+            "reflection": "Yansıtma becerileri"
+          }
+        },
+        "gratitude365": {
+          "description": "Hayatınızdaki iyi şeylere odaklanmanızı sağlar",
+          "features": {
+            "daily": "Günlük teşekkür pratiği",
+            "mood": "Ruh hali takibi",
+            "challenges": "Günlük zorluklar"
+          }
+        },
+        "habitica": {
+          "description": "Alışkanlıklarınızı oyunlaştırarak geliştirin",
+          "features": {
+            "gamification": "Oyunlaştırma",
+            "goals": "Hedef belirleme",
+            "tracking": "İlerleme takibi"
+          }
+        }
+      }
+    },
+    "resources": {
+      "innerPeace": {
+        "title": "İç Huzur Teknikleri",
+        "description": "Günlük hayatta iç huzuru bulmanın yolları",
+        "items": {
+          "breathing": "Derin nefes alma egzersizleri",
+          "nature": "Doğa ile bağlantı kurma",
+          "gratitude": "Şükran pratiği",
+          "walking": "Mindful yürüyüş",
+          "creative": "Yaratıcı ifade yolları"
+        }
+      },
+      "stressManagement": {
+        "title": "Stres Yönetimi",
+        "description": "Stresli durumlarla başa çıkma stratejileri",
+        "items": {
+          "breathing": "4-7-8 nefes tekniği",
+          "muscle": "Progresif kas gevşetme",
+          "visualization": "Görselleştirme teknikleri",
+          "routine": "Günlük rutin oluşturma",
+          "support": "Sosyal destek ağları"
+        }
+      }
+    }
   },
   "meditation": {
     "title": "Meditasyon Rehberi",
