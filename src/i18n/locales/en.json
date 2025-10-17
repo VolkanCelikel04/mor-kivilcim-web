@@ -17,7 +17,101 @@
     "getStarted": "Get Started",
     "learnMore": "Learn More",
     "freeConsultation": "Get Free Consultation",
-    "meditationGuide": "Meditation Guide"
+    "meditationGuide": "Meditation Guide",
+    "services": {
+      "title": "Our Spiritual Services",
+      "subtitle": "Programs specially designed for your spiritual development and inner peace.",
+      "meditation": {
+        "title": "Meditation & Mindfulness",
+        "description": "Calm your mind, find your inner peace, and increase your awareness.",
+        "guided": "Guided Meditations",
+        "mindfulness": "Mindfulness Exercises",
+        "chakra": "Chakra Balancing",
+        "night": "Night Rituals"
+      },
+      "energy": {
+        "title": "Energy Work",
+        "description": "Cleanse your energy field, strengthen with aura work.",
+        "aura": "Aura Cleansing",
+        "crystal": "Crystal Energy",
+        "reiki": "Reiki Sessions",
+        "healing": "Energy Healing"
+      },
+      "counseling": {
+        "title": "Spiritual Counseling",
+        "description": "Guidance in your life journey, spiritual development counseling.",
+        "lifePath": "Life Path Analysis",
+        "transformation": "Transformation Guidance",
+        "personal": "Personal Development",
+        "enlightenment": "Spiritual Enlightenment"
+      }
+    },
+    "resources": {
+      "title": "Spiritual Resources",
+      "subtitle": "Information and practices that will guide you on your spiritual journey.",
+      "rituals": {
+        "title": "Daily Rituals",
+        "description": "Daily practices that make each day meaningful and nourish your soul.",
+        "morning": "Morning Meditation and Gratitude Practice",
+        "nature": "Connecting with Nature",
+        "reading": "Spiritual Reading and Reflection",
+        "night": "Night Ritual and Day Closure"
+      },
+      "discovery": {
+        "title": "Inner Discovery Paths",
+        "description": "Methods to better understand yourself and discover your potential.",
+        "journaling": "Daily Writing and Inner World Discovery",
+        "creative": "Creative Expression and Art Therapy",
+        "emotional": "Emotional Cleansing and Healing",
+        "vision": "Vision Work and Goal Setting"
+      }
+    },
+    "community": {
+      "title": "Spiritual Community",
+      "subtitle": "We share our spiritual journey on Instagram and build community.",
+      "meditation": {
+        "title": "Meditation",
+        "desc": "Daily practices"
+      },
+      "peace": {
+        "title": "Inner Peace",
+        "desc": "Calming techniques"
+      },
+      "energy": {
+        "title": "Energy",
+        "desc": "Healing work"
+      },
+      "guidance": {
+        "title": "Guidance",
+        "desc": "Spiritual counseling"
+      },
+      "follow": "Follow on Instagram"
+    },
+    "symbols": {
+      "title": "Spiritual Symbols",
+      "subtitle": "Sacred symbols and their meanings that will guide you on your spiritual journey",
+      "flower": {
+        "title": "Flower of Life",
+        "description": "The pattern of creation of the universe, symbol of wholeness and harmony. Guides in spiritual development."
+      },
+      "amethyst": {
+        "title": "Amethyst",
+        "description": "Spiritual protection and cleansing crystal. Cleanses negative energies and provides inner peace."
+      },
+      "om": {
+        "title": "Om Symbol",
+        "description": "Universal sound, vibration of creation. Sacred sound used in meditation."
+      },
+      "moon": {
+        "title": "Moon Symbol",
+        "description": "Symbol of the emotional world and intuition. Guides you in discovering your inner world."
+      }
+    },
+    "cta": {
+      "title": "Begin Your Spiritual Journey",
+      "subtitle": "Contact us to discover your inner world and support your spiritual development.",
+      "button": "Get Spiritual Guidance"
+    }
   },
   "about": {
     "title": "About Us",
@@ -83,7 +177,155 @@
     "subtitle": "Comprehensive Services for Spiritual Development",
     "description": "Our services specially designed for your spiritual development",
     "freeConsultation": "Get Free Consultation",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "hero": {
+      "personal": "Personal",
+      "transformative": "Transformative",
+      "healing": "Healing"
+    },
+    "ourServices": {
+      "title": "Our Services",
+      "subtitle": "Services specially designed to support your spiritual journey"
+    },
+    "features": "Features",
+    "benefits": "Benefits",
+    "details": "Get Detailed Information",
+    "meditation": {
+      "title": "Meditation & Mindfulness",
+      "description": "Calm your mind, find your inner peace, and increase your awareness.",
+      "features": {
+        "guided": "Guided Meditation Sessions",
+        "mindfulness": "Mindfulness Exercises",
+        "breathing": "Breathing Techniques",
+        "calming": "Mind Calming Practices",
+        "routines": "Daily Meditation Routines"
+      },
+      "benefits": {
+        "stress": "Stress Reduction",
+        "focus": "Increased Focus",
+        "peace": "Inner Peace",
+        "balance": "Emotional Balance"
+      }
+    },
+    "energy": {
+      "title": "Energy Healing & Reiki",
+      "description": "Cleanse your energy field, strengthen with aura work.",
+      "features": {
+        "reiki": "Reiki Sessions",
+        "aura": "Aura Cleansing",
+        "chakra": "Chakra Balancing",
+        "blockage": "Energy Blockage Resolution",
+        "crystal": "Crystal Energy Work"
+      },
+      "benefits": {
+        "cleansing": "Energy Cleansing",
+        "healing": "Physical Healing",
+        "balance": "Spiritual Balance",
+        "strengthening": "Aura Strengthening"
+      }
+    },
+    "counseling": {
+      "title": "Spiritual Counseling",
+      "description": "Guidance in your life journey, spiritual development counseling.",
+      "features": {
+        "lifePath": "Life Path Analysis",
+        "guidance": "Spiritual Guidance",
+        "transformation": "Personal Transformation",
+        "goals": "Goal Setting",
+        "discovery": "Inner Discovery Work"
+      },
+      "benefits": {
+        "purpose": "Life Purpose",
+        "development": "Personal Development",
+        "transformation": "Transformation",
+        "insight": "Insight"
+      }
+    },
+    "crystal": {
+      "title": "Crystal Therapy",
+      "description": "Achieve spiritual and physical balance using the healing energy of crystals.",
+      "features": {
+        "selection": "Crystal Selection and Cleansing",
+        "chakra": "Chakra Crystals",
+        "meditation": "Crystal Meditation",
+        "healing": "Energy Healing",
+        "rituals": "Crystal Rituals"
+      },
+      "benefits": {
+        "balance": "Energy Balance",
+        "healing": "Emotional Healing",
+        "protection": "Spiritual Protection",
+        "peace": "Inner Peace"
+      }
+    },
+    "astrology": {
+      "title": "Astrology & Numerology",
+      "description": "Understand cosmic energies, discover your life path.",
+      "features": {
+        "birthChart": "Birth Chart Analysis",
+        "numerology": "Numerology Calculation",
+        "future": "Future Road Map",
+        "crystals": "Compatible Crystals",
+        "rituals": "Ritual Recommendations"
+      },
+      "benefits": {
+        "self": "Self-Knowledge",
+        "path": "Life Path",
+        "guidance": "Future Guidance",
+        "harmony": "Harmony"
+      }
+    },
+    "workshops": {
+      "title": "Spiritual Workshops",
+      "description": "Group spiritual development and learning experiences.",
+      "features": {
+        "meditation": "Meditation Workshops",
+        "crystal": "Crystal Study Groups",
+        "healing": "Energy Healing Training",
+        "ritual": "Ritual Creation",
+        "art": "Spiritual Art"
+      },
+      "benefits": {
+        "community": "Community",
+        "learning": "Learning",
+        "sharing": "Sharing",
+        "growth": "Growth"
+      }
+    },
+    "practices": {
+      "morning": {
+        "title": "Morning Ritual",
+        "time": "06:00 - 08:00",
+        "sunrise": "Sunrise meditation",
+        "gratitude": "Gratitude practice",
+        "intention": "Intention setting",
+        "cleansing": "Energy cleansing"
+      },
+      "noon": {
+        "title": "Lunch Break",
+        "time": "12:00 - 13:00",
+        "mindful": "Mindful eating",
+        "meditation": "Short meditation",
+        "renewal": "Energy renewal",
+        "nature": "Nature connection"
+      },
+      "evening": {
+        "title": "Evening Ritual",
+        "time": "18:00 - 20:00",
+        "reflection": "Day reflection",
+        "meditation": "Night meditation",
+        "healing": "Healing work",
+        "closure": "Day closure"
+      }
+    },
+    "dailyPractices": {
+      "title": "Daily Spiritual Practices",
+      "subtitle": "Daily rituals that make each day meaningful and nourish your soul"
+    },
+    "cta": {
+      "title": "Begin Your Spiritual Journey",
+      "subtitle": "Tell us which service you need, and we'll offer you the most suitable solution."
+    }
   },
   "blog": {
     "title": "Blog",
@@ -93,11 +335,288 @@
     "categories": "Categories",
     "all": "All",
     "loadMore": "Load More Content",
+    "hero": {
+      "title": "Spiritual Resources",
+      "subtitle": "Spiritual Blog",
+      "description": "Daily energy status, affirmations, meditation guides and spiritual advice"
+    },
+    "categories": {
+      "all": "All",
+      "breathing": "Breathing Techniques",
+      "meditation": "Meditation",
+      "healing": "Healing Techniques",
+      "writing": "Writing Therapy",
+      "movement": "Movement Meditation"
+    },
+    "dailyAffirmation": {
+      "title": "Daily Affirmation",
+      "text": "Today I approach myself with compassion and nourish my inner peace.",
+      "author": "Purple Spark"
+    },
+    "energyStatus": {
+      "title": "Today's Energy",
+      "level": "High",
+      "description": "Today's energy is full of creativity and inspiration. A perfect day to start new projects."
+    },
+    "posts": {
+      "breathing444": {
+        "title": "4-4-4 Breathing (Box Breathing)",
+        "excerpt": "Calm the Nervous System in 2-5 Minutes",
+        "content": "Inhale through nose for 4 counts, hold for 4, exhale for 4. 3-6 rounds. Keep jaw and shoulders soft.",
+        "readTime": "5 min",
+        "tags": {
+          "breath": "breath",
+          "stress": "stress",
+          "relaxation": "relaxation"
+        }
+      },
+      "bodyScan": {
+        "title": "Body Scan",
+        "excerpt": "Remember \"Softening\" with Your Body",
+        "content": "Move attention from feet to head; don't try to change—just notice and accompany with breath.",
+        "readTime": "10 min",
+        "tags": {
+          "meditation": "meditation",
+          "awareness": "awareness",
+          "body": "body"
+        }
+      },
+      "hooponopono": {
+        "title": "Ho'oponopono",
+        "excerpt": "Four Sentences of Gentle Repair",
+        "content": "\"I'm sorry. Please forgive me. Thank you. I love you.\"—around the heart, with breath.",
+        "readTime": "7 min",
+        "tags": {
+          "healing": "healing",
+          "forgiveness": "forgiveness",
+          "repair": "repair"
+        }
+      },
+      "reiki": {
+        "title": "Reiki",
+        "excerpt": "Experience, Ethics and Expectation Management",
+        "content": "Reiki is a complementary approach; it does not replace medical care. Clear boundaries and intention deepen the experience.",
+        "readTime": "8 min",
+        "tags": {
+          "reiki": "reiki",
+          "energy": "energy",
+          "healing": "healing"
+        }
+      },
+      "traumaSensitive": {
+        "title": "Trauma-Sensitive Meditation",
+        "excerpt": "Safety with 5 Principles",
+        "content": "You set your own pace. Grounding first, permission to stop always open if it intensifies.",
+        "readTime": "8 min",
+        "tags": {
+          "trauma": "trauma",
+          "safety": "safety",
+          "meditation": "meditation"
+        }
+      },
+      "sleepMeditation": {
+        "title": "Meditation for Sleep",
+        "excerpt": "Inspired by Yoga Nidra",
+        "content": "10-15 minute body scan + breath + gentle imagery can ease the transition to sleep.",
+        "readTime": "12 min",
+        "tags": {
+          "sleep": "sleep",
+          "meditation": "meditation",
+          "yogaNidra": "yoga nidra"
+        }
+      },
+      "walkingMeditation": {
+        "title": "Walking Meditation",
+        "excerpt": "Awareness in Every Step",
+        "content": "20-minute walk with step-breath sync and environmental awareness; ending with one sentence of gratitude.",
+        "readTime": "15 min",
+        "tags": {
+          "walking": "walking",
+          "awareness": "awareness",
+          "movement": "movement"
+        }
+      },
+      "gratitudeWriting": {
+        "title": "Gratitude & Emotional Writing",
+        "excerpt": "Regulation in 5 Minutes",
+        "content": "Write 3 small good things + once a week 10-minute expressive writing.",
+        "readTime": "5 min",
+        "tags": {
+          "writing": "writing",
+          "gratitude": "gratitude",
+          "emotions": "emotions"
+        }
+      },
+      "affirmations": {
+        "title": "Affirmations",
+        "excerpt": "When, How?",
+        "content": "Instead of \"I'm fine,\" self-affirmation based on your own values is more effective.",
+        "readTime": "10 min",
+        "tags": {
+          "affirmation": "affirmation",
+          "selfWorth": "self-worth",
+          "positive": "positive"
+        }
+      },
+      "familyConstellation": {
+        "title": "Family Constellation",
+        "excerpt": "What It Is, What It Isn't? Safe Framework",
+        "content": "Family Constellation is a representation work; its scientific validity is debatable. Safe space and integration are required.",
+        "readTime": "12 min",
+        "tags": {
+          "family": "family",
+          "systemic": "systemic",
+          "therapy": "therapy"
+        }
+      }
+    },
     "newsletter": {
       "title": "Spiritual Newsletter",
       "subtitle": "Subscribe to our newsletter for daily affirmations, energy updates and spiritual advice.",
       "placeholder": "Your email address",
       "subscribe": "Subscribe"
+    }
+  },
+  "blogPosts": {
+    "breathing444": {
+      "title": "4-4-4 Breathing (Box Breathing)",
+      "excerpt": "Calm the Nervous System in 2-5 Minutes",
+      "category": "Breathing Techniques",
+      "tldr": "TL;DR",
+      "tldrContent": "Inhale through nose for 4 counts, hold for 4, exhale for 4. 3-6 rounds. Keep jaw and shoulders soft.",
+      "whyItWorks": "Why It Works?",
+      "whyItWorksContent": "Consciously slowing the breath rhythm increases heart rate variability; this strengthens the \"no danger\" signal. Especially safe and practical for quickly softening small tension waves during the day.",
+      "stepByStep": "Step by Step",
+      "step1Title": "Posture",
+      "step1Content": "Feet on the ground, spine long; without fighting your body.",
+      "step2Title": "Inhale",
+      "step2Content": "For 4 counts, through nose, gently.",
+      "step3Title": "Hold",
+      "step3Content": "For 4 counts; without straining, as if waiting.",
+      "step4Title": "Exhale",
+      "step4Content": "For 4 counts, as if flickering a candle without blowing it out.",
+      "step5Title": "Continue",
+      "step5Content": "Continue for 3-6 rounds; extend to 2-3 minutes if it feels good.",
+      "commonMistakes": "Common Mistakes",
+      "mistake1Title": "Forcing the Hold",
+      "mistake1Content": "Can cause dizziness. If difficult, try 4-4-6 or 4-2-6.",
+      "mistake2Title": "Chest Breathing",
+      "mistake2Content": "Lower the breath to belly; shoulders shouldn't rise.",
+      "mistake3Title": "Expectation of \"Feeling Great Quickly\"",
+      "mistake3Content": "Emotional wave subsides gently, give it time.",
+      "miniPractice": "5-Minute Mini Practice",
+      "practice1Time": "1 min",
+      "practice1": "Preparation",
+      "practice2Time": "3 min",
+      "practice2": "4-4-4 Breathing",
+      "practice3Time": "1 min",
+      "practice3": "Free breath and observation",
+      "emotionScale": "Emotion scale 0-10:",
+      "emotionScaleNote": "Note before and after.",
+      "noteTitle": "Purple Spark Note",
+      "noteContent": "Extending the exhale by 1-2 counts (4-4-6) activates the parasympathetic system faster. If you wish, accompany the exhale with \"purple spark in the heart\" imagery.",
+      "relatedArticles": "Related Articles",
+      "related1Title": "Body Scan",
+      "related1Desc": "Remember \"softening\" with your body",
+      "related2Title": "Trauma-Sensitive Meditation",
+      "related2Desc": "Safety with 5 principles"
+    },
+    "bodyScan": {
+      "title": "Body Scan",
+      "excerpt": "Remember \"Softening\" with Your Body",
+      "category": "Mindfulness Meditation",
+      "tldr": "TL;DR",
+      "tldrContent": "Move attention from feet to head; don't try to change—just notice and accompany with breath.",
+      "whyItWorks": "Why It Works?",
+      "whyItWorksContent": "Mind \"tells\", body \"understands\". Scanning makes body sensations visible; noticed tension is already the first step of relaxation. Regular practice teaches catching micro-tensions faster during the day.",
+      "stepByStep": "Step by Step (10-12 min)",
+      "step1Title": "1 min: Adjust Posture",
+      "step1Content": "Adjust posture, let breath be natural.",
+      "step2Title": "6-8 min: Body Scan",
+      "step2Content": "Feet → calves → knees → hips → belly → chest → shoulders → neck → face.",
+      "step2Note": "Stay 3 breaths in each region.",
+      "step3Title": "1-2 min: Closing",
+      "step3Content": "Overall feeling; gratitude and closing.",
+      "scanOrder": "Body Scan Order",
+      "feet": "Feet",
+      "calves": "Calves",
+      "knees": "Knees",
+      "hips": "Hips",
+      "belly": "Belly",
+      "chest": "Chest",
+      "shoulders": "Shoulders",
+      "neckFace": "Neck & Face",
+      "commonMistakes": "Common Mistakes",
+      "mistake1Title": "\"Relax!\" Command",
+      "mistake1Content": "Forcing creates reverse effect. \"2% softening intention\" is enough.",
+      "mistake2Title": "Quick Transition",
+      "mistake2Content": "Stay at least 2-3 breaths to \"catch\" the sensation.",
+      "dailyIntegration": "Daily Integration",
+      "integration1Title": "Before Meeting",
+      "integration1Content": "90 seconds \"shoulder-jaw-chest\" triangle scan",
+      "integration2Title": "Before Driving",
+      "integration2Content": "\"Feet\" scan",
+      "noteTitle": "Purple Spark Note",
+      "noteContent": "Imagine \"purple spark\" softening the edges of that region with each exhale. Apply with eyes open if needed.",
+      "relatedArticles": "Related Articles",
+      "related1Title": "4-4-4 Breathing",
+      "related1Desc": "Calm nervous system in 2-5 minutes",
+      "related2Title": "Meditation for Sleep",
+      "related2Desc": "Inspired by Yoga Nidra"
+    },
+    "hooponopono": {
+      "title": "Ho'oponopono",
+      "excerpt": "Four Sentences of Gentle Repair",
+      "category": "Healing Techniques",
+      "tldr": "TL;DR",
+      "tldrContent": "\"I'm sorry. Please forgive me. Thank you. I love you.\"—around the heart, with breath.",
+      "shortFrame": "Short Frame",
+      "shortFrameContent": "Ho'oponopono is a repair practice done with the intention of bringing relationships and inner world into \"harmony\". In modern individual versions, four sentences are spoken inward.",
+      "fourSentences": "Four Sentences",
+      "sentence1Title": "1. I'm Sorry",
+      "sentence1Content": "I acknowledge the pain I unknowingly created.",
+      "sentence2Title": "2. Please Forgive Me",
+      "sentence2Content": "I embrace the fragile part within me with compassion.",
+      "sentence3Title": "3. Thank You",
+      "sentence3Content": "I appreciate the lesson this experience taught me.",
+      "sentence4Title": "4. I Love You",
+      "sentence4Content": "I connect with love and invite healing.",
+      "practice7min": "7-Minute Practice",
+      "step1Title": "1 min: Preparation",
+      "step1Content": "Gentle attention around the heart.",
+      "step2Title": "4 min: Four Sentences",
+      "step2Content": "Match each sentence with a breath:",
+      "step2Point1": "Say it internally while inhaling",
+      "step2Point2": "Listen to its echo while exhaling",
+      "step3Title": "2 min: Closing",
+      "step3Content": "Silent heart listening and closing.",
+      "breathPattern": "Breath-Sentence Pairing",
+      "breath1": "I'm sorry",
+      "breath2": "Please forgive me",
+      "breath3": "Thank you",
+      "breath4": "I love you",
+      "inhale": "Inhale",
+      "commonMistakes": "Common Mistakes",
+      "mistake1Title": "Forcing Yourself to Forgive",
+      "mistake1Content": "Intention is enough; process may take time.",
+      "mistake2Title": "Expectation of \"Should Finish in One Round\"",
+      "mistake2Content": "Repair is a state of repeated relationship.",
+      "whenToUse": "When to Use?",
+      "innerConflicts": "Inner Conflicts",
+      "conflict1": "Anger towards yourself",
+      "conflict2": "Being stuck in the past",
+      "conflict3": "Guilt feelings",
+      "relationshipIssues": "Relationship Issues",
+      "issue1": "Family tension",
+      "issue2": "Friendship problems",
+      "issue3": "Workplace conflict",
+      "noteTitle": "Purple Spark Note",
+      "noteContent": "You can direct the sentences to a person, an event, or just to the fragile part within you. Reference the \"purple spark\" in the heart area.",
+      "relatedArticles": "Related Articles",
+      "related1Title": "Gratitude & Emotional Writing",
+      "related1Desc": "Regulation in 5 minutes",
+      "related2Title": "Affirmations",
+      "related2Desc": "When, how?"
     }
   },
   "contact": {

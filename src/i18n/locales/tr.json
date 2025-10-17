@@ -17,7 +17,101 @@
     "getStarted": "Hemen Başla",
     "learnMore": "Daha Fazla Bilgi",
     "freeConsultation": "Ücretsiz Danışmanlık Alın",
-    "meditationGuide": "Meditasyon Rehberi"
+    "meditationGuide": "Meditasyon Rehberi",
+    "services": {
+      "title": "Spiritüel Hizmetlerimiz",
+      "subtitle": "Ruhsal gelişiminiz ve iç huzurunuz için özel olarak tasarlanmış programlar.",
+      "meditation": {
+        "title": "Meditasyon & Mindfulness",
+        "description": "Zihninizi sakinleştirin, iç huzurunuzu bulun ve farkındalığınızı artırın.",
+        "guided": "Rehberli Meditasyonlar",
+        "mindfulness": "Mindfulness Egzersizleri",
+        "chakra": "Chakra Dengeleme",
+        "night": "Gece Ritüelleri"
+      },
+      "energy": {
+        "title": "Enerji Çalışmaları",
+        "description": "Enerji alanınızı temizleyin, aura çalışmaları ile güçlenin.",
+        "aura": "Aura Temizliği",
+        "crystal": "Kristal Enerjisi",
+        "reiki": "Reiki Seansları",
+        "healing": "Enerji Şifası"
+      },
+      "counseling": {
+        "title": "Spiritüel Danışmanlık",
+        "description": "Yaşam yolculuğunuzda rehberlik, ruhsal gelişim danışmanlığı.",
+        "lifePath": "Yaşam Yolu Analizi",
+        "transformation": "Dönüşüm Rehberliği",
+        "personal": "Kişisel Gelişim",
+        "enlightenment": "Ruhsal Aydınlanma"
+      }
+    },
+    "resources": {
+      "title": "Spiritüel Kaynaklar",
+      "subtitle": "Ruhsal yolculuğunuzda size rehberlik edecek bilgiler ve pratikler.",
+      "rituals": {
+        "title": "Günlük Ritüeller",
+        "description": "Her günü anlamlı kılan, ruhunuzu besleyen günlük pratikler.",
+        "morning": "Sabah Meditasyonu ve Şükran Pratiği",
+        "nature": "Doğa ile Bağlantı Kurma",
+        "reading": "Spiritüel Okuma ve Refleksiyon",
+        "night": "Gece Ritüeli ve Günü Kapatma"
+      },
+      "discovery": {
+        "title": "İç Keşif Yolları",
+        "description": "Kendinizi daha iyi tanımak ve potansiyelinizi keşfetmek için yöntemler.",
+        "journaling": "Günlük Yazma ve İç Dünya Keşfi",
+        "creative": "Yaratıcı İfade ve Sanat Terapisi",
+        "emotional": "Duygusal Temizlik ve Şifa",
+        "vision": "Vizyon Çalışması ve Hedef Belirleme"
+      }
+    },
+    "community": {
+      "title": "Spiritüel Topluluk",
+      "subtitle": "Instagram'da spiritüel yolculuğumuzu paylaşıyor, topluluk oluşturuyoruz.",
+      "meditation": {
+        "title": "Meditasyon",
+        "desc": "Günlük pratikler"
+      },
+      "peace": {
+        "title": "İç Huzur",
+        "desc": "Sakinlik teknikleri"
+      },
+      "energy": {
+        "title": "Enerji",
+        "desc": "Şifa çalışmaları"
+      },
+      "guidance": {
+        "title": "Rehberlik",
+        "desc": "Spiritüel danışmanlık"
+      },
+      "follow": "Instagram'da Takip Et"
+    },
+    "symbols": {
+      "title": "Spiritüel Semboller",
+      "subtitle": "Ruhsal yolculuğunuzda size rehberlik eden kutsal semboller ve anlamları",
+      "flower": {
+        "title": "Yaşam Çiçeği",
+        "description": "Evrenin yaratılış deseni, bütünlük ve uyumun sembolü. Ruhsal gelişimde rehberlik eder."
+      },
+      "amethyst": {
+        "title": "Ametist",
+        "description": "Ruhsal koruma ve temizlik kristali. Negatif enerjileri temizler, iç huzur sağlar."
+      },
+      "om": {
+        "title": "Om Sembolü",
+        "description": "Evrensel ses, yaratılışın titreşimi. Meditasyonda kullanılan kutsal ses."
+      },
+      "moon": {
+        "title": "Ay Sembolü",
+        "description": "Duygusal dünyanın ve sezgilerin sembolü. İç dünyanızı keşfetmenizde rehberlik eder."
+      }
+    },
+    "cta": {
+      "title": "Ruhsal Yolculuğunuza Başlayın",
+      "subtitle": "İç dünyanızı keşfetmek, ruhsal gelişiminizi desteklemek için bizimle iletişime geçin.",
+      "button": "Spiritüel Rehberlik Al"
+    }
   },
   "about": {
     "title": "Hakkımızda",
@@ -83,7 +177,155 @@
     "subtitle": "Ruhsal Gelişim İçin Kapsamlı Hizmetler",
     "description": "Spiritüel gelişiminiz için özel olarak tasarlanmış hizmetlerimiz",
     "freeConsultation": "Ücretsiz Danışmanlık Alın",
-    "contactUs": "Bizimle İletişime Geçin"
+    "contactUs": "Bizimle İletişime Geçin",
+    "hero": {
+      "personal": "Kişisel",
+      "transformative": "Dönüştürücü",
+      "healing": "Şifalı"
+    },
+    "ourServices": {
+      "title": "Hizmetlerimiz",
+      "subtitle": "Her biri özel olarak tasarlanmış, ruhsal yolculuğunuzu destekleyecek hizmetler"
+    },
+    "features": "Özellikler",
+    "benefits": "Faydalar",
+    "details": "Detaylı Bilgi Al",
+    "meditation": {
+      "title": "Meditasyon & Mindfulness",
+      "description": "Zihninizi sakinleştirin, iç huzurunuzu bulun ve farkındalığınızı artırın.",
+      "features": {
+        "guided": "Rehberli Meditasyon Seansları",
+        "mindfulness": "Mindfulness Egzersizleri",
+        "breathing": "Nefes Alma Teknikleri",
+        "calming": "Zihin Sakinleştirme Pratikleri",
+        "routines": "Günlük Meditasyon Rutinleri"
+      },
+      "benefits": {
+        "stress": "Stres Azaltma",
+        "focus": "Odaklanma Artışı",
+        "peace": "İç Huzur",
+        "balance": "Duygusal Denge"
+      }
+    },
+    "energy": {
+      "title": "Enerji Şifası & Reiki",
+      "description": "Enerji alanınızı temizleyin, aura çalışmaları ile güçlenin.",
+      "features": {
+        "reiki": "Reiki Seansları",
+        "aura": "Aura Temizliği",
+        "chakra": "Chakra Dengeleme",
+        "blockage": "Enerji Blokaj Çözümü",
+        "crystal": "Kristal Enerjisi Çalışmaları"
+      },
+      "benefits": {
+        "cleansing": "Enerji Temizliği",
+        "healing": "Fiziksel Şifa",
+        "balance": "Ruhsal Denge",
+        "strengthening": "Aura Güçlendirme"
+      }
+    },
+    "counseling": {
+      "title": "Spiritüel Danışmanlık",
+      "description": "Yaşam yolculuğunuzda rehberlik, ruhsal gelişim danışmanlığı.",
+      "features": {
+        "lifePath": "Yaşam Yolu Analizi",
+        "guidance": "Ruhsal Rehberlik",
+        "transformation": "Kişisel Dönüşüm",
+        "goals": "Hedef Belirleme",
+        "discovery": "İç Keşif Çalışmaları"
+      },
+      "benefits": {
+        "purpose": "Yaşam Amacı",
+        "development": "Kişisel Gelişim",
+        "transformation": "Dönüşüm",
+        "insight": "İç Görü"
+      }
+    },
+    "crystal": {
+      "title": "Kristal Terapi",
+      "description": "Kristallerin şifalı enerjisini kullanarak ruhsal ve fiziksel denge sağlayın.",
+      "features": {
+        "selection": "Kristal Seçimi ve Temizliği",
+        "chakra": "Chakra Kristalleri",
+        "meditation": "Kristal Meditasyonu",
+        "healing": "Enerji Şifası",
+        "rituals": "Kristal Ritüelleri"
+      },
+      "benefits": {
+        "balance": "Enerji Dengesi",
+        "healing": "Duygusal Şifa",
+        "protection": "Ruhsal Koruma",
+        "peace": "İç Huzur"
+      }
+    },
+    "astrology": {
+      "title": "Astroloji & Numeroloji",
+      "description": "Kozmik enerjileri anlayın, yaşam yolunuzu keşfedin.",
+      "features": {
+        "birthChart": "Doğum Haritası Analizi",
+        "numerology": "Numeroloji Hesaplaması",
+        "future": "Gelecek Yol Haritası",
+        "crystals": "Uyumlu Kristaller",
+        "rituals": "Ritüel Önerileri"
+      },
+      "benefits": {
+        "self": "Kendini Tanıma",
+        "path": "Yaşam Yolu",
+        "guidance": "Gelecek Rehberliği",
+        "harmony": "Uyum"
+      }
+    },
+    "workshops": {
+      "title": "Spiritüel Atölyeler",
+      "description": "Gruplar halinde spiritüel gelişim ve öğrenme deneyimleri.",
+      "features": {
+        "meditation": "Meditasyon Atölyeleri",
+        "crystal": "Kristal Çalışma Grupları",
+        "healing": "Enerji Şifası Eğitimi",
+        "ritual": "Ritüel Yaratma",
+        "art": "Spiritüel Sanat"
+      },
+      "benefits": {
+        "community": "Topluluk",
+        "learning": "Öğrenme",
+        "sharing": "Paylaşım",
+        "growth": "Büyüme"
+      }
+    },
+    "practices": {
+      "morning": {
+        "title": "Sabah Ritüeli",
+        "time": "06:00 - 08:00",
+        "sunrise": "Gün doğumu meditasyonu",
+        "gratitude": "Şükran pratiği",
+        "intention": "Niyet belirleme",
+        "cleansing": "Enerji temizliği"
+      },
+      "noon": {
+        "title": "Öğle Molası",
+        "time": "12:00 - 13:00",
+        "mindful": "Mindful yeme",
+        "meditation": "Kısa meditasyon",
+        "renewal": "Enerji yenileme",
+        "nature": "Doğa bağlantısı"
+      },
+      "evening": {
+        "title": "Akşam Ritüeli",
+        "time": "18:00 - 20:00",
+        "reflection": "Günü değerlendirme",
+        "meditation": "Gece meditasyonu",
+        "healing": "Şifa çalışması",
+        "closure": "Günü kapatma"
+      }
+    },
+    "dailyPractices": {
+      "title": "Günlük Spiritüel Pratikler",
+      "subtitle": "Her günü anlamlı kılan, ruhunuzu besleyen günlük ritüeller"
+    },
+    "cta": {
+      "title": "Spiritüel Yolculuğunuza Başlayın",
+      "subtitle": "Hangi hizmete ihtiyacınız olduğunu söyleyin, size en uygun çözümü sunalım."
+    }
   },
   "blog": {
     "title": "Blog",
@@ -93,11 +335,288 @@
     "categories": "Kategoriler",
     "all": "Tümü",
     "loadMore": "Daha Fazla İçerik Yükle",
+    "hero": {
+      "title": "Ruhsal Kaynaklar",
+      "subtitle": "Spiritüel Blog",
+      "description": "Günlük enerji durumu, affirmasyonlar, meditasyon rehberleri ve spiritüel tavsiyeler"
+    },
+    "categories": {
+      "all": "Tümü",
+      "breathing": "Nefes Teknikleri",
+      "meditation": "Meditasyon",
+      "healing": "Şifa Teknikleri",
+      "writing": "Yazı Terapisi",
+      "movement": "Hareket Meditasyonu"
+    },
+    "dailyAffirmation": {
+      "title": "Günün Affirmasyonu",
+      "text": "Bugün kendime şefkatle yaklaşıyorum ve iç huzurumu besliyorum.",
+      "author": "MOR Kıvılcım"
+    },
+    "energyStatus": {
+      "title": "Günün Enerjisi",
+      "level": "Yüksek",
+      "description": "Bugünün enerjisi yaratıcılık ve ilhamla dolu. Yeni projeler başlatmak için mükemmel bir gün."
+    },
+    "posts": {
+      "breathing444": {
+        "title": "4-4-4 Nefes (Kutu Nefesi)",
+        "excerpt": "2–5 Dakikada Sinir Sistemini Yatıştır",
+        "content": "Burnundan 4 sayıda al, 4 sayıda tut, 4 sayıda ver. 3–6 tur. Çene ve omuzlar yumuşak.",
+        "readTime": "5 dk",
+        "tags": {
+          "breath": "nefes",
+          "stress": "stres",
+          "relaxation": "rahatlama"
+        }
+      },
+      "bodyScan": {
+        "title": "Beden Taraması",
+        "excerpt": "\"Yumuşama\"yı Bedeninle Hatırla",
+        "content": "Dikkati ayaktan başa gezdir; değiştirmeye çalışma—yalnızca fark et ve nefesle eşlik et.",
+        "readTime": "10 dk",
+        "tags": {
+          "meditation": "meditasyon",
+          "awareness": "farkındalık",
+          "body": "beden"
+        }
+      },
+      "hooponopono": {
+        "title": "Ho'oponopono",
+        "excerpt": "Nazik Onarımın Dört Cümlesi",
+        "content": "\"Özür dilerim. Lütfen beni affet. Teşekkür ederim. Seni seviyorum.\"—kalp çevresinde, nefesle birlikte.",
+        "readTime": "7 dk",
+        "tags": {
+          "healing": "şifa",
+          "forgiveness": "affetme",
+          "repair": "onarım"
+        }
+      },
+      "reiki": {
+        "title": "Reiki",
+        "excerpt": "Deneyim, Etik ve Beklenti Yönetimi",
+        "content": "Reiki tamamlayıcı bir yaklaşımdır; tıbbi bakımın yerine geçmez. Net sınırlar ve niyet, deneyimi derinleştirir.",
+        "readTime": "8 dk",
+        "tags": {
+          "reiki": "reiki",
+          "energy": "enerji",
+          "healing": "şifa"
+        }
+      },
+      "traumaSensitive": {
+        "title": "Travma-Duyarlı Meditasyon",
+        "excerpt": "5 İlke ile Güvenlik",
+        "content": "Hızını sen belirlersin. Topraklama önce, yoğunlaşırsa durma izni hep açık.",
+        "readTime": "8 dk",
+        "tags": {
+          "trauma": "travma",
+          "safety": "güvenlik",
+          "meditation": "meditasyon"
+        }
+      },
+      "sleepMeditation": {
+        "title": "Uyku İçin Meditasyon",
+        "excerpt": "Yoga Nidra'dan İlhamla",
+        "content": "10–15 dakikalık beden taraması + nefes + nazik imgeleme, uykuya geçişi kolaylaştırabilir.",
+        "readTime": "12 dk",
+        "tags": {
+          "sleep": "uyku",
+          "meditation": "meditasyon",
+          "yogaNidra": "yoga nidra"
+        }
+      },
+      "walkingMeditation": {
+        "title": "Yürüyüş Meditasyonu",
+        "excerpt": "Her Adımda Farkındalık",
+        "content": "20 dakikalık yürüyüşte adım-nefes senkronu ve çevresel farkındalık; sonunda tek cümlelik şükran.",
+        "readTime": "15 dk",
+        "tags": {
+          "walking": "yürüyüş",
+          "awareness": "farkındalık",
+          "movement": "hareket"
+        }
+      },
+      "gratitudeWriting": {
+        "title": "Şükran & Duygusal Yazım",
+        "excerpt": "5 Dakikada Regülasyon",
+        "content": "3 küçük iyi şeyi yaz + haftada bir kez 10 dakikalık ifade edici yazım.",
+        "readTime": "5 dk",
+        "tags": {
+          "writing": "yazım",
+          "gratitude": "şükran",
+          "emotions": "duygular"
+        }
+      },
+      "affirmations": {
+        "title": "Onaylamalar",
+        "excerpt": "Ne Zaman, Nasıl?",
+        "content": "\"Ben iyiyim\" yerine, kendi değerlerin üzerinden öz-onaylama daha etkili olur.",
+        "readTime": "10 dk",
+        "tags": {
+          "affirmation": "onaylama",
+          "selfWorth": "öz-değer",
+          "positive": "pozitif"
+        }
+      },
+      "familyConstellation": {
+        "title": "Aile Dizimi",
+        "excerpt": "Nedir, Ne Değildir? Güvenli Çerçeve",
+        "content": "Aile Dizimi bir temsil çalışmasıdır; bilimsel geçerliliği tartışmalıdır. Güvenli alan ve entegrasyon şart.",
+        "readTime": "12 dk",
+        "tags": {
+          "family": "aile",
+          "systemic": "sistemik",
+          "therapy": "terapi"
+        }
+      }
+    },
     "newsletter": {
       "title": "Spiritüel Bülten",
       "subtitle": "Günlük affirmasyonlar, enerji durumu ve spiritüel tavsiyeler için bültenimize abone olun.",
       "placeholder": "E-posta adresiniz",
       "subscribe": "Abone Ol"
+    }
+  },
+  "blogPosts": {
+    "breathing444": {
+      "title": "4-4-4 Nefes (Kutu Nefesi)",
+      "excerpt": "2–5 Dakikada Sinir Sistemini Yatıştır",
+      "category": "Nefes Teknikleri",
+      "tldr": "TL;DR",
+      "tldrContent": "Burnundan 4 sayıda al, 4 sayıda tut, 4 sayıda ver. 3–6 tur. Çene ve omuzlar yumuşak.",
+      "whyItWorks": "Neden İşe Yarar?",
+      "whyItWorksContent": "Nefesin ritmini bilinçli yavaşlatmak, kalp atım aralığındaki değişkenliği artırır; bu da \"tehlike yok\" sinyalini güçlendirir. Özellikle gün içinde küçük gerilim dalgalarını hızlıca yumuşatmak için güvenli ve pratiktir.",
+      "stepByStep": "Adım Adım",
+      "step1Title": "Duruş",
+      "step1Content": "Ayak tabanların yerde, omurgan uzun; bedeninle kavga etmeden.",
+      "step2Title": "Al",
+      "step2Content": "4 sayıda, burundan, nazikçe.",
+      "step3Title": "Tut",
+      "step3Content": "4 sayıda; kasmadan, bekler gibi.",
+      "step4Title": "Ver",
+      "step4Content": "4 sayıda, sanki bir mumu söndürmeden titretiyormuş gibi.",
+      "step5Title": "Sürdür",
+      "step5Content": "3–6 tur sürdür; iyi gelirse 2–3 dakikaya uzat.",
+      "commonMistakes": "Sık Yapılan Hatalar",
+      "mistake1Title": "Zorlayıcı Tutuş",
+      "mistake1Content": "Baş dönmesi yapabilir. Zor gelirse 4-4-6 veya 4-2-6 dene.",
+      "mistake2Title": "Göğüsten Nefes",
+      "mistake2Content": "Nefesi karına indir; omuzlar kalkmasın.",
+      "mistake3Title": "Hızla \"Çok İyi Hissetmeliyim\" Beklentisi",
+      "mistake3Content": "Duygu dalgası nazikçe söner, süre tanı.",
+      "miniPractice": "5 Dakikalık Mini Pratik",
+      "practice1Time": "1 dk",
+      "practice1": "Hazırlık",
+      "practice2Time": "3 dk",
+      "practice2": "4-4-4 Nefes",
+      "practice3Time": "1 dk",
+      "practice3": "Serbest nefes ve gözlem",
+      "emotionScale": "Duygu ölçeği 0–10:",
+      "emotionScaleNote": "Öncesini ve sonrasını not et.",
+      "noteTitle": "Mor Kıvılcım Notu",
+      "noteContent": "Verişi 1–2 sayı uzatmak (4-4-6) parasempatik sistemi daha hızlı devreye alır. Dilersen \"kalpte mor kıvılcım\" imgelemesini verişe eşlik ettir.",
+      "relatedArticles": "İlgili Makaleler",
+      "related1Title": "Beden Taraması",
+      "related1Desc": "\"Yumuşama\"yı bedeninle hatırla",
+      "related2Title": "Travma-Duyarlı Meditasyon",
+      "related2Desc": "5 ilke ile güvenlik"
+    },
+    "bodyScan": {
+      "title": "Beden Taraması",
+      "excerpt": "\"Yumuşama\"yı Bedeninle Hatırla",
+      "category": "Farkındalık Meditasyonu",
+      "tldr": "TL;DR",
+      "tldrContent": "Dikkati ayaktan başa gezdir; değiştirmeye çalışma—yalnızca fark et ve nefesle eşlik et.",
+      "whyItWorks": "Neden İşe Yarar?",
+      "whyItWorksContent": "Zihin \"anlatır\", beden \"anlar\". Tarama, beden duyumlarını görünür kılar; fark edilen gerilim zaten gevşemenin ilk adımıdır. Düzenli uygulama, gün içindeki mikro gerginlikleri daha hızlı yakalamayı öğretir.",
+      "stepByStep": "Adım Adım (10–12 dk)",
+      "step1Title": "1 dk: Duruşu Ayarla",
+      "step1Content": "Duruşu ayarla, nefesi doğal bırak.",
+      "step2Title": "6–8 dk: Beden Taraması",
+      "step2Content": "Ayak tabanları → baldır → diz → kalça → karın → göğüs → omuz → boyun → yüz.",
+      "step2Note": "Her bölgede 3 nefes kal.",
+      "step3Title": "1–2 dk: Kapanış",
+      "step3Content": "Genel his; teşekkür ve kapanış.",
+      "scanOrder": "Beden Tarama Sırası",
+      "feet": "Ayak Tabanları",
+      "calves": "Baldır",
+      "knees": "Diz",
+      "hips": "Kalça",
+      "belly": "Karın",
+      "chest": "Göğüs",
+      "shoulders": "Omuz",
+      "neckFace": "Boyun & Yüz",
+      "commonMistakes": "Sık Yapılan Hatalar",
+      "mistake1Title": "\"Gevşe!\" Komutu",
+      "mistake1Content": "Zorlama ters etki yaratır. \"%2 yumuşama niyeti\" de yeter.",
+      "mistake2Title": "Hızlı Geçiş",
+      "mistake2Content": "Duyumu \"yakalamak\" için en az 2–3 nefes kal.",
+      "dailyIntegration": "Gündelik Entegrasyon",
+      "integration1Title": "Toplantı Öncesi",
+      "integration1Content": "90 saniye \"omuz–çene–göğüs\" üçgeni taraması",
+      "integration2Title": "Araba Kullanmadan Önce",
+      "integration2Content": "\"Ayak tabanları\" taraması",
+      "noteTitle": "Mor Kıvılcım Notu",
+      "noteContent": "Her verişte \"mor kıvılcım\" o bölgenin kenarlarını yumuşatıyor gibi hayal et. Gerekirse gözleri açık uygula.",
+      "relatedArticles": "İlgili Makaleler",
+      "related1Title": "4-4-4 Nefes",
+      "related1Desc": "2–5 dakikada sinir sistemini yatıştır",
+      "related2Title": "Uyku İçin Meditasyon",
+      "related2Desc": "Yoga Nidra'dan ilhamla"
+    },
+    "hooponopono": {
+      "title": "Ho'oponopono",
+      "excerpt": "Nazik Onarımın Dört Cümlesi",
+      "category": "Şifa Teknikleri",
+      "tldr": "TL;DR",
+      "tldrContent": "\"Özür dilerim. Lütfen beni affet. Teşekkür ederim. Seni seviyorum.\"—kalp çevresinde, nefesle birlikte.",
+      "shortFrame": "Kısa Çerçeve",
+      "shortFrameContent": "Ho'oponopono, ilişkileri ve iç dünyayı \"uyum\" hâline getirme niyetiyle yapılan bir onarım pratiği. Modern bireysel versiyonlarında dört cümle içe doğru söylenir.",
+      "fourSentences": "Dört Cümle",
+      "sentence1Title": "1. Özür Dilerim",
+      "sentence1Content": "Farkında olmadan yarattığım acıyı kabul ediyorum.",
+      "sentence2Title": "2. Lütfen Beni Affet",
+      "sentence2Content": "İçimdeki kırılgan parçayı şefkatle kucaklıyorum.",
+      "sentence3Title": "3. Teşekkür Ederim",
+      "sentence3Content": "Bu deneyimin bana öğrettiği dersi takdir ediyorum.",
+      "sentence4Title": "4. Seni Seviyorum",
+      "sentence4Content": "Sevgiyle bağ kuruyorum ve şifayı davet ediyorum.",
+      "practice7min": "7 Dakikalık Uygulama",
+      "step1Title": "1 dk: Hazırlık",
+      "step1Content": "Kalp çevresine nazik dikkat.",
+      "step2Title": "4 dk: Dört Cümle",
+      "step2Content": "Her cümleyi bir nefesle eşleştir:",
+      "step2Point1": "Alırken içinden söyle",
+      "step2Point2": "Verirken yankısını dinle",
+      "step3Title": "2 dk: Kapanış",
+      "step3Content": "Sessiz kalp dinleme ve kapanış.",
+      "breathPattern": "Nefes-Cümle Eşleştirmesi",
+      "breath1": "Özür dilerim",
+      "breath2": "Lütfen beni affet",
+      "breath3": "Teşekkür ederim",
+      "breath4": "Seni seviyorum",
+      "inhale": "Nefes al",
+      "commonMistakes": "Sık Yapılan Hatalar",
+      "mistake1Title": "Kendini Zorlayarak Affetmeye Çalışma",
+      "mistake1Content": "Niyet yeter; süreç zaman alabilir.",
+      "mistake2Title": "\"Bir Turda Bitmeli\" Beklentisi",
+      "mistake2Content": "Onarım, tekrar eden bir ilişki hâlidir.",
+      "whenToUse": "Ne Zaman Kullanılır?",
+      "innerConflicts": "İç Çatışmalar",
+      "conflict1": "Kendine karşı öfke",
+      "conflict2": "Geçmişe takılma",
+      "conflict3": "Suçluluk duyguları",
+      "relationshipIssues": "İlişki Sorunları",
+      "issue1": "Aile içi gerginlik",
+      "issue2": "Arkadaşlık sorunları",
+      "issue3": "İş yerinde çatışma",
+      "noteTitle": "Mor Kıvılcım Notu",
+      "noteContent": "Cümleleri bir kişiye, bir olaya ya da yalnızca içindeki kırılgan parçaya yöneltebilirsin. Kalp bölgesindeki \"mor kıvılcım\"ı referans al.",
+      "relatedArticles": "İlgili Makaleler",
+      "related1Title": "Şükran & Duygusal Yazım",
+      "related1Desc": "5 dakikada regülasyon",
+      "related2Title": "Onaylamalar",
+      "related2Desc": "Ne zaman, nasıl?"
     }
   },
   "contact": {

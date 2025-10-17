@@ -17,7 +17,101 @@
     "getStarted": "Loslegen",
     "learnMore": "Mehr erfahren",
     "freeConsultation": "Kostenlose Beratung erhalten",
-    "meditationGuide": "Meditationsführer"
+    "meditationGuide": "Meditationsführer",
+    "services": {
+      "title": "Unsere spirituellen Dienstleistungen",
+      "subtitle": "Speziell für Ihre spirituelle Entwicklung und Ihren inneren Frieden entwickelte Programme.",
+      "meditation": {
+        "title": "Meditation & Achtsamkeit",
+        "description": "Beruhigen Sie Ihren Geist, finden Sie Ihren inneren Frieden und steigern Sie Ihr Bewusstsein.",
+        "guided": "Geführte Meditationen",
+        "mindfulness": "Achtsamkeitsübungen",
+        "chakra": "Chakra-Ausgleich",
+        "night": "Nachtrituale"
+      },
+      "energy": {
+        "title": "Energiearbeit",
+        "description": "Reinigen Sie Ihr Energiefeld und stärken Sie sich durch Aura-Arbeit.",
+        "aura": "Aura-Reinigung",
+        "crystal": "Kristallenergie",
+        "reiki": "Reiki-Sitzungen",
+        "healing": "Energieheilung"
+      },
+      "counseling": {
+        "title": "Spirituelle Beratung",
+        "description": "Führung auf Ihrer Lebensreise, spirituelle Entwicklungsberatung.",
+        "lifePath": "Lebensweg-Analyse",
+        "transformation": "Transformationsführung",
+        "personal": "Persönliche Entwicklung",
+        "enlightenment": "Spirituelle Erleuchtung"
+      }
+    },
+    "resources": {
+      "title": "Spirituelle Ressourcen",
+      "subtitle": "Informationen und Praktiken, die Sie auf Ihrer spirituellen Reise leiten werden.",
+      "rituals": {
+        "title": "Tägliche Rituale",
+        "description": "Tägliche Praktiken, die jeden Tag bedeutungsvoll machen und Ihre Seele nähren.",
+        "morning": "Morgenmeditation und Dankbarkeitspraxis",
+        "nature": "Verbindung zur Natur",
+        "reading": "Spirituelles Lesen und Reflexion",
+        "night": "Nachtritual und Tagesabschluss"
+      },
+      "discovery": {
+        "title": "Wege der inneren Entdeckung",
+        "description": "Methoden, um sich selbst besser kennenzulernen und Ihr Potenzial zu entdecken.",
+        "journaling": "Tägliches Schreiben und innere Welterkundung",
+        "creative": "Kreativer Ausdruck und Kunsttherapie",
+        "emotional": "Emotionale Reinigung und Heilung",
+        "vision": "Visionsarbeit und Zielsetzung"
+      }
+    },
+    "community": {
+      "title": "Spirituelle Gemeinschaft",
+      "subtitle": "Wir teilen unsere spirituelle Reise auf Instagram und bauen Gemeinschaft auf.",
+      "meditation": {
+        "title": "Meditation",
+        "desc": "Tägliche Praktiken"
+      },
+      "peace": {
+        "title": "Innerer Frieden",
+        "desc": "Beruhigungstechniken"
+      },
+      "energy": {
+        "title": "Energie",
+        "desc": "Heilarbeit"
+      },
+      "guidance": {
+        "title": "Führung",
+        "desc": "Spirituelle Beratung"
+      },
+      "follow": "Auf Instagram folgen"
+    },
+    "symbols": {
+      "title": "Spirituelle Symbole",
+      "subtitle": "Heilige Symbole und ihre Bedeutungen, die Sie auf Ihrer spirituellen Reise leiten werden",
+      "flower": {
+        "title": "Blume des Lebens",
+        "description": "Das Schöpfungsmuster des Universums, Symbol für Ganzheit und Harmonie. Führt in der spirituellen Entwicklung."
+      },
+      "amethyst": {
+        "title": "Amethyst",
+        "description": "Spiritueller Schutz- und Reinigungskristall. Reinigt negative Energien und sorgt für inneren Frieden."
+      },
+      "om": {
+        "title": "Om-Symbol",
+        "description": "Universeller Klang, Schwingung der Schöpfung. Heiliger Klang, der in der Meditation verwendet wird."
+      },
+      "moon": {
+        "title": "Mondsymbol",
+        "description": "Symbol der emotionalen Welt und Intuition. Führt Sie bei der Entdeckung Ihrer inneren Welt."
+      }
+    },
+    "cta": {
+      "title": "Beginnen Sie Ihre spirituelle Reise",
+      "subtitle": "Kontaktieren Sie uns, um Ihre innere Welt zu entdecken und Ihre spirituelle Entwicklung zu unterstützen.",
+      "button": "Spirituelle Führung erhalten"
+    }
   },
   "about": {
     "title": "Über uns",
@@ -83,7 +177,155 @@
     "subtitle": "Umfassende Dienstleistungen für spirituelle Entwicklung",
     "description": "Unsere speziell für Ihre spirituelle Entwicklung konzipierten Dienstleistungen",
     "freeConsultation": "Kostenlose Beratung erhalten",
-    "contactUs": "Kontaktieren Sie uns"
+    "contactUs": "Kontaktieren Sie uns",
+    "hero": {
+      "personal": "Persönlich",
+      "transformative": "Transformativ",
+      "healing": "Heilend"
+    },
+    "ourServices": {
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Speziell entwickelte Dienstleistungen zur Unterstützung Ihrer spirituellen Reise"
+    },
+    "features": "Eigenschaften",
+    "benefits": "Vorteile",
+    "details": "Detaillierte Informationen erhalten",
+    "meditation": {
+      "title": "Meditation & Achtsamkeit",
+      "description": "Beruhigen Sie Ihren Geist, finden Sie Ihren inneren Frieden und steigern Sie Ihr Bewusstsein.",
+      "features": {
+        "guided": "Geführte Meditationssitzungen",
+        "mindfulness": "Achtsamkeitsübungen",
+        "breathing": "Atemtechniken",
+        "calming": "Geistberuhigungspraktiken",
+        "routines": "Tägliche Meditationsroutinen"
+      },
+      "benefits": {
+        "stress": "Stressreduktion",
+        "focus": "Erhöhte Konzentration",
+        "peace": "Innerer Frieden",
+        "balance": "Emotionale Balance"
+      }
+    },
+    "energy": {
+      "title": "Energieheilung & Reiki",
+      "description": "Reinigen Sie Ihr Energiefeld und stärken Sie sich durch Aura-Arbeit.",
+      "features": {
+        "reiki": "Reiki-Sitzungen",
+        "aura": "Aura-Reinigung",
+        "chakra": "Chakra-Ausgleich",
+        "blockage": "Energieblockade-Auflösung",
+        "crystal": "Kristallenergiearbeit"
+      },
+      "benefits": {
+        "cleansing": "Energiereinigung",
+        "healing": "Körperliche Heilung",
+        "balance": "Spirituelle Balance",
+        "strengthening": "Aura-Stärkung"
+      }
+    },
+    "counseling": {
+      "title": "Spirituelle Beratung",
+      "description": "Führung auf Ihrer Lebensreise, spirituelle Entwicklungsberatung.",
+      "features": {
+        "lifePath": "Lebensweg-Analyse",
+        "guidance": "Spirituelle Führung",
+        "transformation": "Persönliche Transformation",
+        "goals": "Zielsetzung",
+        "discovery": "Innere Entdeckungsarbeit"
+      },
+      "benefits": {
+        "purpose": "Lebenszweck",
+        "development": "Persönliche Entwicklung",
+        "transformation": "Transformation",
+        "insight": "Einsicht"
+      }
+    },
+    "crystal": {
+      "title": "Kristalltherapie",
+      "description": "Erreichen Sie spirituelle und körperliche Balance durch die heilende Energie der Kristalle.",
+      "features": {
+        "selection": "Kristallauswahl und -reinigung",
+        "chakra": "Chakra-Kristalle",
+        "meditation": "Kristallmeditation",
+        "healing": "Energieheilung",
+        "rituals": "Kristallrituale"
+      },
+      "benefits": {
+        "balance": "Energiebalance",
+        "healing": "Emotionale Heilung",
+        "protection": "Spiritueller Schutz",
+        "peace": "Innerer Frieden"
+      }
+    },
+    "astrology": {
+      "title": "Astrologie & Numerologie",
+      "description": "Verstehen Sie kosmische Energien und entdecken Sie Ihren Lebensweg.",
+      "features": {
+        "birthChart": "Geburtshoroskop-Analyse",
+        "numerology": "Numerologie-Berechnung",
+        "future": "Zukunfts-Roadmap",
+        "crystals": "Kompatible Kristalle",
+        "rituals": "Ritual-Empfehlungen"
+      },
+      "benefits": {
+        "self": "Selbsterkenntnis",
+        "path": "Lebensweg",
+        "guidance": "Zukunfts-Führung",
+        "harmony": "Harmonie"
+      }
+    },
+    "workshops": {
+      "title": "Spirituelle Workshops",
+      "description": "Gruppenspirituelle Entwicklung und Lernerfahrungen.",
+      "features": {
+        "meditation": "Meditationsworkshops",
+        "crystal": "Kristallstudien-Gruppen",
+        "healing": "Energieheilungs-Training",
+        "ritual": "Ritual-Erstellung",
+        "art": "Spirituelle Kunst"
+      },
+      "benefits": {
+        "community": "Gemeinschaft",
+        "learning": "Lernen",
+        "sharing": "Teilen",
+        "growth": "Wachstum"
+      }
+    },
+    "practices": {
+      "morning": {
+        "title": "Morgenritual",
+        "time": "06:00 - 08:00",
+        "sunrise": "Sonnenaufgangsmeditation",
+        "gratitude": "Dankbarkeitspraxis",
+        "intention": "Absicht setzen",
+        "cleansing": "Energiereinigung"
+      },
+      "noon": {
+        "title": "Mittagspause",
+        "time": "12:00 - 13:00",
+        "mindful": "Achtsames Essen",
+        "meditation": "Kurze Meditation",
+        "renewal": "Energieerneuerung",
+        "nature": "Naturverbindung"
+      },
+      "evening": {
+        "title": "Abendritual",
+        "time": "18:00 - 20:00",
+        "reflection": "Tagesreflexion",
+        "meditation": "Nachtmeditation",
+        "healing": "Heilarbeit",
+        "closure": "Tagesabschluss"
+      }
+    },
+    "dailyPractices": {
+      "title": "Tägliche spirituelle Praktiken",
+      "subtitle": "Tägliche Rituale, die jeden Tag bedeutungsvoll machen und Ihre Seele nähren"
+    },
+    "cta": {
+      "title": "Beginnen Sie Ihre spirituelle Reise",
+      "subtitle": "Sagen Sie uns, welche Dienstleistung Sie benötigen, und wir bieten Ihnen die passendste Lösung."
+    }
   },
   "blog": {
     "title": "Blog",
@@ -93,11 +335,288 @@
     "categories": "Kategorien",
     "all": "Alle",
     "loadMore": "Mehr Inhalt laden",
+    "hero": {
+      "title": "Spirituelle Ressourcen",
+      "subtitle": "Spiritueller Blog",
+      "description": "Täglicher Energiestatus, Affirmationen, Meditationsführer und spirituelle Ratschläge"
+    },
+    "categories": {
+      "all": "Alle",
+      "breathing": "Atemtechniken",
+      "meditation": "Meditation",
+      "healing": "Heiltechniken",
+      "writing": "Schreibtherapie",
+      "movement": "Bewegungsmeditation"
+    },
+    "dailyAffirmation": {
+      "title": "Tägliche Affirmation",
+      "text": "Heute nähere ich mir selbst mit Mitgefühl und nähre meinen inneren Frieden.",
+      "author": "Lila Funke"
+    },
+    "energyStatus": {
+      "title": "Heutige Energie",
+      "level": "Hoch",
+      "description": "Die heutige Energie ist voller Kreativität und Inspiration. Ein perfekter Tag, um neue Projekte zu starten."
+    },
+    "posts": {
+      "breathing444": {
+        "title": "4-4-4 Atmung (Box-Atmung)",
+        "excerpt": "Beruhigen Sie das Nervensystem in 2-5 Minuten",
+        "content": "Durch die Nase 4 zählen einatmen, 4 halten, 4 ausatmen. 3-6 Runden. Kiefer und Schultern weich halten.",
+        "readTime": "5 Min",
+        "tags": {
+          "breath": "Atem",
+          "stress": "Stress",
+          "relaxation": "Entspannung"
+        }
+      },
+      "bodyScan": {
+        "title": "Körperscan",
+        "excerpt": "Erinnern Sie sich an \"Erweichung\" mit Ihrem Körper",
+        "content": "Aufmerksamkeit von den Füßen zum Kopf bewegen; nicht versuchen zu ändern—nur bemerken und mit dem Atem begleiten.",
+        "readTime": "10 Min",
+        "tags": {
+          "meditation": "Meditation",
+          "awareness": "Bewusstsein",
+          "body": "Körper"
+        }
+      },
+      "hooponopono": {
+        "title": "Ho'oponopono",
+        "excerpt": "Vier Sätze sanfter Reparatur",
+        "content": "\"Es tut mir leid. Bitte verzeihen Sie mir. Danke. Ich liebe Sie.\"—um das Herz, mit dem Atem.",
+        "readTime": "7 Min",
+        "tags": {
+          "healing": "Heilung",
+          "forgiveness": "Vergebung",
+          "repair": "Reparatur"
+        }
+      },
+      "reiki": {
+        "title": "Reiki",
+        "excerpt": "Erfahrung, Ethik und Erwartungsmanagement",
+        "content": "Reiki ist ein komplementärer Ansatz; es ersetzt keine medizinische Versorgung. Klare Grenzen und Absicht vertiefen die Erfahrung.",
+        "readTime": "8 Min",
+        "tags": {
+          "reiki": "Reiki",
+          "energy": "Energie",
+          "healing": "Heilung"
+        }
+      },
+      "traumaSensitive": {
+        "title": "Trauma-sensible Meditation",
+        "excerpt": "Sicherheit mit 5 Prinzipien",
+        "content": "Sie bestimmen Ihr eigenes Tempo. Erdung zuerst, Erlaubnis zum Stoppen immer offen, wenn es intensiv wird.",
+        "readTime": "8 Min",
+        "tags": {
+          "trauma": "Trauma",
+          "safety": "Sicherheit",
+          "meditation": "Meditation"
+        }
+      },
+      "sleepMeditation": {
+        "title": "Meditation für den Schlaf",
+        "excerpt": "Inspiriert von Yoga Nidra",
+        "content": "10-15 Minuten Körperscan + Atem + sanfte Vorstellung kann den Übergang zum Schlaf erleichtern.",
+        "readTime": "12 Min",
+        "tags": {
+          "sleep": "Schlaf",
+          "meditation": "Meditation",
+          "yogaNidra": "Yoga Nidra"
+        }
+      },
+      "walkingMeditation": {
+        "title": "Gehmeditation",
+        "excerpt": "Bewusstsein in jedem Schritt",
+        "content": "20-minütiger Spaziergang mit Schritt-Atem-Synchronisation und Umweltbewusstsein; endet mit einem Satz Dankbarkeit.",
+        "readTime": "15 Min",
+        "tags": {
+          "walking": "Gehen",
+          "awareness": "Bewusstsein",
+          "movement": "Bewegung"
+        }
+      },
+      "gratitudeWriting": {
+        "title": "Dankbarkeit & Emotionales Schreiben",
+        "excerpt": "Regulierung in 5 Minuten",
+        "content": "3 kleine gute Dinge schreiben + einmal pro Woche 10 Minuten ausdrucksvolles Schreiben.",
+        "readTime": "5 Min",
+        "tags": {
+          "writing": "Schreiben",
+          "gratitude": "Dankbarkeit",
+          "emotions": "Emotionen"
+        }
+      },
+      "affirmations": {
+        "title": "Affirmationen",
+        "excerpt": "Wann, Wie?",
+        "content": "Statt \"Mir geht es gut\" ist Selbstbestätigung basierend auf Ihren eigenen Werten effektiver.",
+        "readTime": "10 Min",
+        "tags": {
+          "affirmation": "Affirmation",
+          "selfWorth": "Selbstwert",
+          "positive": "positiv"
+        }
+      },
+      "familyConstellation": {
+        "title": "Familienaufstellung",
+        "excerpt": "Was es ist, was es nicht ist? Sicherer Rahmen",
+        "content": "Familienaufstellung ist eine Repräsentationsarbeit; ihre wissenschaftliche Gültigkeit ist umstritten. Sicherer Raum und Integration sind erforderlich.",
+        "readTime": "12 Min",
+        "tags": {
+          "family": "Familie",
+          "systemic": "systemisch",
+          "therapy": "Therapie"
+        }
+      }
+    },
     "newsletter": {
       "title": "Spiritueller Newsletter",
       "subtitle": "Abonnieren Sie unseren Newsletter für tägliche Affirmationen, Energie-Updates und spirituelle Ratschläge.",
       "placeholder": "Ihre E-Mail-Adresse",
       "subscribe": "Abonnieren"
+    }
+  },
+  "blogPosts": {
+    "breathing444": {
+      "title": "4-4-4 Atmung (Box-Atmung)",
+      "excerpt": "Beruhigen Sie das Nervensystem in 2-5 Minuten",
+      "category": "Atemtechniken",
+      "tldr": "TL;DR",
+      "tldrContent": "Durch die Nase 4 zählen einatmen, 4 halten, 4 ausatmen. 3-6 Runden. Kiefer und Schultern weich halten.",
+      "whyItWorks": "Warum es funktioniert?",
+      "whyItWorksContent": "Das bewusste Verlangsamen des Atemrhythmus erhöht die Herzfrequenzvariabilität; dies verstärkt das \"keine Gefahr\"-Signal. Besonders sicher und praktisch, um kleine Spannungswellen im Laufe des Tages schnell zu mildern.",
+      "stepByStep": "Schritt für Schritt",
+      "step1Title": "Haltung",
+      "step1Content": "Füße auf dem Boden, Wirbelsäule lang; ohne gegen Ihren Körper zu kämpfen.",
+      "step2Title": "Einatmen",
+      "step2Content": "Für 4 Zählungen, durch die Nase, sanft.",
+      "step3Title": "Halten",
+      "step3Content": "Für 4 Zählungen; ohne Anstrengung, wie beim Warten.",
+      "step4Title": "Ausatmen",
+      "step4Content": "Für 4 Zählungen, als ob Sie eine Kerze flackern lassen, ohne sie auszublasen.",
+      "step5Title": "Fortsetzen",
+      "step5Content": "3-6 Runden fortsetzen; auf 2-3 Minuten verlängern, wenn es sich gut anfühlt.",
+      "commonMistakes": "Häufige Fehler",
+      "mistake1Title": "Erzwungenes Halten",
+      "mistake1Content": "Kann Schwindel verursachen. Wenn schwierig, versuchen Sie 4-4-6 oder 4-2-6.",
+      "mistake2Title": "Brustatmung",
+      "mistake2Content": "Senken Sie den Atem zum Bauch; Schultern sollten nicht steigen.",
+      "mistake3Title": "Erwartung, \"schnell großartig zu fühlen\"",
+      "mistake3Content": "Emotionale Welle klingt sanft ab, geben Sie Zeit.",
+      "miniPractice": "5-Minuten-Mini-Praxis",
+      "practice1Time": "1 Min",
+      "practice1": "Vorbereitung",
+      "practice2Time": "3 Min",
+      "practice2": "4-4-4 Atmung",
+      "practice3Time": "1 Min",
+      "practice3": "Freier Atem und Beobachtung",
+      "emotionScale": "Emotionsskala 0-10:",
+      "emotionScaleNote": "Vorher und nachher notieren.",
+      "noteTitle": "Lila Funke Notiz",
+      "noteContent": "Das Verlängern des Ausatmens um 1-2 Zählungen (4-4-6) aktiviert das parasympathische System schneller. Wenn Sie möchten, begleiten Sie das Ausatmen mit \"Lila Funke im Herzen\" Vorstellung.",
+      "relatedArticles": "Verwandte Artikel",
+      "related1Title": "Körperscan",
+      "related1Desc": "Erinnern Sie sich an \"Erweichung\" mit Ihrem Körper",
+      "related2Title": "Trauma-sensible Meditation",
+      "related2Desc": "Sicherheit mit 5 Prinzipien"
+    },
+    "bodyScan": {
+      "title": "Körperscan",
+      "excerpt": "Erinnern Sie sich an \"Erweichung\" mit Ihrem Körper",
+      "category": "Achtsamkeitsmeditation",
+      "tldr": "TL;DR",
+      "tldrContent": "Aufmerksamkeit von den Füßen zum Kopf bewegen; nicht versuchen zu ändern—nur bemerken und mit dem Atem begleiten.",
+      "whyItWorks": "Warum es funktioniert?",
+      "whyItWorksContent": "Geist \"erzählt\", Körper \"versteht\". Scannen macht Körperempfindungen sichtbar; bemerkte Spannung ist bereits der erste Schritt der Entspannung. Regelmäßige Praxis lehrt, Mikro-Spannungen im Laufe des Tages schneller zu erfassen.",
+      "stepByStep": "Schritt für Schritt (10-12 Min)",
+      "step1Title": "1 Min: Haltung anpassen",
+      "step1Content": "Haltung anpassen, Atem natürlich lassen.",
+      "step2Title": "6-8 Min: Körperscan",
+      "step2Content": "Füße → Waden → Knie → Hüften → Bauch → Brust → Schultern → Nacken → Gesicht.",
+      "step2Note": "3 Atemzüge in jeder Region bleiben.",
+      "step3Title": "1-2 Min: Abschluss",
+      "step3Content": "Gesamtgefühl; Dankbarkeit und Abschluss.",
+      "scanOrder": "Körperscan-Reihenfolge",
+      "feet": "Füße",
+      "calves": "Waden",
+      "knees": "Knie",
+      "hips": "Hüften",
+      "belly": "Bauch",
+      "chest": "Brust",
+      "shoulders": "Schultern",
+      "neckFace": "Nacken & Gesicht",
+      "commonMistakes": "Häufige Fehler",
+      "mistake1Title": "\"Entspann dich!\" Befehl",
+      "mistake1Content": "Zwang erzeugt Gegeneffekt. \"2% Erweichungsabsicht\" reicht.",
+      "mistake2Title": "Schneller Übergang",
+      "mistake2Content": "Bleiben Sie mindestens 2-3 Atemzüge, um die Empfindung zu \"erfassen\".",
+      "dailyIntegration": "Tägliche Integration",
+      "integration1Title": "Vor dem Meeting",
+      "integration1Content": "90 Sekunden \"Schulter-Kiefer-Brust\" Dreieck-Scan",
+      "integration2Title": "Vor dem Fahren",
+      "integration2Content": "\"Füße\" Scan",
+      "noteTitle": "Lila Funke Notiz",
+      "noteContent": "Stellen Sie sich vor, \"Lila Funke\" erweicht bei jedem Ausatmen die Ränder dieser Region. Bei Bedarf mit offenen Augen anwenden.",
+      "relatedArticles": "Verwandte Artikel",
+      "related1Title": "4-4-4 Atmung",
+      "related1Desc": "Nervensystem in 2-5 Minuten beruhigen",
+      "related2Title": "Meditation für den Schlaf",
+      "related2Desc": "Inspiriert von Yoga Nidra"
+    },
+    "hooponopono": {
+      "title": "Ho'oponopono",
+      "excerpt": "Vier Sätze sanfter Reparatur",
+      "category": "Heiltechniken",
+      "tldr": "TL;DR",
+      "tldrContent": "\"Es tut mir leid. Bitte verzeihen Sie mir. Danke. Ich liebe Sie.\"—um das Herz, mit dem Atem.",
+      "shortFrame": "Kurzer Rahmen",
+      "shortFrameContent": "Ho'oponopono ist eine Reparaturpraxis, die mit der Absicht durchgeführt wird, Beziehungen und innere Welt in \"Harmonie\" zu bringen. In modernen individuellen Versionen werden vier Sätze nach innen gesprochen.",
+      "fourSentences": "Vier Sätze",
+      "sentence1Title": "1. Es tut mir leid",
+      "sentence1Content": "Ich erkenne den Schmerz an, den ich unwissentlich verursacht habe.",
+      "sentence2Title": "2. Bitte verzeihen Sie mir",
+      "sentence2Content": "Ich umarme den zerbrechlichen Teil in mir mit Mitgefühl.",
+      "sentence3Title": "3. Danke",
+      "sentence3Content": "Ich schätze die Lektion, die mir diese Erfahrung gelehrt hat.",
+      "sentence4Title": "4. Ich liebe Sie",
+      "sentence4Content": "Ich verbinde mich mit Liebe und lade Heilung ein.",
+      "practice7min": "7-Minuten-Praxis",
+      "step1Title": "1 Min: Vorbereitung",
+      "step1Content": "Sanfte Aufmerksamkeit um das Herz.",
+      "step2Title": "4 Min: Vier Sätze",
+      "step2Content": "Jeden Satz mit einem Atemzug paaren:",
+      "step2Point1": "Sagen Sie es innerlich beim Einatmen",
+      "step2Point2": "Hören Sie sein Echo beim Ausatmen",
+      "step3Title": "2 Min: Abschluss",
+      "step3Content": "Stilles Herz hören und Abschluss.",
+      "breathPattern": "Atem-Satz-Paarung",
+      "breath1": "Es tut mir leid",
+      "breath2": "Bitte verzeihen Sie mir",
+      "breath3": "Danke",
+      "breath4": "Ich liebe Sie",
+      "inhale": "Einatmen",
+      "commonMistakes": "Häufige Fehler",
+      "mistake1Title": "Sich selbst zwingen zu vergeben",
+      "mistake1Content": "Absicht ist genug; Prozess kann Zeit brauchen.",
+      "mistake2Title": "Erwartung \"Sollte in einer Runde fertig sein\"",
+      "mistake2Content": "Reparatur ist ein Zustand wiederholter Beziehung.",
+      "whenToUse": "Wann zu verwenden?",
+      "innerConflicts": "Innere Konflikte",
+      "conflict1": "Wut auf sich selbst",
+      "conflict2": "In der Vergangenheit feststecken",
+      "conflict3": "Schuldgefühle",
+      "relationshipIssues": "Beziehungsprobleme",
+      "issue1": "Familiäre Spannungen",
+      "issue2": "Freundschaftsprobleme",
+      "issue3": "Arbeitsplatzkonflikt",
+      "noteTitle": "Lila Funke Notiz",
+      "noteContent": "Sie können die Sätze an eine Person, ein Ereignis oder nur an den zerbrechlichen Teil in Ihnen richten. Referenzieren Sie den \"Lila Funken\" im Herzbereich.",
+      "relatedArticles": "Verwandte Artikel",
+      "related1Title": "Dankbarkeit & Emotionales Schreiben",
+      "related1Desc": "Regulierung in 5 Minuten",
+      "related2Title": "Affirmationen",
+      "related2Desc": "Wann, wie?"
     }
   },
   "contact": {
