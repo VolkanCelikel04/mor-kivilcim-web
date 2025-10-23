@@ -213,7 +213,7 @@ const SpiritualJourney: React.FC = () => {
                 <h3 className="text-2xl font-bold mb-2">{t('spiritualJourney.meditation.preparation.title')}</h3>
               </div>
               <ul className="space-y-3 text-sm">
-                {t('spiritualJourney.meditation.preparation.steps', { returnObjects: true }).map((step: string, index: number) => (
+                {(t('spiritualJourney.meditation.preparation.steps', { returnObjects: true }) as string[]).map((step: string, index: number) => (
                   <li key={index}>• {step}</li>
                 ))}
               </ul>
@@ -225,7 +225,7 @@ const SpiritualJourney: React.FC = () => {
                 <h3 className="text-2xl font-bold mb-2">{t('spiritualJourney.meditation.breathing.title')}</h3>
               </div>
               <ul className="space-y-3 text-sm">
-                {t('spiritualJourney.meditation.breathing.steps', { returnObjects: true }).map((step: string, index: number) => (
+                {(t('spiritualJourney.meditation.breathing.steps', { returnObjects: true }) as string[]).map((step: string, index: number) => (
                   <li key={index}>• {step}</li>
                 ))}
               </ul>
@@ -237,7 +237,7 @@ const SpiritualJourney: React.FC = () => {
                 <h3 className="text-2xl font-bold mb-2">{t('spiritualJourney.meditation.awareness.title')}</h3>
               </div>
               <ul className="space-y-3 text-sm">
-                {t('spiritualJourney.meditation.awareness.steps', { returnObjects: true }).map((step: string, index: number) => (
+                {(t('spiritualJourney.meditation.awareness.steps', { returnObjects: true }) as string[]).map((step: string, index: number) => (
                   <li key={index}>• {step}</li>
                 ))}
               </ul>
