@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const PrivacyPolicy: React.FC = () => {
+  const { t } = useTranslation();
   const [expandedSections, setExpandedSections] = useState<number[]>([]);
 
   const toggleSection = (sectionId: number) => {
@@ -14,206 +16,206 @@ const PrivacyPolicy: React.FC = () => {
   const sections = [
     {
       id: 1,
-      title: "Veri Sorumlusu ve İletişim",
+      title: t('privacyPolicy.section1Title'),
       content: (
         <div className="space-y-4">
-          <p><strong>Veri Sorumlusu:</strong> Mor Kıvılcım</p>
-          <p><strong>Adres:</strong> Bostancı, İstanbul, Türkiye</p>
-          <p><strong>E-posta:</strong> info@morkivilcim.com</p>
-          <p><strong>Telefon:</strong> 0501 127 25 33</p>
-          <p>Kişisel verilerinizle ilgili talepleriniz için aşağıdaki "Haklarınız ve Başvuru" bölümündeki kanalları kullanabilirsiniz.</p>
+          <p><strong>{t('privacyPolicy.dataController')}:</strong> Mor Kıvılcım</p>
+          <p><strong>{t('privacyPolicy.address')}:</strong> Bostancı, İstanbul, Türkiye</p>
+          <p><strong>{t('privacyPolicy.email')}:</strong> info@morkivilcim.com</p>
+          <p><strong>{t('privacyPolicy.phone')}:</strong> 0501 127 25 33</p>
+          <p>{t('privacyPolicy.section1Text')}</p>
         </div>
       )
     },
     {
       id: 2,
-      title: "Bu Politika Neleri Kapsar?",
+      title: t('privacyPolicy.section2Title'),
       content: (
         <div className="space-y-4">
-          <p>Web sitemiz, iletişim/rezervasyon formlarımız, bülten aboneliği, etkinlik kayıtları, atölye/çalışma başvuruları ve (kullanıyorsanız) mobil uygulama bildirimleri.</p>
-          <p>Sosyal medya hesaplarımıza yönlenen bağlantılar bu politikaya tabi değildir; ilgili platformların kendi politikaları geçerlidir.</p>
+          <p>{t('privacyPolicy.section2Text1')}</p>
+          <p>{t('privacyPolicy.section2Text2')}</p>
         </div>
       )
     },
     {
       id: 3,
-      title: "Topladığımız Veri Kategorileri",
+      title: t('privacyPolicy.section3Title'),
       content: (
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold mb-2">Kimlik ve İletişim:</h4>
-            <p>Ad-soyad, e-posta, telefon.</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.identityContact')}:</h4>
+            <p>{t('privacyPolicy.identityContactDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">İşlem Bilgisi:</h4>
-            <p>Rezervasyon/etkinlik kaydı, ödeme durumu (tutar, tarih; kart bilgileri ödeme sağlayıcıda işlenir).</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.transactionInfo')}:</h4>
+            <p>{t('privacyPolicy.transactionInfoDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">İçerik & Tercihler:</h4>
-            <p>Bülten/mesajlaşma tercihleri, atölye seçimi, randevu saati.</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.contentPreferences')}:</h4>
+            <p>{t('privacyPolicy.contentPreferencesDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">Teknik Veriler:</h4>
-            <p>IP, cihaz/çerez tanımlayıcıları, tarayıcı/OS, sayfa etkileşimi (analitik çerezler açık rızaya bağlıdır).</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.technicalData')}:</h4>
+            <p>{t('privacyPolicy.technicalDataDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">Hassas/Özel Nitelikli Veriler:</h4>
-            <p>Form/mesajlarda paylaşırsanız sağlık/iyilik hâli gibi veriler yalnızca açık rızanızla ve belirtilen amaçla işlenir.</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sensitiveData')}:</h4>
+            <p>{t('privacyPolicy.sensitiveDataDesc')}</p>
           </div>
         </div>
       )
     },
     {
       id: 4,
-      title: "Çerezler ve Benzer Teknolojiler",
+      title: t('privacyPolicy.section4Title'),
       content: (
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold mb-2">Zorunlu çerezler:</h4>
-            <p>Oturum ve güvenlik (kapatılamaz).</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.requiredCookies')}:</h4>
+            <p>{t('privacyPolicy.requiredCookiesDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">Analitik/performans çerezleri:</h4>
-            <p>Siteyi geliştirmek için (yalnızca rızayla).</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.analyticsCookies')}:</h4>
+            <p>{t('privacyPolicy.analyticsCookiesDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">İşlevsel/reklam çerezleri:</h4>
-            <p>Tercihler ve kampanyalar (yalnızca rızayla).</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.functionalCookies')}:</h4>
+            <p>{t('privacyPolicy.functionalCookiesDesc')}</p>
           </div>
-          <p>Tarayıcı ayarlarınızdan çerezleri yönetebilirsiniz. Çerez tercih paneli (varsa) üzerinden dilediğiniz an onayınızı değiştirebilirsiniz.</p>
+          <p>{t('privacyPolicy.cookieManagement')}</p>
           <div>
-            <h4 className="font-semibold mb-2">Örnek çerezler (kullanıyorsanız):</h4>
-            <p>_ga, _ga_* (Google Analytics – 13 ay); _gid (24 saat); __Host-* (oturum/güvenlik).</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.exampleCookies')}:</h4>
+            <p>{t('privacyPolicy.exampleCookiesDesc')}</p>
           </div>
         </div>
       )
     },
     {
       id: 5,
-      title: "İşleme Amaçlarımız",
+      title: t('privacyPolicy.section5Title'),
       content: (
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold mb-2">Hizmet sunumu:</h4>
-            <p>Rezervasyon/etkinlik kaydı, iletişim taleplerine dönüş, dijital içerik sağlama.</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.serviceDelivery')}:</h4>
+            <p>{t('privacyPolicy.serviceDeliveryDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">İşletme süreçleri:</h4>
-            <p>Faturalama, muhasebe, yükümlülüklere uyum.</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.businessProcesses')}:</h4>
+            <p>{t('privacyPolicy.businessProcessesDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">Geliştirme ve güvenlik:</h4>
-            <p>Performans/analiz, hata ayıklama, dolandırıcılık önleme.</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.developmentSecurity')}:</h4>
+            <p>{t('privacyPolicy.developmentSecurityDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">Pazarlama (isteğe bağlı):</h4>
-            <p>Bülten, etkinlik duyurusu, kampanya iletişimi (her zaman vazgeçebilirsiniz).</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.marketing')}:</h4>
+            <p>{t('privacyPolicy.marketingDesc')}</p>
           </div>
         </div>
       )
     },
     {
       id: 6,
-      title: "Hukuki Sebepler (KVKK m.5, m.6)",
+      title: t('privacyPolicy.section6Title'),
       content: (
         <div className="space-y-4">
           <ul className="list-disc list-inside space-y-2">
-            <li>Sözleşmenin kurulması/ifası (örn. rezervasyon işlemleri).</li>
-            <li>Hukuki yükümlülüklerimizin yerine getirilmesi (muhasebe/vergi).</li>
-            <li>Meşru menfaat (güvenlik, dolandırıcılık önleme, temel analitik).</li>
-            <li>Açık rıza (pazarlama iletişimi, analitik çerezler, özel nitelikli veriler).</li>
+            <li>{t('privacyPolicy.legalBasis1')}</li>
+            <li>{t('privacyPolicy.legalBasis2')}</li>
+            <li>{t('privacyPolicy.legalBasis3')}</li>
+            <li>{t('privacyPolicy.legalBasis4')}</li>
           </ul>
-          <p>Açık rıza geri çekilebilir; geri çekme, geçmiş işlemenin hukukiliğini etkilemez.</p>
+          <p>{t('privacyPolicy.consentWithdrawal')}</p>
         </div>
       )
     },
     {
       id: 7,
-      title: "Veri Paylaşımı / Alıcı Grupları",
+      title: t('privacyPolicy.section7Title'),
       content: (
         <div className="space-y-4">
-          <p>Aşağıdaki tedarikçilerle hizmet sağlama amacıyla sınırlı ve gerekli ölçüde veri paylaşabiliriz:</p>
+          <p>{t('privacyPolicy.dataSharingIntro')}</p>
           <ul className="list-disc list-inside space-y-2">
-            <li><strong>Barındırma ve altyapı:</strong> Vercel/Azure</li>
-            <li><strong>E-posta ve bildirim:</strong> SendGrid/FCM</li>
-            <li><strong>Ödeme/Rezervasyon altyapısı:</strong> iyzico/Stripe vb.</li>
-            <li><strong>Analitik ve hata izleme:</strong> Google Analytics/Sentry</li>
-            <li><strong>Hukuk/muhasebe/denetim:</strong> mevzuat yükümlülükleri kapsamında.</li>
+            <li><strong>{t('privacyPolicy.hostingInfrastructure')}:</strong> Vercel/Azure</li>
+            <li><strong>{t('privacyPolicy.emailNotifications')}:</strong> SendGrid/FCM</li>
+            <li><strong>{t('privacyPolicy.paymentReservation')}:</strong> iyzico/Stripe vb.</li>
+            <li><strong>{t('privacyPolicy.analyticsErrorTracking')}:</strong> Google Analytics/Sentry</li>
+            <li><strong>{t('privacyPolicy.legalAccounting')}:</strong> {t('privacyPolicy.legalAccountingDesc')}</li>
           </ul>
-          <p>Bu hizmet sağlayıcılar veri işleyen sıfatıyla sözleşmeyle yükümlülük altına alınır.</p>
+          <p>{t('privacyPolicy.serviceProviders')}</p>
         </div>
       )
     },
     {
       id: 8,
-      title: "Yurt Dışına Aktarım",
+      title: t('privacyPolicy.section8Title'),
       content: (
         <div className="space-y-4">
-          <p>Sunucularımız veya hizmet sağlayıcılarımız Türkiye dışında olabilir. Bu durumda aktarım KVKK m.9 kapsamında Kurul kararları, yeterlilik kararı veya taahhütname/özel hükümler ile gerçekleştirilir. Ayrıntı talep ederseniz size yazılı bilgi sunarız.</p>
+          <p>{t('privacyPolicy.internationalTransfer')}</p>
         </div>
       )
     },
     {
       id: 9,
-      title: "Saklama Süreleri",
+      title: t('privacyPolicy.section9Title'),
       content: (
         <div className="space-y-4">
           <ul className="list-disc list-inside space-y-2">
-            <li><strong>Sözleşmesel/işlem verileri:</strong> ilgili mevzuat süreleri (örn. ticari defter/vergi yükümlülükleri).</li>
-            <li><strong>İletişim/bülten verileri:</strong> üyelik/abonelik süresi + 2 yıl.</li>
-            <li><strong>Analitik/çerez verileri:</strong> çerez yaşam süresi kadar (rızaya bağlı).</li>
+            <li><strong>{t('privacyPolicy.contractualData')}:</strong> {t('privacyPolicy.contractualDataDesc')}</li>
+            <li><strong>{t('privacyPolicy.communicationNewsletter')}:</strong> {t('privacyPolicy.communicationNewsletterDesc')}</li>
+            <li><strong>{t('privacyPolicy.analyticsCookieData')}:</strong> {t('privacyPolicy.analyticsCookieDataDesc')}</li>
           </ul>
-          <p>Süre dolduğunda veriler silinir, anonimleştirilir veya imha edilir.</p>
+          <p>{t('privacyPolicy.dataRetentionEnd')}</p>
         </div>
       )
     },
     {
       id: 10,
-      title: "Güvenlik",
+      title: t('privacyPolicy.section10Title'),
       content: (
         <div className="space-y-4">
-          <p>Uygun idari ve teknik tedbirler (erişim kontrolü, şifreleme, en az veri ilkesi, loglama) uygularız. İnternet üzerinden hiçbir aktarımın %100 güvenli olmadığını hatırlatırız.</p>
+          <p>{t('privacyPolicy.security')}</p>
         </div>
       )
     },
     {
       id: 11,
-      title: "Haklarınız ve Başvuru (KVKK m.11)",
+      title: t('privacyPolicy.section11Title'),
       content: (
         <div className="space-y-4">
-          <p>Şunları talep edebilirsiniz:</p>
+          <p>{t('privacyPolicy.rightsIntro')}</p>
           <ul className="list-disc list-inside space-y-2">
-            <li>İşlenip işlenmediğini öğrenme ve bilgi talebi,</li>
-            <li>Amacına uygun kullanılıp kullanılmadığını ve aktarım yapılan tarafları öğrenme,</li>
-            <li>Eksik/yanlış ise düzeltilmesini isteme,</li>
-            <li>KVKK ve ilgili mevzuata göre silme/unutulma talebi,</li>
-            <li>Otomatik işleme sonucu aleyhinize bir sonucun ortaya çıkmasına itiraz,</li>
-            <li>Açık rızayı geri çekme; pazarlama iletilerini reddetme.</li>
+            <li>{t('privacyPolicy.right1')}</li>
+            <li>{t('privacyPolicy.right2')}</li>
+            <li>{t('privacyPolicy.right3')}</li>
+            <li>{t('privacyPolicy.right4')}</li>
+            <li>{t('privacyPolicy.right5')}</li>
+            <li>{t('privacyPolicy.right6')}</li>
           </ul>
           <div>
-            <h4 className="font-semibold mb-2">Başvuru kanalları:</h4>
-            <p><strong>E-posta:</strong> info@morkivilcim.com (konu satırı: KVKK Başvuru)</p>
-            <p><strong>Posta:</strong> Bostancı, İstanbul, Türkiye</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.applicationChannels')}:</h4>
+            <p><strong>{t('privacyPolicy.email')}:</strong> info@morkivilcim.com ({t('privacyPolicy.emailSubject')})</p>
+            <p><strong>{t('privacyPolicy.mail')}:</strong> Bostancı, İstanbul, Türkiye</p>
           </div>
-          <p>Başvurularınızı mevzuattaki süreler içinde yanıtlarız. Olumsuz yanıt almanız hâlinde KVKK Kurumu'na şikâyet hakkınız saklıdır.</p>
+          <p>{t('privacyPolicy.responseTime')}</p>
         </div>
       )
     },
     {
       id: 12,
-      title: "Çocukların Verileri",
+      title: t('privacyPolicy.section12Title'),
       content: (
         <div className="space-y-4">
-          <p>Hizmetlerimiz yetişkinlere yöneliktir. 18 yaş altı kullanıcıların verileri, veli/vasi onayı olmaksızın bilerek işlenmez.</p>
+          <p>{t('privacyPolicy.childrenData')}</p>
         </div>
       )
     },
     {
       id: 13,
-      title: "Değişiklikler",
+      title: t('privacyPolicy.section13Title'),
       content: (
         <div className="space-y-4">
-          <p>Bu politika güncellenebilir. En güncel sürümü her zaman bu sayfada bulabilirsiniz. Önemli değişikliklerde bildirim yaparız.</p>
+          <p>{t('privacyPolicy.changes')}</p>
         </div>
       )
     }
@@ -225,12 +227,12 @@ const PrivacyPolicy: React.FC = () => {
       <section className="bg-gradient-to-r from-mor-600 to-mor-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Gizlilik Politikası</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('privacyPolicy.title')}</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Kişisel verilerinizin korunması bizim için önemlidir.
+              {t('privacyPolicy.subtitle')}
             </p>
             <p className="text-lg mt-4 opacity-90">
-              Son güncelleme: 29 Eylül 2025
+              {t('privacyPolicy.lastUpdated')}
             </p>
           </div>
         </div>
@@ -242,18 +244,18 @@ const PrivacyPolicy: React.FC = () => {
           {/* Introduction */}
           <div className="mb-12">
             <p className="text-lg text-gray-700 leading-relaxed">
-              Bu Gizlilik Politikası, Mor Kıvılcım ("Biz") tarafından işletilen web sitemizi ve çevrimiçi hizmetlerimizi kullandığınızda kişisel verilerinizin nasıl toplandığını, kullanıldığını, saklandığını ve korunduğunu açıklar. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili mevzuata uyarız. AB/AEA'dan erişen kullanıcılar için GDPR ilkeleri de gözetilir.
+              {t('privacyPolicy.introduction')}
             </p>
           </div>
 
           {/* Quick Summary */}
           <div className="bg-mor-50 border border-mor-200 rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Kısa Özet</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('privacyPolicy.quickSummary')}</h2>
             <ul className="space-y-2 text-gray-700">
-              <li>• Zorunlu çerezler olmadan site çalışmaz; analitik/pazarlama çerezleri rızaya bağlıdır.</li>
-              <li>• Rezervasyon ve iletişim için temel verileri alır, sadece hizmeti sağlamak için kullanırız.</li>
-              <li>• Pazarlama mesajlarını dilediğiniz an iptal edebilirsiniz.</li>
-              <li>• KVKK kapsamındaki haklarınız için info@morkivilcim.com adresine yazın.</li>
+              <li>• {t('privacyPolicy.summary1')}</li>
+              <li>• {t('privacyPolicy.summary2')}</li>
+              <li>• {t('privacyPolicy.summary3')}</li>
+              <li>• {t('privacyPolicy.summary4')}</li>
             </ul>
           </div>
 
@@ -292,13 +294,13 @@ const PrivacyPolicy: React.FC = () => {
 
           {/* Contact Info */}
           <div className="mt-12 bg-gray-50 rounded-lg p-6">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">İletişim</h3>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">{t('privacyPolicy.contact')}</h3>
             <p className="text-gray-700 mb-2">
-              Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz:
+              {t('privacyPolicy.contactText')}
             </p>
             <p className="text-gray-700">
-              <strong>E-posta:</strong> info@morkivilcim.com<br />
-              <strong>Telefon:</strong> 0501 127 25 33
+              <strong>{t('privacyPolicy.email')}:</strong> info@morkivilcim.com<br />
+              <strong>{t('privacyPolicy.phone')}:</strong> 0501 127 25 33
             </p>
           </div>
         </div>

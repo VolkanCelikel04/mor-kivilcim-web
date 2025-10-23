@@ -792,6 +792,194 @@
     "timer": "Timer",
     "progress": "Fortschritt"
   },
+  "dailyPositive": {
+    "title": "DailyPositive",
+    "subtitle": "Kontoverwaltung und Vorgänge",
+    "about": "Über DailyPositive",
+    "aboutDescription": "DailyPositive schützt die Daten unserer Nutzer mit höchsten Sicherheitsstandards. Sie können alle kontobezogenen Vorgänge von dieser Seite aus verwalten.",
+    "aboutDescription2": "Wenn Sie Fragen haben, zögern Sie bitte nicht, unser Support-Team zu kontaktieren.",
+    "accountOperations": "Kontovorgänge",
+    "accountOperationsDesc": "Erstellen Sie Kontolöschungsanfragen und verwalten Sie Ihre Daten",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "privacyPolicyDesc": "Erfahren Sie, wie Ihre Daten geschützt werden",
+    "support": "Support",
+    "supportDesc": "Kontaktieren Sie uns für Ihre Fragen"
+  },
+  "accountDeletion": {
+    "title": "Kontovorgänge",
+    "subtitle": "DailyPositive - Kontolöschungsanfrage",
+    "requestReceived": "Ihre Anfrage wurde erhalten",
+    "requestReceivedDesc": "Ihre Kontolöschungsanfrage wurde erhalten",
+    "requestReceivedText": "Ihre Anfrage wurde an {email} gesendet. Sie wird so schnell wie möglich bearbeitet.",
+    "processingTime": "Bearbeitungszeit: 7-14 Werktage",
+    "importantWarning": "Wichtige Warnung",
+    "warningText": "Wenn Sie Ihr Konto löschen, werden alle Ihre Daten dauerhaft gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.",
+    "deletionProcess": "Kontolöschungsprozess",
+    "step1": "Anfrage erstellen",
+    "step1Desc": "Füllen Sie das untenstehende Formular aus und senden Sie Ihre Anfrage.",
+    "step2": "Überprüfung",
+    "step2Desc": "Ihre Anfrage wird von unserem Support-Team überprüft (3-5 Werktage).",
+    "step3": "Bestätigungs-E-Mail",
+    "step3Desc": "Ein Bestätigungslink wird an Ihre E-Mail-Adresse gesendet.",
+    "step4": "Kontolöschung",
+    "step4Desc": "Nach der Bestätigung werden Ihr Konto und Ihre Daten innerhalb von 7-14 Werktagen gelöscht.",
+    "deletedData": "Zu löschende Daten",
+    "permanentlyDeleted": "Dauerhaft gelöscht:",
+    "permanentlyDeletedItems": [
+      "Benutzerprofilinformationen",
+      "In-App-Inhalte und Aufzeichnungen",
+      "Einstellungen und Präferenzen",
+      "Tägliche und Aktivitätshistorie",
+      "Kontaktinformationen"
+    ],
+    "legalRetention": "Gesetzliche Aufbewahrungspflichten:",
+    "legalRetentionItems": [
+      "Zahlungsaufzeichnungen (10 Jahre aufgrund der Steuergesetzgebung)",
+      "Handelsaufzeichnungen (gesetzliche Verpflichtungen)",
+      "Sicherheitsprotokolle (30 Tage)"
+    ],
+    "legalRetentionNote": "Diese Daten werden am Ende der gesetzlichen Aufbewahrungsfristen automatisch gelöscht.",
+    "createRequest": "Kontolöschungsanfrage erstellen",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "konto@beispiel.com",
+    "emailHelp": "Geben Sie die in Ihrem DailyPositive-Konto registrierte E-Mail-Adresse ein.",
+    "reason": "Löschungsgrund (Optional)",
+    "reasonPlaceholder": "Sie können angeben, warum Sie Ihr Konto löschen möchten (nicht erforderlich)",
+    "confirmation": "Ich verstehe und bestätige, dass mein Konto und alle meine Daten dauerhaft gelöscht werden und diese Aktion nicht rückgängig gemacht werden kann.",
+    "note": "Hinweis:",
+    "noteText": "Nach dem Senden Ihrer Anfrage wird ein Bestätigungslink an Ihre E-Mail-Adresse gesendet. Sie müssen auf diesen Link klicken, um den Vorgang abzuschließen.",
+    "submitRequest": "Kontolöschungsanfrage senden",
+    "needHelp": "Brauchen Sie Hilfe?",
+    "needHelpText": "Wenn Sie Fragen zum Kontolöschungsprozess haben, kontaktieren Sie bitte unser Support-Team.",
+    "contactUs": "Kontaktieren Sie uns"
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzrichtlinie",
+    "subtitle": "Der Schutz Ihrer persönlichen Daten ist uns wichtig.",
+    "lastUpdated": "Letzte Aktualisierung: 29. September 2025",
+    "introduction": "Diese Datenschutzrichtlinie erklärt, wie Ihre persönlichen Daten gesammelt, verwendet, gespeichert und geschützt werden, wenn Sie unsere von Purple Spark (\"Wir\") betriebene Website und Online-Dienste nutzen. Wir halten uns an das Gesetz zum Schutz personenbezogener Daten Nr. 6698 (KVKK) und verwandte Gesetze. Für Nutzer aus der EU/EWR werden auch GDPR-Prinzipien beachtet.",
+    "quickSummary": "Kurze Zusammenfassung",
+    "summaryItems": [
+      "Die Website funktioniert nicht ohne obligatorische Cookies; analytische/Marketing-Cookies erfordern Zustimmung.",
+      "Wir sammeln grundlegende Daten für Reservierungen und Kommunikation und verwenden sie nur zur Bereitstellung des Dienstes.",
+      "Sie können Marketing-Nachrichten jederzeit abbestellen.",
+      "Schreiben Sie an info@morkivilcim.com für Ihre Rechte unter KVKK."
+    ],
+    "contact": "Kontakt",
+    "contactText": "Sie können uns für Fragen zu unserer Datenschutzrichtlinie kontaktieren:",
+    "sections": {
+      "dataController": "Datenverantwortlicher und Kontakt",
+      "dataControllerContent": {
+        "dataController": "Datenverantwortlicher:",
+        "dataControllerValue": "Purple Spark",
+        "address": "Adresse:",
+        "addressValue": "Bostancı, Istanbul, Türkei",
+        "email": "E-Mail:",
+        "emailValue": "info@morkivilcim.com",
+        "phone": "Telefon:",
+        "phoneValue": "0501 127 25 33",
+        "rightsText": "Sie können die Kanäle im Abschnitt \"Ihre Rechte und Antrag\" unten für Ihre Anfragen bezüglich Ihrer persönlichen Daten verwenden."
+      },
+      "policyScope": "Was deckt diese Richtlinie ab?",
+      "policyScopeContent": {
+        "covered": "Unsere Website, Kommunikations-/Reservierungsformulare, Newsletter-Abonnement, Veranstaltungsregistrierungen, Workshop-/Studienanwendungen und (falls Sie sie nutzen) mobile App-Benachrichtigungen.",
+        "notCovered": "Links zu unseren Social-Media-Konten unterliegen nicht dieser Richtlinie; die eigenen Richtlinien der relevanten Plattformen gelten."
+      },
+      "dataCategories": "Datenkategorien, die wir sammeln",
+      "dataCategoriesContent": {
+        "identity": "Identität und Kontakt:",
+        "identityDesc": "Name-Nachname, E-Mail, Telefon.",
+        "transaction": "Transaktionsinformationen:",
+        "transactionDesc": "Reservierungs-/Veranstaltungsregistrierung, Zahlungsstatus (Betrag, Datum; Kartendaten werden vom Zahlungsanbieter verarbeitet).",
+        "content": "Inhalt & Präferenzen:",
+        "contentDesc": "Newsletter-/Messaging-Präferenzen, Workshop-Auswahl, Terminzeit.",
+        "technical": "Technische Daten:",
+        "technicalDesc": "IP, Geräte-/Cookie-Identifikatoren, Browser/OS, Seiteninteraktion (analytische Cookies erfordern ausdrückliche Zustimmung).",
+        "sensitive": "Sensible/Besondere Kategorien von Daten:",
+        "sensitiveDesc": "Wenn Sie Gesundheits-/Wohlbefindensdaten in Formularen/Nachrichten teilen, werden sie nur mit Ihrer ausdrücklichen Zustimmung und für den angegebenen Zweck verarbeitet."
+      },
+      "cookies": "Cookies und ähnliche Technologien",
+      "cookiesContent": {
+        "mandatory": "Obligatorische Cookies:",
+        "mandatoryDesc": "Sitzung und Sicherheit (können nicht deaktiviert werden).",
+        "analytical": "Analytische/Leistungs-Cookies:",
+        "analyticalDesc": "Zur Verbesserung der Website (nur mit Zustimmung).",
+        "functional": "Funktionale/Werbungs-Cookies:",
+        "functionalDesc": "Präferenzen und Kampagnen (nur mit Zustimmung).",
+        "management": "Sie können Cookies über Ihre Browser-Einstellungen verwalten. Sie können Ihre Zustimmung jederzeit über das Cookie-Präferenzpanel ändern (falls verfügbar).",
+        "examples": "Beispiel-Cookies (falls verwendet):",
+        "examplesDesc": "_ga, _ga_* (Google Analytics – 13 Monate); _gid (24 Stunden); __Host-* (Sitzung/Sicherheit)."
+      },
+      "processingPurposes": "Unsere Verarbeitungszwecke",
+      "processingPurposesContent": {
+        "service": "Dienstleistungserbringung:",
+        "serviceDesc": "Reservierungs-/Veranstaltungsregistrierung, Beantwortung von Kommunikationsanfragen, Bereitstellung digitaler Inhalte.",
+        "business": "Geschäftsprozesse:",
+        "businessDesc": "Abrechnung, Buchhaltung, Einhaltung von Verpflichtungen.",
+        "development": "Entwicklung und Sicherheit:",
+        "developmentDesc": "Leistung/Analyse, Fehlerbehebung, Betrugsprävention.",
+        "marketing": "Marketing (optional):",
+        "marketingDesc": "Newsletter, Veranstaltungsankündigungen, Kampagnenkommunikation (Sie können sich jederzeit abmelden)."
+      },
+      "legalBasis": "Rechtsgrundlage (KVKK Art.5, Art.6)",
+      "legalBasisContent": {
+        "items": [
+          "Begründung/Erfüllung des Vertrags (z.B. Reservierungstransaktionen).",
+          "Erfüllung unserer rechtlichen Verpflichtungen (Buchhaltung/Steuern).",
+          "Berechtigtes Interesse (Sicherheit, Betrugsprävention, grundlegende Analytik).",
+          "Ausdrückliche Zustimmung (Marketing-Kommunikation, analytische Cookies, besondere Kategorien von Daten)."
+        ],
+        "consentNote": "Ausdrückliche Zustimmung kann widerrufen werden; Widerruf beeinflusst nicht die Rechtmäßigkeit der vergangenen Verarbeitung."
+      },
+      "dataSharing": "Datenaustausch / Empfängergruppen",
+      "dataSharingContent": {
+        "intro": "Wir können Daten mit den folgenden Anbietern in begrenztem und notwendigem Umfang für die Dienstleistungserbringung teilen:",
+        "items": [
+          "Hosting und Infrastruktur: Vercel/Azure",
+          "E-Mail und Benachrichtigungen: SendGrid/FCM",
+          "Zahlungs-/Reservierungsinfrastruktur: iyzico/Stripe usw.",
+          "Analytik und Fehlerüberwachung: Google Analytics/Sentry",
+          "Recht/Buchhaltung/Prüfung: im Rahmen gesetzlicher Verpflichtungen."
+        ],
+        "note": "Diese Dienstleister werden vertraglich als Datenverarbeiter verpflichtet."
+      },
+      "internationalTransfer": "Internationale Übertragung",
+      "internationalTransferContent": "Unsere Server oder Dienstleister können außerhalb der Türkei sein. In diesem Fall erfolgt die Übertragung gemäß KVKK Art.9 im Rahmen von Kuratoriumsbeschlüssen, Angemessenheitsbeschlüssen oder Verpflichtungen/spezielle Bestimmungen. Wir stellen Ihnen schriftliche Informationen zur Verfügung, wenn Sie Details anfordern.",
+      "retentionPeriods": "Aufbewahrungsfristen",
+      "retentionPeriodsContent": {
+        "items": [
+          "Vertragliche/Transaktionsdaten: relevante Gesetzesfristen (z.B. Handelsbuchhaltung/Steuerverpflichtungen).",
+          "Kommunikations-/Newsletter-Daten: Mitgliedschafts-/Abonnementdauer + 2 Jahre.",
+          "Analytische/Cookie-Daten: so lange wie Cookie-Lebensdauer (zustimmungsbasiert)."
+        ],
+        "note": "Wenn die Frist abläuft, werden Daten gelöscht, anonymisiert oder vernichtet."
+      },
+      "security": "Sicherheit",
+      "securityContent": "Wir implementieren angemessene administrative und technische Maßnahmen (Zugangskontrolle, Verschlüsselung, Datenminimierungsprinzip, Protokollierung). Wir erinnern Sie daran, dass keine Übertragung über das Internet 100% sicher ist.",
+      "rights": "Ihre Rechte und Antrag (KVKK Art.11)",
+      "rightsContent": {
+        "intro": "Sie können anfordern:",
+        "items": [
+          "Erfahren, ob es verarbeitet wird und Informationsanfrage,",
+          "Erfahren, ob es für seinen Zweck verwendet wird und die Parteien, an die es übertragen wird,",
+          "Korrektur anfordern, wenn unvollständig/falsch,",
+          "Löschung/Vergessen unter KVKK und verwandten Gesetzen anfordern,",
+          "Einspruch gegen ein gegen Sie gerichtetes Ergebnis aus automatischer Verarbeitung,",
+          "Widerruf der ausdrücklichen Zustimmung; Ablehnung von Marketing-Nachrichten."
+        ],
+        "channels": "Antragskanäle:",
+        "email": "E-Mail:",
+        "emailValue": "info@morkivilcim.com (Betreff: KVKK-Antrag)",
+        "mail": "Post:",
+        "mailValue": "Bostancı, Istanbul, Türkei",
+        "response": "Wir antworten auf Ihre Anträge innerhalb der in der Gesetzgebung festgelegten Fristen. Wenn Sie eine negative Antwort erhalten, bleibt Ihr Recht zur Beschwerde bei der KVKK-Behörde vorbehalten."
+      },
+      "childrenData": "Daten von Kindern",
+      "childrenDataContent": "Unsere Dienste richten sich an Erwachsene. Daten von Nutzern unter 18 Jahren werden nicht wissentlich ohne Einverständnis der Eltern/Erziehungsberechtigten verarbeitet.",
+      "changes": "Änderungen",
+      "changesContent": "Diese Richtlinie kann aktualisiert werden. Sie können die neueste Version immer auf dieser Seite finden. Wir werden Sie über wichtige Änderungen informieren."
+    }
+  },
   "common": {
     "loading": "Wird geladen...",
     "error": "Ein Fehler ist aufgetreten",
@@ -801,6 +989,110 @@
     "next": "Weiter",
     "previous": "Vorherige",
     "readMore": "Weiterlesen",
-    "learnMore": "Mehr erfahren"
+    "learnMore": "Mehr erfahren",
+    "step": "Schritt"
+  },
+  "spiritualJourney": {
+    "title": "Spirituelle Reise",
+    "subtitle": "Sind Sie bereit für eine transformative Reise, die Sie durch jede Phase Ihrer spirituellen Entwicklung führen wird?",
+    "growth": "Wachstum",
+    "transformation": "Transformation",
+    "enlightenment": "Erleuchtung",
+    "practices": "Praktiken",
+    "journeySteps": {
+      "title": "Reiseschritte",
+      "subtitle": "Jeder Schritt wird eine neue Tür in Ihrer spirituellen Entwicklung öffnen",
+      "step1": {
+        "title": "Bewusstsein",
+        "description": "Beginnen Sie, Ihre innere Welt zu erkunden, beobachten Sie Ihre Emotionen und Gedanken.",
+        "practices": ["Tägliche Meditation", "Achtsames Atmen", "Emotionen verfolgen", "Gedanken beobachten"]
+      },
+      "step2": {
+        "title": "Reinigung",
+        "description": "Reinigen Sie Ihr Energiefeld, lösen Sie Blockaden aus der Vergangenheit.",
+        "practices": ["Energiereinigung", "Aura-Reinigung", "Kristallheilung", "Ritualbäder"]
+      },
+      "step3": {
+        "title": "Ausgleich",
+        "description": "Balancieren Sie Ihr Chakra-System, optimieren Sie den Energiefluss.",
+        "practices": ["Chakra-Meditation", "Kristall-Ausgleich", "Reiki-Sitzungen", "Energiearbeit"]
+      },
+      "step4": {
+        "title": "Stärkung",
+        "description": "Erhöhen Sie Ihre spirituelle Kraft, stärken Sie Ihr Schutzfeld.",
+        "practices": ["Energieschutz", "Aura-Stärkung", "Spiritueller Schild", "Positive Energie"]
+      },
+      "step5": {
+        "title": "Verbindung",
+        "description": "Verbinden Sie sich mit universellen Energien, empfangen Sie Führung.",
+        "practices": ["Spirituelle Führung", "Meditation", "Naturverbindung", "Kosmische Energie"]
+      },
+      "step6": {
+        "title": "Erleuchtung",
+        "description": "Entdecken Sie Ihr inneres Licht, offenbaren Sie Ihr spirituelles Potenzial.",
+        "practices": ["Innere Erkundung", "Spirituelle Entwicklung", "Kreativität", "Intuitive Kraft"]
+      }
+    },
+    "chakras": {
+      "title": "Chakra-System",
+      "subtitle": "Lernen Sie Ihre Energiezentren kennen und balancieren Sie sie",
+      "root": {
+        "name": "Wurzel-Chakra",
+        "location": "Wirbelsäulenbasis",
+        "element": "Erde"
+      },
+      "sacral": {
+        "name": "Sakral-Chakra",
+        "location": "Unterbauch",
+        "element": "Wasser"
+      },
+      "solarPlexus": {
+        "name": "Solarplexus",
+        "location": "Oberbauch",
+        "element": "Feuer"
+      },
+      "heart": {
+        "name": "Herz-Chakra",
+        "location": "Brust",
+        "element": "Luft"
+      },
+      "throat": {
+        "name": "Hals-Chakra",
+        "location": "Hals",
+        "element": "Äther"
+      },
+      "thirdEye": {
+        "name": "Drittes Auge",
+        "location": "Stirn",
+        "element": "Licht"
+      },
+      "crown": {
+        "name": "Kronen-Chakra",
+        "location": "Scheitel",
+        "element": "Gedanke"
+      }
+    },
+    "meditation": {
+      "title": "Anfänger-Meditation",
+      "subtitle": "Ein einfacher Meditationsleitfaden, um Ihre spirituelle Reise zu beginnen",
+      "preparation": {
+        "title": "Vorbereitung",
+        "steps": ["Nehmen Sie eine bequeme Position ein", "Schließen Sie Ihre Augen", "Atmen Sie tief ein", "Leeren Sie Ihren Geist"]
+      },
+      "breathing": {
+        "title": "Atmung",
+        "steps": ["4 Sekunden einatmen", "4 Sekunden halten", "4 Sekunden ausatmen", "Den Rhythmus beibehalten"]
+      },
+      "awareness": {
+        "title": "Bewusstsein",
+        "steps": ["Beobachten Sie Ihre Emotionen", "Lassen Sie Gedanken los", "Spüren Sie inneren Frieden", "Genießen Sie den Moment"]
+      },
+      "downloadGuide": "Meditationsleitfaden herunterladen"
+    },
+    "cta": {
+      "title": "Beginnen Sie Ihre Reise",
+      "subtitle": "Wir sind hier, um Sie in Ihrer spirituellen Entwicklung zu führen. Lassen Sie uns den ersten Schritt zusammen machen.",
+      "getPersonalGuidance": "Persönliche Führung erhalten"
+    }
   }
 }

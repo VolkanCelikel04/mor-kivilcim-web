@@ -7,62 +7,62 @@ const SpiritualJourney: React.FC = () => {
   const journeySteps = [
     {
       step: 1,
-      title: 'Farkındalık',
+      title: t('spiritualJourney.journeySteps.step1.title'),
       icon: '🌱',
-      description: 'İç dünyanızı keşfetmeye başlayın, duygularınızı ve düşüncelerinizi gözlemleyin.',
-      practices: ['Günlük meditasyon', 'Mindful nefes alma', 'Duygu takibi', 'Düşünce gözlemi'],
+      description: t('spiritualJourney.journeySteps.step1.description'),
+      practices: t('spiritualJourney.journeySteps.step1.practices', { returnObjects: true }) as string[],
       color: 'from-green-400 to-emerald-500'
     },
     {
       step: 2,
-      title: 'Temizlik',
+      title: t('spiritualJourney.journeySteps.step2.title'),
       icon: '🧹',
-      description: 'Enerji alanınızı temizleyin, geçmişten gelen blokajları çözün.',
-      practices: ['Enerji temizliği', 'Aura temizleme', 'Kristal şifa', 'Ritüel banyolar'],
+      description: t('spiritualJourney.journeySteps.step2.description'),
+      practices: t('spiritualJourney.journeySteps.step2.practices', { returnObjects: true }) as string[],
       color: 'from-blue-400 to-cyan-500'
     },
     {
       step: 3,
-      title: 'Dengeleme',
+      title: t('spiritualJourney.journeySteps.step3.title'),
       icon: '⚖️',
-      description: 'Chakra sisteminizi dengeleyin, enerji akışını optimize edin.',
-      practices: ['Chakra meditasyonu', 'Kristal dengeleme', 'Reiki seansları', 'Enerji çalışması'],
+      description: t('spiritualJourney.journeySteps.step3.description'),
+      practices: t('spiritualJourney.journeySteps.step3.practices', { returnObjects: true }) as string[],
       color: 'from-purple-400 to-violet-500'
     },
     {
       step: 4,
-      title: 'Güçlendirme',
+      title: t('spiritualJourney.journeySteps.step4.title'),
       icon: '💪',
-      description: 'Ruhsal gücünüzü artırın, koruma alanınızı güçlendirin.',
-      practices: ['Enerji koruması', 'Aura güçlendirme', 'Ruhsal kalkan', 'Pozitif enerji'],
+      description: t('spiritualJourney.journeySteps.step4.description'),
+      practices: t('spiritualJourney.journeySteps.step4.practices', { returnObjects: true }) as string[],
       color: 'from-orange-400 to-red-500'
     },
     {
       step: 5,
-      title: 'Bağlantı',
+      title: t('spiritualJourney.journeySteps.step5.title'),
       icon: '🌟',
-      description: 'Evrensel enerjilerle bağlantı kurun, rehberlik alın.',
-      practices: ['Spiritüel rehberlik', 'Meditasyon', 'Doğa bağlantısı', 'Kozmik enerji'],
+      description: t('spiritualJourney.journeySteps.step5.description'),
+      practices: t('spiritualJourney.journeySteps.step5.practices', { returnObjects: true }) as string[],
       color: 'from-yellow-400 to-amber-500'
     },
     {
       step: 6,
-      title: 'Aydınlanma',
+      title: t('spiritualJourney.journeySteps.step6.title'),
       icon: '✨',
-      description: 'İç ışığınızı keşfedin, ruhsal potansiyelinizi açığa çıkarın.',
-      practices: ['İç keşif', 'Ruhsal gelişim', 'Yaratıcılık', 'Sezgisel güç'],
+      description: t('spiritualJourney.journeySteps.step6.description'),
+      practices: t('spiritualJourney.journeySteps.step6.practices', { returnObjects: true }) as string[],
       color: 'from-indigo-400 to-purple-500'
     }
   ];
 
   const chakras = [
-    { name: 'Kök Chakra', color: 'bg-red-500', location: 'Omurga tabanı', element: 'Toprak', emoji: '🔴' },
-    { name: 'Sakral Chakra', color: 'bg-orange-500', location: 'Alt karın', element: 'Su', emoji: '🟠' },
-    { name: 'Solar Plexus', color: 'bg-yellow-500', location: 'Üst karın', element: 'Ateş', emoji: '🟡' },
-    { name: 'Kalp Chakra', color: 'bg-green-500', location: 'Göğüs', element: 'Hava', emoji: '🟢' },
-    { name: 'Boğaz Chakra', color: 'bg-blue-500', location: 'Boğaz', element: 'Eter', emoji: '🔵' },
-    { name: 'Üçüncü Göz', color: 'bg-indigo-500', location: 'Alın', element: 'Işık', emoji: '🟣' },
-    { name: 'Taç Chakra', color: 'bg-purple-500', location: 'Tepe', element: 'Düşünce', emoji: '⚪' }
+    { name: t('spiritualJourney.chakras.root.name'), color: 'bg-red-500', location: t('spiritualJourney.chakras.root.location'), element: t('spiritualJourney.chakras.root.element'), emoji: '🔴' },
+    { name: t('spiritualJourney.chakras.sacral.name'), color: 'bg-orange-500', location: t('spiritualJourney.chakras.sacral.location'), element: t('spiritualJourney.chakras.sacral.element'), emoji: '🟠' },
+    { name: t('spiritualJourney.chakras.solarPlexus.name'), color: 'bg-yellow-500', location: t('spiritualJourney.chakras.solarPlexus.location'), element: t('spiritualJourney.chakras.solarPlexus.element'), emoji: '🟡' },
+    { name: t('spiritualJourney.chakras.heart.name'), color: 'bg-green-500', location: t('spiritualJourney.chakras.heart.location'), element: t('spiritualJourney.chakras.heart.element'), emoji: '🟢' },
+    { name: t('spiritualJourney.chakras.throat.name'), color: 'bg-blue-500', location: t('spiritualJourney.chakras.throat.location'), element: t('spiritualJourney.chakras.throat.element'), emoji: '🔵' },
+    { name: t('spiritualJourney.chakras.thirdEye.name'), color: 'bg-indigo-500', location: t('spiritualJourney.chakras.thirdEye.location'), element: t('spiritualJourney.chakras.thirdEye.element'), emoji: '🟣' },
+    { name: t('spiritualJourney.chakras.crown.name'), color: 'bg-purple-500', location: t('spiritualJourney.chakras.crown.location'), element: t('spiritualJourney.chakras.crown.element'), emoji: '⚪' }
   ];
 
   return (
@@ -73,24 +73,23 @@ const SpiritualJourney: React.FC = () => {
           <div className="text-center">
             <div className="flex items-center justify-center mb-6">
               <span className="text-5xl mr-4">🦋</span>
-              <h1 className="text-4xl md:text-6xl font-bold">Spiritüel Yolculuk</h1>
+              <h1 className="text-4xl md:text-6xl font-bold">{t('spiritualJourney.title')}</h1>
             </div>
             <p className="text-xl md:text-2xl max-w-4xl mx-auto mb-8">
-              Ruhsal gelişiminizin her aşamasında size rehberlik edecek, 
-              dönüştürücü bir yolculuğa hazır mısınız?
+              {t('spiritualJourney.subtitle')}
             </p>
             <div className="flex justify-center space-x-8 text-lg">
               <div className="flex items-center">
                 <span className="text-2xl mr-2">🌱</span>
-                <span>Büyüme</span>
+                <span>{t('spiritualJourney.growth')}</span>
               </div>
               <div className="flex items-center">
                 <span className="text-2xl mr-2">🔄</span>
-                <span>Dönüşüm</span>
+                <span>{t('spiritualJourney.transformation')}</span>
               </div>
               <div className="flex items-center">
                 <span className="text-2xl mr-2">✨</span>
-                <span>Aydınlanma</span>
+                <span>{t('spiritualJourney.enlightenment')}</span>
               </div>
             </div>
           </div>
@@ -102,10 +101,10 @@ const SpiritualJourney: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Yolculuk Aşamaları
+              {t('spiritualJourney.journeySteps.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Her adım, ruhsal gelişiminizde yeni bir kapı açacak
+              {t('spiritualJourney.journeySteps.subtitle')}
             </p>
           </div>
 
@@ -120,7 +119,7 @@ const SpiritualJourney: React.FC = () => {
                   <div className="flex-1 bg-white rounded-3xl p-8 shadow-xl">
                     <div className="flex items-center mb-4">
                       <span className="bg-mor-100 text-mor-600 px-4 py-2 rounded-full font-bold text-lg mr-4">
-                        Adım {step.step}
+                        {t('common.step')} {step.step}
                       </span>
                       <h3 className="text-3xl font-bold text-gray-900">
                         {step.title}
@@ -134,7 +133,7 @@ const SpiritualJourney: React.FC = () => {
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
                         <span className="text-mor-500 mr-2">✨</span>
-                        Pratikler:
+                        {t('spiritualJourney.practices')}:
                       </h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {step.practices.map((practice, practiceIndex) => (
@@ -165,10 +164,10 @@ const SpiritualJourney: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Chakra Sistemi
+              {t('spiritualJourney.chakras.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Enerji merkezlerinizi tanıyın ve dengeleyin
+              {t('spiritualJourney.chakras.subtitle')}
             </p>
           </div>
 
@@ -200,10 +199,10 @@ const SpiritualJourney: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              Başlangıç Meditasyonu
+              {t('spiritualJourney.meditation.title')}
             </h2>
             <p className="text-xl max-w-3xl mx-auto opacity-90">
-              Spiritüel yolculuğunuza başlamak için basit bir meditasyon rehberi
+              {t('spiritualJourney.meditation.subtitle')}
             </p>
           </div>
 
@@ -211,46 +210,43 @@ const SpiritualJourney: React.FC = () => {
             <div className="bg-white bg-opacity-10 rounded-2xl p-8 backdrop-blur-sm">
               <div className="text-center mb-6">
                 <span className="text-4xl mb-4 block">🧘‍♀️</span>
-                <h3 className="text-2xl font-bold mb-2">Hazırlık</h3>
+                <h3 className="text-2xl font-bold mb-2">{t('spiritualJourney.meditation.preparation.title')}</h3>
               </div>
               <ul className="space-y-3 text-sm">
-                <li>• Rahat bir pozisyon alın</li>
-                <li>• Gözlerinizi kapatın</li>
-                <li>• Derin nefes alın</li>
-                <li>• Zihninizi boşaltın</li>
+                {t('spiritualJourney.meditation.preparation.steps', { returnObjects: true }).map((step: string, index: number) => (
+                  <li key={index}>• {step}</li>
+                ))}
               </ul>
             </div>
 
             <div className="bg-white bg-opacity-10 rounded-2xl p-8 backdrop-blur-sm">
               <div className="text-center mb-6">
                 <span className="text-4xl mb-4 block">🌬️</span>
-                <h3 className="text-2xl font-bold mb-2">Nefes</h3>
+                <h3 className="text-2xl font-bold mb-2">{t('spiritualJourney.meditation.breathing.title')}</h3>
               </div>
               <ul className="space-y-3 text-sm">
-                <li>• 4 saniye nefes alın</li>
-                <li>• 4 saniye tutun</li>
-                <li>• 4 saniye verin</li>
-                <li>• Ritmi koruyun</li>
+                {t('spiritualJourney.meditation.breathing.steps', { returnObjects: true }).map((step: string, index: number) => (
+                  <li key={index}>• {step}</li>
+                ))}
               </ul>
             </div>
 
             <div className="bg-white bg-opacity-10 rounded-2xl p-8 backdrop-blur-sm">
               <div className="text-center mb-6">
                 <span className="text-4xl mb-4 block">✨</span>
-                <h3 className="text-2xl font-bold mb-2">Farkındalık</h3>
+                <h3 className="text-2xl font-bold mb-2">{t('spiritualJourney.meditation.awareness.title')}</h3>
               </div>
               <ul className="space-y-3 text-sm">
-                <li>• Duygularınızı gözlemleyin</li>
-                <li>• Düşünceleri serbest bırakın</li>
-                <li>• İç huzuru hissedin</li>
-                <li>• Anın tadını çıkarın</li>
+                {t('spiritualJourney.meditation.awareness.steps', { returnObjects: true }).map((step: string, index: number) => (
+                  <li key={index}>• {step}</li>
+                ))}
               </ul>
             </div>
           </div>
 
           <div className="text-center mt-12">
             <button className="bg-white text-mor-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-mor-50 transition-all duration-300 transform hover:scale-105">
-              Meditasyon Rehberini İndir
+              {t('spiritualJourney.meditation.downloadGuide')}
             </button>
           </div>
         </div>
@@ -262,15 +258,14 @@ const SpiritualJourney: React.FC = () => {
           <div className="mb-8">
             <span className="text-6xl mb-4 block">🦋</span>
             <h2 className="text-4xl font-bold mb-4">
-              Yolculuğunuza Başlayın
+              {t('spiritualJourney.cta.title')}
             </h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-              Spiritüel gelişiminizde size rehberlik etmek için buradayız. 
-              İlk adımı birlikte atalım.
+              {t('spiritualJourney.cta.subtitle')}
             </p>
           </div>
           <button className="bg-gradient-to-r from-mor-500 to-purple-600 text-white px-12 py-4 rounded-full font-bold text-xl hover:from-mor-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 inline-block shadow-2xl">
-            Kişisel Rehberlik Al
+            {t('spiritualJourney.cta.getPersonalGuidance')}
           </button>
         </div>
       </section>

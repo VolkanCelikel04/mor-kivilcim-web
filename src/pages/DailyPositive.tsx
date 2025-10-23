@@ -1,16 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const DailyPositive: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-mor-600 to-mor-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">DailyPositive</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('dailyPositive.title')}</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Hesap Yönetimi ve İşlemler
+              {t('dailyPositive.subtitle')}
             </p>
           </div>
         </div>
@@ -31,9 +34,9 @@ const DailyPositive: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Hesap İşlemleri</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{t('dailyPositive.accountOperations')}</h3>
                 <p className="text-gray-600">
-                  Hesabınızı silme talebi oluşturun ve verilerinizi yönetin
+                  {t('dailyPositive.accountOperationsDesc')}
                 </p>
               </div>
             </Link>
@@ -49,9 +52,9 @@ const DailyPositive: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Gizlilik Politikası</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{t('dailyPositive.privacyPolicy')}</h3>
                 <p className="text-gray-600">
-                  Verilerinizin nasıl korunduğunu öğrenin
+                  {t('dailyPositive.privacyPolicyDesc')}
                 </p>
               </div>
             </Link>
@@ -67,9 +70,9 @@ const DailyPositive: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Destek</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{t('dailyPositive.support')}</h3>
                 <p className="text-gray-600">
-                  Sorularınız için bizimle iletişime geçin
+                  {t('dailyPositive.supportDesc')}
                 </p>
               </div>
             </Link>
@@ -77,13 +80,12 @@ const DailyPositive: React.FC = () => {
 
           {/* Information Section */}
           <div className="mt-16 bg-gray-50 rounded-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">DailyPositive Hakkında</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('dailyPositive.about')}</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              DailyPositive, kullanıcılarımızın verilerini en yüksek güvenlik standartlarıyla korur. 
-              Hesabınızla ilgili tüm işlemleri bu sayfadan yönetebilirsiniz.
+              {t('dailyPositive.aboutDescription')}
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Herhangi bir sorunuz olduğunda, lütfen destek ekibimizle iletişime geçmekten çekinmeyin.
+              {t('dailyPositive.aboutDescription2')}
             </p>
           </div>
         </div>

@@ -792,6 +792,194 @@
     "timer": "Timer",
     "progress": "Progress"
   },
+  "dailyPositive": {
+    "title": "DailyPositive",
+    "subtitle": "Account Management and Operations",
+    "about": "About DailyPositive",
+    "aboutDescription": "DailyPositive protects our users' data with the highest security standards. You can manage all your account-related operations from this page.",
+    "aboutDescription2": "If you have any questions, please don't hesitate to contact our support team.",
+    "accountOperations": "Account Operations",
+    "accountOperationsDesc": "Create account deletion requests and manage your data",
+    "privacyPolicy": "Privacy Policy",
+    "privacyPolicyDesc": "Learn how your data is protected",
+    "support": "Support",
+    "supportDesc": "Contact us for your questions"
+  },
+  "accountDeletion": {
+    "title": "Account Operations",
+    "subtitle": "DailyPositive - Account Deletion Request",
+    "requestReceived": "Your Request Has Been Received",
+    "requestReceivedDesc": "Your Account Deletion Request Has Been Received",
+    "requestReceivedText": "Your request has been sent to {email}. It will be processed as soon as possible.",
+    "processingTime": "Processing time: 7-14 business days",
+    "importantWarning": "Important Warning",
+    "warningText": "When you delete your account, all your data will be permanently deleted. This action cannot be undone.",
+    "deletionProcess": "Account Deletion Process",
+    "step1": "Create Request",
+    "step1Desc": "Fill out the form below and submit your request.",
+    "step2": "Review",
+    "step2Desc": "Your request will be reviewed by our support team (3-5 business days).",
+    "step3": "Confirmation Email",
+    "step3Desc": "A confirmation link will be sent to your email address.",
+    "step4": "Account Deletion",
+    "step4Desc": "After confirmation, your account and data will be deleted within 7-14 business days.",
+    "deletedData": "Data to be Deleted",
+    "permanentlyDeleted": "Permanently Deleted:",
+    "permanentlyDeletedItems": [
+      "User profile information",
+      "In-app content and records",
+      "Preferences and settings",
+      "Daily and activity history",
+      "Contact information"
+    ],
+    "legalRetention": "Legal Retention Requirements:",
+    "legalRetentionItems": [
+      "Payment records (10 years due to tax legislation)",
+      "Commercial records (legal obligations)",
+      "Security logs (30 days)"
+    ],
+    "legalRetentionNote": "This data will be automatically deleted at the end of legal retention periods.",
+    "createRequest": "Create Account Deletion Request",
+    "email": "Email Address",
+    "emailPlaceholder": "account@example.com",
+    "emailHelp": "Enter the email address registered in your DailyPositive account.",
+    "reason": "Deletion Reason (Optional)",
+    "reasonPlaceholder": "You can specify why you want to delete your account (not required)",
+    "confirmation": "I understand and confirm that my account and all my data will be permanently deleted and this action cannot be undone.",
+    "note": "Note:",
+    "noteText": "After submitting your request, a confirmation link will be sent to your email address. You need to click this link to complete the process.",
+    "submitRequest": "Submit Account Deletion Request",
+    "needHelp": "Need Help?",
+    "needHelpText": "If you have questions about the account deletion process, please contact our support team.",
+    "contactUs": "Contact Us"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Protecting your personal data is important to us.",
+    "lastUpdated": "Last updated: September 29, 2025",
+    "introduction": "This Privacy Policy explains how your personal data is collected, used, stored, and protected when you use our website and online services operated by Purple Spark (\"We\"). We comply with the Personal Data Protection Law No. 6698 (KVKK) and related legislation. GDPR principles are also observed for users accessing from EU/EEA.",
+    "quickSummary": "Quick Summary",
+    "summaryItems": [
+      "The site cannot function without mandatory cookies; analytical/marketing cookies require consent.",
+      "We collect basic data for reservations and communication, using it only to provide the service.",
+      "You can cancel marketing messages at any time.",
+      "Write to info@morkivilcim.com for your rights under KVKK."
+    ],
+    "contact": "Contact",
+    "contactText": "You can contact us for questions about our privacy policy:",
+    "sections": {
+      "dataController": "Data Controller and Contact",
+      "dataControllerContent": {
+        "dataController": "Data Controller:",
+        "dataControllerValue": "Purple Spark",
+        "address": "Address:",
+        "addressValue": "Bostancı, Istanbul, Turkey",
+        "email": "Email:",
+        "emailValue": "info@morkivilcim.com",
+        "phone": "Phone:",
+        "phoneValue": "0501 127 25 33",
+        "rightsText": "You can use the channels in the \"Your Rights and Application\" section below for your requests regarding your personal data."
+      },
+      "policyScope": "What Does This Policy Cover?",
+      "policyScopeContent": {
+        "covered": "Our website, communication/reservation forms, newsletter subscription, event registrations, workshop/study applications, and (if you use) mobile app notifications.",
+        "notCovered": "Links to our social media accounts are not subject to this policy; the relevant platforms' own policies apply."
+      },
+      "dataCategories": "Data Categories We Collect",
+      "dataCategoriesContent": {
+        "identity": "Identity and Contact:",
+        "identityDesc": "Name-surname, email, phone.",
+        "transaction": "Transaction Information:",
+        "transactionDesc": "Reservation/event registration, payment status (amount, date; card information is processed by payment provider).",
+        "content": "Content & Preferences:",
+        "contentDesc": "Newsletter/messaging preferences, workshop selection, appointment time.",
+        "technical": "Technical Data:",
+        "technicalDesc": "IP, device/cookie identifiers, browser/OS, page interaction (analytical cookies require explicit consent).",
+        "sensitive": "Sensitive/Special Category Data:",
+        "sensitiveDesc": "If you share health/wellness data in forms/messages, it is processed only with your explicit consent and for the specified purpose."
+      },
+      "cookies": "Cookies and Similar Technologies",
+      "cookiesContent": {
+        "mandatory": "Mandatory cookies:",
+        "mandatoryDesc": "Session and security (cannot be disabled).",
+        "analytical": "Analytical/performance cookies:",
+        "analyticalDesc": "To improve the site (with consent only).",
+        "functional": "Functional/advertising cookies:",
+        "functionalDesc": "Preferences and campaigns (with consent only).",
+        "management": "You can manage cookies from your browser settings. You can change your consent at any time through the cookie preference panel (if available).",
+        "examples": "Example cookies (if used):",
+        "examplesDesc": "_ga, _ga_* (Google Analytics – 13 months); _gid (24 hours); __Host-* (session/security)."
+      },
+      "processingPurposes": "Our Processing Purposes",
+      "processingPurposesContent": {
+        "service": "Service delivery:",
+        "serviceDesc": "Reservation/event registration, responding to communication requests, providing digital content.",
+        "business": "Business processes:",
+        "businessDesc": "Billing, accounting, compliance with obligations.",
+        "development": "Development and security:",
+        "developmentDesc": "Performance/analysis, debugging, fraud prevention.",
+        "marketing": "Marketing (optional):",
+        "marketingDesc": "Newsletter, event announcements, campaign communication (you can always opt out)."
+      },
+      "legalBasis": "Legal Basis (KVKK Art.5, Art.6)",
+      "legalBasisContent": {
+        "items": [
+          "Establishment/performance of contract (e.g., reservation transactions).",
+          "Fulfillment of our legal obligations (accounting/tax).",
+          "Legitimate interest (security, fraud prevention, basic analytics).",
+          "Explicit consent (marketing communication, analytical cookies, special category data)."
+        ],
+        "consentNote": "Explicit consent can be withdrawn; withdrawal does not affect the legality of past processing."
+      },
+      "dataSharing": "Data Sharing / Recipient Groups",
+      "dataSharingContent": {
+        "intro": "We may share data with the following providers to a limited and necessary extent for service provision:",
+        "items": [
+          "Hosting and infrastructure: Vercel/Azure",
+          "Email and notifications: SendGrid/FCM",
+          "Payment/Reservation infrastructure: iyzico/Stripe etc.",
+          "Analytics and error monitoring: Google Analytics/Sentry",
+          "Legal/accounting/audit: within the scope of legal obligations."
+        ],
+        "note": "These service providers are bound by contract as data processors."
+      },
+      "internationalTransfer": "International Transfer",
+      "internationalTransferContent": "Our servers or service providers may be outside Turkey. In this case, transfer is carried out in accordance with KVKK Art.9 within the scope of Board decisions, adequacy decisions, or undertakings/special provisions. We will provide you with written information if you request details.",
+      "retentionPeriods": "Retention Periods",
+      "retentionPeriodsContent": {
+        "items": [
+          "Contractual/transaction data: relevant legislation periods (e.g., commercial bookkeeping/tax obligations).",
+          "Communication/newsletter data: membership/subscription period + 2 years.",
+          "Analytical/cookie data: as long as cookie lifetime (consent-based)."
+        ],
+        "note": "When the period expires, data is deleted, anonymized, or destroyed."
+      },
+      "security": "Security",
+      "securityContent": "We implement appropriate administrative and technical measures (access control, encryption, data minimization principle, logging). We remind you that no transmission over the internet is 100% secure.",
+      "rights": "Your Rights and Application (KVKK Art.11)",
+      "rightsContent": {
+        "intro": "You can request:",
+        "items": [
+          "Learning whether it is processed and requesting information,",
+          "Learning whether it is used for its purpose and the parties to which it is transferred,",
+          "Requesting correction if incomplete/incorrect,",
+          "Requesting deletion/forgetting under KVKK and related legislation,",
+          "Objecting to a result against you arising from automatic processing,",
+          "Withdrawing explicit consent; rejecting marketing messages."
+        ],
+        "channels": "Application channels:",
+        "email": "Email:",
+        "emailValue": "info@morkivilcim.com (subject line: KVKK Application)",
+        "mail": "Mail:",
+        "mailValue": "Bostancı, Istanbul, Turkey",
+        "response": "We respond to your applications within the periods specified in the legislation. If you receive a negative response, your right to complain to the KVKK Authority is reserved."
+      },
+      "childrenData": "Children's Data",
+      "childrenDataContent": "Our services are for adults. Data of users under 18 is not knowingly processed without parental/guardian consent.",
+      "changes": "Changes",
+      "changesContent": "This policy may be updated. You can always find the most current version on this page. We will notify you of important changes."
+    }
+  },
   "common": {
     "loading": "Loading...",
     "error": "An error occurred",
@@ -801,6 +989,110 @@
     "next": "Next",
     "previous": "Previous",
     "readMore": "Read More",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "step": "Step"
+  },
+  "spiritualJourney": {
+    "title": "Spiritual Journey",
+    "subtitle": "Are you ready for a transformative journey that will guide you through every stage of your spiritual development?",
+    "growth": "Growth",
+    "transformation": "Transformation",
+    "enlightenment": "Enlightenment",
+    "practices": "Practices",
+    "journeySteps": {
+      "title": "Journey Steps",
+      "subtitle": "Each step will open a new door in your spiritual development",
+      "step1": {
+        "title": "Awareness",
+        "description": "Begin to explore your inner world, observe your emotions and thoughts.",
+        "practices": ["Daily meditation", "Mindful breathing", "Emotion tracking", "Thought observation"]
+      },
+      "step2": {
+        "title": "Cleansing",
+        "description": "Clean your energy field, resolve blockages from the past.",
+        "practices": ["Energy cleansing", "Aura cleansing", "Crystal healing", "Ritual baths"]
+      },
+      "step3": {
+        "title": "Balancing",
+        "description": "Balance your chakra system, optimize energy flow.",
+        "practices": ["Chakra meditation", "Crystal balancing", "Reiki sessions", "Energy work"]
+      },
+      "step4": {
+        "title": "Strengthening",
+        "description": "Increase your spiritual power, strengthen your protection field.",
+        "practices": ["Energy protection", "Aura strengthening", "Spiritual shield", "Positive energy"]
+      },
+      "step5": {
+        "title": "Connection",
+        "description": "Connect with universal energies, receive guidance.",
+        "practices": ["Spiritual guidance", "Meditation", "Nature connection", "Cosmic energy"]
+      },
+      "step6": {
+        "title": "Enlightenment",
+        "description": "Discover your inner light, reveal your spiritual potential.",
+        "practices": ["Inner exploration", "Spiritual development", "Creativity", "Intuitive power"]
+      }
+    },
+    "chakras": {
+      "title": "Chakra System",
+      "subtitle": "Learn about and balance your energy centers",
+      "root": {
+        "name": "Root Chakra",
+        "location": "Base of spine",
+        "element": "Earth"
+      },
+      "sacral": {
+        "name": "Sacral Chakra",
+        "location": "Lower abdomen",
+        "element": "Water"
+      },
+      "solarPlexus": {
+        "name": "Solar Plexus",
+        "location": "Upper abdomen",
+        "element": "Fire"
+      },
+      "heart": {
+        "name": "Heart Chakra",
+        "location": "Chest",
+        "element": "Air"
+      },
+      "throat": {
+        "name": "Throat Chakra",
+        "location": "Throat",
+        "element": "Ether"
+      },
+      "thirdEye": {
+        "name": "Third Eye",
+        "location": "Forehead",
+        "element": "Light"
+      },
+      "crown": {
+        "name": "Crown Chakra",
+        "location": "Top of head",
+        "element": "Thought"
+      }
+    },
+    "meditation": {
+      "title": "Beginner Meditation",
+      "subtitle": "A simple meditation guide to start your spiritual journey",
+      "preparation": {
+        "title": "Preparation",
+        "steps": ["Take a comfortable position", "Close your eyes", "Take deep breaths", "Clear your mind"]
+      },
+      "breathing": {
+        "title": "Breathing",
+        "steps": ["Breathe in for 4 seconds", "Hold for 4 seconds", "Exhale for 4 seconds", "Maintain the rhythm"]
+      },
+      "awareness": {
+        "title": "Awareness",
+        "steps": ["Observe your emotions", "Release thoughts", "Feel inner peace", "Enjoy the moment"]
+      },
+      "downloadGuide": "Download Meditation Guide"
+    },
+    "cta": {
+      "title": "Start Your Journey",
+      "subtitle": "We are here to guide you in your spiritual development. Let's take the first step together.",
+      "getPersonalGuidance": "Get Personal Guidance"
+    }
   }
 }

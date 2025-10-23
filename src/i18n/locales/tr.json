@@ -792,6 +792,194 @@
     "timer": "Süre",
     "progress": "İlerleme"
   },
+  "dailyPositive": {
+    "title": "DailyPositive",
+    "subtitle": "Hesap Yönetimi ve İşlemler",
+    "about": "DailyPositive Hakkında",
+    "aboutDescription": "DailyPositive, kullanıcılarımızın verilerini en yüksek güvenlik standartlarıyla korur. Hesabınızla ilgili tüm işlemleri bu sayfadan yönetebilirsiniz.",
+    "aboutDescription2": "Herhangi bir sorunuz olduğunda, lütfen destek ekibimizle iletişime geçmekten çekinmeyin.",
+    "accountOperations": "Hesap İşlemleri",
+    "accountOperationsDesc": "Hesabınızı silme talebi oluşturun ve verilerinizi yönetin",
+    "privacyPolicy": "Gizlilik Politikası",
+    "privacyPolicyDesc": "Verilerinizin nasıl korunduğunu öğrenin",
+    "support": "Destek",
+    "supportDesc": "Sorularınız için bizimle iletişime geçin"
+  },
+  "accountDeletion": {
+    "title": "Hesap İşlemleri",
+    "subtitle": "DailyPositive - Hesap Silme Talebi",
+    "requestReceived": "Talebiniz Alındı",
+    "requestReceivedDesc": "Hesap Silme Talebiniz Alındı",
+    "requestReceivedText": "Talebiniz {email} adresine gönderilmiştir. En kısa sürede işleme alınacaktır.",
+    "processingTime": "İşlem süresi: 7-14 iş günü",
+    "importantWarning": "Önemli Uyarı",
+    "warningText": "Hesabınızı sildiğinizde, tüm verileriniz kalıcı olarak silinecektir. Bu işlem geri alınamaz.",
+    "deletionProcess": "Hesap Silme Süreci",
+    "step1": "Talep Oluşturma",
+    "step1Desc": "Aşağıdaki formu doldurun ve talebinizi gönderin.",
+    "step2": "İnceleme",
+    "step2Desc": "Talebiniz destek ekibimiz tarafından incelenecektir (3-5 iş günü).",
+    "step3": "Onay E-postası",
+    "step3Desc": "E-posta adresinize bir onay linki gönderilecektir.",
+    "step4": "Hesap Silme",
+    "step4Desc": "Onayladıktan sonra hesabınız ve verileriniz 7-14 iş günü içinde silinecektir.",
+    "deletedData": "Silinecek Veriler",
+    "permanentlyDeleted": "Kalıcı Olarak Silinecek:",
+    "permanentlyDeletedItems": [
+      "Kullanıcı profil bilgileri",
+      "Uygulama içi içerikler ve kayıtlar",
+      "Tercihler ve ayarlar",
+      "Günlük ve aktivite geçmişi",
+      "İletişim bilgileri"
+    ],
+    "legalRetention": "Yasal Saklama Gerekliliği:",
+    "legalRetentionItems": [
+      "Ödeme kayıtları (vergi mevzuatı gereği 10 yıl)",
+      "Ticari kayıtlar (yasal yükümlülükler)",
+      "Güvenlik logları (30 gün)"
+    ],
+    "legalRetentionNote": "Bu veriler yasal saklama süreleri sonunda otomatik olarak silinecektir.",
+    "createRequest": "Hesap Silme Talebi Oluştur",
+    "email": "E-posta Adresi",
+    "emailPlaceholder": "hesap@ornek.com",
+    "emailHelp": "DailyPositive hesabınızda kayıtlı e-posta adresinizi girin.",
+    "reason": "Silme Nedeni (Opsiyonel)",
+    "reasonPlaceholder": "Hesabınızı neden silmek istediğinizi belirtebilirsiniz (zorunlu değil)",
+    "confirmation": "Hesabımın ve tüm verilerimin kalıcı olarak silineceğini ve bu işlemin geri alınamayacağını anlıyorum ve onaylıyorum.",
+    "note": "Not:",
+    "noteText": "Talep gönderdikten sonra e-posta adresinize bir onay linki gönderilecektir. İşlemi tamamlamak için bu linke tıklamanız gerekmektedir.",
+    "submitRequest": "Hesap Silme Talebi Gönder",
+    "needHelp": "Yardıma mı ihtiyacınız var?",
+    "needHelpText": "Hesap silme işlemi hakkında sorularınız varsa, lütfen destek ekibimizle iletişime geçin.",
+    "contactUs": "İletişime Geç"
+  },
+  "privacyPolicy": {
+    "title": "Gizlilik Politikası",
+    "subtitle": "Kişisel verilerinizin korunması bizim için önemlidir.",
+    "lastUpdated": "Son güncelleme: 29 Eylül 2025",
+    "introduction": "Bu Gizlilik Politikası, Mor Kıvılcım (\"Biz\") tarafından işletilen web sitemizi ve çevrimiçi hizmetlerimizi kullandığınızda kişisel verilerinizin nasıl toplandığını, kullanıldığını, saklandığını ve korunduğunu açıklar. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili mevzuata uyarız. AB/AEA'dan erişen kullanıcılar için GDPR ilkeleri de gözetilir.",
+    "quickSummary": "Kısa Özet",
+    "summaryItems": [
+      "Zorunlu çerezler olmadan site çalışmaz; analitik/pazarlama çerezleri rızaya bağlıdır.",
+      "Rezervasyon ve iletişim için temel verileri alır, sadece hizmeti sağlamak için kullanırız.",
+      "Pazarlama mesajlarını dilediğiniz an iptal edebilirsiniz.",
+      "KVKK kapsamındaki haklarınız için info@morkivilcim.com adresine yazın."
+    ],
+    "contact": "İletişim",
+    "contactText": "Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz:",
+    "sections": {
+      "dataController": "Veri Sorumlusu ve İletişim",
+      "dataControllerContent": {
+        "dataController": "Veri Sorumlusu:",
+        "dataControllerValue": "Mor Kıvılcım",
+        "address": "Adres:",
+        "addressValue": "Bostancı, İstanbul, Türkiye",
+        "email": "E-posta:",
+        "emailValue": "info@morkivilcim.com",
+        "phone": "Telefon:",
+        "phoneValue": "0501 127 25 33",
+        "rightsText": "Kişisel verilerinizle ilgili talepleriniz için aşağıdaki \"Haklarınız ve Başvuru\" bölümündeki kanalları kullanabilirsiniz."
+      },
+      "policyScope": "Bu Politika Neleri Kapsar?",
+      "policyScopeContent": {
+        "covered": "Web sitemiz, iletişim/rezervasyon formlarımız, bülten aboneliği, etkinlik kayıtları, atölye/çalışma başvuruları ve (kullanıyorsanız) mobil uygulama bildirimleri.",
+        "notCovered": "Sosyal medya hesaplarımıza yönlenen bağlantılar bu politikaya tabi değildir; ilgili platformların kendi politikaları geçerlidir."
+      },
+      "dataCategories": "Topladığımız Veri Kategorileri",
+      "dataCategoriesContent": {
+        "identity": "Kimlik ve İletişim:",
+        "identityDesc": "Ad-soyad, e-posta, telefon.",
+        "transaction": "İşlem Bilgisi:",
+        "transactionDesc": "Rezervasyon/etkinlik kaydı, ödeme durumu (tutar, tarih; kart bilgileri ödeme sağlayıcıda işlenir).",
+        "content": "İçerik & Tercihler:",
+        "contentDesc": "Bülten/mesajlaşma tercihleri, atölye seçimi, randevu saati.",
+        "technical": "Teknik Veriler:",
+        "technicalDesc": "IP, cihaz/çerez tanımlayıcıları, tarayıcı/OS, sayfa etkileşimi (analitik çerezler açık rızaya bağlıdır).",
+        "sensitive": "Hassas/Özel Nitelikli Veriler:",
+        "sensitiveDesc": "Form/mesajlarda paylaşırsanız sağlık/iyilik hâli gibi veriler yalnızca açık rızanızla ve belirtilen amaçla işlenir."
+      },
+      "cookies": "Çerezler ve Benzer Teknolojiler",
+      "cookiesContent": {
+        "mandatory": "Zorunlu çerezler:",
+        "mandatoryDesc": "Oturum ve güvenlik (kapatılamaz).",
+        "analytical": "Analitik/performans çerezleri:",
+        "analyticalDesc": "Siteyi geliştirmek için (yalnızca rızayla).",
+        "functional": "İşlevsel/reklam çerezleri:",
+        "functionalDesc": "Tercihler ve kampanyalar (yalnızca rızayla).",
+        "management": "Tarayıcı ayarlarınızdan çerezleri yönetebilirsiniz. Çerez tercih paneli (varsa) üzerinden dilediğiniz an onayınızı değiştirebilirsiniz.",
+        "examples": "Örnek çerezler (kullanıyorsanız):",
+        "examplesDesc": "_ga, _ga_* (Google Analytics – 13 ay); _gid (24 saat); __Host-* (oturum/güvenlik)."
+      },
+      "processingPurposes": "İşleme Amaçlarımız",
+      "processingPurposesContent": {
+        "service": "Hizmet sunumu:",
+        "serviceDesc": "Rezervasyon/etkinlik kaydı, iletişim taleplerine dönüş, dijital içerik sağlama.",
+        "business": "İşletme süreçleri:",
+        "businessDesc": "Faturalama, muhasebe, yükümlülüklere uyum.",
+        "development": "Geliştirme ve güvenlik:",
+        "developmentDesc": "Performans/analiz, hata ayıklama, dolandırıcılık önleme.",
+        "marketing": "Pazarlama (isteğe bağlı):",
+        "marketingDesc": "Bülten, etkinlik duyurusu, kampanya iletişimi (her zaman vazgeçebilirsiniz)."
+      },
+      "legalBasis": "Hukuki Sebepler (KVKK m.5, m.6)",
+      "legalBasisContent": {
+        "items": [
+          "Sözleşmenin kurulması/ifası (örn. rezervasyon işlemleri).",
+          "Hukuki yükümlülüklerimizin yerine getirilmesi (muhasebe/vergi).",
+          "Meşru menfaat (güvenlik, dolandırıcılık önleme, temel analitik).",
+          "Açık rıza (pazarlama iletişimi, analitik çerezler, özel nitelikli veriler)."
+        ],
+        "consentNote": "Açık rıza geri çekilebilir; geri çekme, geçmiş işlemenin hukukiliğini etkilemez."
+      },
+      "dataSharing": "Veri Paylaşımı / Alıcı Grupları",
+      "dataSharingContent": {
+        "intro": "Aşağıdaki tedarikçilerle hizmet sağlama amacıyla sınırlı ve gerekli ölçüde veri paylaşabiliriz:",
+        "items": [
+          "Barındırma ve altyapı: Vercel/Azure",
+          "E-posta ve bildirim: SendGrid/FCM",
+          "Ödeme/Rezervasyon altyapısı: iyzico/Stripe vb.",
+          "Analitik ve hata izleme: Google Analytics/Sentry",
+          "Hukuk/muhasebe/denetim: mevzuat yükümlülükleri kapsamında."
+        ],
+        "note": "Bu hizmet sağlayıcılar veri işleyen sıfatıyla sözleşmeyle yükümlülük altına alınır."
+      },
+      "internationalTransfer": "Yurt Dışına Aktarım",
+      "internationalTransferContent": "Sunucularımız veya hizmet sağlayıcılarımız Türkiye dışında olabilir. Bu durumda aktarım KVKK m.9 kapsamında Kurul kararları, yeterlilik kararı veya taahhütname/özel hükümler ile gerçekleştirilir. Ayrıntı talep ederseniz size yazılı bilgi sunarız.",
+      "retentionPeriods": "Saklama Süreleri",
+      "retentionPeriodsContent": {
+        "items": [
+          "Sözleşmesel/işlem verileri: ilgili mevzuat süreleri (örn. ticari defter/vergi yükümlülükleri).",
+          "İletişim/bülten verileri: üyelik/abonelik süresi + 2 yıl.",
+          "Analitik/çerez verileri: çerez yaşam süresi kadar (rızaya bağlı)."
+        ],
+        "note": "Süre dolduğunda veriler silinir, anonimleştirilir veya imha edilir."
+      },
+      "security": "Güvenlik",
+      "securityContent": "Uygun idari ve teknik tedbirler (erişim kontrolü, şifreleme, en az veri ilkesi, loglama) uygularız. İnternet üzerinden hiçbir aktarımın %100 güvenli olmadığını hatırlatırız.",
+      "rights": "Haklarınız ve Başvuru (KVKK m.11)",
+      "rightsContent": {
+        "intro": "Şunları talep edebilirsiniz:",
+        "items": [
+          "İşlenip işlenmediğini öğrenme ve bilgi talebi,",
+          "Amacına uygun kullanılıp kullanılmadığını ve aktarım yapılan tarafları öğrenme,",
+          "Eksik/yanlış ise düzeltilmesini isteme,",
+          "KVKK ve ilgili mevzuata göre silme/unutulma talebi,",
+          "Otomatik işleme sonucu aleyhinize bir sonucun ortaya çıkmasına itiraz,",
+          "Açık rızayı geri çekme; pazarlama iletilerini reddetme."
+        ],
+        "channels": "Başvuru kanalları:",
+        "email": "E-posta:",
+        "emailValue": "info@morkivilcim.com (konu satırı: KVKK Başvuru)",
+        "mail": "Posta:",
+        "mailValue": "Bostancı, İstanbul, Türkiye",
+        "response": "Başvurularınızı mevzuattaki süreler içinde yanıtlarız. Olumsuz yanıt almanız hâlinde KVKK Kurumu'na şikâyet hakkınız saklıdır."
+      },
+      "childrenData": "Çocukların Verileri",
+      "childrenDataContent": "Hizmetlerimiz yetişkinlere yöneliktir. 18 yaş altı kullanıcıların verileri, veli/vasi onayı olmaksızın bilerek işlenmez.",
+      "changes": "Değişiklikler",
+      "changesContent": "Bu politika güncellenebilir. En güncel sürümü her zaman bu sayfada bulabilirsiniz. Önemli değişikliklerde bildirim yaparız."
+    }
+  },
   "common": {
     "loading": "Yükleniyor...",
     "error": "Hata oluştu",
@@ -801,6 +989,110 @@
     "next": "İleri",
     "previous": "Önceki",
     "readMore": "Devamını Oku",
-    "learnMore": "Daha Fazla Bilgi"
+    "learnMore": "Daha Fazla Bilgi",
+    "step": "Adım"
+  },
+  "spiritualJourney": {
+    "title": "Spiritüel Yolculuk",
+    "subtitle": "Ruhsal gelişiminizin her aşamasında size rehberlik edecek, dönüştürücü bir yolculuğa hazır mısınız?",
+    "growth": "Büyüme",
+    "transformation": "Dönüşüm",
+    "enlightenment": "Aydınlanma",
+    "practices": "Pratikler",
+    "journeySteps": {
+      "title": "Yolculuk Aşamaları",
+      "subtitle": "Her adım, ruhsal gelişiminizde yeni bir kapı açacak",
+      "step1": {
+        "title": "Farkındalık",
+        "description": "İç dünyanızı keşfetmeye başlayın, duygularınızı ve düşüncelerinizi gözlemleyin.",
+        "practices": ["Günlük meditasyon", "Mindful nefes alma", "Duygu takibi", "Düşünce gözlemi"]
+      },
+      "step2": {
+        "title": "Temizlik",
+        "description": "Enerji alanınızı temizleyin, geçmişten gelen blokajları çözün.",
+        "practices": ["Enerji temizliği", "Aura temizleme", "Kristal şifa", "Ritüel banyolar"]
+      },
+      "step3": {
+        "title": "Dengeleme",
+        "description": "Chakra sisteminizi dengeleyin, enerji akışını optimize edin.",
+        "practices": ["Chakra meditasyonu", "Kristal dengeleme", "Reiki seansları", "Enerji çalışması"]
+      },
+      "step4": {
+        "title": "Güçlendirme",
+        "description": "Ruhsal gücünüzü artırın, koruma alanınızı güçlendirin.",
+        "practices": ["Enerji koruması", "Aura güçlendirme", "Ruhsal kalkan", "Pozitif enerji"]
+      },
+      "step5": {
+        "title": "Bağlantı",
+        "description": "Evrensel enerjilerle bağlantı kurun, rehberlik alın.",
+        "practices": ["Spiritüel rehberlik", "Meditasyon", "Doğa bağlantısı", "Kozmik enerji"]
+      },
+      "step6": {
+        "title": "Aydınlanma",
+        "description": "İç ışığınızı keşfedin, ruhsal potansiyelinizi açığa çıkarın.",
+        "practices": ["İç keşif", "Ruhsal gelişim", "Yaratıcılık", "Sezgisel güç"]
+      }
+    },
+    "chakras": {
+      "title": "Chakra Sistemi",
+      "subtitle": "Enerji merkezlerinizi tanıyın ve dengeleyin",
+      "root": {
+        "name": "Kök Chakra",
+        "location": "Omurga tabanı",
+        "element": "Toprak"
+      },
+      "sacral": {
+        "name": "Sakral Chakra",
+        "location": "Alt karın",
+        "element": "Su"
+      },
+      "solarPlexus": {
+        "name": "Solar Plexus",
+        "location": "Üst karın",
+        "element": "Ateş"
+      },
+      "heart": {
+        "name": "Kalp Chakra",
+        "location": "Göğüs",
+        "element": "Hava"
+      },
+      "throat": {
+        "name": "Boğaz Chakra",
+        "location": "Boğaz",
+        "element": "Eter"
+      },
+      "thirdEye": {
+        "name": "Üçüncü Göz",
+        "location": "Alın",
+        "element": "Işık"
+      },
+      "crown": {
+        "name": "Taç Chakra",
+        "location": "Tepe",
+        "element": "Düşünce"
+      }
+    },
+    "meditation": {
+      "title": "Başlangıç Meditasyonu",
+      "subtitle": "Spiritüel yolculuğunuza başlamak için basit bir meditasyon rehberi",
+      "preparation": {
+        "title": "Hazırlık",
+        "steps": ["Rahat bir pozisyon alın", "Gözlerinizi kapatın", "Derin nefes alın", "Zihninizi boşaltın"]
+      },
+      "breathing": {
+        "title": "Nefes",
+        "steps": ["4 saniye nefes alın", "4 saniye tutun", "4 saniye verin", "Ritmi koruyun"]
+      },
+      "awareness": {
+        "title": "Farkındalık",
+        "steps": ["Duygularınızı gözlemleyin", "Düşünceleri serbest bırakın", "İç huzuru hissedin", "Anın tadını çıkarın"]
+      },
+      "downloadGuide": "Meditasyon Rehberini İndir"
+    },
+    "cta": {
+      "title": "Yolculuğunuza Başlayın",
+      "subtitle": "Spiritüel gelişiminizde size rehberlik etmek için buradayız. İlk adımı birlikte atalım.",
+      "getPersonalGuidance": "Kişisel Rehberlik Al"
+    }
   }
 }
