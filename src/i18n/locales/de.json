@@ -803,7 +803,65 @@
     "privacyPolicy": "Datenschutzrichtlinie",
     "privacyPolicyDesc": "Erfahren Sie, wie Ihre Daten geschützt werden",
     "support": "Support",
-    "supportDesc": "Kontaktieren Sie uns für Ihre Fragen"
+    "supportDesc": "Kontaktieren Sie uns für Ihre Fragen",
+    "mobileApp": {
+      "title": "DailyPositive Mobile App",
+      "subtitle": "Tägliche Motivation und positive Energie in Ihrer Tasche",
+      "description": "Die DailyPositive Mobile App wurde entwickelt, um Ihnen zu helfen, jeden Tag positiv zu beginnen. Sie unterstützt Ihre spirituelle Reise mit Motivationsnachrichten, inspirierenden Inhalten und Tools zur persönlichen Entwicklung.",
+      "features": {
+        "title": "Funktionen",
+        "dailyQuotes": {
+          "title": "Tägliche Motivationsnachrichten",
+          "description": "Erhalten Sie jeden Morgen speziell ausgewählte inspirierende Nachrichten. Beginnen Sie Ihren Tag mit positiver Energie."
+        },
+        "meditation": {
+          "title": "Geführte Meditationen",
+          "description": "Sorgfältig vorbereitete Meditationssitzungen, um Ihren inneren Frieden zu finden. Stressreduzierung und Achtsamkeitstechniken."
+        },
+        "journaling": {
+          "title": "Digitales Tagebuch",
+          "description": "Zeichnen Sie Ihre Emotionen, Gedanken und Dankbarkeiten auf. Verfolgen Sie Ihre persönliche Entwicklungsreise."
+        },
+        "progress": {
+          "title": "Fortschrittsverfolgung",
+          "description": "Verfolgen Sie visuell Ihren Fortschritt bei Meditation, Tagebuchführung und positiven Gewohnheiten."
+        },
+        "notifications": {
+          "title": "Personalisierte Benachrichtigungen",
+          "description": "Individuelle Erinnerungen und Motivationsnachrichten. Intelligente Benachrichtigungen, die Ihre tägliche Routine unterstützen."
+        },
+        "offline": {
+          "title": "Offline-Zugriff",
+          "description": "Greifen Sie auf Inhalte ohne Internetverbindung zu. Tragen Sie Ihre Meditationen und Nachrichten immer bei sich."
+        }
+      },
+      "examples": {
+        "title": "App-Beispiele",
+        "homeScreen": {
+          "title": "Startbildschirm",
+          "description": "Beginnen Sie mit Ihrer täglichen Motivationsnachricht und Schnellzugriffstools."
+        },
+        "meditationScreen": {
+          "title": "Meditationsbibliothek",
+          "description": "Meditationssitzungen in verschiedenen Dauer und Themen. Schlaf, Stressreduzierung, Fokus und mehr."
+        },
+        "journalScreen": {
+          "title": "Tagebuch schreiben",
+          "description": "Sicheres und privates digitales Tagebuch. Zeichnen Sie Ihre Emotionen, Ziele und Dankbarkeiten auf."
+        },
+        "progressScreen": {
+          "title": "Statistiken",
+          "description": "Verfolgen Sie Ihren täglichen, wöchentlichen und monatlichen Fortschritt mit visuellen Diagrammen. Feiern Sie Ihre Erfolge."
+        }
+      },
+      "download": {
+        "title": "Jetzt herunterladen",
+        "subtitle": "Kostenlos für iOS- und Android-Geräte",
+        "appStore": "Vom App Store herunterladen",
+        "playStore": "Von Google Play herunterladen",
+        "comingSoon": "Demnächst"
+      }
+    }
   },
   "accountDeletion": {
     "title": "Kontovorgänge",

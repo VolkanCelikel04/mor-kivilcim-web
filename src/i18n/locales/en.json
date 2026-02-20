@@ -803,7 +803,65 @@
     "privacyPolicy": "Privacy Policy",
     "privacyPolicyDesc": "Learn how your data is protected",
     "support": "Support",
-    "supportDesc": "Contact us for your questions"
+    "supportDesc": "Contact us for your questions",
+    "mobileApp": {
+      "title": "DailyPositive Mobile App",
+      "subtitle": "Carry daily motivation and positive energy in your pocket",
+      "description": "The DailyPositive mobile app is designed to help you start each day with positivity. It supports your spiritual journey with motivational messages, inspiring content, and personal development tools.",
+      "features": {
+        "title": "Features",
+        "dailyQuotes": {
+          "title": "Daily Motivational Messages",
+          "description": "Receive specially selected inspiring messages every morning. Start your day with positive energy."
+        },
+        "meditation": {
+          "title": "Guided Meditations",
+          "description": "Carefully prepared meditation sessions to find your inner peace. Stress reduction and mindfulness techniques."
+        },
+        "journaling": {
+          "title": "Digital Journal",
+          "description": "Record your emotions, thoughts, and gratitudes. Track your personal development journey."
+        },
+        "progress": {
+          "title": "Progress Tracking",
+          "description": "Visually track your progress in meditation, journaling, and positive habits."
+        },
+        "notifications": {
+          "title": "Personalized Notifications",
+          "description": "Custom reminders and motivational messages. Smart notifications that support your daily routine."
+        },
+        "offline": {
+          "title": "Offline Access",
+          "description": "Access content without an internet connection. Always carry your meditations and messages with you."
+        }
+      },
+      "examples": {
+        "title": "App Examples",
+        "homeScreen": {
+          "title": "Home Screen",
+          "description": "Start with your daily motivational message and quick access tools."
+        },
+        "meditationScreen": {
+          "title": "Meditation Library",
+          "description": "Meditation sessions in different durations and themes. Sleep, stress reduction, focus, and more."
+        },
+        "journalScreen": {
+          "title": "Journal Writing",
+          "description": "Secure and private digital journal. Record your emotions, goals, and gratitudes."
+        },
+        "progressScreen": {
+          "title": "Statistics",
+          "description": "Track your daily, weekly, and monthly progress with visual charts. Celebrate your achievements."
+        }
+      },
+      "download": {
+        "title": "Download Now",
+        "subtitle": "Free for iOS and Android devices",
+        "appStore": "Download from App Store",
+        "playStore": "Download from Google Play",
+        "comingSoon": "Coming Soon"
+      }
+    }
   },
   "accountDeletion": {
     "title": "Account Operations",

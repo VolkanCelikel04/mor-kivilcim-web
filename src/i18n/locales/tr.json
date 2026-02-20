@@ -335,8 +335,6 @@
     "subtitle": "Ruhsal Gelişim ve İç Huzur Hakkında Yazılar",
     "description": "Spiritüel gelişiminizi destekleyecek pratik rehberler, meditasyon teknikleri ve şifa yöntemleri",
     "readMore": "Devamını Oku",
-    "categories": "Kategoriler",
-    "all": "Tümü",
     "loadMore": "Daha Fazla İçerik Yükle",
     "hero": {
       "title": "Ruhsal Kaynaklar",
@@ -803,7 +801,65 @@
     "privacyPolicy": "Gizlilik Politikası",
     "privacyPolicyDesc": "Verilerinizin nasıl korunduğunu öğrenin",
     "support": "Destek",
-    "supportDesc": "Sorularınız için bizimle iletişime geçin"
+    "supportDesc": "Sorularınız için bizimle iletişime geçin",
+    "mobileApp": {
+      "title": "DailyPositive Mobil Uygulaması",
+      "subtitle": "Günlük motivasyon ve pozitif enerjiyi cebinizde taşıyın",
+      "description": "DailyPositive mobil uygulaması, her gününüze pozitif bir başlangıç yapmanız için tasarlandı. Motivasyon mesajları, ilham verici içerikler ve kişisel gelişim araçlarıyla ruhsal yolculuğunuzu destekler.",
+      "features": {
+        "title": "Özellikler",
+        "dailyQuotes": {
+          "title": "Günlük Motivasyon Mesajları",
+          "description": "Her sabah size özel olarak seçilmiş ilham verici mesajlar alın. Gününüze pozitif bir enerjiyle başlayın."
+        },
+        "meditation": {
+          "title": "Rehberli Meditasyonlar",
+          "description": "İç huzurunuzu bulmak için özenle hazırlanmış meditasyon seansları. Stres azaltma ve farkındalık teknikleri."
+        },
+        "journaling": {
+          "title": "Dijital Günlük",
+          "description": "Duygularınızı, düşüncelerinizi ve minnettarlıklarınızı kaydedin. Kişisel gelişim yolculuğunuzu takip edin."
+        },
+        "progress": {
+          "title": "İlerleme Takibi",
+          "description": "Meditasyon, günlük yazma ve pozitif alışkanlıklarınızın ilerlemesini görsel olarak takip edin."
+        },
+        "notifications": {
+          "title": "Kişiselleştirilmiş Bildirimler",
+          "description": "Size özel hatırlatmalar ve motivasyon mesajları. Günlük rutininizi destekleyen akıllı bildirimler."
+        },
+        "offline": {
+          "title": "Çevrimdışı Erişim",
+          "description": "İnternet bağlantısı olmadan da içeriklere erişin. Meditasyonlarınızı ve mesajlarınızı her zaman yanınızda taşıyın."
+        }
+      },
+      "examples": {
+        "title": "Uygulama Örnekleri",
+        "homeScreen": {
+          "title": "Ana Ekran",
+          "description": "Günlük motivasyon mesajınız ve hızlı erişim araçlarıyla başlayın."
+        },
+        "meditationScreen": {
+          "title": "Meditasyon Kütüphanesi",
+          "description": "Farklı sürelerde ve temalarda meditasyon seansları. Uyku, stres azaltma, odaklanma ve daha fazlası."
+        },
+        "journalScreen": {
+          "title": "Günlük Yazma",
+          "description": "Güvenli ve özel dijital günlük. Duygularınızı, hedeflerinizi ve minnettarlıklarınızı kaydedin."
+        },
+        "progressScreen": {
+          "title": "İstatistikler",
+          "description": "Günlük, haftalık ve aylık ilerlemenizi görsel grafiklerle takip edin. Başarılarınızı kutlayın."
+        }
+      },
+      "download": {
+        "title": "Hemen İndirin",
+        "subtitle": "iOS ve Android cihazlarınız için ücretsiz",
+        "appStore": "App Store'dan İndir",
+        "playStore": "Google Play'den İndir",
+        "comingSoon": "Yakında"
+      }
+    }
   },
   "accountDeletion": {
     "title": "Hesap İşlemleri",
