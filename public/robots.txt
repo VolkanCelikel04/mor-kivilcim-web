@@ -6,4 +6,4 @@ Allow: /
 Disallow: /admin/
 
 # Sitemap konumu (canlı sitedeki gerçek domain ile değiştirin)
-Sitemap: https://www.morkivilcim.com/sitemap.xml
+Sitemap: https://morkivilcim.com.tr/sitemap.xml
