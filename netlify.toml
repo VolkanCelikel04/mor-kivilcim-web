@@ -12,6 +12,10 @@
   to = "/sitemap.xml"
   status = 200
 [[redirects]]
+  from = "/googlec85b2de9bb7d54d0.html"
+  to = "/googlec85b2de9bb7d54d0.html"
+  status = 200
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
