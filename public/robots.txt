@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Admin sayfalarını taramadan hariç tut (isteğe bağlı)
+Disallow: /admin/
+
+# Sitemap konumu (canlı sitedeki gerçek domain ile değiştirin)
+Sitemap: https://www.morkivilcim.com/sitemap.xml
