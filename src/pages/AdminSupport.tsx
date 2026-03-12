@@ -3,10 +3,8 @@ import {
   TicketIcon, 
   ChatBubbleLeftRightIcon, 
   UserGroupIcon, 
-  ChartBarIcon,
   ClockIcon,
   CheckCircleIcon,
-  ExclamationTriangleIcon,
   XCircleIcon,
   EyeIcon,
   PencilIcon,
@@ -53,7 +51,7 @@ const AdminSupport: React.FC = () => {
   // Session timeout hook
   useSessionTimeout();
   const [tickets, setTickets] = useState<SupportTicket[]>([]);
-  const [categories, setCategories] = useState<SupportCategory[]>([]);
+  const [, setCategories] = useState<SupportCategory[]>([]);
   const [stats, setStats] = useState<TicketStats>({
     totalTickets: 0,
     newTickets: 0,
@@ -73,6 +71,7 @@ const AdminSupport: React.FC = () => {
   useEffect(() => {
     loadTickets();
     loadCategories();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- loadTickets/loadCategories intentionally omitted to run only on filter change
   }, [filterStatus, filterPriority]);
 
   const loadTickets = async () => {

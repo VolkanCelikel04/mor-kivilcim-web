@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
       }
       
       // Google Sheets'e gönder
-      const response = await fetch(scriptUrl, {
+      await fetch(scriptUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

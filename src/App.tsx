@@ -29,7 +29,6 @@ import FamilyConstellation from './pages/blog/FamilyConstellation';
 import DailyPositive from './pages/DailyPositive';
 import AccountDeletion from './pages/AccountDeletion';
 import MeditationGuide from './pages/MeditationGuide';
-import ProtectedRoute from './components/ProtectedRoute';
 import SecureAdminRoute from './components/SecureAdminRoute';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
