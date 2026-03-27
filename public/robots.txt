@@ -2,8 +2,5 @@
 User-agent: *
 Allow: /
 
-# Admin sayfalarını taramadan hariç tut (isteğe bağlı)
-Disallow: /admin/
-
 # Sitemap konumu (canlı sitedeki gerçek domain ile değiştirin)
 Sitemap: https://morkivilcim.com.tr/sitemap.xml
