@@ -1,4 +1,11 @@
 Options -MultiViews
 RewriteEngine On
+
+# Admin yolları için noindex (Apache + mod_headers; Netlify için netlify.toml)
+<IfModule mod_headers.c>
+  SetEnvIf Request_URI "^/admin(/|$)" MOR_ADMIN_AREA=1
+  Header set X-Robots-Tag "noindex, nofollow" env=MOR_ADMIN_AREA
+</IfModule>
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.html [QSA,L]

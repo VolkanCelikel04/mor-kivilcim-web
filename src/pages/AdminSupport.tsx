@@ -13,6 +13,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { useAuth } from '../contexts/AuthContext';
 import { supportService } from '../services/apiService';
+import { useAdminNoIndex } from '../hooks/useAdminNoIndex';
 import { useSessionTimeout } from '../hooks/useSessionTimeout';
 
 interface SupportTicket {
@@ -47,6 +48,7 @@ interface TicketStats {
 }
 
 const AdminSupport: React.FC = () => {
+  useAdminNoIndex();
   const { token, logout, user } = useAuth();
   
   // Session timeout hook

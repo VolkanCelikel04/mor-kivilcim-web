@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useAdminNoIndex } from '../hooks/useAdminNoIndex';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { 
@@ -10,6 +11,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 const AdminLogin: React.FC = () => {
+  useAdminNoIndex();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);

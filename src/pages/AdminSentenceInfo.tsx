@@ -2,10 +2,12 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { sentenceInfoService, SentenceInfoRow } from '../services/apiService';
+import { useAdminNoIndex } from '../hooks/useAdminNoIndex';
 import { useSessionTimeout } from '../hooks/useSessionTimeout';
 import { ArrowRightOnRectangleIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 
 const AdminSentenceInfo: React.FC = () => {
+  useAdminNoIndex();
   const { token, logout, user } = useAuth();
   useSessionTimeout();
 

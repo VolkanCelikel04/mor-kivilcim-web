@@ -2,6 +2,12 @@
   publish = "build"
   command = "npm run build"
 
+# Admin SPA yolları: yanıtta noindex (robots.txt ile birlikte)
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
 # SEO: robots.txt ve sitemap önce eşleşsin, sonra SPA fallback
 [[redirects]]
   from = "/robots.txt"
