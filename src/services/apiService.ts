@@ -98,7 +98,17 @@ export const authenticatedRequest = async <T = any>(
   }
 };
 
-// Authentication Service (DailyPositive API)
+/** Admin panel girişi — [User].IsAdmin = 1 ve şifre SHA256 ile eşleşmeli */
+export const adminAuthService = {
+  login: async (email: string, password: string): Promise<ApiResponse<{ success?: boolean; token: string; user: { id: string; email: string; name: string; isAdmin: boolean } }>> => {
+    return apiRequest(API_CONFIG.ENDPOINTS.ADMIN_LOGIN, {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+    });
+  },
+};
+
+// Authentication Service (DailyPositive API — mobil)
 export const authService = {
   login: async (email: string, password: string): Promise<ApiResponse<{ token: string; user: any }>> => {
     return apiRequest(API_CONFIG.ENDPOINTS.LOGIN, {
@@ -189,6 +199,35 @@ export const supportService = {
   ): Promise<ApiResponse<any>> => {
     return authenticatedRequest(`${API_CONFIG.ENDPOINTS.SUPPORT_MESSAGES}/${ticketId}`, token, {
       method: 'GET',
+    });
+  },
+};
+
+export interface SentenceInfoRow {
+  id: number;
+  sHead: string | null;
+  sDetail: string | null;
+  sDate: string | null;
+  sState: number | null;
+}
+
+export const sentenceInfoService = {
+  list: async (token: string, take = 100): Promise<ApiResponse<{ success: boolean; items: SentenceInfoRow[] }>> => {
+    return authenticatedRequest(API_CONFIG.ENDPOINTS.SENTENCE_INFO, token, { method: 'GET' }, { take: take.toString() });
+  },
+
+  create: async (
+    token: string,
+    body: { sHead?: string; sDetail?: string; sDate?: string; sState?: number }
+  ): Promise<ApiResponse<{ success: boolean; id: number }>> => {
+    return authenticatedRequest(API_CONFIG.ENDPOINTS.SENTENCE_INFO, token, {
+      method: 'POST',
+      body: JSON.stringify({
+        sHead: body.sHead,
+        sDetail: body.sDetail,
+        sDate: body.sDate ?? undefined,
+        sState: body.sState,
+      }),
     });
   },
 };

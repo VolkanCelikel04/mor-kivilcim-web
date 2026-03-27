@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   TicketIcon, 
   ChatBubbleLeftRightIcon, 
@@ -228,7 +229,13 @@ const AdminSupport: React.FC = () => {
                 )}
               </p>
             </div>
-            <div className="flex space-x-4">
+            <div className="flex flex-wrap gap-2 sm:space-x-4 sm:gap-0">
+              <Link
+                to="/admin/sentence-info"
+                className="bg-gray-100 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors text-center"
+              >
+                SentenceInfo
+              </Link>
               <button
                 onClick={loadTickets}
                 className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"

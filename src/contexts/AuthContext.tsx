@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { authService } from '../services/apiService';
+import { adminAuthService } from '../services/apiService';
 
 interface AuthContextType {
   isAuthenticated: boolean;
@@ -15,12 +15,6 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 interface AuthProviderProps {
   children: ReactNode;
 }
-
-// Admin credentials - In production, these should be stored securely on the backend
-const ADMIN_CREDENTIALS = {
-  username: 'admin',
-  password: 'admin123' // In production, use strong password and hash comparison
-};
 
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -50,42 +44,33 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const login = async (email: string, password: string): Promise<boolean> => {
     try {
-      // Azure API ile giriş yap
-      const response = await authService.login(email, password);
-      
+      const response = await adminAuthService.login(email, password);
+
       if (response.success && response.data) {
-        const { token: newToken, user: userData } = response.data;
-        
+        const payload = response.data as {
+          token?: string;
+          user?: { id?: string; email?: string; name?: string; isAdmin?: boolean };
+        };
+        const newToken = payload.token;
+        const userData = payload.user;
+
+        if (!newToken || !userData || userData.isAdmin !== true) {
+          return false;
+        }
+
         setToken(newToken);
         setUser(userData);
         setIsAuthenticated(true);
-        
-        // localStorage'a kaydet
+
         localStorage.setItem('admin_token', newToken);
         localStorage.setItem('admin_user', JSON.stringify(userData));
-        
+
         return true;
       }
-      
+
       return false;
     } catch (error) {
       console.error('Login error:', error);
-      
-      // Fallback: Local admin credentials (geliştirme için)
-      if (email === ADMIN_CREDENTIALS.username && password === ADMIN_CREDENTIALS.password) {
-        const fallbackToken = btoa(`${email}:${Date.now()}`);
-        const fallbackUser = { email, name: 'Admin', role: 'admin' };
-        
-        setToken(fallbackToken);
-        setUser(fallbackUser);
-        setIsAuthenticated(true);
-        
-        localStorage.setItem('admin_token', fallbackToken);
-        localStorage.setItem('admin_user', JSON.stringify(fallbackUser));
-        
-        return true;
-      }
-      
       return false;
     }
   };

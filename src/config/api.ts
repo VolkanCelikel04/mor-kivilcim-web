@@ -1,14 +1,20 @@
-// Azure API Konfigürasyonu - DailyPositive API
+// DailyPositive backend (DailyPositiveServer) — mobil uygulama ile aynı API
 export const API_CONFIG = {
-  // Azure API Base URL - DailyPositive ile kullandığınız endpoint
-  BASE_URL: process.env.REACT_APP_API_URL || 'https://mor-kivilcim-server-c7dggnb6ccdbb9ds.canadacentral-01.azurewebsites.net',
+  // Ortam değişkeni ile override: REACT_APP_API_URL (ör. yerel veya staging)
+  BASE_URL: process.env.REACT_APP_API_URL || 'https://api.morkivilcim.com',
   
   // API Endpoints - DailyPositive API
   ENDPOINTS: {
-    // Authentication (DailyPositive AuthController)
+    // Admin panel (IsAdmin = 1, JWT) — DailyPositive AdminAuthController
+    ADMIN_LOGIN: '/api/admin/auth/login',
+
+    // Authentication (DailyPositive AuthController — mobil uygulama)
     LOGIN: '/api/auth/login',
     REGISTER: '/api/auth/register',
     PROFILE: '/api/auth/profile',
+
+    // SentenceInfo tablosu (admin)
+    SENTENCE_INFO: '/api/admin/sentence-info',
     
     // Support System (DailyPositive AdminSupportController)
     SUPPORT_TICKETS: '/api/admin/support/tickets',

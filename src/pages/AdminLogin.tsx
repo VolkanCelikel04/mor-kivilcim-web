@@ -20,7 +20,7 @@ const AdminLogin: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const from = location.state?.from?.pathname || '/admin/support';
+  const from = location.state?.from?.pathname || '/admin/sentence-info';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -52,7 +52,7 @@ const AdminLogin: React.FC = () => {
             Admin Girişi
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Destek yönetim paneline erişim için giriş yapın
+            Yönetim paneli — veritabanında <span className="font-medium">IsAdmin = 1</span> olan hesap ile giriş yapın
           </p>
         </div>
         
@@ -140,17 +140,6 @@ const AdminLogin: React.FC = () => {
               </button>
             </div>
 
-            <div className="text-center">
-              <p className="text-xs text-gray-500">
-                Test için e-posta: <span className="font-mono bg-gray-100 px-2 py-1 rounded">admin</span>
-              </p>
-              <p className="text-xs text-gray-500 mt-1">
-                Test şifresi: <span className="font-mono bg-gray-100 px-2 py-1 rounded">admin123</span>
-              </p>
-              <p className="text-xs text-gray-400 mt-2">
-                Azure API'den giriş yapılamazsa test bilgileri kullanılır
-              </p>
-            </div>
           </div>
         </form>
       </div>

@@ -14,22 +14,25 @@ const SecureAdminRoute: React.FC<SecureAdminRouteProps> = ({ children }) => {
   useEffect(() => {
     const checkAuthorization = async () => {
       try {
-        // IP kontrolü (opsiyonel)
-        const allowedIPs = process.env.REACT_APP_ALLOWED_IPS?.split(',') || [];
-        const currentIP = await getCurrentIP();
-        
-        // Admin kullanıcı kontrolü
-        const isAdmin = user?.role === 'admin' || user?.email?.includes('admin');
-        
-        // Token geçerlilik kontrolü
-        const isTokenValid = token && token.length > 10;
-        
-        // Tüm kontrolleri geçmeli
-        const authorized = isAdmin && isTokenValid && (
-          allowedIPs.length === 0 || allowedIPs.includes(currentIP)
-        );
-        
-        setIsAuthorized(authorized);
+        const isAdmin = user?.isAdmin === true;
+        const isTokenValid = Boolean(token && token.length > 20);
+        if (!isAdmin || !isTokenValid) {
+          setIsAuthorized(false);
+          return;
+        }
+
+        const allowedIPs =
+          process.env.REACT_APP_ALLOWED_IPS?.split(',')
+            .map((s) => s.trim())
+            .filter(Boolean) ?? [];
+        if (allowedIPs.length === 0) {
+          setIsAuthorized(true);
+          return;
+        }
+
+        const res = await fetch('https://api.ipify.org?format=json');
+        const data = await res.json();
+        setIsAuthorized(allowedIPs.includes(data.ip));
       } catch (error) {
         console.error('Authorization check failed:', error);
         setIsAuthorized(false);
@@ -38,19 +41,8 @@ const SecureAdminRoute: React.FC<SecureAdminRouteProps> = ({ children }) => {
       }
     };
 
-    checkAuthorization();
+    void checkAuthorization();
   }, [token, user]);
-
-  // IP adresini almak için basit bir servis
-  const getCurrentIP = async (): Promise<string> => {
-    try {
-      const response = await fetch('https://api.ipify.org?format=json');
-      const data = await response.json();
-      return data.ip;
-    } catch {
-      return 'unknown';
-    }
-  };
 
   if (loading) {
     return (
@@ -70,7 +62,7 @@ const SecureAdminRoute: React.FC<SecureAdminRouteProps> = ({ children }) => {
           <div className="text-red-500 text-6xl mb-4">🚫</div>
           <h1 className="text-2xl font-bold text-gray-900 mb-2">Erişim Reddedildi</h1>
           <p className="text-gray-600 mb-4">Bu sayfaya erişim yetkiniz bulunmamaktadır.</p>
-          <Navigate to="/" replace />
+          <Navigate to="/admin/login" replace />
         </div>
       </div>
     );

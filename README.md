@@ -43,9 +43,31 @@ npm run build
 - **Telefon:** +90 (212) 555 0123
 - **E-posta:** info@morkivilcim.com
 
+## 🔗 Daily Positive (mobil uygulama) API bağlantısı
+
+Bu site, **`DailyPositiveServer`** REST API’sine bağlanır (Auth, destek biletleri vb.). Kaynak kod: `DailyPositive` reposundaki `DailyPositiveServer` projesi; canlı taban adresi varsayılan olarak **`https://api.morkivilcim.com`**.
+
+| Dosya | Açıklama |
+|--------|----------|
+| `src/config/api.ts` | `BASE_URL`, endpoint yolları |
+| `src/services/apiService.ts` | `fetch` / JWT ile istekler (`adminAuthService`, `sentenceInfoService`) |
+| `/admin/login` | `POST /api/admin/auth/login` — yalnızca DB’de `IsAdmin = 1` olan kullanıcılar |
+| `/admin/sentence-info` | `SentenceInfo` tablosuna yazma + son kayıtlar listesi |
+| `/admin/support` | Destek biletleri admin paneli |
+
+**Admin hesabı:** SQL’de `[User]` tablosunda kendi e-postanız için `IsAdmin = 1` olmalı. Aksi halde giriş reddedilir.
+
+Yerel veya farklı ortam için proje kökünde `.env` oluşturun (örnek: `.env.example`):
+
+```bash
+REACT_APP_API_URL=https://api.morkivilcim.com
+```
+
+Yeni “tablo / içerik” girişleri web üzerinden gerekiyorsa, veriyi ya bu API’ye **yeni korumalı endpoint’ler** ekleyerek ya da (iç ağda) **paylaşılan SQL Server** ile yazarak bağlarsınız; tarayıcıdan doğrudan veritabanına bağlanılmaz.
+
 ## 🚀 Deployment
 
-Bu proje Vercel ile deploy edilmiştir.
+Bu proje Vercel ile deploy edilmiştir. Production’da API adresini Vercel **Environment Variables** içinde `REACT_APP_API_URL` ile ayarlayın; yoksa `api.ts` içindeki varsayılan kullanılır.
 
 ---
 

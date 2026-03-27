@@ -10,6 +10,7 @@ import Blog from './pages/Blog';
 import SpiritualWellbeing from './pages/SpiritualWellbeing';
 import SpiritualJourney from './pages/SpiritualJourney';
 import AdminSupport from './pages/AdminSupport';
+import AdminSentenceInfo from './pages/AdminSentenceInfo';
 import AdminLogin from './pages/AdminLogin';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -70,7 +71,11 @@ function App() {
               <Route path="/meditasyon-rehberi" element={<MeditationGuide />} />
               <Route path="/meditation" element={<MeditationGuide />} />
               <Route path="/admin/login" element={<AdminLogin />} />
-              {/* Güvenli Admin Route - Sadece yetkili kullanıcılar */}
+              <Route path="/admin/sentence-info" element={
+                <SecureAdminRoute>
+                  <AdminSentenceInfo />
+                </SecureAdminRoute>
+              } />
               <Route path="/admin/support" element={
                 <SecureAdminRoute>
                   <AdminSupport />
