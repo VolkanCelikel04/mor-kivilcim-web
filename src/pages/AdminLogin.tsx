@@ -32,7 +32,7 @@ const AdminLogin: React.FC = () => {
       if (success) {
         navigate(from, { replace: true });
       } else {
-        setError('E-posta veya şifre hatalı!');
+        setError('Kullanıcı adı (e-posta) veya şifre hatalı, ya da hesabınızda admin yetkisi yok.');
       }
     } catch (error) {
       setError('Giriş yapılırken bir hata oluştu. Lütfen tekrar deneyin.');
@@ -56,8 +56,8 @@ const AdminLogin: React.FC = () => {
           </p>
         </div>
         
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-          <div className="rounded-xl shadow-lg bg-white p-8 space-y-6">
+        <form className="mt-8 space-y-6" onSubmit={handleSubmit} noValidate>
+          <div className="rounded-xl shadow-lg bg-white p-8 space-y-6 border border-gray-200">
             {error && (
               <div className="bg-red-50 border border-red-200 rounded-lg p-4 flex items-center">
                 <ExclamationTriangleIcon className="h-5 w-5 text-red-500 mr-2" />
@@ -66,29 +66,32 @@ const AdminLogin: React.FC = () => {
             )}
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                E-posta
+              <label htmlFor="admin-username" className="block text-sm font-medium text-gray-900 mb-2">
+                Kullanıcı adı (e-posta)
               </label>
+              <p className="text-xs text-gray-500 mb-2">Uygulamada kayıtlı e-posta adresiniz — admin paneli aynı hesabı kullanır.</p>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <UserIcon className="h-5 w-5 text-gray-400" />
                 </div>
                 <input
-                  id="email"
-                  name="email"
+                  id="admin-username"
+                  name="username"
                   type="email"
+                  autoComplete="username"
+                  inputMode="email"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="appearance-none rounded-lg relative block w-full pl-10 pr-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent focus:z-10 sm:text-sm"
-                  placeholder="E-posta adresinizi girin"
+                  className="appearance-none rounded-lg relative block w-full pl-10 pr-3 py-3 border-2 border-gray-400 bg-white placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 sm:text-sm"
+                  placeholder="ornek@morkivilcim.com"
                   disabled={loading}
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="admin-password" className="block text-sm font-medium text-gray-900 mb-2">
                 Şifre
               </label>
               <div className="relative">
@@ -96,14 +99,15 @@ const AdminLogin: React.FC = () => {
                   <LockClosedIcon className="h-5 w-5 text-gray-400" />
                 </div>
                 <input
-                  id="password"
+                  id="admin-password"
                   name="password"
                   type={showPassword ? 'text' : 'password'}
+                  autoComplete="current-password"
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="appearance-none rounded-lg relative block w-full pl-10 pr-12 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent focus:z-10 sm:text-sm"
-                  placeholder="Şifrenizi girin"
+                  className="appearance-none rounded-lg relative block w-full pl-10 pr-12 py-3 border-2 border-gray-400 bg-white placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 sm:text-sm"
+                  placeholder="Şifreniz"
                   disabled={loading}
                 />
                 <div className="absolute inset-y-0 right-0 pr-3 flex items-center">

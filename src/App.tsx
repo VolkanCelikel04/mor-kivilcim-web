@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import './i18n';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -35,56 +35,69 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { AuthProvider } from './contexts/AuthContext';
 
+function MainLayout() {
+  return (
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      <Navbar />
+      <main className="flex-1 w-full">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
 function App() {
   return (
     <AuthProvider>
       <Router>
         <ScrollToTop />
-        <div className="min-h-screen bg-gray-50">
-          <Navbar />
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/blog" element={<Blog />} />
-              {/* Blog Routes */}
-              <Route path="/blog/444-breathing" element={<FourFourFourBreathing />} />
-              <Route path="/blog/beden-taramasi" element={<BodyScan />} />
-              <Route path="/blog/hooponopono" element={<Hooponopono />} />
-              <Route path="/blog/reiki" element={<Reiki />} />
-              <Route path="/blog/travma-duyarli-meditasyon" element={<TraumaSensitiveMeditation />} />
-              <Route path="/blog/uyku-meditasyonu" element={<SleepMeditation />} />
-              <Route path="/blog/yuruyus-meditasyonu" element={<WalkingMeditation />} />
-              <Route path="/blog/sukran-yazim" element={<GratitudeWriting />} />
-              <Route path="/blog/onaylamalar" element={<Affirmations />} />
-              <Route path="/blog/aile-dizimi" element={<FamilyConstellation />} />
-              <Route path="/spiritual-wellbeing" element={<SpiritualWellbeing />} />
-              <Route path="/spiritual-journey" element={<SpiritualJourney />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="/terms-of-service" element={<TermsOfService />} />
-              <Route path="/cookie-policy" element={<CookiePolicy />} />
-              {/* DailyPositive Routes */}
-              <Route path="/dailypositive" element={<DailyPositive />} />
-              <Route path="/dailypositive/hesap-silme" element={<AccountDeletion />} />
-              <Route path="/meditasyon-rehberi" element={<MeditationGuide />} />
-              <Route path="/meditation" element={<MeditationGuide />} />
-              <Route path="/admin/login" element={<AdminLogin />} />
-              <Route path="/admin/sentence-info" element={
+        <Routes>
+          {/* Tam ekran giriş: üst menü / footer alanları formu örtmesin */}
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/444-breathing" element={<FourFourFourBreathing />} />
+            <Route path="/blog/beden-taramasi" element={<BodyScan />} />
+            <Route path="/blog/hooponopono" element={<Hooponopono />} />
+            <Route path="/blog/reiki" element={<Reiki />} />
+            <Route path="/blog/travma-duyarli-meditasyon" element={<TraumaSensitiveMeditation />} />
+            <Route path="/blog/uyku-meditasyonu" element={<SleepMeditation />} />
+            <Route path="/blog/yuruyus-meditasyonu" element={<WalkingMeditation />} />
+            <Route path="/blog/sukran-yazim" element={<GratitudeWriting />} />
+            <Route path="/blog/onaylamalar" element={<Affirmations />} />
+            <Route path="/blog/aile-dizimi" element={<FamilyConstellation />} />
+            <Route path="/spiritual-wellbeing" element={<SpiritualWellbeing />} />
+            <Route path="/spiritual-journey" element={<SpiritualJourney />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/cookie-policy" element={<CookiePolicy />} />
+            <Route path="/dailypositive" element={<DailyPositive />} />
+            <Route path="/dailypositive/hesap-silme" element={<AccountDeletion />} />
+            <Route path="/meditasyon-rehberi" element={<MeditationGuide />} />
+            <Route path="/meditation" element={<MeditationGuide />} />
+            <Route
+              path="/admin/sentence-info"
+              element={
                 <SecureAdminRoute>
                   <AdminSentenceInfo />
                 </SecureAdminRoute>
-              } />
-              <Route path="/admin/support" element={
+              }
+            />
+            <Route
+              path="/admin/support"
+              element={
                 <SecureAdminRoute>
                   <AdminSupport />
                 </SecureAdminRoute>
-              } />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
+              }
+            />
+          </Route>
+        </Routes>
       </Router>
     </AuthProvider>
   );
