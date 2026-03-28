@@ -14,7 +14,7 @@ const AdminSentenceInfo: React.FC = () => {
   const [sHead, setSHead] = useState('');
   const [sDetail, setSDetail] = useState('');
   const [sDate, setSDate] = useState('');
-  const [sState, setSState] = useState<number>(1);
+  const [deletingId, setDeletingId] = useState<number | null>(null);
   const [items, setItems] = useState<SentenceInfoRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -52,7 +52,6 @@ const AdminSentenceInfo: React.FC = () => {
         sHead: sHead.trim() || undefined,
         sDetail: sDetail.trim() || undefined,
         sDate: sDate ? new Date(sDate).toISOString() : undefined,
-        sState,
       });
       const data = res.data as { success?: boolean; id?: number } | undefined;
       if (data?.success) {
@@ -60,7 +59,6 @@ const AdminSentenceInfo: React.FC = () => {
         setSHead('');
         setSDetail('');
         setSDate('');
-        setSState(1);
         await load();
       } else {
         setMessage({ type: 'err', text: 'Kayıt eklenemedi.' });
@@ -70,6 +68,33 @@ const AdminSentenceInfo: React.FC = () => {
     } finally {
       setSaving(false);
     }
+  };
+
+  const handleDelete = async (id: number) => {
+    if (!token) return;
+    if (!window.confirm(`Bu kayıt silinsin mi? (Id: ${id})`)) return;
+    setMessage(null);
+    try {
+      setDeletingId(id);
+      const res = await sentenceInfoService.delete(token, id);
+      const data = res.data as { success?: boolean } | undefined;
+      if (data?.success) {
+        setMessage({ type: 'ok', text: `Kayıt silindi (Id: ${id})` });
+        await load();
+      } else {
+        setMessage({ type: 'err', text: 'Silinemedi.' });
+      }
+    } catch {
+      setMessage({ type: 'err', text: 'Silme sırasında hata oluştu.' });
+    } finally {
+      setDeletingId(null);
+    }
+  };
+
+  const formatState = (v: string | number | null | undefined) => {
+    if (v === null || v === undefined || v === '') return '—';
+    if (v === 1 || v === '1') return 'Planlandı';
+    return String(v);
   };
 
   return (
@@ -133,28 +158,15 @@ const AdminSentenceInfo: React.FC = () => {
                 placeholder="Cümle / afirmasyon metni"
               />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">S_Date (isteğe bağlı)</label>
-                <input
-                  type="datetime-local"
-                  value={sDate}
-                  onChange={(e) => setSDate(e.target.value)}
-                  className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-                <p className="text-xs text-gray-500 mt-1">Boş bırakılırsa sunucu UTC zamanı kullanılır.</p>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">S_State</label>
-                <select
-                  value={sState}
-                  onChange={(e) => setSState(Number(e.target.value))}
-                  className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                >
-                  <option value={1}>1 — aktif</option>
-                  <option value={0}>0 — pasif</option>
-                </select>
-              </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">S_Date (isteğe bağlı)</label>
+              <input
+                type="datetime-local"
+                value={sDate}
+                onChange={(e) => setSDate(e.target.value)}
+                className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-purple-500 focus:border-transparent max-w-md"
+              />
+              <p className="text-xs text-gray-500 mt-1">Boş bırakılırsa sunucu UTC zamanı kullanılır. Durum sunucuda otomatik «Planlandı» yazılır.</p>
             </div>
             <button
               type="submit"
@@ -190,7 +202,8 @@ const AdminSentenceInfo: React.FC = () => {
                     <th className="px-4 py-3 font-medium">S_Head</th>
                     <th className="px-4 py-3 font-medium">S_Detail</th>
                     <th className="px-4 py-3 font-medium">S_Date</th>
-                    <th className="px-4 py-3 font-medium">S_State</th>
+                    <th className="px-4 py-3 font-medium">Durum</th>
+                    <th className="px-4 py-3 font-medium w-24">İşlem</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-100">
@@ -206,7 +219,17 @@ const AdminSentenceInfo: React.FC = () => {
                       <td className="px-4 py-3 whitespace-nowrap text-gray-600 text-xs">
                         {row.sDate != null ? String(row.sDate) : '—'}
                       </td>
-                      <td className="px-4 py-3">{row.sState ?? '—'}</td>
+                      <td className="px-4 py-3 text-gray-800">{formatState(row.sState)}</td>
+                      <td className="px-4 py-3">
+                        <button
+                          type="button"
+                          onClick={() => void handleDelete(row.id)}
+                          disabled={deletingId === row.id}
+                          className="text-red-600 hover:text-red-800 text-sm font-medium disabled:opacity-50"
+                        >
+                          {deletingId === row.id ? 'Siliniyor…' : 'Sil'}
+                        </button>
+                      </td>
                     </tr>
                   ))}
                 </tbody>

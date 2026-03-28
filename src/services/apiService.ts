@@ -208,7 +208,8 @@ export interface SentenceInfoRow {
   sHead: string | null;
   sDetail: string | null;
   sDate: string | null;
-  sState: number | null;
+  /** Sunucu NVARCHAR ise metin; eski kayıtlar sayısal da olabilir */
+  sState: string | number | null;
 }
 
 export const sentenceInfoService = {
@@ -218,7 +219,7 @@ export const sentenceInfoService = {
 
   create: async (
     token: string,
-    body: { sHead?: string; sDetail?: string; sDate?: string; sState?: number }
+    body: { sHead?: string; sDetail?: string; sDate?: string }
   ): Promise<ApiResponse<{ success: boolean; id: number }>> => {
     return authenticatedRequest(API_CONFIG.ENDPOINTS.SENTENCE_INFO, token, {
       method: 'POST',
@@ -226,8 +227,13 @@ export const sentenceInfoService = {
         sHead: body.sHead,
         sDetail: body.sDetail,
         sDate: body.sDate ?? undefined,
-        sState: body.sState,
       }),
+    });
+  },
+
+  delete: async (token: string, id: number): Promise<ApiResponse<{ success: boolean }>> => {
+    return authenticatedRequest(`${API_CONFIG.ENDPOINTS.SENTENCE_INFO}/${id}`, token, {
+      method: 'DELETE',
     });
   },
 };
