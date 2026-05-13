@@ -671,6 +671,7 @@
     "terms": "Terms of Service",
     "cookies": "Cookie Policy",
     "privacyPolicy": "Privacy Policy",
+    "kvkk": "KVKK",
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy",
     "rights": "All rights reserved.",
@@ -914,12 +915,13 @@
   "privacyPolicy": {
     "title": "Privacy Policy",
     "subtitle": "Protecting your personal data is important to us.",
-    "lastUpdated": "Last updated: September 29, 2025",
-    "introduction": "This Privacy Policy explains how your personal data is collected, used, stored, and protected when you use our website and online services operated by Purple Spark (\"We\"). We comply with the Personal Data Protection Law No. 6698 (KVKK) and related legislation. GDPR principles are also observed for users accessing from EU/EEA.",
+    "lastUpdated": "Last updated: May 13, 2026",
+    "introduction": "This Privacy Policy explains how your personal data is collected, used, stored, and protected when you use our website, online services, and the DailyPositive mobile app operated by Purple Spark (\"We\"). We comply with the Personal Data Protection Law No. 6698 (KVKK) and related legislation. GDPR principles are also observed for users accessing from EU/EEA.",
     "quickSummary": "Quick Summary",
     "summaryItems": [
       "The site cannot function without mandatory cookies; analytical/marketing cookies require consent.",
-      "We collect basic data for reservations and communication, using it only to provide the service.",
+      "We collect the basic data needed for reservations, communication, and your DailyPositive account, using it only to provide the service.",
+      "Your DailyPositive in-app preferences, notification permissions, support requests, and account deletion requests are covered by this policy.",
       "You can cancel marketing messages at any time.",
       "Write to info@morkivilcim.com for your rights under KVKK."
     ],
@@ -940,21 +942,27 @@
       },
       "policyScope": "What Does This Policy Cover?",
       "policyScopeContent": {
-        "covered": "Our website, communication/reservation forms, newsletter subscription, event registrations, workshop/study applications, and (if you use) mobile app notifications.",
+        "covered": "Our website, communication/reservation forms, newsletter subscription, event registrations, workshop/study applications, the DailyPositive mobile app, DailyPositive account operations, support requests, and mobile notifications.",
         "notCovered": "Links to our social media accounts are not subject to this policy; the relevant platforms' own policies apply."
       },
       "dataCategories": "Data Categories We Collect",
       "dataCategoriesContent": {
         "identity": "Identity and Contact:",
-        "identityDesc": "Name-surname, email, phone.",
+        "identityDesc": "Name-surname, email, phone; when you create a DailyPositive account, account email address and profile information.",
         "transaction": "Transaction Information:",
         "transactionDesc": "Reservation/event registration, payment status (amount, date; card information is processed by payment provider).",
         "content": "Content & Preferences:",
         "contentDesc": "Newsletter/messaging preferences, workshop selection, appointment time.",
+        "appAccount": "DailyPositive Account and App Data:",
+        "appAccountDesc": "DailyPositive account status, in-app preferences, favorites, progress/activity history, and support or account deletion requests.",
+        "appUsage": "DailyPositive Content Use:",
+        "appUsageDesc": "Content and settings you create or select while using daily affirmations, meditation, journaling, and similar features.",
+        "notifications": "Notification and Device Data:",
+        "notificationsDesc": "Notification permission, device operating system, app version, device identifiers, and push notification tokens.",
         "technical": "Technical Data:",
-        "technicalDesc": "IP, device/cookie identifiers, browser/OS, page interaction (analytical cookies require explicit consent).",
+        "technicalDesc": "IP, device/cookie identifiers, browser/OS, app version, page and app interaction (analytical cookies require explicit consent).",
         "sensitive": "Sensitive/Special Category Data:",
-        "sensitiveDesc": "If you share health/wellness data in forms/messages, it is processed only with your explicit consent and for the specified purpose."
+        "sensitiveDesc": "If you share health/wellness data in forms/messages or inside DailyPositive, it is processed only with your explicit consent and for the specified purpose."
       },
       "cookies": "Cookies and Similar Technologies",
       "cookiesContent": {
@@ -972,6 +980,8 @@
       "processingPurposesContent": {
         "service": "Service delivery:",
         "serviceDesc": "Reservation/event registration, responding to communication requests, providing digital content.",
+        "dailyPositiveService": "DailyPositive services:",
+        "dailyPositiveServiceDesc": "Creating and managing accounts, providing personalized content and preferences, delivering mobile notifications, and handling support and account deletion requests.",
         "business": "Business processes:",
         "businessDesc": "Billing, accounting, compliance with obligations.",
         "development": "Development and security:",
@@ -993,7 +1003,7 @@
       "dataSharingContent": {
         "intro": "We may share data with the following providers to a limited and necessary extent for service provision:",
         "items": [
-          "Hosting and infrastructure: Vercel/Azure",
+          "Hosting and infrastructure: Vercel/Azure (including the DailyPositive API and database)",
           "Email and notifications: SendGrid/FCM",
           "Payment/Reservation infrastructure: iyzico/Stripe etc.",
           "Analytics and error monitoring: Google Analytics/Sentry",
@@ -1008,6 +1018,8 @@
         "items": [
           "Contractual/transaction data: relevant legislation periods (e.g., commercial bookkeeping/tax obligations).",
           "Communication/newsletter data: membership/subscription period + 2 years.",
+          "DailyPositive account and app data: while the account is active; after an account deletion request is completed, it is deleted or anonymized except for records that must be retained by law.",
+          "Support and account deletion requests: for reasonable objection and proof periods after the request is completed.",
           "Analytical/cookie data: as long as cookie lifetime (consent-based)."
         ],
         "note": "When the period expires, data is deleted, anonymized, or destroyed."
@@ -1021,7 +1033,7 @@
           "Learning whether it is processed and requesting information,",
           "Learning whether it is used for its purpose and the parties to which it is transferred,",
           "Requesting correction if incomplete/incorrect,",
-          "Requesting deletion/forgetting under KVKK and related legislation,",
+          "Requesting deletion/forgetting under KVKK and related legislation; requesting DailyPositive account deletion,",
           "Objecting to a result against you arising from automatic processing,",
           "Withdrawing explicit consent; rejecting marketing messages."
         ],
@@ -1031,6 +1043,17 @@
         "mail": "Mail:",
         "mailValue": "Bostancı, Istanbul, Turkey",
         "response": "We respond to your applications within the periods specified in the legislation. If you receive a negative response, your right to complain to the KVKK Authority is reserved."
+      },
+      "dailyPositive": "DailyPositive Mobile App",
+      "dailyPositiveContent": {
+        "intro": "DailyPositive is a mobile app offered within the Purple Spark ecosystem. When you use the app, the following data processing activities are also covered by this policy:",
+        "items": [
+          "Email, profile, and technical records may be processed for account creation, sign-in, authentication, and account security.",
+          "In-app preferences, favorites, progress/activity history, journaling, and similar user content are used only to provide and improve the app experience.",
+          "To send push notifications, we may process your device notification permission and tokens from notification services such as FCM; you can disable notifications from your device settings.",
+          "Your support requests, error records, and security logs may be retained to resolve your issue, improve service quality, and prevent abuse."
+        ],
+        "accountDeletion": "You can delete your DailyPositive account through /dailypositive/hesap-silme or by contacting info@morkivilcim.com. Once the request is completed, your account and app data are deleted or anonymized; records that must be retained by law are kept only for the required period."
       },
       "childrenData": "Children's Data",
       "childrenDataContent": "Our services are for adults. Data of users under 18 is not knowingly processed without parental/guardian consent.",

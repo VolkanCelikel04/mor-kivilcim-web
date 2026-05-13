@@ -5,6 +5,13 @@ const PrivacyPolicy: React.FC = () => {
   const { t } = useTranslation();
   const [expandedSections, setExpandedSections] = useState<number[]>([]);
 
+  const summaryItems = t('privacyPolicy.summaryItems', { returnObjects: true }) as string[];
+  const legalBasisItems = t('privacyPolicy.sections.legalBasisContent.items', { returnObjects: true }) as string[];
+  const dataSharingItems = t('privacyPolicy.sections.dataSharingContent.items', { returnObjects: true }) as string[];
+  const retentionItems = t('privacyPolicy.sections.retentionPeriodsContent.items', { returnObjects: true }) as string[];
+  const rightsItems = t('privacyPolicy.sections.rightsContent.items', { returnObjects: true }) as string[];
+  const dailyPositiveItems = t('privacyPolicy.sections.dailyPositiveContent.items', { returnObjects: true }) as string[];
+
   const toggleSection = (sectionId: number) => {
     setExpandedSections(prev => 
       prev.includes(sectionId) 
@@ -16,206 +23,231 @@ const PrivacyPolicy: React.FC = () => {
   const sections = [
     {
       id: 1,
-      title: t('privacyPolicy.section1Title'),
+      title: t('privacyPolicy.sections.dataController'),
       content: (
         <div className="space-y-4">
-          <p><strong>{t('privacyPolicy.dataController')}:</strong> Mor Kıvılcım</p>
-          <p><strong>{t('privacyPolicy.address')}:</strong> Bostancı, İstanbul, Türkiye</p>
-          <p><strong>{t('privacyPolicy.email')}:</strong> info@morkivilcim.com</p>
-          <p><strong>{t('privacyPolicy.phone')}:</strong> 0501 127 25 33</p>
-          <p>{t('privacyPolicy.section1Text')}</p>
+          <p><strong>{t('privacyPolicy.sections.dataControllerContent.dataController')}</strong> {t('privacyPolicy.sections.dataControllerContent.dataControllerValue')}</p>
+          <p><strong>{t('privacyPolicy.sections.dataControllerContent.address')}</strong> {t('privacyPolicy.sections.dataControllerContent.addressValue')}</p>
+          <p><strong>{t('privacyPolicy.sections.dataControllerContent.email')}</strong> {t('privacyPolicy.sections.dataControllerContent.emailValue')}</p>
+          <p><strong>{t('privacyPolicy.sections.dataControllerContent.phone')}</strong> {t('privacyPolicy.sections.dataControllerContent.phoneValue')}</p>
+          <p>{t('privacyPolicy.sections.dataControllerContent.rightsText')}</p>
         </div>
       )
     },
     {
       id: 2,
-      title: t('privacyPolicy.section2Title'),
+      title: t('privacyPolicy.sections.policyScope'),
       content: (
         <div className="space-y-4">
-          <p>{t('privacyPolicy.section2Text1')}</p>
-          <p>{t('privacyPolicy.section2Text2')}</p>
+          <p>{t('privacyPolicy.sections.policyScopeContent.covered')}</p>
+          <p>{t('privacyPolicy.sections.policyScopeContent.notCovered')}</p>
         </div>
       )
     },
     {
       id: 3,
-      title: t('privacyPolicy.section3Title'),
+      title: t('privacyPolicy.sections.dataCategories'),
       content: (
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.identityContact')}:</h4>
-            <p>{t('privacyPolicy.identityContactDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.dataCategoriesContent.identity')}</h4>
+            <p>{t('privacyPolicy.sections.dataCategoriesContent.identityDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.transactionInfo')}:</h4>
-            <p>{t('privacyPolicy.transactionInfoDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.dataCategoriesContent.transaction')}</h4>
+            <p>{t('privacyPolicy.sections.dataCategoriesContent.transactionDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.contentPreferences')}:</h4>
-            <p>{t('privacyPolicy.contentPreferencesDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.dataCategoriesContent.content')}</h4>
+            <p>{t('privacyPolicy.sections.dataCategoriesContent.contentDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.technicalData')}:</h4>
-            <p>{t('privacyPolicy.technicalDataDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.dataCategoriesContent.appAccount')}</h4>
+            <p>{t('privacyPolicy.sections.dataCategoriesContent.appAccountDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.sensitiveData')}:</h4>
-            <p>{t('privacyPolicy.sensitiveDataDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.dataCategoriesContent.appUsage')}</h4>
+            <p>{t('privacyPolicy.sections.dataCategoriesContent.appUsageDesc')}</p>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.dataCategoriesContent.notifications')}</h4>
+            <p>{t('privacyPolicy.sections.dataCategoriesContent.notificationsDesc')}</p>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.dataCategoriesContent.technical')}</h4>
+            <p>{t('privacyPolicy.sections.dataCategoriesContent.technicalDesc')}</p>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.dataCategoriesContent.sensitive')}</h4>
+            <p>{t('privacyPolicy.sections.dataCategoriesContent.sensitiveDesc')}</p>
           </div>
         </div>
       )
     },
     {
       id: 4,
-      title: t('privacyPolicy.section4Title'),
+      title: t('privacyPolicy.sections.cookies'),
       content: (
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.requiredCookies')}:</h4>
-            <p>{t('privacyPolicy.requiredCookiesDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.cookiesContent.mandatory')}</h4>
+            <p>{t('privacyPolicy.sections.cookiesContent.mandatoryDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.analyticsCookies')}:</h4>
-            <p>{t('privacyPolicy.analyticsCookiesDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.cookiesContent.analytical')}</h4>
+            <p>{t('privacyPolicy.sections.cookiesContent.analyticalDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.functionalCookies')}:</h4>
-            <p>{t('privacyPolicy.functionalCookiesDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.cookiesContent.functional')}</h4>
+            <p>{t('privacyPolicy.sections.cookiesContent.functionalDesc')}</p>
           </div>
-          <p>{t('privacyPolicy.cookieManagement')}</p>
+          <p>{t('privacyPolicy.sections.cookiesContent.management')}</p>
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.exampleCookies')}:</h4>
-            <p>{t('privacyPolicy.exampleCookiesDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.cookiesContent.examples')}</h4>
+            <p>{t('privacyPolicy.sections.cookiesContent.examplesDesc')}</p>
           </div>
         </div>
       )
     },
     {
       id: 5,
-      title: t('privacyPolicy.section5Title'),
+      title: t('privacyPolicy.sections.processingPurposes'),
       content: (
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.serviceDelivery')}:</h4>
-            <p>{t('privacyPolicy.serviceDeliveryDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.processingPurposesContent.service')}</h4>
+            <p>{t('privacyPolicy.sections.processingPurposesContent.serviceDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.businessProcesses')}:</h4>
-            <p>{t('privacyPolicy.businessProcessesDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.processingPurposesContent.dailyPositiveService')}</h4>
+            <p>{t('privacyPolicy.sections.processingPurposesContent.dailyPositiveServiceDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.developmentSecurity')}:</h4>
-            <p>{t('privacyPolicy.developmentSecurityDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.processingPurposesContent.business')}</h4>
+            <p>{t('privacyPolicy.sections.processingPurposesContent.businessDesc')}</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.marketing')}:</h4>
-            <p>{t('privacyPolicy.marketingDesc')}</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.processingPurposesContent.development')}</h4>
+            <p>{t('privacyPolicy.sections.processingPurposesContent.developmentDesc')}</p>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.processingPurposesContent.marketing')}</h4>
+            <p>{t('privacyPolicy.sections.processingPurposesContent.marketingDesc')}</p>
           </div>
         </div>
       )
     },
     {
       id: 6,
-      title: t('privacyPolicy.section6Title'),
+      title: t('privacyPolicy.sections.legalBasis'),
       content: (
         <div className="space-y-4">
           <ul className="list-disc list-inside space-y-2">
-            <li>{t('privacyPolicy.legalBasis1')}</li>
-            <li>{t('privacyPolicy.legalBasis2')}</li>
-            <li>{t('privacyPolicy.legalBasis3')}</li>
-            <li>{t('privacyPolicy.legalBasis4')}</li>
+            {legalBasisItems.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
-          <p>{t('privacyPolicy.consentWithdrawal')}</p>
+          <p>{t('privacyPolicy.sections.legalBasisContent.consentNote')}</p>
         </div>
       )
     },
     {
       id: 7,
-      title: t('privacyPolicy.section7Title'),
+      title: t('privacyPolicy.sections.dataSharing'),
       content: (
         <div className="space-y-4">
-          <p>{t('privacyPolicy.dataSharingIntro')}</p>
+          <p>{t('privacyPolicy.sections.dataSharingContent.intro')}</p>
           <ul className="list-disc list-inside space-y-2">
-            <li><strong>{t('privacyPolicy.hostingInfrastructure')}:</strong> Vercel/Azure</li>
-            <li><strong>{t('privacyPolicy.emailNotifications')}:</strong> SendGrid/FCM</li>
-            <li><strong>{t('privacyPolicy.paymentReservation')}:</strong> iyzico/Stripe vb.</li>
-            <li><strong>{t('privacyPolicy.analyticsErrorTracking')}:</strong> Google Analytics/Sentry</li>
-            <li><strong>{t('privacyPolicy.legalAccounting')}:</strong> {t('privacyPolicy.legalAccountingDesc')}</li>
+            {dataSharingItems.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
-          <p>{t('privacyPolicy.serviceProviders')}</p>
+          <p>{t('privacyPolicy.sections.dataSharingContent.note')}</p>
         </div>
       )
     },
     {
       id: 8,
-      title: t('privacyPolicy.section8Title'),
+      title: t('privacyPolicy.sections.internationalTransfer'),
       content: (
         <div className="space-y-4">
-          <p>{t('privacyPolicy.internationalTransfer')}</p>
+          <p>{t('privacyPolicy.sections.internationalTransferContent')}</p>
         </div>
       )
     },
     {
       id: 9,
-      title: t('privacyPolicy.section9Title'),
+      title: t('privacyPolicy.sections.retentionPeriods'),
       content: (
         <div className="space-y-4">
           <ul className="list-disc list-inside space-y-2">
-            <li><strong>{t('privacyPolicy.contractualData')}:</strong> {t('privacyPolicy.contractualDataDesc')}</li>
-            <li><strong>{t('privacyPolicy.communicationNewsletter')}:</strong> {t('privacyPolicy.communicationNewsletterDesc')}</li>
-            <li><strong>{t('privacyPolicy.analyticsCookieData')}:</strong> {t('privacyPolicy.analyticsCookieDataDesc')}</li>
+            {retentionItems.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
-          <p>{t('privacyPolicy.dataRetentionEnd')}</p>
+          <p>{t('privacyPolicy.sections.retentionPeriodsContent.note')}</p>
         </div>
       )
     },
     {
       id: 10,
-      title: t('privacyPolicy.section10Title'),
+      title: t('privacyPolicy.sections.security'),
       content: (
         <div className="space-y-4">
-          <p>{t('privacyPolicy.security')}</p>
+          <p>{t('privacyPolicy.sections.securityContent')}</p>
         </div>
       )
     },
     {
       id: 11,
-      title: t('privacyPolicy.section11Title'),
+      title: t('privacyPolicy.sections.rights'),
       content: (
         <div className="space-y-4">
-          <p>{t('privacyPolicy.rightsIntro')}</p>
+          <p>{t('privacyPolicy.sections.rightsContent.intro')}</p>
           <ul className="list-disc list-inside space-y-2">
-            <li>{t('privacyPolicy.right1')}</li>
-            <li>{t('privacyPolicy.right2')}</li>
-            <li>{t('privacyPolicy.right3')}</li>
-            <li>{t('privacyPolicy.right4')}</li>
-            <li>{t('privacyPolicy.right5')}</li>
-            <li>{t('privacyPolicy.right6')}</li>
+            {rightsItems.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
           <div>
-            <h4 className="font-semibold mb-2">{t('privacyPolicy.applicationChannels')}:</h4>
-            <p><strong>{t('privacyPolicy.email')}:</strong> info@morkivilcim.com ({t('privacyPolicy.emailSubject')})</p>
-            <p><strong>{t('privacyPolicy.mail')}:</strong> Bostancı, İstanbul, Türkiye</p>
+            <h4 className="font-semibold mb-2">{t('privacyPolicy.sections.rightsContent.channels')}</h4>
+            <p><strong>{t('privacyPolicy.sections.rightsContent.email')}</strong> {t('privacyPolicy.sections.rightsContent.emailValue')}</p>
+            <p><strong>{t('privacyPolicy.sections.rightsContent.mail')}</strong> {t('privacyPolicy.sections.rightsContent.mailValue')}</p>
           </div>
-          <p>{t('privacyPolicy.responseTime')}</p>
+          <p>{t('privacyPolicy.sections.rightsContent.response')}</p>
         </div>
       )
     },
     {
       id: 12,
-      title: t('privacyPolicy.section12Title'),
+      title: t('privacyPolicy.sections.childrenData'),
       content: (
         <div className="space-y-4">
-          <p>{t('privacyPolicy.childrenData')}</p>
+          <p>{t('privacyPolicy.sections.childrenDataContent')}</p>
         </div>
       )
     },
     {
       id: 13,
-      title: t('privacyPolicy.section13Title'),
+      title: t('privacyPolicy.sections.dailyPositive'),
       content: (
         <div className="space-y-4">
-          <p>{t('privacyPolicy.changes')}</p>
+          <p>{t('privacyPolicy.sections.dailyPositiveContent.intro')}</p>
+          <ul className="list-disc list-inside space-y-2">
+            {dailyPositiveItems.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+          <p>{t('privacyPolicy.sections.dailyPositiveContent.accountDeletion')}</p>
+        </div>
+      )
+    },
+    {
+      id: 14,
+      title: t('privacyPolicy.sections.changes'),
+      content: (
+        <div className="space-y-4">
+          <p>{t('privacyPolicy.sections.changesContent')}</p>
         </div>
       )
     }
@@ -252,10 +284,9 @@ const PrivacyPolicy: React.FC = () => {
           <div className="bg-mor-50 border border-mor-200 rounded-lg p-6 mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('privacyPolicy.quickSummary')}</h2>
             <ul className="space-y-2 text-gray-700">
-              <li>• {t('privacyPolicy.summary1')}</li>
-              <li>• {t('privacyPolicy.summary2')}</li>
-              <li>• {t('privacyPolicy.summary3')}</li>
-              <li>• {t('privacyPolicy.summary4')}</li>
+              {summaryItems.map((item, index) => (
+                <li key={index}>• {item}</li>
+              ))}
             </ul>
           </div>
 
@@ -299,8 +330,8 @@ const PrivacyPolicy: React.FC = () => {
               {t('privacyPolicy.contactText')}
             </p>
             <p className="text-gray-700">
-              <strong>{t('privacyPolicy.email')}:</strong> info@morkivilcim.com<br />
-              <strong>{t('privacyPolicy.phone')}:</strong> 0501 127 25 33
+              <strong>{t('privacyPolicy.sections.dataControllerContent.email')}</strong> {t('privacyPolicy.sections.dataControllerContent.emailValue')}<br />
+              <strong>{t('privacyPolicy.sections.dataControllerContent.phone')}</strong> {t('privacyPolicy.sections.dataControllerContent.phoneValue')}
             </p>
           </div>
         </div>

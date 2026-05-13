@@ -1,195 +1,154 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+type Section = {
+  id: number;
+  title: string;
+  content: React.ReactNode;
+};
 
 const TermsOfService: React.FC = () => {
-  const [expandedSections, setExpandedSections] = useState<number[]>([]);
+  const [expandedSections, setExpandedSections] = useState<number[]>([1, 2, 7]);
 
   const toggleSection = (sectionId: number) => {
-    setExpandedSections(prev => 
-      prev.includes(sectionId) 
+    setExpandedSections(prev =>
+      prev.includes(sectionId)
         ? prev.filter(id => id !== sectionId)
         : [...prev, sectionId]
     );
   };
 
-  const sections = [
+  const sections: Section[] = [
     {
       id: 1,
-      title: "Tanımlar",
+      title: 'Taraflar, Kapsam ve Kabul',
       content: (
         <div className="space-y-4">
-          <div>
-            <h4 className="font-semibold mb-2">Şirket/İşletme:</h4>
-            <p>Mor Kıvılcım, Adres: Bostancı, İstanbul, Türkiye, E-posta: info@morkivilcim.com, Tel: 0501 127 25 33</p>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-2">Hizmetler:</h4>
-            <p>Meditasyon içerikleri, enerji çalışmaları, atölye/etkinlikler, randevu/rezervasyon, bülten, duyuru ve benzeri dijital/çevrimdışı hizmetler.</p>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-2">Kullanıcı:</h4>
-            <p>Siteyi ziyaret eden, kayıt olan, form dolduran veya Hizmetlerden yararlanan gerçek/tüzel kişi.</p>
-          </div>
+          <p>Bu Kullanım Şartları, Mor Kıvılcım tarafından sunulan web sitesi, çevrimiçi hizmetler, iletişim ve rezervasyon kanalları ile DailyPositive mobil uygulamasının kullanım koşullarını düzenler.</p>
+          <p>Siteyi, DailyPositive uygulamasını veya ilgili hizmetleri kullanan herkes bu şartları okumuş ve kabul etmiş sayılır. Bu şartları kabul etmiyorsanız hizmetleri kullanmamalısınız.</p>
+          <p><strong>İletişim:</strong> Mor Kıvılcım, Bostancı, İstanbul, Türkiye, info@morkivilcim.com, 0501 127 25 33</p>
         </div>
       )
     },
     {
       id: 2,
-      title: "Şartların Kapsamı ve Değişiklik",
+      title: 'DailyPositive Hesabı ve Uygulama Kullanımı',
       content: (
         <div className="space-y-4">
-          <p>Mor Kıvılcım, Şartları tek taraflı olarak güncelleyebilir. En güncel sürüm sitede yayımlandığı anda yürürlüğe girer. Önemli değişiklikleri makul ölçüde bildirmek için çaba gösteririz. Kullanımın sürmesi, değişikliklerin kabulü anlamına gelir.</p>
+          <p>DailyPositive hesabı oluştururken doğru ve güncel bilgi vermeniz gerekir. Hesap güvenliğinizden, cihazınıza erişimden ve hesabınız üzerinden yapılan işlemlerden siz sorumlusunuz.</p>
+          <p>DailyPositive; günlük olumlamalar, meditasyon destekleri, günlük yazımı, tercih ve ilerleme özellikleri, bildirimler ve destek kanalları sunabilir. Özellikler zaman içinde değişebilir, askıya alınabilir veya geliştirilebilir.</p>
+          <p>Hesabınızı dilediğiniz zaman <Link to="/dailypositive/hesap-silme" className="text-mor-600 hover:text-mor-700 underline">Delete Account / Hesap Silme</Link> sayfasından veya info@morkivilcim.com üzerinden silme talebiyle kapatabilirsiniz.</p>
         </div>
       )
     },
     {
       id: 3,
-      title: "Uygunluk ve Hesap",
+      title: 'Kullanıcı Yükümlülükleri',
       content: (
         <div className="space-y-4">
-          <p>Site ve Hizmetler, kural olarak 18 yaş ve üzeri içindir. 18 yaş altı kullanım veli/vasi onayıyla mümkündür.</p>
-          <p>Hesap açılırsa, erişim bilgilerini gizli tutmak Kullanıcı'nın sorumluluğundadır. Hesap üzerinden yapılan tüm işlemler Kullanıcıya aittir.</p>
-          <p>Mor Kıvılcım, uygun görmediği hesapları askıya alma veya sonlandırma hakkını saklı tutar.</p>
+          <p>Kullanıcı, hizmetleri hukuka, iyi niyet kurallarına, üçüncü kişi haklarına ve bu şartlara uygun kullanmayı kabul eder.</p>
+          <ul className="list-disc list-inside space-y-2">
+            <li>Yetkisiz erişim, tersine mühendislik, güvenlik testi, bot, scraping veya hizmeti bozacak otomasyon kullanamazsınız.</li>
+            <li>Hakaret, tehdit, nefret söylemi, taciz, spam, zararlı yazılım veya hukuka aykırı içerik paylaşamazsınız.</li>
+            <li>Başkasına ait hesap, kimlik veya iletişim bilgilerini izinsiz kullanamazsınız.</li>
+            <li>DailyPositive içinde oluşturduğunuz günlük, tercih veya benzeri içeriklerden siz sorumlusunuz.</li>
+          </ul>
         </div>
       )
     },
     {
       id: 4,
-      title: "İçerikler ve Fikri Mülkiyet",
+      title: 'Sağlık, Refah ve Acil Durum Uyarısı',
       content: (
         <div className="space-y-4">
-          <p>Sitedeki tüm metin, görsel, logo, ses, video, marka, tasarım ve kod dâhil içerikler Mor Kıvılcım'a veya lisans verenlerine aittir.</p>
-          <p>Ön yazılı izin olmaksızın kopyalama, çoğaltma, değiştirme, dağıtma, halka iletim yasaktır.</p>
-          <p>Kullanıcı tarafından gönderilen içerik/testimonial (metin, fotoğraf vb.) için Mor Kıvılcım'a dünya çapında, devredilebilir, alt lisanslanabilir, ücretsiz kullanım, çoğaltma, yayımlama ve gösterim lisansı verilir. Kişisel verileriniz Gizlilik Politikasına tabidir.</p>
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+            <p className="font-semibold text-yellow-900 mb-2">Önemli uyarı</p>
+            <p className="text-yellow-900">Mor Kıvılcım ve DailyPositive içerikleri tıbbi, psikolojik veya psikiyatrik tanı, tedavi ya da acil destek hizmeti değildir. Profesyonel sağlık hizmetlerinin yerine kullanılmamalıdır.</p>
+          </div>
+          <p>Kendinize veya bir başkasına zarar verme riski, panik, kriz, ağır kaygı, travma tetiklenmesi ya da acil sağlık durumu varsa 112'yi arayın veya en yakın sağlık kuruluşuna başvurun.</p>
+          <p>Uygulama ya da içerikler sizde rahatsızlık yaratırsa kullanımı durdurmanız ve uygun bir uzmandan destek almanız önerilir.</p>
         </div>
       )
     },
     {
       id: 5,
-      title: "Kabul Edilebilir Kullanım",
+      title: 'İçerik, Fikri Mülkiyet ve Lisans',
       content: (
         <div className="space-y-4">
-          <p>Kullanıcı:</p>
-          <ul className="list-disc list-inside space-y-2 ml-4">
-            <li>Yürürlükteki mevzuata, üçüncü kişi haklarına ve genel ahlaka aykırı eylemlerde bulunamaz,</li>
-            <li>Virüs, kötü amaçlı yazılım, otomatik erişim (scraping, bot vb.) veya sisteme yetkisiz giriş girişiminde bulunamaz,</li>
-            <li>Hakaret, nefret söylemi, taciz, spam içerik paylaşamaz,</li>
-            <li>Hizmetlerin kaynak kodunu geri mühendislik (reverse engineering) amacıyla kullanamaz.</li>
-          </ul>
-          <p>Aykırı kullanım tespitinde erişim sınırlanabilir, hesap kapatılabilir; hukuki ve cezai yollara başvurulabilir.</p>
+          <p>Web sitesi, DailyPositive uygulaması, metinler, tasarımlar, logolar, görseller, yazılım, marka unsurları ve diğer içerikler Mor Kıvılcım'a veya lisans verenlerine aittir.</p>
+          <p>Size, hizmetleri kişisel ve hukuka uygun kullanımınız için sınırlı, devredilemez, münhasır olmayan bir kullanım hakkı verilir. İçerikleri izinsiz kopyalayamaz, çoğaltamaz, dağıtamaz, satamaz veya ticari amaçla kullanamazsınız.</p>
+          <p>DailyPositive içinde sizin oluşturduğunuz günlük notları ve benzeri kullanıcı içerikleri size aittir. Bu içerikler, hizmeti sunmak, senkronize etmek, yedeklemek, güvenliği sağlamak ve destek taleplerinizi çözmek için gerekli ölçüde işlenebilir.</p>
         </div>
       )
     },
     {
       id: 6,
-      title: "Randevu, Etkinlik ve Ödemeler",
+      title: 'Ödemeler, Randevular ve Dijital Hizmetler',
       content: (
         <div className="space-y-4">
-          <div>
-            <h4 className="font-semibold mb-2">Randevu/Etkinlik:</h4>
-            <p>Rezervasyon koşulları, tarih ve kontenjanlar sitede/iletişimde belirtilir.</p>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-2">İptal/Erteleme:</h4>
-            <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Kullanıcı iptali için öneri: ≥24 saat öncesine kadar ücretsiz erteleme/iptal; &lt;24 saat no-show sayılabilir.</li>
-              <li>Etkinliklerde bilet/devre dışı bırakma, erteleme ve iade koşulları etkinlik sayfasında ayrıca duyurulur.</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-2">Dijital İçerik:</h4>
-            <p>İndirilebilir/erişilebilir dijital içeriklerde, mevzuat gereği cayma istisnaları uygulanabilir.</p>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-2">Ödemeler:</h4>
-            <p>Ödemeler (ör. Iyzico/Stripe vb. sağlayıcılarla) güvenli ödeme altyapısı üzerinden yapılır; kart verileri Mor Kıvılcım tarafından saklanmaz.</p>
-          </div>
+          <p>Mor Kıvılcım web sitesi üzerinden randevu, etkinlik, atölye veya dijital içerik sunulabilir. Ücret, kapsam, iptal, erteleme ve iade koşulları ilgili hizmet sayfasında veya iletişim kanalında ayrıca belirtilir.</p>
+          <p>Ödeme alınan hizmetlerde kart bilgileri Mor Kıvılcım tarafından saklanmaz; ödeme sağlayıcısının güvenli altyapısı üzerinden işlenir. App Store veya Google Play üzerinden sunulan işlemlerde ilgili mağaza koşulları da uygulanabilir.</p>
         </div>
       )
     },
     {
       id: 7,
-      title: "Sağlık/Refah ve Acil Durum Uyarısı",
+      title: 'Hesap Silme, Askıya Alma ve Sonlandırma',
       content: (
         <div className="space-y-4">
-          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-            <p className="font-semibold text-yellow-800 mb-2">⚠️ Önemli Uyarı:</p>
-            <p>Mor Kıvılcım'ın sunduğu meditasyon, enerji çalışmaları ve benzeri Hizmetler tıbbi/psikolojik tanı ve tedavi değildir; profesyonel sağlık hizmetlerinin alternatifi olarak kullanılmamalıdır.</p>
-          </div>
-          <p>Acil durumda 112'yi arayın veya en yakın sağlık kuruluşuna başvurun. Herhangi bir rahatsızlık/rahatsız edici duygu halinde çalışmayı durdurmanız ve uzman görüşü almanız önerilir.</p>
+          <p>DailyPositive hesabınızı uygulama içinden sunulan yol, <Link to="/dailypositive/hesap-silme" className="text-mor-600 hover:text-mor-700 underline">web hesap silme sayfası</Link> veya info@morkivilcim.com üzerinden kapatmayı talep edebilirsiniz.</p>
+          <p>Hesap silme talebi tamamlandığında profil, uygulama içi tercihler, günlük/aktivite kayıtları ve hesapla ilişkilendirilen kişisel veriler silinir veya anonimleştirilir. Vergi, muhasebe, uyuşmazlık, güvenlik ve yasal yükümlülük kapsamında tutulması gereken kayıtlar yalnızca gerekli süre boyunca saklanır.</p>
+          <p>Mor Kıvılcım; güvenlik riski, hukuka aykırı kullanım, kötüye kullanım, teknik zorunluluk veya şartların ihlali halinde hesabı ya da hizmet erişimini askıya alabilir veya sonlandırabilir.</p>
         </div>
       )
     },
     {
       id: 8,
-      title: "Üçüncü Taraf Bağlantılar ve Araçlar",
+      title: 'Gizlilik, KVKK ve Bildirimler',
       content: (
         <div className="space-y-4">
-          <p>Site, üçüncü taraf web sitelerine/araçlarına yönlendirebilir (örn. rezervasyon, ödeme, analitik). Bu sitelerin içerik ve politikalarından Mor Kıvılcım sorumlu değildir; kullanım kendi koşullarına tabidir.</p>
+          <p>Kişisel verilerin işlenmesine ilişkin ayrıntılar <Link to="/privacy-policy" className="text-mor-600 hover:text-mor-700 underline">Gizlilik Politikası</Link>, <Link to="/kvkk" className="text-mor-600 hover:text-mor-700 underline">KVKK Aydınlatma Metni</Link> ve <Link to="/cookie-policy" className="text-mor-600 hover:text-mor-700 underline">Çerez Politikası</Link> içinde açıklanır.</p>
+          <p>DailyPositive bildirimlerini cihaz ayarlarınızdan kapatabilirsiniz. Pazarlama veya duyuru iletişimleri açık rızaya bağlıdır ve her zaman geri çekilebilir.</p>
         </div>
       )
     },
     {
       id: 9,
-      title: "Gizlilik ve Çerezler",
+      title: 'Üçüncü Taraf Hizmetler',
       content: (
         <div className="space-y-4">
-          <p>Kişisel verilerinizin işlenmesine ilişkin ayrıntılar Gizlilik Politikası'nda; çerez kullanım detayları Çerez Politikası'nda yer alır. KVKK ve, uygulanabiliyorsa, GDPR kapsamındaki haklarınızı kullanabilirsiniz: info@morkivilcim.com</p>
+          <p>Hizmetler; barındırma, analitik, hata izleme, ödeme, e-posta, push bildirimleri, uygulama mağazaları veya sosyal medya bağlantıları gibi üçüncü taraf hizmetlerle çalışabilir. Bu hizmetlerin kendi koşulları ve gizlilik politikaları geçerli olabilir.</p>
+          <p>Üçüncü taraf bağlantıların içeriğinden veya bu platformlardaki işlemlerden Mor Kıvılcım sorumlu değildir.</p>
         </div>
       )
     },
     {
       id: 10,
-      title: "Sorumluluk Reddi ve Sınırı",
+      title: 'Sorumluluğun Sınırı',
       content: (
         <div className="space-y-4">
-          <p>Site "olduğu gibi" ve "müsait oldukça" sunulur; kesintisizlik, hatasızlık, belirli amaca uygunluk garantisi verilmez.</p>
-          <p>Dolaylı, sonuçsal veya kâr kaybı gibi zararlardan Mor Kıvılcım sorumlu değildir. Zorunlu tüketici mevzuatı kapsamındaki haklarınız saklıdır.</p>
-          <p>Mücbir sebep (doğal afet, savaş, grev, altyapı kesintisi vb.) hallerinde sorumluluk doğmaz.</p>
+          <p>Hizmetler "olduğu gibi" ve "müsait oldukça" sunulur. Kesintisizlik, hatasızlık, belirli bir sonuca ulaşma veya belirli bir amaca uygunluk garantisi verilmez.</p>
+          <p>Zorunlu tüketici mevzuatından doğan haklarınız saklı kalmak kaydıyla, dolaylı zarar, kâr kaybı, veri kaybı, hizmet kesintisi veya üçüncü taraf işlemlerinden doğan zararlardan sorumluluk kabul edilmez.</p>
         </div>
       )
     },
     {
       id: 11,
-      title: "Askıya Alma ve Fesih",
+      title: 'Değişiklikler',
       content: (
         <div className="space-y-4">
-          <p>Mor Kıvılcım; Şartlara aykırılık, güvenlik riski veya hukuki zorunluluk hâllerinde Hizmetleri askıya alabilir veya sonlandırabilir. Kullanıcı da hesabını dilediği zaman kapatabilir. Fesih, yürürlükteki borç ve yükümlülükleri sona erdirmez.</p>
+          <p>Bu şartlar zaman zaman güncellenebilir. Güncel sürüm web sitesinde yayımlandığı anda yürürlüğe girer. Önemli değişikliklerde makul yöntemlerle bilgilendirme yapılabilir.</p>
+          <p>Değişikliklerden sonra hizmetleri kullanmaya devam etmeniz güncel şartları kabul ettiğiniz anlamına gelir.</p>
         </div>
       )
     },
     {
       id: 12,
-      title: "Uygulanacak Hukuk ve Yetkili Mahkeme",
+      title: 'Uygulanacak Hukuk ve İletişim',
       content: (
         <div className="space-y-4">
-          <p>Bu Şartlar Türkiye Cumhuriyeti hukukuna tabidir. Uyuşmazlıklarda İstanbul Merkez Mahkemeleri ve İcra Daireleri yetkilidir. Tüketici sıfatını haiz kullanıcılar, kendi yerleşim yerlerindeki Tüketici Mahkemeleri/Heyetlerine de başvurabilir.</p>
-        </div>
-      )
-    },
-    {
-      id: 13,
-      title: "Bildirimler ve İletişim",
-      content: (
-        <div className="space-y-4">
-          <p>Resmî bildirimler info@morkivilcim.com adresine e-posta ile yapılabilir. Mor Kıvılcım, Kullanıcı'nın sağladığı iletişim bilgileri üzerinden bilgilendirme yapabilir (bülten için açık rıza gerekir ve her zaman vazgeçebilirsiniz).</p>
-        </div>
-      )
-    },
-    {
-      id: 14,
-      title: "Hükümlerin Ayrılabilirliği",
-      content: (
-        <div className="space-y-4">
-          <p>Şartların herhangi bir hükmü geçersiz/uygulanamaz sayılırsa, kalan hükümler yürürlükte kalır.</p>
-        </div>
-      )
-    },
-    {
-      id: 15,
-      title: "Yürürlük",
-      content: (
-        <div className="space-y-4">
-          <p>Bu Şartlar 29 Eylül 2025 tarihi itibarıyla yürürlüktedir ve Site'de yayımlandığı sürece geçerlidir.</p>
+          <p>Bu şartlar Türkiye Cumhuriyeti hukukuna tabidir. Tüketici sıfatından doğan zorunlu başvuru haklarınız saklıdır.</p>
+          <p>Sorularınız için info@morkivilcim.com adresine yazabilir veya 0501 127 25 33 numarasından bize ulaşabilirsiniz.</p>
         </div>
       )
     }
@@ -197,43 +156,26 @@ const TermsOfService: React.FC = () => {
 
   return (
     <div className="bg-white">
-      {/* Hero Section */}
       <section className="bg-gradient-to-r from-mor-600 to-mor-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Kullanım Şartları</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Web sitemizi ve hizmetlerimizi kullanım koşulları.
+              Mor Kıvılcım web sitesi ve DailyPositive mobil uygulaması kullanım koşulları.
             </p>
-            <p className="text-lg mt-4 opacity-90">
-              Son güncelleme: 29 Eylül 2025
-            </p>
+            <p className="text-lg mt-4 opacity-90">Son güncelleme: 13 Mayıs 2026</p>
           </div>
         </div>
       </section>
 
-      {/* Content */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Introduction */}
           <div className="mb-12">
             <p className="text-lg text-gray-700 leading-relaxed">
-              Bu Kullanım Şartları ("Şartlar"), Mor Kıvılcım tarafından işletilen web sitemiz ve ilişkili hizmetlerin ("Hizmetler") kullanım koşullarını düzenler. Siteye giren ve/veya Hizmetleri kullanan herkes ("Kullanıcı") bu Şartları okumuş, anlamış ve kabul etmiş sayılır.
+              Bu metin, Mor Kıvılcım hizmetlerini ve DailyPositive uygulamasını güvenli, şeffaf ve hukuka uygun şekilde kullanmanız için hazırlanmıştır.
             </p>
           </div>
 
-          {/* Important Notice */}
-          <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-12">
-            <h2 className="text-xl font-bold text-red-800 mb-4 flex items-center">
-              <span className="text-2xl mr-2">⚠️</span>
-              Önemli Uyarı
-            </h2>
-            <p className="text-red-700">
-              Mor Kıvılcım'ın sunduğu meditasyon, enerji çalışmaları ve benzeri hizmetler tıbbi/psikolojik tanı ve tedavi değildir. Acil durumda 112'yi arayın veya en yakın sağlık kuruluşuna başvurun.
-            </p>
-          </div>
-
-          {/* Sections */}
           <div className="space-y-6">
             {sections.map((section) => (
               <div key={section.id} className="border border-gray-200 rounded-lg">
@@ -257,7 +199,7 @@ const TermsOfService: React.FC = () => {
                 </button>
                 {expandedSections.includes(section.id) && (
                   <div className="px-6 pb-6 border-t border-gray-200">
-                    <div className="pt-4">
+                    <div className="pt-4 text-gray-700">
                       {section.content}
                     </div>
                   </div>
@@ -266,12 +208,8 @@ const TermsOfService: React.FC = () => {
             ))}
           </div>
 
-          {/* Contact Info */}
           <div className="mt-12 bg-gray-50 rounded-lg p-6">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">İletişim</h3>
-            <p className="text-gray-700 mb-2">
-              Kullanım şartları hakkında sorularınız için bizimle iletişime geçebilirsiniz:
-            </p>
             <p className="text-gray-700">
               <strong>E-posta:</strong> info@morkivilcim.com<br />
               <strong>Telefon:</strong> 0501 127 25 33<br />
@@ -285,4 +223,3 @@ const TermsOfService: React.FC = () => {
 };
 
 export default TermsOfService;
-

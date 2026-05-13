@@ -15,6 +15,7 @@ import AdminLogin from './pages/AdminLogin';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import CookiePolicy from './pages/CookiePolicy';
+import KvkkPolicy from './pages/KvkkPolicy';
 // Blog imports
 import FourFourFourBreathing from './pages/blog/444Breathing';
 import BodyScan from './pages/blog/BodyScan';
@@ -74,10 +75,14 @@ function App() {
             <Route path="/spiritual-journey" element={<SpiritualJourney />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/kvkk" element={<KvkkPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/terms-of-use" element={<TermsOfService />} />
             <Route path="/cookie-policy" element={<CookiePolicy />} />
             <Route path="/dailypositive" element={<DailyPositive />} />
             <Route path="/dailypositive/hesap-silme" element={<AccountDeletion />} />
+            <Route path="/dailypositive/delete-account" element={<AccountDeletion />} />
+            <Route path="/delete-account" element={<AccountDeletion />} />
             <Route path="/meditasyon-rehberi" element={<MeditationGuide />} />
             <Route path="/meditation" element={<MeditationGuide />} />
             <Route

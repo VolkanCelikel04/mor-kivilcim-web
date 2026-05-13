@@ -140,9 +140,11 @@ const Footer: React.FC = () => {
                 {t('footer.centerDescription')}
               </p>
             </div>
-            <div className="flex items-center space-x-6 text-sm text-gray-400">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-gray-400">
               <Link to="/privacy-policy" className="hover:text-mor-400 transition-colors">{t('footer.privacyPolicy')}</Link>
+              <Link to="/kvkk" className="hover:text-mor-400 transition-colors">{t('footer.kvkk')}</Link>
               <Link to="/terms-of-service" className="hover:text-mor-400 transition-colors">{t('footer.termsOfService')}</Link>
+              <Link to="/dailypositive/hesap-silme" className="hover:text-mor-400 transition-colors">Delete Account</Link>
               <Link to="/cookie-policy" className="hover:text-mor-400 transition-colors">{t('footer.cookiePolicy')}</Link>
             </div>
           </div>

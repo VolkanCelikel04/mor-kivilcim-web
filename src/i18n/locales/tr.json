@@ -669,6 +669,7 @@
     "terms": "Kullanım Şartları",
     "cookies": "Çerez Politikası",
     "privacyPolicy": "Gizlilik Politikası",
+    "kvkk": "KVKK",
     "termsOfService": "Kullanım Şartları",
     "cookiePolicy": "Çerez Politikası",
     "rights": "Tüm hakları saklıdır.",
@@ -912,12 +913,13 @@
   "privacyPolicy": {
     "title": "Gizlilik Politikası",
     "subtitle": "Kişisel verilerinizin korunması bizim için önemlidir.",
-    "lastUpdated": "Son güncelleme: 29 Eylül 2025",
-    "introduction": "Bu Gizlilik Politikası, Mor Kıvılcım (\"Biz\") tarafından işletilen web sitemizi ve çevrimiçi hizmetlerimizi kullandığınızda kişisel verilerinizin nasıl toplandığını, kullanıldığını, saklandığını ve korunduğunu açıklar. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili mevzuata uyarız. AB/AEA'dan erişen kullanıcılar için GDPR ilkeleri de gözetilir.",
+    "lastUpdated": "Son güncelleme: 13 Mayıs 2026",
+    "introduction": "Bu Gizlilik Politikası, Mor Kıvılcım (\"Biz\") tarafından işletilen web sitemizi, çevrimiçi hizmetlerimizi ve DailyPositive mobil uygulamasını kullandığınızda kişisel verilerinizin nasıl toplandığını, kullanıldığını, saklandığını ve korunduğunu açıklar. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili mevzuata uyarız. AB/AEA'dan erişen kullanıcılar için GDPR ilkeleri de gözetilir.",
     "quickSummary": "Kısa Özet",
     "summaryItems": [
       "Zorunlu çerezler olmadan site çalışmaz; analitik/pazarlama çerezleri rızaya bağlıdır.",
-      "Rezervasyon ve iletişim için temel verileri alır, sadece hizmeti sağlamak için kullanırız.",
+      "Rezervasyon, iletişim ve DailyPositive hesabı için gerekli temel verileri alır, sadece hizmeti sağlamak için kullanırız.",
+      "DailyPositive uygulama içi tercihleriniz, bildirim izinleriniz, destek ve hesap silme talepleriniz bu politika kapsamındadır.",
       "Pazarlama mesajlarını dilediğiniz an iptal edebilirsiniz.",
       "KVKK kapsamındaki haklarınız için info@morkivilcim.com adresine yazın."
     ],
@@ -938,21 +940,27 @@
       },
       "policyScope": "Bu Politika Neleri Kapsar?",
       "policyScopeContent": {
-        "covered": "Web sitemiz, iletişim/rezervasyon formlarımız, bülten aboneliği, etkinlik kayıtları, atölye/çalışma başvuruları ve (kullanıyorsanız) mobil uygulama bildirimleri.",
+        "covered": "Web sitemiz, iletişim/rezervasyon formlarımız, bülten aboneliği, etkinlik kayıtları, atölye/çalışma başvuruları, DailyPositive mobil uygulaması, DailyPositive hesap işlemleri, destek talepleri ve mobil bildirimler.",
         "notCovered": "Sosyal medya hesaplarımıza yönlenen bağlantılar bu politikaya tabi değildir; ilgili platformların kendi politikaları geçerlidir."
       },
       "dataCategories": "Topladığımız Veri Kategorileri",
       "dataCategoriesContent": {
         "identity": "Kimlik ve İletişim:",
-        "identityDesc": "Ad-soyad, e-posta, telefon.",
+        "identityDesc": "Ad-soyad, e-posta, telefon; DailyPositive hesabı oluşturduğunuzda hesap e-posta adresi ve profil bilgileri.",
         "transaction": "İşlem Bilgisi:",
         "transactionDesc": "Rezervasyon/etkinlik kaydı, ödeme durumu (tutar, tarih; kart bilgileri ödeme sağlayıcıda işlenir).",
         "content": "İçerik & Tercihler:",
         "contentDesc": "Bülten/mesajlaşma tercihleri, atölye seçimi, randevu saati.",
+        "appAccount": "DailyPositive Hesap ve Uygulama Verileri:",
+        "appAccountDesc": "DailyPositive hesap durumu, uygulama içi tercihler, favoriler, ilerleme/aktivite geçmişi ve destek ya da hesap silme talepleri.",
+        "appUsage": "DailyPositive İçerik Kullanımı:",
+        "appUsageDesc": "Günlük olumlama, meditasyon, günlük yazımı ve benzeri özellikleri kullanırken oluşturduğunuz ya da seçtiğiniz içerik ve ayarlar.",
+        "notifications": "Bildirim ve Cihaz Verileri:",
+        "notificationsDesc": "Bildirim izni, cihaz işletim sistemi, uygulama sürümü, cihaz tanımlayıcıları ve push bildirim tokenları.",
         "technical": "Teknik Veriler:",
-        "technicalDesc": "IP, cihaz/çerez tanımlayıcıları, tarayıcı/OS, sayfa etkileşimi (analitik çerezler açık rızaya bağlıdır).",
+        "technicalDesc": "IP, cihaz/çerez tanımlayıcıları, tarayıcı/OS, uygulama sürümü, sayfa ve uygulama etkileşimi (analitik çerezler açık rızaya bağlıdır).",
         "sensitive": "Hassas/Özel Nitelikli Veriler:",
-        "sensitiveDesc": "Form/mesajlarda paylaşırsanız sağlık/iyilik hâli gibi veriler yalnızca açık rızanızla ve belirtilen amaçla işlenir."
+        "sensitiveDesc": "Form/mesajlarda veya DailyPositive içinde paylaşırsanız sağlık/iyilik hâli gibi veriler yalnızca açık rızanızla ve belirtilen amaçla işlenir."
       },
       "cookies": "Çerezler ve Benzer Teknolojiler",
       "cookiesContent": {
@@ -970,6 +978,8 @@
       "processingPurposesContent": {
         "service": "Hizmet sunumu:",
         "serviceDesc": "Rezervasyon/etkinlik kaydı, iletişim taleplerine dönüş, dijital içerik sağlama.",
+        "dailyPositiveService": "DailyPositive hizmetleri:",
+        "dailyPositiveServiceDesc": "Hesap oluşturma ve yönetimi, kişiselleştirilmiş içerik ve tercihlerin sunulması, mobil bildirimlerin iletilmesi, destek ve hesap silme taleplerinin yürütülmesi.",
         "business": "İşletme süreçleri:",
         "businessDesc": "Faturalama, muhasebe, yükümlülüklere uyum.",
         "development": "Geliştirme ve güvenlik:",
@@ -991,7 +1001,7 @@
       "dataSharingContent": {
         "intro": "Aşağıdaki tedarikçilerle hizmet sağlama amacıyla sınırlı ve gerekli ölçüde veri paylaşabiliriz:",
         "items": [
-          "Barındırma ve altyapı: Vercel/Azure",
+          "Barındırma ve altyapı: Vercel/Azure (DailyPositive API ve veritabanı dahil)",
           "E-posta ve bildirim: SendGrid/FCM",
           "Ödeme/Rezervasyon altyapısı: iyzico/Stripe vb.",
           "Analitik ve hata izleme: Google Analytics/Sentry",
@@ -1006,6 +1016,8 @@
         "items": [
           "Sözleşmesel/işlem verileri: ilgili mevzuat süreleri (örn. ticari defter/vergi yükümlülükleri).",
           "İletişim/bülten verileri: üyelik/abonelik süresi + 2 yıl.",
+          "DailyPositive hesap ve uygulama verileri: hesap aktif olduğu sürece; hesap silme talebi tamamlandığında mevzuat gereği saklanması gereken kayıtlar hariç silinir veya anonimleştirilir.",
+          "Destek ve hesap silme talepleri: talebin sonuçlanmasından sonra makul itiraz ve ispat süreleri boyunca.",
           "Analitik/çerez verileri: çerez yaşam süresi kadar (rızaya bağlı)."
         ],
         "note": "Süre dolduğunda veriler silinir, anonimleştirilir veya imha edilir."
@@ -1019,7 +1031,7 @@
           "İşlenip işlenmediğini öğrenme ve bilgi talebi,",
           "Amacına uygun kullanılıp kullanılmadığını ve aktarım yapılan tarafları öğrenme,",
           "Eksik/yanlış ise düzeltilmesini isteme,",
-          "KVKK ve ilgili mevzuata göre silme/unutulma talebi,",
+          "KVKK ve ilgili mevzuata göre silme/unutulma talebi; DailyPositive için hesap silme talebi,",
           "Otomatik işleme sonucu aleyhinize bir sonucun ortaya çıkmasına itiraz,",
           "Açık rızayı geri çekme; pazarlama iletilerini reddetme."
         ],
@@ -1029,6 +1041,17 @@
         "mail": "Posta:",
         "mailValue": "Bostancı, İstanbul, Türkiye",
         "response": "Başvurularınızı mevzuattaki süreler içinde yanıtlarız. Olumsuz yanıt almanız hâlinde KVKK Kurumu'na şikâyet hakkınız saklıdır."
+      },
+      "dailyPositive": "DailyPositive Mobil Uygulaması",
+      "dailyPositiveContent": {
+        "intro": "DailyPositive, Mor Kıvılcım ekosistemi içinde sunulan mobil uygulamadır. Uygulamayı kullandığınızda aşağıdaki veri işleme faaliyetleri de bu politika kapsamındadır:",
+        "items": [
+          "Hesap oluşturma, oturum açma, kimlik doğrulama ve hesap güvenliği için e-posta, profil ve teknik kayıtlar işlenebilir.",
+          "Uygulama içi tercihler, favoriler, ilerleme/aktivite geçmişi, günlük yazımı ve benzeri kullanıcı içerikleri yalnızca uygulama deneyimini sunmak ve iyileştirmek için kullanılır.",
+          "Push bildirimleri gönderebilmemiz için cihazınızın verdiği bildirim izni ve FCM gibi bildirim servislerine ait tokenlar işlenebilir; bildirimleri cihaz ayarlarınızdan kapatabilirsiniz.",
+          "Destek talepleriniz, hata kayıtları ve güvenlik logları sorununuzu çözmek, hizmet kalitesini artırmak ve kötüye kullanımı önlemek için saklanabilir."
+        ],
+        "accountDeletion": "DailyPositive hesabınızı /dailypositive/hesap-silme sayfasından veya info@morkivilcim.com adresinden talep ederek silebilirsiniz. Talep tamamlandığında hesabınız ve uygulama verileriniz silinir ya da anonimleştirilir; mevzuat gereği saklanması zorunlu kayıtlar yalnızca gerekli süre boyunca tutulur."
       },
       "childrenData": "Çocukların Verileri",
       "childrenDataContent": "Hizmetlerimiz yetişkinlere yöneliktir. 18 yaş altı kullanıcıların verileri, veli/vasi onayı olmaksızın bilerek işlenmez.",
