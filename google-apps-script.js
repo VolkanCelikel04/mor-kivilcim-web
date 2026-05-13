@@ -14,11 +14,16 @@ function doPost(e) {
     // Verileri satıra ekle
     sheet.appendRow([
       timestamp,
-      data.name,
-      data.email,
+      data.requestType || 'contact',
+      data.name || '-',
+      data.email || '-',
       data.phone || '-',
       data.company || '-',
-      data.message
+      data.subject || '-',
+      data.reason || '-',
+      data.confirmation || '-',
+      data.source || '-',
+      data.message || '-'
     ]);
     
     // Başarılı yanıt

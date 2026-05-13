@@ -11,6 +11,8 @@ const AccountDeletion: React.FC = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
@@ -22,27 +24,58 @@ const AccountDeletion: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitError('');
 
     const subject = encodeURIComponent('DailyPositive Hesap Silme Talebi');
-    const body = encodeURIComponent(
-      [
-        'Merhaba,',
-        '',
-        'DailyPositive hesabımın ve hesabıma bağlı kişisel verilerimin silinmesini talep ediyorum.',
-        '',
-        `Hesap e-posta adresim: ${formData.email}`,
-        `Silme nedeni: ${formData.reason || 'Belirtilmedi'}`,
-        '',
-        'Bu talebin geri alınamaz sonuçlar doğurabileceğini ve yasal saklama zorunluluğu bulunan kayıtların yalnızca gerekli süre boyunca saklanabileceğini anlıyorum.',
-        '',
-        'Teşekkürler.'
-      ].join('\n')
-    );
+    const messageLines = [
+      'Merhaba,',
+      '',
+      'DailyPositive hesabımın ve hesabıma bağlı kişisel verilerimin silinmesini talep ediyorum.',
+      '',
+      `Hesap e-posta adresim: ${formData.email}`,
+      `Silme nedeni: ${formData.reason || 'Belirtilmedi'}`,
+      '',
+      'Bu talebin geri alınamaz sonuçlar doğurabileceğini ve yasal saklama zorunluluğu bulunan kayıtların yalnızca gerekli süre boyunca saklanabileceğini anlıyorum.',
+      '',
+      'Teşekkürler.'
+    ];
+    const body = encodeURIComponent(messageLines.join('\n'));
+    const scriptUrl = process.env.REACT_APP_GOOGLE_SCRIPT_URL || '';
 
-    window.location.href = `mailto:${supportEmail}?subject=${subject}&body=${body}`;
-    setSubmitted(true);
+    try {
+      if (scriptUrl) {
+        await fetch(scriptUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            requestType: 'dailypositive_account_deletion',
+            name: 'DailyPositive Account Deletion',
+            email: formData.email,
+            phone: '-',
+            company: 'DailyPositive',
+            subject: 'DailyPositive Hesap Silme Talebi',
+            reason: formData.reason || 'Belirtilmedi',
+            message: messageLines.join('\n'),
+            confirmation: formData.confirmation ? 'Onaylandı' : 'Onaylanmadı',
+            source: 'dailypositive/hesap-silme'
+          }),
+          mode: 'no-cors'
+        });
+      }
+
+      window.location.href = `mailto:${supportEmail}?subject=${subject}&body=${body}`;
+      setSubmitted(true);
+    } catch (error) {
+      console.error('Hesap silme talebi kaydedilemedi:', error);
+      setSubmitError('Talep Google Sheets kaydına gönderilemedi. Lütfen aynı bilgileri info@morkivilcim.com adresine e-posta ile iletin.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -64,10 +97,17 @@ const AccountDeletion: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {submitted && (
             <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
-              <h2 className="text-xl font-bold text-green-900 mb-2">E-posta taslağı hazırlandı</h2>
+              <h2 className="text-xl font-bold text-green-900 mb-2">Talep kaydı oluşturuldu</h2>
               <p className="text-green-800">
-                E-posta uygulamanız açıldıysa talebi göndermeniz yeterli. Açılmadıysa aynı bilgileri {supportEmail} adresine "DailyPositive Hesap Silme Talebi" konu satırıyla gönderebilirsiniz.
+                Talep Google Sheets kaydına gönderildi ve e-posta taslağı hazırlandı. E-posta uygulamanız açıldıysa talebi göndermeniz yeterli. Açılmadıysa aynı bilgileri {supportEmail} adresine "DailyPositive Hesap Silme Talebi" konu satırıyla gönderebilirsiniz.
               </p>
+            </div>
+          )}
+
+          {submitError && (
+            <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-8">
+              <h2 className="text-xl font-bold text-red-900 mb-2">Talep kaydedilemedi</h2>
+              <p className="text-red-800">{submitError}</p>
             </div>
           )}
 
@@ -177,10 +217,10 @@ const AccountDeletion: React.FC = () => {
 
               <button
                 type="submit"
-                disabled={!formData.confirmation}
+                disabled={!formData.confirmation || isSubmitting}
                 className="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
               >
-                E-posta ile hesap silme talebi oluştur
+                {isSubmitting ? 'Talep kaydediliyor...' : 'Hesap silme talebi oluştur'}
               </button>
             </form>
           </div>
